@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4db33e05ff9f061019a8ffda7c4fd996" label="Integration Question Response" max_length="40" name="x_rptp_smartinte_0_integration_question_response" type="collection">
+        <element label="Customer ID" max_length="32" name="customer_id" reference="sys_user" type="reference"/>
+        <element label="Insurer" max_length="32" name="insurer" reference="x_rptp_smartinte_0_integrationinsurer" type="reference"/>
+        <element label="Product" max_length="32" name="product" reference="x_rptp_smartinte_0_integrationproducts" type="reference"/>
+        <element label="Product Variant" max_length="32" name="product_variant" reference="x_rptp_smartinte_0_integrationproductvariants" type="reference"/>
+        <element label="Question" max_length="32" name="question" reference="x_rptp_smartinte_0_integration_question_configuration" type="reference"/>
+        <element label="Question Response Type" max_length="32" name="question_response_type" reference="x_rptp_smartinte_0_integration_question_responsetype" type="reference"/>
+        <element label="Response" max_length="100000" name="response" type="string"/>
+        <index name="index">
+            <element name="customer_id"/>
+        </index>
+        <index name="index2">
+            <element name="insurer"/>
+        </index>
+        <index name="index3">
+            <element name="product"/>
+        </index>
+        <index name="index4">
+            <element name="product_variant"/>
+        </index>
+        <index name="index5">
+            <element name="question"/>
+        </index>
+        <index name="index6">
+            <element name="question_response_type"/>
+        </index>
+    </element>
+</database>

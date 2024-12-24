@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_rptp_smartinte_0.snPromise </api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>snPromise </name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var snPromise = Class.create();
+snPromise.prototype = {
+    initialize: function() {
+        if (!(this instanceof snPromise))
+            throw new TypeError('Promises must be constructed via new');
+    },
+
+    snPromise: function(fn) {
+        if (typeof fn !== 'function') throw new TypeError('not a function');
+        this._state = 0;
+        this._handled = false;
+        this._value = undefined;
+        this._deferreds = [];
+        snPromise.prototype.doResolve(fn, this);
+    },
+
+    noop: function() {},
+
+    handle: function(self, deferred) {
+        while (self._state === 3) {
+            self = self._value;
+        }
+        if (self._state === 0) {
+            self._deferreds.push(deferred);
+            return;
+        }
+        self._handled = true;
+        setTimeout(function() {
+            var cb = self._state === 1 ? deferred.onFulfilled : deferred.onRejected;
+            if (cb === null) {
+                (self._state === 1 ? snPromise.prototype.resolve : snPromise.prototype.reject)(deferred.promise, self._value);
+                return;
+            }
+            var ret;
+            try {
+                ret = cb(self._value);
+            } catch (e) {
+                snPromise.prototype.reject(deferred.promise, e);
+                return;
+            }
+            snPromise.prototype.resolve(deferred.promise, ret);
+        });
+    },
+
+    resolve: function(self, newValue) {
+        try {
+            if (newValue === self)
+                throw new TypeError('A promise cannot be resolved with itself.');
+            if (newValue && (typeof newValue === 'object' || typeof newValue === 'function')) {
+                var then = newValue.then;
+                if (newValue instanceof snPromise) {
+                    self._state = 3;
+                    self._value = newValue;
+                    snPromise.prototype.finale(self);
+                    return;
+                } else if (typeof then === 'function') {
+                    snPromise.prototype.doResolve(then.bind(newValue), self);
+                    return;
+                }
+            }
+            self._state = 1;
+            self._value = newValue;
+            snPromise.prototype.finale(self);
+        } catch (e) {
+            snPromise.prototype.reject(self, e);
+        }
+    },
+
+    reject: function(self, newValue) {
+        self._state = 2;
+        self._value = newValue;
+        snPromise.prototype.finale(self);
+    },
+
+    finale: function(self) {
+        if (self._state === 2 && self._deferreds.length === 0) {
+            setTimeout(function() {
+                if (!self._handled) {
+                    gs.warn('Possible Unhandled snPromise Rejection:' + self._value);
+                }
+            });
+        }
+        for (var i = 0, len = self._deferreds.length; i < len; i++) {
+            snPromise.prototype.handle(self, self._deferreds[i]);
+        }
+        self._deferreds = null;
+    },
+
+    doResolve: function(fn, self) {
+        var done = false;
+        try {
+            fn(
+                function(value) {
+                    if (done) return;
+                    done = true;
+                    snPromise.prototype.resolve(self, value);
+                },
+                function(reason) {
+                    if (done) return;
+                    done = true;
+                    snPromise.prototype.reject(self, reason);
+                }
+            );
+        } catch (ex) {
+            if (done) return;
+            done = true;
+            snPromise.prototype.reject(self, ex);
+        }
+    },
+
+    catch: function(onRejected) {
+        return this.then(null, onRejected);
+    },
+
+    then: function(onFulfilled, onRejected) {
+        var prom = new this.constructor(snPromise.prototype.noop);
+
+        snPromise.prototype.handle(this, {
+            onFulfilled: typeof onFulfilled === 'function' ? onFulfilled : null,
+            onRejected: typeof onRejected === 'function' ? onRejected : null,
+            promise: prom
+        });
+
+        return prom;
+    },
+
+    finally: function(callback) {
+        var constructor = this.constructor;
+        return this.then(
+            function(value) {
+                return constructor.resolve(callback()).then(function() {
+                    return value;
+                });
+            },
+            function(reason) {
+                return constructor.resolve(callback()).then(function() {
+                    return constructor.reject(reason);
+                });
+            }
+        );
+    },
+
+    all: function(arr) {
+        return new snPromise(function(resolve, reject) {
+            if (!arr || typeof arr.length === "undefined") {
+                return reject(new TypeError('Promise.all accepts an array'));
+            }
+
+            var args = Array.prototype.slice.call(arr);
+            if (args.length === 0) return resolve([]);
+            var remaining = args.length;
+
+            function res(i, val) {
+                try {
+                    if (val && (typeof val === 'object' || typeof val === 'function')) {
+                        var then = val.then;
+                        if (typeof then === 'function') {
+                            then.call(
+                                val,
+                                function(val) {
+                                    res(i, val);
+                                },
+                                reject
+                            );
+                            return;
+                        }
+                    }
+                    args[i] = val;
+                    if (--remaining === 0) {
+                        resolve(args);
+                    }
+                } catch (ex) {
+                    reject(ex);
+                }
+            }
+
+            for (var i = 0; i < args.length; i++) {
+                res(i, args[i]);
+            }
+        });
+    },
+
+    any: function(arr) {
+        return new snPromise(function(resolve, reject) {
+            if (!arr || typeof arr.length === "undefined") {
+                return reject(new TypeError('snPromise.any accepts an array'));
+            }
+
+            var args = Array.prototype.slice.call(arr);
+            if (args.length === 0) return reject();
+
+            var rejectionReasons = [];
+            for (var i = 0; i < args.length; i++) {
+                try {
+                    snPromise.prototype.resolve(args[i])
+                        .then(resolve)
+                        .catch(function(error) {
+                            rejectionReasons.push(error);
+                            if (rejectionReasons.length === args.length) {
+                                const err = new Error('All promises were rejected');
+                                err.errors = rejectionReasons;
+                                reject(err);
+                            }
+                        });
+                } catch (ex) {
+                    reject(ex);
+                }
+            }
+        });
+    },
+
+    allSettled: function(arr) {
+        return new snPromise(function(resolve, reject) {
+            if (!arr || typeof arr.length === 'undefined') {
+                return reject(
+                    new TypeError(typeof arr + ' ' + arr + ' is not iterable(cannot read property Symbol(Symbol.iterator))')
+                );
+            }
+            var args = Array.prototype.slice.call(arr);
+            if (args.length === 0) return resolve([]);
+            var remaining = args.length;
+
+            function res(i, val) {
+                if (val && (typeof val === 'object' || typeof val === 'function')) {
+                    var then = val.then;
+                    if (typeof then === 'function') {
+                        then.call(
+                            val,
+                            function(val) {
+                                res(i, val);
+                            },
+                            function(e) {
+                                args[i] = {
+                                    status: 'rejected',
+                                    reason: e
+                                };
+                                if (--remaining === 0) {
+                                    resolve(args);
+                                }
+                            }
+                        );
+                        return;
+                    }
+                }
+                args[i] = {
+                    status: 'fulfilled',
+                    value: val
+                };
+                if (--remaining === 0) {
+                    resolve(args);
+                }
+            }
+
+            for (var i = 0; i < args.length; i++) {
+                res(i, args[i]);
+            }
+        });
+    },
+
+    resolve: function(value) {
+        if (value && typeof value === 'object' && value.constructor === snPromise) {
+            return value;
+        }
+
+        return new snPromise(function(resolve) {
+            resolve(value);
+        });
+    },
+
+    reject: function(value) {
+        return new snPromise(function(resolve, reject) {
+            reject(value);
+        });
+    },
+
+    race: function(arr) {
+        return new snPromise(function(resolve, reject) {
+            if (!arr || typeof arr.length === 'undefined') {
+                return reject(new TypeError('Promise.race accepts an array'));
+            }
+
+            for (var i = 0, len = arr.length; i < len; i++) {
+                snPromise.prototype.resolve(arr[i]).then(resolve, reject);
+            }
+        });
+    },
+
+    type: 'snPromise'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-07-04 10:28:33</sys_created_on>
+        <sys_id>e26a1ebf47cb4e50e9ddbf66706d4319</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>snPromise </sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_script_include_e26a1ebf47cb4e50e9ddbf66706d4319</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-07-04 10:49:46</sys_updated_on>
+    </sys_script_include>
+</record_update>

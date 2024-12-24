@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="38dc757647434650e9ddbf66706d4312" label="Integration Source field Mapper" max_length="40" name="x_rptp_smartinte_0_integration_source_field_mapper" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="AgentCode" max_length="100" name="agentcode" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Code" max_length="100" name="code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="200" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Insurer" max_length="32" name="insurer" reference="x_rptp_smartinte_0_integrationinsurer" type="reference"/>
+        <element label="IsActive" max_length="40" name="isactive" type="boolean"/>
+        <element label="IsList" max_length="40" name="islist" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="300" name="name" type="string"/>
+        <element label="ParentPropertyKey" max_length="40" name="parentpropertykey" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="RequestSource" max_length="100" name="requestsource" type="string"/>
+        <element label="SourceField" max_length="32" name="source_field" reference="x_rptp_smartinte_0_integration_source_field_master" type="reference"/>
+        <element label="TargetDataFormat" max_length="40" name="targetdataformat" type="string"/>
+        <element label="TargetDataType" max_length="32" name="targetdatatype" reference="x_rptp_smartinte_0_integrationdatatypemaster" type="reference"/>
+        <element label="TargetPropertyName" max_length="40" name="targetpropertyname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="VendorCode" max_length="100" name="vendorcode" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="VendorName" max_length="40" name="vendorname" type="string"/>
+        <index name="index">
+            <element name="insurer"/>
+        </index>
+        <index name="index2">
+            <element name="source_field"/>
+        </index>
+        <index name="index3">
+            <element name="targetdatatype"/>
+        </index>
+    </element>
+</database>

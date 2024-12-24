@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>getfullfillmentrequirement_subflow</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>getFullfillmentRequirement subflow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:49:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>986ea4b6ff374a1019a8ffda7c4fd933</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>getFullfillmentRequirement subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_986ea4b6ff374a1019a8ffda7c4fd933</sys_update_name>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:53:44</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_variable_value action="delete_multiple" query="document_key=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_986ea4b6ff374a1019a8ffda7c4fd933^id=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=986ea4b6ff374a1019a8ffda7c4fd933^sys_idNOT IN286ea4b6ff374a1019a8ffda7c4fd934"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>986ea4b6ff374a1019a8ffda7c4fd933</id>
+        <name>getFullfillmentRequirement subflow</name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:49:04</sys_created_on>
+        <sys_id>286ea4b6ff374a1019a8ffda7c4fd934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:49:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=286ea4b6ff374a1019a8ffda7c4fd934"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=986ea4b6ff374a1019a8ffda7c4fd933^sys_idNOT IN243f243aff374a1019a8ffda7c4fd92f,303f243aff374a1019a8ffda7c4fd952,683fac76ff374a1019a8ffda7c4fd99c,7c3f243aff374a1019a8ffda7c4fd938,7c3f243aff374a1019a8ffda7c4fd94e,b83f243aff374a1019a8ffda7c4fd935,b83f243aff374a1019a8ffda7c4fd94b,e43f243aff374a1019a8ffda7c4fd932,f03f243aff374a1019a8ffda7c4fd955,f43f243aff374a1019a8ffda7c4fd948"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e24e030a-ba98-47c0-bf2c-f299ff149b82</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rqmntcd</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>rqmntcd</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>243f243aff374a1019a8ffda7c4fd92f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=243f243aff374a1019a8ffda7c4fd92f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aa0b2bc2-5db7-4c26-b5c9-336fc66122ec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurer</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>303f243aff374a1019a8ffda7c4fd952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=303f243aff374a1019a8ffda7c4fd952"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f37ff238-8632-4ec3-a676-fa88a88341cc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>res</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>res</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>683fac76ff374a1019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=683fac76ff374a1019a8ffda7c4fd99c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f3457e03-762e-4ea0-828d-362154fce25b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vendorcode</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>vendorcode</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>7c3f243aff374a1019a8ffda7c4fd938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c3f243aff374a1019a8ffda7c4fd938"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=30727870-de68-433f-90bb-2dc216f15b48</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variant</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variant</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>7c3f243aff374a1019a8ffda7c4fd94e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c3f243aff374a1019a8ffda7c4fd94e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=89fb2f46-e9e9-43a0-8f08-1d06595becb1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>accesstoken</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>accessToken</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>b83f243aff374a1019a8ffda7c4fd935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b83f243aff374a1019a8ffda7c4fd935"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=05ad66dc-708f-4e59-ad17-8dd048db9acc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>b83f243aff374a1019a8ffda7c4fd94b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b83f243aff374a1019a8ffda7c4fd94b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f6ed92f3-30c6-49c7-a9b5-38d07d71a722</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>capdocid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>capdocid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>e43f243aff374a1019a8ffda7c4fd932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e43f243aff374a1019a8ffda7c4fd932"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=49fa03f3-34ba-4f7d-adf2-5c503c7f1eb0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestbody</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:39</sys_created_on>
+        <sys_id>f03f243aff374a1019a8ffda7c4fd955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f03f243aff374a1019a8ffda7c4fd955"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9c7559f2-1946-41eb-8361-ee4e80bd642f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>f43f243aff374a1019a8ffda7c4fd948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f43f243aff374a1019a8ffda7c4fd948"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=986ea4b6ff374a1019a8ffda7c4fd933^sys_idNOT IN747fa83aff374a1019a8ffda7c4fd9fd,b87fe83aff374a1019a8ffda7c4fd901"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3968bca6-3971-41ab-a3f0-55d8a4a7e9c6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:53:44</sys_created_on>
+        <sys_id>747fa83aff374a1019a8ffda7c4fd9fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:53:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=747fa83aff374a1019a8ffda7c4fd9fd"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=26d39a2c-07a7-4557-ab1b-3df4cfd45e0b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output1</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="getFullfillmentRequirement subflow">986ea4b6ff374a1019a8ffda7c4fd933</model>
+        <model_id>986ea4b6ff374a1019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:53:44</sys_created_on>
+        <sys_id>b87fe83aff374a1019a8ffda7c4fd901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:53:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b87fe83aff374a1019a8ffda7c4fd901"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933^sys_idNOT IN283f243aff374a1019a8ffda7c4fd931,343f243aff374a1019a8ffda7c4fd954,383f243aff374a1019a8ffda7c4fd947,643f243aff374a1019a8ffda7c4fd92e,703f243aff374a1019a8ffda7c4fd951,bc3f243aff374a1019a8ffda7c4fd937,bc3f243aff374a1019a8ffda7c4fd94d,f43f243aff374a1019a8ffda7c4fd957,f83f243aff374a1019a8ffda7c4fd934,f83f243aff374a1019a8ffda7c4fd94a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>rqmntcd</element>
+        <help/>
+        <hint/>
+        <label>rqmntcd</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>283f243aff374a1019a8ffda7c4fd931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>insurer</element>
+        <help/>
+        <hint/>
+        <label>insurer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:39</sys_created_on>
+        <sys_id>343f243aff374a1019a8ffda7c4fd954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>vendorcode</element>
+        <help/>
+        <hint/>
+        <label>vendorcode</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>383f243aff374a1019a8ffda7c4fd947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>res</element>
+        <help/>
+        <hint/>
+        <label>res</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>643f243aff374a1019a8ffda7c4fd92e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variant</element>
+        <help/>
+        <hint/>
+        <label>variant</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>703f243aff374a1019a8ffda7c4fd951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>accesstoken</element>
+        <help/>
+        <hint/>
+        <label>accessToken</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>bc3f243aff374a1019a8ffda7c4fd937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productid</element>
+        <help/>
+        <hint/>
+        <label>productid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>bc3f243aff374a1019a8ffda7c4fd94d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestbody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:39</sys_created_on>
+        <sys_id>f43f243aff374a1019a8ffda7c4fd957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>capdocid</element>
+        <help/>
+        <hint/>
+        <label>capdocid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>f83f243aff374a1019a8ffda7c4fd934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productname</element>
+        <help/>
+        <hint/>
+        <label>productname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:52:38</sys_created_on>
+        <sys_id>f83f243aff374a1019a8ffda7c4fd94a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:52:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_986ea4b6ff374a1019a8ffda7c4fd933^sys_idNOT INbc7fe83aff374a1019a8ffda7c4fd903,f87fe83aff374a1019a8ffda7c4fd900"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output1</element>
+        <help/>
+        <hint/>
+        <label>Output1</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:53:44</sys_created_on>
+        <sys_id>bc7fe83aff374a1019a8ffda7c4fd903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:53:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_986ea4b6ff374a1019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-07 06:53:44</sys_created_on>
+        <sys_id>f87fe83aff374a1019a8ffda7c4fd900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-07 06:53:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=986ea4b6ff374a1019a8ffda7c4fd933"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=986ea4b6ff374a1019a8ffda7c4fd933"/>
+</record_update>

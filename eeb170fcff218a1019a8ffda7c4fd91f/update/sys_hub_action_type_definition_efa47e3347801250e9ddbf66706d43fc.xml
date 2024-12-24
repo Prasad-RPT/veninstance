@@ -1,0 +1,1925 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>true</ih_action>
+        <internal_name>error_handling_dor_icici_doc_upload</internal_name>
+        <label_cache>[{"name":"{{action.status}}","label":"action➛status","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.productid}}","label":"action➛productid","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[be25746f-50af-464a-aab3-d24eef9ba34e].output}}","label":"step➛JSON Builder step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>7045b2f347801250e9ddbf66706d4383</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Error handling for ICICI DOC upload</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:25:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>efa47e3347801250e9ddbf66706d43fc</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Error handling for ICICI DOC upload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_efa47e3347801250e9ddbf66706d43fc</sys_update_name>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:20</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=efa47e3347801250e9ddbf66706d43fc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=efa47e3347801250e9ddbf66706d43fc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>efa47e3347801250e9ddbf66706d43fc</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>2c45b2f347801250e9ddbf66706d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">6445b2f347801250e9ddbf66706d4338</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>efa47e3347801250e9ddbf66706d43fc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>ec45b2f347801250e9ddbf66706d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">6c45b2f347801250e9ddbf66706d4326</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=efa47e3347801250e9ddbf66706d43fc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>efa47e3347801250e9ddbf66706d43fc</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:32:00</sys_created_on>
+        <sys_id>2f263a7747801250e9ddbf66706d43cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:32:00</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</table>
+        <value>{{step[be25746f-50af-464a-aab3-d24eef9ba34e].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>efa47e3347801250e9ddbf66706d43fc</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>a845b2f347801250e9ddbf66706d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>efa47e3347801250e9ddbf66706d43fc</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>e445b2f347801250e9ddbf66706d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=efa47e3347801250e9ddbf66706d43fc^sys_idNOT IN2106fe3747801250e9ddbf66706d4360,2c45b2f347801250e9ddbf66706d4304"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</action>
+        <cid>be25746f-50af-464a-aab3-d24eef9ba34e</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Builder step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:31:19</sys_created_on>
+        <sys_id>2106fe3747801250e9ddbf66706d4360</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:17</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2106fe3747801250e9ddbf66706d4360"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2106fe3747801250e9ddbf66706d4360</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:31:19</sys_created_on>
+        <sys_id>e506fe3747801250e9ddbf66706d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:31:19</sys_updated_on>
+        <value/>
+        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2106fe3747801250e9ddbf66706d4360"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>structure</field>
+        <id>2106fe3747801250e9ddbf66706d4360</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:31:19</sys_created_on>
+        <sys_id>6106fe3747801250e9ddbf66706d4366</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3</table>
+        <value>[{"id":"dc8d3617-71c1-476f-bef1-9f523f3a279c","name":"productid","value":"productid","type":"string","path":[],"choice":"empty string"},{"id":"6e3aa831-485f-45dc-a35c-a130bfdca690","name":"errorMessage","value":"","type":"object","path":[],"choice":"empty string"},{"id":"ce261c9b-b2fd-433f-a5ae-5ca82d658133","name":"code","value":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.code}}","type":"string","path":["6e3aa831-485f-45dc-a35c-a130bfdca690"],"choice":"empty string"},{"id":"4bd78435-93ac-4793-8c02-e95067b3a40a","name":"message","value":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.message}}","type":"string","path":["6e3aa831-485f-45dc-a35c-a130bfdca690"],"choice":"empty string"}]</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2106fe3747801250e9ddbf66706d4360"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2106fe3747801250e9ddbf66706d4360"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2106fe3747801250e9ddbf66706d4360"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_2106fe3747801250e9ddbf66706d4360"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</action>
+        <cid>1b7c4c66-667e-4faa-b371-f7ec0e696534</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>2c45b2f347801250e9ddbf66706d4304</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:01</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c45b2f347801250e9ddbf66706d4304"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2c45b2f347801250e9ddbf66706d4304</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:01</sys_created_on>
+        <sys_id>81a63eb747801250e9ddbf66706d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:01</sys_updated_on>
+        <value>{&#13;
+    "code":500,&#13;
+"message": "Request not sent to uri= https://api-dex.iciciprulife.com/v1/document/upload/update/details : java.net.UnknownHostException: api-dex.iciciprulife.apigee.net"&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2c45b2f347801250e9ddbf66706d4304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>a845b2f347801250e9ddbf66706d4324</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:01</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"code","children":[],"type":"string","jpath":"$.code","previewValue":"500"},{"name":"message","children":[],"type":"string","jpath":"$.message","previewValue":"Request not sent to uri= https://api-dex.iciciprulife.com/v1/document/upload/update/details : java.net.UnknownHostException: api-dex.iciciprulife.apigee.net"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2c45b2f347801250e9ddbf66706d4304^id=2c45b2f347801250e9ddbf66706d4304"/>
+    <sys_element_mapping action="delete_multiple" query="id=2c45b2f347801250e9ddbf66706d4304"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>2c45b2f347801250e9ddbf66706d4304</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:01</sys_created_on>
+        <sys_id>41a63eb747801250e9ddbf66706d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>2c45b2f347801250e9ddbf66706d4304</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>6045b2f347801250e9ddbf66706d4324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{action.status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>2c45b2f347801250e9ddbf66706d4304</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>2845b2f347801250e9ddbf66706d4324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2c45b2f347801250e9ddbf66706d4304"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2c45b2f347801250e9ddbf66706d4304^sys_idNOT IN89a63eb747801250e9ddbf66706d437f"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD85a63eb75e8012509f33ab959777957e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD85a63eb75e8012509f33ab959777957e":{"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"866be588-5962-4e21-945f-79db310eda10\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ee41303f-913b-4f45-85bd-c4b74411b620\"}"}},"FlowDesigner:FD85a63eb75e8012509f33ab959777957e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"e69f5ea8-5a02-48b3-b93d-d6a8d1cf5395\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD85a63eb75e8012509f33ab959777957e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>49a63eb747801250e9ddbf66706d437e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:17</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD85a63eb75e8012509f33ab959777957e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e69f5ea8-5a02-48b3-b93d-d6a8d1cf5395</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">2c45b2f347801250e9ddbf66706d4304</model>
+        <model_id>2c45b2f347801250e9ddbf66706d4304</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2c45b2f347801250e9ddbf66706d4304</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:01</sys_created_on>
+        <sys_id>89a63eb747801250e9ddbf66706d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2c45b2f347801250e9ddbf66706d4304"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_2c45b2f347801250e9ddbf66706d4304^sys_idNOT IN8da63eb747801250e9ddbf66706d4383"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_2c45b2f347801250e9ddbf66706d4304</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:01</sys_created_on>
+        <sys_id>8da63eb747801250e9ddbf66706d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=efa47e3347801250e9ddbf66706d43fc^sys_idNOT IN604572f347801250e9ddbf66706d43fa,701532bc47901a50e9ddbf66706d43a2"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=82a24876-3a78-417a-a8e8-b0d5f710e6b7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</model>
+        <model_id>efa47e3347801250e9ddbf66706d43fc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_efa47e3347801250e9ddbf66706d43fc</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>604572f347801250e9ddbf66706d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=604572f347801250e9ddbf66706d43fa"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0185f226-512c-4b70-9e62-de5a62b23bf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</model>
+        <model_id>efa47e3347801250e9ddbf66706d43fc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_efa47e3347801250e9ddbf66706d43fc</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-26 08:01:06</sys_created_on>
+        <sys_id>701532bc47901a50e9ddbf66706d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:01:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=701532bc47901a50e9ddbf66706d43a2"/>
+    <sys_hub_action_output action="delete_multiple" query="model=efa47e3347801250e9ddbf66706d43fc^sys_idNOT IN2f263a7747801250e9ddbf66706d43ba,6445b2f347801250e9ddbf66706d4338,6c45b2f347801250e9ddbf66706d4326"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b73865a6-47d9-4b9e-9382-22e906831697</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype display_value="Output" element="output" name="var__m_sys_flow_step_definition_output_dfd9f353b733111007402a91de11a9e3">5f7a3f53b733111007402a91de11a95e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</model>
+        <model_id>efa47e3347801250e9ddbf66706d43fc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:32:00</sys_created_on>
+        <sys_id>2f263a7747801250e9ddbf66706d43ba</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2f263a7747801250e9ddbf66706d43ba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2f263a7747801250e9ddbf66706d43ba"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=54d03abd-e8ab-467d-9714-def454ccdada,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</model>
+        <model_id>efa47e3347801250e9ddbf66706d43fc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>6445b2f347801250e9ddbf66706d4338</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6445b2f347801250e9ddbf66706d4338"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6445b2f347801250e9ddbf66706d4338"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=131a3a44-9c02-4257-99a1-5195307bd7bc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</model>
+        <model_id>efa47e3347801250e9ddbf66706d43fc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>6c45b2f347801250e9ddbf66706d4326</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:32:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6c45b2f347801250e9ddbf66706d4326"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c45b2f347801250e9ddbf66706d4326"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=efa47e3347801250e9ddbf66706d43fc"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=efa47e3347801250e9ddbf66706d43fc^sys_idNOT IN98c4fa3347801250e9ddbf66706d430a"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</action_type_id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:25:47</sys_created_on>
+        <sys_id>98c4fa3347801250e9ddbf66706d430a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:25:47</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=98c4fa3347801250e9ddbf66706d430a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_efa47e3347801250e9ddbf66706d43fc^sys_idNOT IN284572f347801250e9ddbf66706d43fe,b815febc47901a50e9ddbf66706d4383"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_efa47e3347801250e9ddbf66706d43fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>284572f347801250e9ddbf66706d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productid</element>
+        <help/>
+        <hint/>
+        <label>productid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_efa47e3347801250e9ddbf66706d43fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-26 08:01:06</sys_created_on>
+        <sys_id>b815febc47901a50e9ddbf66706d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:01:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_efa47e3347801250e9ddbf66706d43fc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc^sys_idNOT IN63263a7747801250e9ddbf66706d43bf,6845b2f347801250e9ddbf66706d433d,ec45b2f347801250e9ddbf66706d432a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:32:00</sys_created_on>
+        <sys_id>63263a7747801250e9ddbf66706d43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:32:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>6845b2f347801250e9ddbf66706d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:58</sys_created_on>
+        <sys_id>ec45b2f347801250e9ddbf66706d432a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_efa47e3347801250e9ddbf66706d43fc"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=efa47e3347801250e9ddbf66706d43fc^sys_idNOT IN1145f2f347801250e9ddbf66706d4393"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1145f2f347801250e9ddbf66706d4393","name":"plan","plan_signature":null}}</plan>
+        <snapshot>4650cf7447141a50e9ddbf66706d43ee</snapshot>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1145f2f347801250e9ddbf66706d4393</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:21</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>error_handling_for_icici_doc_upload</internal_name>
+        <label_cache>[{"name":"{{action.status}}","label":"action➛status","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.productid}}","label":"action➛productid","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[be25746f-50af-464a-aab3-d24eef9ba34e].output}}","label":"step➛JSON Builder step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Error handling for ICICI DOC upload</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Error handling for ICICI DOC upload">efa47e3347801250e9ddbf66706d43fc</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7045b2f347801250e9ddbf66706d4383</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:01:09</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7045b2f347801250e9ddbf66706d4383"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7045b2f347801250e9ddbf66706d4383"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>7045b2f347801250e9ddbf66706d4383</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>8545f2f347801250e9ddbf66706d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">bc45b2f347801250e9ddbf66706d43af</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>7045b2f347801250e9ddbf66706d4383</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>c145f2f347801250e9ddbf66706d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">7845f2f347801250e9ddbf66706d430b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7045b2f347801250e9ddbf66706d4383"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>7045b2f347801250e9ddbf66706d4383</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:32:02</sys_created_on>
+        <sys_id>4c367a7747801250e9ddbf66706d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:32:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</table>
+        <value>{{step[be25746f-50af-464a-aab3-d24eef9ba34e].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>7045b2f347801250e9ddbf66706d4383</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>4145f2f347801250e9ddbf66706d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>7045b2f347801250e9ddbf66706d4383</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>8d45f2f347801250e9ddbf66706d4312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=7045b2f347801250e9ddbf66706d4383^sys_idNOT IN0606327747801250e9ddbf66706d4324,7845b2f347801250e9ddbf66706d43a9"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</action>
+        <cid>be25746f-50af-464a-aab3-d24eef9ba34e</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Builder step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:31:21</sys_created_on>
+        <sys_id>0606327747801250e9ddbf66706d4324</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:20</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0606327747801250e9ddbf66706d4324"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0606327747801250e9ddbf66706d4324</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:31:21</sys_created_on>
+        <sys_id>4206327747801250e9ddbf66706d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:31:21</sys_updated_on>
+        <value/>
+        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0606327747801250e9ddbf66706d4324"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>structure</field>
+        <id>0606327747801250e9ddbf66706d4324</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:31:21</sys_created_on>
+        <sys_id>ce06327747801250e9ddbf66706d4334</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3</table>
+        <value>[{"id":"dc8d3617-71c1-476f-bef1-9f523f3a279c","name":"productid","value":"productid","type":"string","path":[],"choice":"empty string"},{"id":"6e3aa831-485f-45dc-a35c-a130bfdca690","name":"errorMessage","value":"","type":"object","path":[],"choice":"empty string"},{"id":"ce261c9b-b2fd-433f-a5ae-5ca82d658133","name":"code","value":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.code}}","type":"string","path":["6e3aa831-485f-45dc-a35c-a130bfdca690"],"choice":"empty string"},{"id":"4bd78435-93ac-4793-8c02-e95067b3a40a","name":"message","value":"{{step[1b7c4c66-667e-4faa-b371-f7ec0e696534].__step_status__.message}}","type":"string","path":["6e3aa831-485f-45dc-a35c-a130bfdca690"],"choice":"empty string"}]</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=0606327747801250e9ddbf66706d4324"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=0606327747801250e9ddbf66706d4324"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0606327747801250e9ddbf66706d4324"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_0606327747801250e9ddbf66706d4324"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</action>
+        <cid>1b7c4c66-667e-4faa-b371-f7ec0e696534</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>7845b2f347801250e9ddbf66706d43a9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:03</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7845b2f347801250e9ddbf66706d43a9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7845b2f347801250e9ddbf66706d43a9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:03</sys_created_on>
+        <sys_id>65a67eb747801250e9ddbf66706d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:03</sys_updated_on>
+        <value>{&#13;
+    "code":500,&#13;
+"message": "Request not sent to uri= https://api-dex.iciciprulife.com/v1/document/upload/update/details : java.net.UnknownHostException: api-dex.iciciprulife.apigee.net"&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7845b2f347801250e9ddbf66706d43a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>7445b2f347801250e9ddbf66706d43ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:03</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"code","children":[],"type":"string","jpath":"$.code","previewValue":"500"},{"name":"message","children":[],"type":"string","jpath":"$.message","previewValue":"Request not sent to uri= https://api-dex.iciciprulife.com/v1/document/upload/update/details : java.net.UnknownHostException: api-dex.iciciprulife.apigee.net"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_7845b2f347801250e9ddbf66706d43a9^id=7845b2f347801250e9ddbf66706d43a9"/>
+    <sys_element_mapping action="delete_multiple" query="id=7845b2f347801250e9ddbf66706d43a9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>7845b2f347801250e9ddbf66706d43a9</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:03</sys_created_on>
+        <sys_id>21a67eb747801250e9ddbf66706d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>7845b2f347801250e9ddbf66706d43a9</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>3045b2f347801250e9ddbf66706d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{action.status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>7845b2f347801250e9ddbf66706d43a9</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>f045b2f347801250e9ddbf66706d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7845b2f347801250e9ddbf66706d43a9"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=7845b2f347801250e9ddbf66706d43a9^sys_idNOT INeda67eb747801250e9ddbf66706d43a8"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD21a67eb72e801250b952063c035009a8</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD21a67eb72e801250b952063c035009a8":{"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"866be588-5962-4e21-945f-79db310eda10\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ee41303f-913b-4f45-85bd-c4b74411b620\"}"}},"FlowDesigner:FD21a67eb72e801250b952063c035009a8.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD21a67eb72e801250b952063c035009a8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"e69f5ea8-5a02-48b3-b93d-d6a8d1cf5395\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e1a67eb747801250e9ddbf66706d43a8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:20</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD21a67eb72e801250b952063c035009a8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e69f5ea8-5a02-48b3-b93d-d6a8d1cf5395</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">7845b2f347801250e9ddbf66706d43a9</model>
+        <model_id>7845b2f347801250e9ddbf66706d43a9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_7845b2f347801250e9ddbf66706d43a9</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:03</sys_created_on>
+        <sys_id>eda67eb747801250e9ddbf66706d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7845b2f347801250e9ddbf66706d43a9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_7845b2f347801250e9ddbf66706d43a9^sys_idNOT IN25a67eb747801250e9ddbf66706d43ac"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_7845b2f347801250e9ddbf66706d43a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:34:03</sys_created_on>
+        <sys_id>25a67eb747801250e9ddbf66706d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:34:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=7045b2f347801250e9ddbf66706d4383^sys_idNOT INe91532fc47901a50e9ddbf66706d436d,f845b2f347801250e9ddbf66706d4386"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0185f226-512c-4b70-9e62-de5a62b23bf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</model>
+        <model_id>7045b2f347801250e9ddbf66706d4383</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_7045b2f347801250e9ddbf66706d4383</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-26 08:01:09</sys_created_on>
+        <sys_id>e91532fc47901a50e9ddbf66706d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:01:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e91532fc47901a50e9ddbf66706d436d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=82a24876-3a78-417a-a8e8-b0d5f710e6b7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</model>
+        <model_id>7045b2f347801250e9ddbf66706d4383</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_7045b2f347801250e9ddbf66706d4383</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:59</sys_created_on>
+        <sys_id>f845b2f347801250e9ddbf66706d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f845b2f347801250e9ddbf66706d4386"/>
+    <sys_hub_action_output action="delete_multiple" query="model=7045b2f347801250e9ddbf66706d4383^sys_idNOT IN7845f2f347801250e9ddbf66706d430b,bc45b2f347801250e9ddbf66706d43af,c4367a7747801250e9ddbf66706d43e3"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=54d03abd-e8ab-467d-9714-def454ccdada,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</model>
+        <model_id>7045b2f347801250e9ddbf66706d4383</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>7845f2f347801250e9ddbf66706d430b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7845f2f347801250e9ddbf66706d430b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7845f2f347801250e9ddbf66706d430b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=131a3a44-9c02-4257-99a1-5195307bd7bc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</model>
+        <model_id>7045b2f347801250e9ddbf66706d4383</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>bc45b2f347801250e9ddbf66706d43af</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:32:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc45b2f347801250e9ddbf66706d43af"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc45b2f347801250e9ddbf66706d43af"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b73865a6-47d9-4b9e-9382-22e906831697</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype display_value="Output" element="output" name="var__m_sys_flow_step_definition_output_dfd9f353b733111007402a91de11a9e3">5f7a3f53b733111007402a91de11a95e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</model>
+        <model_id>7045b2f347801250e9ddbf66706d4383</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:32:02</sys_created_on>
+        <sys_id>c4367a7747801250e9ddbf66706d43e3</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:50:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4367a7747801250e9ddbf66706d43e3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c4367a7747801250e9ddbf66706d43e3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7045b2f347801250e9ddbf66706d4383"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7045b2f347801250e9ddbf66706d4383^sys_idNOT IN4545f2f347801250e9ddbf66706d4315"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Error handling for ICICI DOC upload">7045b2f347801250e9ddbf66706d4383</action_type_id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>4545f2f347801250e9ddbf66706d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=4545f2f347801250e9ddbf66706d4315"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_7045b2f347801250e9ddbf66706d4383^sys_idNOT IN691532fc47901a50e9ddbf66706d4370,b445b2f347801250e9ddbf66706d438a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productid</element>
+        <help/>
+        <hint/>
+        <label>productid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7045b2f347801250e9ddbf66706d4383</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-26 08:01:09</sys_created_on>
+        <sys_id>691532fc47901a50e9ddbf66706d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-26 08:01:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7045b2f347801250e9ddbf66706d4383</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:27:59</sys_created_on>
+        <sys_id>b445b2f347801250e9ddbf66706d438a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:27:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_7045b2f347801250e9ddbf66706d4383"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383^sys_idNOT IN7845b2f347801250e9ddbf66706d43b3,80367a7747801250e9ddbf66706d43e7,c145f2f347801250e9ddbf66706d4310"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>7845b2f347801250e9ddbf66706d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:32:02</sys_created_on>
+        <sys_id>80367a7747801250e9ddbf66706d43e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:32:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-08-23 05:28:00</sys_created_on>
+        <sys_id>c145f2f347801250e9ddbf66706d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:28:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7045b2f347801250e9ddbf66706d4383"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>efa47e3347801250e9ddbf66706d43fc</sys_id>
+        <latest_snapshot>7045b2f347801250e9ddbf66706d4383</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch9-hotfix2a-06-19-2024_07-11-2024_1609.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

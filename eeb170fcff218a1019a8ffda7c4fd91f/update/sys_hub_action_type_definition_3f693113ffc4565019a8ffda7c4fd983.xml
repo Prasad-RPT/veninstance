@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>validation_for_maturity_age</internal_name>
+        <label_cache>[{"name":"{{action.request}}","label":"action➛request","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>57da31d3ffc4565019a8ffda7c4fd9d3</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Validation for maturity Age</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:49:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f693113ffc4565019a8ffda7c4fd983</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Validation for maturity Age</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_3f693113ffc4565019a8ffda7c4fd983</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:54</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=3f693113ffc4565019a8ffda7c4fd983"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3f693113ffc4565019a8ffda7c4fd983"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=3f693113ffc4565019a8ffda7c4fd983^sys_idNOT IN36dab953ffc4565019a8ffda7c4fd934"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Validation for maturity Age">3f693113ffc4565019a8ffda7c4fd983</action>
+        <cid>7058bdee-1a68-48e1-a591-4b9adab75eae</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>36dab953ffc4565019a8ffda7c4fd934</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=36dab953ffc4565019a8ffda7c4fd934"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>36dab953ffc4565019a8ffda7c4fd934</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>c3da31d3ffc4565019a8ffda7c4fd9b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>36dab953ffc4565019a8ffda7c4fd934</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>cbda31d3ffc4565019a8ffda7c4fd9b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+// ... code ...&#13;
+&#13;
+var gr =new GlideRecord('x_rptp_smartinte_0_integration_values_validator_tables');&#13;
+gr.addQuery('variant_id',req.variantId);&#13;
+gr.addQuery('insuredperson',true);&#13;
+gr.query();&#13;
+if(gr.next()){&#13;
+    if(gr.min_maturity_age){&#13;
+        if( gr.min_maturity_age &gt; age + req.policyterm){&#13;
+            outputs.code=400&#13;
+            outputs.message="Minimum Maturity age for the product is "+gr.min_maturity_age;&#13;
+            return;&#13;
+        }&#13;
+    }&#13;
+    // max maturity age validation&#13;
+     if(gr.max_maturity_age){&#13;
+        if( age  + req.policyterm &gt; gr.max_maturity_age){&#13;
+            outputs.code=400&#13;
+            outputs.message="Maximum Maturity age  for the product is "+gr.max_maturity_age;&#13;
+            return;&#13;
+        }&#13;
+    }&#13;
+}&#13;
+&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=36dab953ffc4565019a8ffda7c4fd934"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>36dab953ffc4565019a8ffda7c4fd934</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>8bda31d3ffc4565019a8ffda7c4fd9b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>36dab953ffc4565019a8ffda7c4fd934</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>c7da31d3ffc4565019a8ffda7c4fd9b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_36dab953ffc4565019a8ffda7c4fd934</table>
+        <value>{{action.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>36dab953ffc4565019a8ffda7c4fd934</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>43da31d3ffc4565019a8ffda7c4fd9b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=36dab953ffc4565019a8ffda7c4fd934"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=36dab953ffc4565019a8ffda7c4fd934^sys_idNOT IN8fda31d3ffc4565019a8ffda7c4fd9ad"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">36dab953ffc4565019a8ffda7c4fd934</model>
+        <model_id>36dab953ffc4565019a8ffda7c4fd934</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_36dab953ffc4565019a8ffda7c4fd934</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>8fda31d3ffc4565019a8ffda7c4fd9ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=36dab953ffc4565019a8ffda7c4fd934"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=36dab953ffc4565019a8ffda7c4fd934"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_36dab953ffc4565019a8ffda7c4fd934"/>
+    <sys_hub_action_input action="delete_multiple" query="model=3f693113ffc4565019a8ffda7c4fd983^sys_idNOT INf6dab953ffc4565019a8ffda7c4fd92d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=22d0e352-c5e7-4798-a58b-57f0672b717c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>request</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Validation for maturity Age">3f693113ffc4565019a8ffda7c4fd983</model>
+        <model_id>3f693113ffc4565019a8ffda7c4fd983</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_3f693113ffc4565019a8ffda7c4fd983</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>f6dab953ffc4565019a8ffda7c4fd92d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f6dab953ffc4565019a8ffda7c4fd92d"/>
+    <sys_hub_action_output action="delete_multiple" query="model=3f693113ffc4565019a8ffda7c4fd983"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3f693113ffc4565019a8ffda7c4fd983"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=3f693113ffc4565019a8ffda7c4fd983^sys_idNOT IN4fda31d3ffc4565019a8ffda7c4fd9bb"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Validation for maturity Age">3f693113ffc4565019a8ffda7c4fd983</action_type_id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>4fda31d3ffc4565019a8ffda7c4fd9bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=4fda31d3ffc4565019a8ffda7c4fd9bb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_3f693113ffc4565019a8ffda7c4fd983^sys_idNOT INfedab953ffc4565019a8ffda7c4fd931"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request</element>
+        <help/>
+        <hint/>
+        <label>request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_3f693113ffc4565019a8ffda7c4fd983</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:52</sys_created_on>
+        <sys_id>fedab953ffc4565019a8ffda7c4fd931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_3f693113ffc4565019a8ffda7c4fd983"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_3f693113ffc4565019a8ffda7c4fd983"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_3f693113ffc4565019a8ffda7c4fd983"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=3f693113ffc4565019a8ffda7c4fd983^sys_idNOT INf3da71d3ffc4565019a8ffda7c4fd994"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Validation for maturity Age">3f693113ffc4565019a8ffda7c4fd983</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"f3da71d3ffc4565019a8ffda7c4fd994","name":"plan","plan_signature":null}}</plan>
+        <snapshot>6bda71d3ffc4565019a8ffda7c4fd938</snapshot>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f3da71d3ffc4565019a8ffda7c4fd994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:55</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>validation_for_maturity_age</internal_name>
+        <label_cache>[{"name":"{{action.request}}","label":"action➛request","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Validation for maturity Age</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Validation for maturity Age">3f693113ffc4565019a8ffda7c4fd983</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57da31d3ffc4565019a8ffda7c4fd9d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=57da31d3ffc4565019a8ffda7c4fd9d3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=57da31d3ffc4565019a8ffda7c4fd9d3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>57da31d3ffc4565019a8ffda7c4fd9d3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:54</sys_created_on>
+        <sys_id>2bda71d3ffc4565019a8ffda7c4fd936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:54</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">97da31d3ffc4565019a8ffda7c4fd9f0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_57da31d3ffc4565019a8ffda7c4fd9d3^id=57da31d3ffc4565019a8ffda7c4fd9d3"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=57da31d3ffc4565019a8ffda7c4fd9d3^sys_idNOT INdfda31d3ffc4565019a8ffda7c4fd9dc"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Validation for maturity Age">57da31d3ffc4565019a8ffda7c4fd9d3</action>
+        <cid>7058bdee-1a68-48e1-a591-4b9adab75eae</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>dfda31d3ffc4565019a8ffda7c4fd9dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dfda31d3ffc4565019a8ffda7c4fd9dc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>dfda31d3ffc4565019a8ffda7c4fd9dc</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>13da31d3ffc4565019a8ffda7c4fd9e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>dfda31d3ffc4565019a8ffda7c4fd9dc</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>d3da31d3ffc4565019a8ffda7c4fd9e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+// ... code ...&#13;
+&#13;
+var gr =new GlideRecord('x_rptp_smartinte_0_integration_values_validator_tables');&#13;
+gr.addQuery('variant_id',req.variantId);&#13;
+gr.addQuery('insuredperson',true);&#13;
+gr.query();&#13;
+if(gr.next()){&#13;
+    if(gr.min_maturity_age){&#13;
+        if( gr.min_maturity_age &gt; age + req.policyterm){&#13;
+            outputs.code=400&#13;
+            outputs.message="Minimum Maturity age for the product is "+gr.min_maturity_age;&#13;
+            return;&#13;
+        }&#13;
+    }&#13;
+    // max maturity age validation&#13;
+     if(gr.max_maturity_age){&#13;
+        if( age  + req.policyterm &gt; gr.max_maturity_age){&#13;
+            outputs.code=400&#13;
+            outputs.message="Maximum Maturity age  for the product is "+gr.max_maturity_age;&#13;
+            return;&#13;
+        }&#13;
+    }&#13;
+}&#13;
+&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dfda31d3ffc4565019a8ffda7c4fd9dc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>dfda31d3ffc4565019a8ffda7c4fd9dc</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>dbda31d3ffc4565019a8ffda7c4fd9e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>dfda31d3ffc4565019a8ffda7c4fd9dc</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>1fda31d3ffc4565019a8ffda7c4fd9e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_dfda31d3ffc4565019a8ffda7c4fd9dc</table>
+        <value>{{action.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>dfda31d3ffc4565019a8ffda7c4fd9dc</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>9fda31d3ffc4565019a8ffda7c4fd9e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=dfda31d3ffc4565019a8ffda7c4fd9dc"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=dfda31d3ffc4565019a8ffda7c4fd9dc^sys_idNOT IN57da31d3ffc4565019a8ffda7c4fd9e0"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>request</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">dfda31d3ffc4565019a8ffda7c4fd9dc</model>
+        <model_id>dfda31d3ffc4565019a8ffda7c4fd9dc</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_dfda31d3ffc4565019a8ffda7c4fd9dc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>57da31d3ffc4565019a8ffda7c4fd9e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=dfda31d3ffc4565019a8ffda7c4fd9dc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dfda31d3ffc4565019a8ffda7c4fd9dc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_dfda31d3ffc4565019a8ffda7c4fd9dc"/>
+    <sys_hub_action_input action="delete_multiple" query="model=57da31d3ffc4565019a8ffda7c4fd9d3^sys_idNOT INdfda31d3ffc4565019a8ffda7c4fd9d6"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=22d0e352-c5e7-4798-a58b-57f0672b717c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>request</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Validation for maturity Age">57da31d3ffc4565019a8ffda7c4fd9d3</model>
+        <model_id>57da31d3ffc4565019a8ffda7c4fd9d3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_57da31d3ffc4565019a8ffda7c4fd9d3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>dfda31d3ffc4565019a8ffda7c4fd9d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dfda31d3ffc4565019a8ffda7c4fd9d6"/>
+    <sys_hub_action_output action="delete_multiple" query="model=57da31d3ffc4565019a8ffda7c4fd9d3^sys_idNOT IN97da31d3ffc4565019a8ffda7c4fd9f0,d7da31d3ffc4565019a8ffda7c4fd9eb"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Validation for maturity Age">57da31d3ffc4565019a8ffda7c4fd9d3</model>
+        <model_id>57da31d3ffc4565019a8ffda7c4fd9d3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_57da31d3ffc4565019a8ffda7c4fd9d3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:54</sys_created_on>
+        <sys_id>97da31d3ffc4565019a8ffda7c4fd9f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97da31d3ffc4565019a8ffda7c4fd9f0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=97da31d3ffc4565019a8ffda7c4fd9f0"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Validation for maturity Age">57da31d3ffc4565019a8ffda7c4fd9d3</model>
+        <model_id>57da31d3ffc4565019a8ffda7c4fd9d3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_57da31d3ffc4565019a8ffda7c4fd9d3</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>d7da31d3ffc4565019a8ffda7c4fd9eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d7da31d3ffc4565019a8ffda7c4fd9eb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d7da31d3ffc4565019a8ffda7c4fd9eb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=57da31d3ffc4565019a8ffda7c4fd9d3"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=57da31d3ffc4565019a8ffda7c4fd9d3^sys_idNOT INa7da71d3ffc4565019a8ffda7c4fd938"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Validation for maturity Age">57da31d3ffc4565019a8ffda7c4fd9d3</action_type_id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:54</sys_created_on>
+        <sys_id>a7da71d3ffc4565019a8ffda7c4fd938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:54</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a7da71d3ffc4565019a8ffda7c4fd938"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_57da31d3ffc4565019a8ffda7c4fd9d3^sys_idNOT IN9bda31d3ffc4565019a8ffda7c4fd9da"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request</element>
+        <help/>
+        <hint/>
+        <label>request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_57da31d3ffc4565019a8ffda7c4fd9d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:53</sys_created_on>
+        <sys_id>9bda31d3ffc4565019a8ffda7c4fd9da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_57da31d3ffc4565019a8ffda7c4fd9d3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_57da31d3ffc4565019a8ffda7c4fd9d3^sys_idNOT INd7da31d3ffc4565019a8ffda7c4fd9ef,ebda71d3ffc4565019a8ffda7c4fd933"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_57da31d3ffc4565019a8ffda7c4fd9d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:54</sys_created_on>
+        <sys_id>d7da31d3ffc4565019a8ffda7c4fd9ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_57da31d3ffc4565019a8ffda7c4fd9d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-21 11:55:54</sys_created_on>
+        <sys_id>ebda71d3ffc4565019a8ffda7c4fd933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:55:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_57da31d3ffc4565019a8ffda7c4fd9d3"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>3f693113ffc4565019a8ffda7c4fd983</sys_id>
+        <latest_snapshot>57da31d3ffc4565019a8ffda7c4fd9d3</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch9-hotfix2a-06-19-2024_07-11-2024_1609.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

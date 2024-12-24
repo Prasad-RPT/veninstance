@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f19b793247434650e9ddbf66706d437f" label="Integration Source Field Master" max_length="40" name="x_rptp_smartinte_0_integration_source_field_master" type="collection">
+        <element label="DataType" max_length="32" name="data_type" reference="x_rptp_smartinte_0_integrationdatatypemaster" type="reference"/>
+        <element label="Label" max_length="40" name="label" type="string"/>
+        <element label="Name" max_length="300" name="name" type="string"/>
+        <element label="ParentPropertyKey" max_length="40" name="parentpropertykey" type="string"/>
+        <index name="index">
+            <element name="data_type"/>
+        </index>
+    </element>
+</database>

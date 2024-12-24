@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=785000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>doc_upload_main_subflow</internal_name>
+        <label_cache>[{"name":"subflow.request","label":"input➛request","reference":"","reference_display":"","type":"json","base_type":"json","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"75aa7a97-4bb0-4012-81b9-11a4a3111760"}},{"name":"251533ee-54f8-43ea-8e1a-5dd452f12427.response","label":"1 - Format request object to BALIC request object  for Doc Uploads➛response","reference_display":"response","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","child_label":"persons","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"json","child_type":"object","child_name":"persons","child_uiUniqueId":"b2d99b08-7a52-449c-ac79-bb90818c401a","uiUniqueId":"c5bfdf92-d385-4c1f-9fdc-ea8f15b76a4a"}},{"name":"5f12db11-35ea-4702-87ee-e3e13f4bc91d.response","label":"2 - call APi for Doc upload➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8116c658-15a4-4c56-9afc-16ce06a2cd6c"}},{"name":"ac40a27e-9975-44b6-9527-84d257fba514.response","label":"3 - Format Response object Balic for Doc uploads➛response","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"json","uiUniqueId":"362ff308-f0a1-42f1-a5db-656d3cdb0930"}}]</label_cache>
+        <master_snapshot>7bfe4d85ff76421019a8ffda7c4fd92b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>doc upload main subflow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:26:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bbfb85cdff36421019a8ffda7c4fd914</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>doc upload main subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_bbfb85cdff36421019a8ffda7c4fd914</sys_update_name>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914^id=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT INfffb85cdff36421019a8ffda7c4fd916"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bbfb85cdff36421019a8ffda7c4fd914</id>
+        <name>doc upload main subflow</name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:26:19</sys_created_on>
+        <sys_id>fffb85cdff36421019a8ffda7c4fd916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:26:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=fffb85cdff36421019a8ffda7c4fd916"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT IN97fe0d85ff76421019a8ffda7c4fd98c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=75aa7a97-4bb0-4012-81b9-11a4a3111760</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>request</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</model>
+        <model_id>bbfb85cdff36421019a8ffda7c4fd914</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bbfb85cdff36421019a8ffda7c4fd914</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:22</sys_created_on>
+        <sys_id>97fe0d85ff76421019a8ffda7c4fd98c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97fe0d85ff76421019a8ffda7c4fd98c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT IN13fe0d85ff76421019a8ffda7c4fd995,1ffe0d85ff76421019a8ffda7c4fd999"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD53fe0d85a87642109a0a84b5119fa093</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD53fe0d85a87642109a0a84b5119fa093":{},"FlowDesigner:FD53fe0d85a87642109a0a84b5119fa093.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"ac40a27e-9975-44b6-9527-84d257fba514\",\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"uiUniqueId\":\"89284cb9-1ad1-4d6f-ac96-c32975342759\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD53fe0d85a87642109a0a84b5119fa093\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"action\",\"sourceUiUniqueId\":\"ac40a27e-9975-44b6-9527-84d257fba514\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>17fe0d85ff76421019a8ffda7c4fd993</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD53fe0d85a87642109a0a84b5119fa093,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=ac40a27e-9975-44b6-9527-84d257fba514,sourceType=action,sourceUiUniqueId=ac40a27e-9975-44b6-9527-84d257fba514,uiType=object,uiTypeLabel=Object,uiUniqueId=89284cb9-1ad1-4d6f-ac96-c32975342759</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</model>
+        <model_id>bbfb85cdff36421019a8ffda7c4fd914</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>13fe0d85ff76421019a8ffda7c4fd995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=13fe0d85ff76421019a8ffda7c4fd995"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD53fe0d8586764210720b1705fd225594</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD53fe0d8586764210720b1705fd225594":{},"FlowDesigner:FD53fe0d8586764210720b1705fd225594.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD53fe0d8586764210720b1705fd225594\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"requestbody\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"65000\",\"uiUniqueId\":\"16a3de0e-533e-4c95-99e3-ac8cb33d39d5\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>17fe0d85ff76421019a8ffda7c4fd994</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD53fe0d8586764210720b1705fd225594,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=16a3de0e-533e-4c95-99e3-ac8cb33d39d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestbody</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</model>
+        <model_id>bbfb85cdff36421019a8ffda7c4fd914</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>1ffe0d85ff76421019a8ffda7c4fd999</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1ffe0d85ff76421019a8ffda7c4fd999"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT IN1bfe0d85ff76421019a8ffda7c4fd9c1,9ffe0d85ff76421019a8ffda7c4fd9a6,e3fe0d85ff76421019a8ffda7c4fd9d0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="call APi for Doc upload">84683c2dffc64a1019a8ffda7c4fd9f5</action_type>
+        <action_type_parent display_value="call APi for Doc upload">a396fc29ffc64a1019a8ffda7c4fd9e6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>1bfe0d85ff76421019a8ffda7c4fd9c1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+        <ui_id>5f12db11-35ea-4702-87ee-e3e13f4bc91d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1bfe0d85ff76421019a8ffda7c4fd9c1"/>
+    <sys_element_mapping action="delete_multiple" query="id=1bfe0d85ff76421019a8ffda7c4fd9c1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestobject</field>
+        <id>1bfe0d85ff76421019a8ffda7c4fd9c1</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>dbfe0d85ff76421019a8ffda7c4fd9c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_84683c2dffc64a1019a8ffda7c4fd9f5</table>
+        <value>{{251533ee-54f8-43ea-8e1a-5dd452f12427.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1bfe0d85ff76421019a8ffda7c4fd9c1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1bfe0d85ff76421019a8ffda7c4fd9c1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format request object to BALIC request object  for Doc Uploads">fbc63bf0ffaac29019a8ffda7c4fd9e8</action_type>
+        <action_type_parent display_value="Format request object to BALIC request object  for Doc Uploads">57e4b3fcff6ac29019a8ffda7c4fd99a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>9ffe0d85ff76421019a8ffda7c4fd9a6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+        <ui_id>251533ee-54f8-43ea-8e1a-5dd452f12427</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ffe0d85ff76421019a8ffda7c4fd9a6"/>
+    <sys_element_mapping action="delete_multiple" query="id=9ffe0d85ff76421019a8ffda7c4fd9a6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestobject</field>
+        <id>9ffe0d85ff76421019a8ffda7c4fd9a6</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>9ffe0d85ff76421019a8ffda7c4fd9a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_fbc63bf0ffaac29019a8ffda7c4fd9e8</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ffe0d85ff76421019a8ffda7c4fd9a6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9ffe0d85ff76421019a8ffda7c4fd9a6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format Response object Balic for Doc uploads">6b414650ff124e5019a8ffda7c4fd9bb</action_type>
+        <action_type_parent display_value="Format Response object Balic for Doc uploads">2d238386ff028e1019a8ffda7c4fd999</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>e3fe0d85ff76421019a8ffda7c4fd9d0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+        <ui_id>ac40a27e-9975-44b6-9527-84d257fba514</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e3fe0d85ff76421019a8ffda7c4fd9d0"/>
+    <sys_element_mapping action="delete_multiple" query="id=e3fe0d85ff76421019a8ffda7c4fd9d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>balicresponse</field>
+        <id>e3fe0d85ff76421019a8ffda7c4fd9d0</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>a7fe0d85ff76421019a8ffda7c4fd9d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b414650ff124e5019a8ffda7c4fd9bb</table>
+        <value>{{5f12db11-35ea-4702-87ee-e3e13f4bc91d.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e3fe0d85ff76421019a8ffda7c4fd9d0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e3fe0d85ff76421019a8ffda7c4fd9d0"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT IN2bfe0d85ff76421019a8ffda7c4fd9d2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ebfe0d85ff76421019a8ffda7c4fd9d1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>2bfe0d85ff76421019a8ffda7c4fd9d2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+        <ui_id>a65dcc50-3b12-4897-bd14-031313ed1950</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2bfe0d85ff76421019a8ffda7c4fd9d2"/>
+    <sys_element_mapping action="delete_multiple" query="id=2bfe0d85ff76421019a8ffda7c4fd9d2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>2bfe0d85ff76421019a8ffda7c4fd9d2</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>effe0d85ff76421019a8ffda7c4fd9d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914</table>
+        <value>{{ac40a27e-9975-44b6-9527-84d257fba514.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2bfe0d85ff76421019a8ffda7c4fd9d2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2bfe0d85ff76421019a8ffda7c4fd9d2"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT IN5ffe0d85ff76421019a8ffda7c4fd990"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request</element>
+        <help/>
+        <hint/>
+        <label>request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bbfb85cdff36421019a8ffda7c4fd914</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>5ffe0d85ff76421019a8ffda7c4fd990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT IN53fe0d85ff76421019a8ffda7c4fd99c,5ffe0d85ff76421019a8ffda7c4fd998"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestbody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>53fe0d85ff76421019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:23</sys_created_on>
+        <sys_id>5ffe0d85ff76421019a8ffda7c4fd998</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>doc_upload_main_subflow</internal_name>
+        <label_cache>[{"name":"subflow.request","label":"input➛request","reference":"","reference_display":"","type":"json","base_type":"json","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"75aa7a97-4bb0-4012-81b9-11a4a3111760"}},{"name":"251533ee-54f8-43ea-8e1a-5dd452f12427.response","label":"1 - Format request object to BALIC request object  for Doc Uploads➛response","reference_display":"response","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","child_label":"persons","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"json","child_type":"object","child_name":"persons","child_uiUniqueId":"b2d99b08-7a52-449c-ac79-bb90818c401a","uiUniqueId":"c5bfdf92-d385-4c1f-9fdc-ea8f15b76a4a"}},{"name":"5f12db11-35ea-4702-87ee-e3e13f4bc91d.response","label":"2 - call APi for Doc upload➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8116c658-15a4-4c56-9afc-16ce06a2cd6c"}},{"name":"ac40a27e-9975-44b6-9527-84d257fba514.response","label":"3 - Format Response object Balic for Doc uploads➛response","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"json","uiUniqueId":"362ff308-f0a1-42f1-a5db-656d3cdb0930"}}]</label_cache>
+        <master>true</master>
+        <name>doc upload main subflow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7bfe4d85ff76421019a8ffda7c4fd92b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b^id=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7bfe4d85ff76421019a8ffda7c4fd92b^sys_idNOT IN3ffe4d85ff76421019a8ffda7c4fd92c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7bfe4d85ff76421019a8ffda7c4fd92b</id>
+        <name>doc upload main subflow</name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_id>3ffe4d85ff76421019a8ffda7c4fd92c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3ffe4d85ff76421019a8ffda7c4fd92c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7bfe4d85ff76421019a8ffda7c4fd92b^sys_idNOT INb3fe4d85ff76421019a8ffda7c4fd92e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=75aa7a97-4bb0-4012-81b9-11a4a3111760</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>request</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="doc upload main subflow">7bfe4d85ff76421019a8ffda7c4fd92b</model>
+        <model_id>7bfe4d85ff76421019a8ffda7c4fd92b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7bfe4d85ff76421019a8ffda7c4fd92b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_id>b3fe4d85ff76421019a8ffda7c4fd92e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b3fe4d85ff76421019a8ffda7c4fd92e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7bfe4d85ff76421019a8ffda7c4fd92b^sys_idNOT IN7bfe4d85ff76421019a8ffda7c4fd99d,fbfe4d85ff76421019a8ffda7c4fd9b2"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD33fe4d853c764210bacdcdef7b4c209c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD33fe4d853c764210bacdcdef7b4c209c":{},"FlowDesigner:FD33fe4d853c764210bacdcdef7b4c209c.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"ac40a27e-9975-44b6-9527-84d257fba514\",\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"uiUniqueId\":\"89284cb9-1ad1-4d6f-ac96-c32975342759\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD33fe4d853c764210bacdcdef7b4c209c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"action\",\"sourceUiUniqueId\":\"ac40a27e-9975-44b6-9527-84d257fba514\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f3fe4d85ff76421019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD33fe4d853c764210bacdcdef7b4c209c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=ac40a27e-9975-44b6-9527-84d257fba514,sourceType=action,sourceUiUniqueId=ac40a27e-9975-44b6-9527-84d257fba514,uiType=object,uiTypeLabel=Object,uiUniqueId=89284cb9-1ad1-4d6f-ac96-c32975342759</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="doc upload main subflow">7bfe4d85ff76421019a8ffda7c4fd92b</model>
+        <model_id>7bfe4d85ff76421019a8ffda7c4fd92b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_id>7bfe4d85ff76421019a8ffda7c4fd99d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7bfe4d85ff76421019a8ffda7c4fd99d"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDbbfe4d857a7642108df3a80a9bbd8b9c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FDbbfe4d857a7642108df3a80a9bbd8b9c":{},"FlowDesigner:FDbbfe4d857a7642108df3a80a9bbd8b9c.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDbbfe4d857a7642108df3a80a9bbd8b9c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"requestbody\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"65000\",\"uiUniqueId\":\"16a3de0e-533e-4c95-99e3-ac8cb33d39d5\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ffe4d85ff76421019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDbbfe4d857a7642108df3a80a9bbd8b9c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=16a3de0e-533e-4c95-99e3-ac8cb33d39d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestbody</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="doc upload main subflow">7bfe4d85ff76421019a8ffda7c4fd92b</model>
+        <model_id>7bfe4d85ff76421019a8ffda7c4fd92b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_id>fbfe4d85ff76421019a8ffda7c4fd9b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fbfe4d85ff76421019a8ffda7c4fd9b2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7bfe4d85ff76421019a8ffda7c4fd92b^sys_idNOT IN000f4d85ff76421019a8ffda7c4fd9de,1c0f4d85ff76421019a8ffda7c4fd9f1,4c0f4d85ff76421019a8ffda7c4fd9cb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="call APi for Doc upload">84683c2dffc64a1019a8ffda7c4fd9f5</action_type>
+        <action_type_parent display_value="call APi for Doc upload">a396fc29ffc64a1019a8ffda7c4fd9e6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="doc upload main subflow">7bfe4d85ff76421019a8ffda7c4fd92b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:26</sys_created_on>
+        <sys_id>000f4d85ff76421019a8ffda7c4fd9de</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:26</sys_updated_on>
+        <ui_id>5f12db11-35ea-4702-87ee-e3e13f4bc91d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=000f4d85ff76421019a8ffda7c4fd9de"/>
+    <sys_element_mapping action="delete_multiple" query="id=000f4d85ff76421019a8ffda7c4fd9de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestobject</field>
+        <id>000f4d85ff76421019a8ffda7c4fd9de</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:26</sys_created_on>
+        <sys_id>4c0f4d85ff76421019a8ffda7c4fd9de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_84683c2dffc64a1019a8ffda7c4fd9f5</table>
+        <value>{{251533ee-54f8-43ea-8e1a-5dd452f12427.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=000f4d85ff76421019a8ffda7c4fd9de"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=000f4d85ff76421019a8ffda7c4fd9de"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format Response object Balic for Doc uploads">6b414650ff124e5019a8ffda7c4fd9bb</action_type>
+        <action_type_parent display_value="Format Response object Balic for Doc uploads">2d238386ff028e1019a8ffda7c4fd999</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="doc upload main subflow">7bfe4d85ff76421019a8ffda7c4fd92b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:26</sys_created_on>
+        <sys_id>1c0f4d85ff76421019a8ffda7c4fd9f1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:27</sys_updated_on>
+        <ui_id>ac40a27e-9975-44b6-9527-84d257fba514</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1c0f4d85ff76421019a8ffda7c4fd9f1"/>
+    <sys_element_mapping action="delete_multiple" query="id=1c0f4d85ff76421019a8ffda7c4fd9f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>balicresponse</field>
+        <id>1c0f4d85ff76421019a8ffda7c4fd9f1</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:27</sys_created_on>
+        <sys_id>580f4d85ff76421019a8ffda7c4fd9f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b414650ff124e5019a8ffda7c4fd9bb</table>
+        <value>{{5f12db11-35ea-4702-87ee-e3e13f4bc91d.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1c0f4d85ff76421019a8ffda7c4fd9f1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1c0f4d85ff76421019a8ffda7c4fd9f1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format request object to BALIC request object  for Doc Uploads">fbc63bf0ffaac29019a8ffda7c4fd9e8</action_type>
+        <action_type_parent display_value="Format request object to BALIC request object  for Doc Uploads">57e4b3fcff6ac29019a8ffda7c4fd99a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="doc upload main subflow">7bfe4d85ff76421019a8ffda7c4fd92b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:26</sys_created_on>
+        <sys_id>4c0f4d85ff76421019a8ffda7c4fd9cb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:26</sys_updated_on>
+        <ui_id>251533ee-54f8-43ea-8e1a-5dd452f12427</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4c0f4d85ff76421019a8ffda7c4fd9cb"/>
+    <sys_element_mapping action="delete_multiple" query="id=4c0f4d85ff76421019a8ffda7c4fd9cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestobject</field>
+        <id>4c0f4d85ff76421019a8ffda7c4fd9cb</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:26</sys_created_on>
+        <sys_id>0c0f4d85ff76421019a8ffda7c4fd9cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_fbc63bf0ffaac29019a8ffda7c4fd9e8</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4c0f4d85ff76421019a8ffda7c4fd9cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4c0f4d85ff76421019a8ffda7c4fd9cb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7bfe4d85ff76421019a8ffda7c4fd92b^sys_idNOT INc40f4d85ff76421019a8ffda7c4fd9be"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ebfe0d85ff76421019a8ffda7c4fd9d1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="doc upload main subflow">7bfe4d85ff76421019a8ffda7c4fd92b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:26</sys_created_on>
+        <sys_id>c40f4d85ff76421019a8ffda7c4fd9be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:26</sys_updated_on>
+        <ui_id>a65dcc50-3b12-4897-bd14-031313ed1950</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c40f4d85ff76421019a8ffda7c4fd9be"/>
+    <sys_element_mapping action="delete_multiple" query="id=c40f4d85ff76421019a8ffda7c4fd9be"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>c40f4d85ff76421019a8ffda7c4fd9be</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:26</sys_created_on>
+        <sys_id>480f4d85ff76421019a8ffda7c4fd9c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b</table>
+        <value>{{ac40a27e-9975-44b6-9527-84d257fba514.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c40f4d85ff76421019a8ffda7c4fd9be"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c40f4d85ff76421019a8ffda7c4fd9be"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7bfe4d85ff76421019a8ffda7c4fd92b^sys_idNOT IN77fe4d85ff76421019a8ffda7c4fd997"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request</element>
+        <help/>
+        <hint/>
+        <label>request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7bfe4d85ff76421019a8ffda7c4fd92b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_id>77fe4d85ff76421019a8ffda7c4fd997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b^sys_idNOT INb3fe4d85ff76421019a8ffda7c4fd9af,c00f4d85ff76421019a8ffda7c4fd9b7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_id>b3fe4d85ff76421019a8ffda7c4fd9af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestbody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:25</sys_created_on>
+        <sys_id>c00f4d85ff76421019a8ffda7c4fd9b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7bfe4d85ff76421019a8ffda7c4fd92b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>bbfb85cdff36421019a8ffda7c4fd914</sys_id>
+        <latest_snapshot>7bfe4d85ff76421019a8ffda7c4fd92b</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=bbfb85cdff36421019a8ffda7c4fd914"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=bbfb85cdff36421019a8ffda7c4fd914^sys_idNOT INac0f8d85ff76421019a8ffda7c4fd978"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@246001</plan>
+        <plan_id display_value="doc upload main subflow">bbfb85cdff36421019a8ffda7c4fd914</plan_id>
+        <snapshot>7bfe4d85ff76421019a8ffda7c4fd92b</snapshot>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-06-13 05:39:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac0f8d85ff76421019a8ffda7c4fd978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:39:28</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

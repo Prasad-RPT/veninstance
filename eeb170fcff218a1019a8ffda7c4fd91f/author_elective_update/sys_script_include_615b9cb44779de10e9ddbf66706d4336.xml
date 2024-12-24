@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_rptp_smartinte_0.iciciFieldValidationAppSubsds</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>iciciFieldValidationAppSubsds</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var iciciFieldValidationAppSubsds = Class.create();
+iciciFieldValidationAppSubsds.prototype = {
+    initialize: function() {},
+    validate: function(obj, txnObj) {
+        var txnReq = JSON.parse(txnObj);
+        var jsonObj = (obj);
+        try {
+
+            // if (txnObj.isProposer == "true") {
+            //     //this means dependent flag is true
+
+			//	if(txnReq.isProposer === "true")
+               // proposerInfoCheck(jsonObj.data);
+
+                lifeAssuredCheck(jsonObj.data);
+            
+
+
+            // } else {
+            //     lifeAssuredCheck(jsonObj.data);
+
+            // }
+            //}
+            if (jsonObj.data.nomineeInfos && jsonObj.data.nomineeInfos.length > 0) {
+                var count = 1;
+                jsonObj.data.nomineeInfos.forEach(function(nominee, count) {
+                    nomineeeCheck(nominee, count);
+                    count++;
+                });
+            }
+            otherFieldsCheck(jsonObj.data);
+            return JSON.stringify({
+                code: 200,
+                msg: "correct"
+            });
+        } catch (ex) {
+            return JSON.stringify({
+                code: 400,
+                msg: ex.message
+            });
+        }
+
+    },
+
+    type: 'iciciFieldValidationAppSubsds'
+};
+
+function lifeAssuredCheck(obj) {
+    var path = "data.lifeAssrdInfos";
+    //      try {
+    ifStringOnly(obj.lifeAssrdInfos.frstNm, 1, 30, path + ".frstNm", true);
+    ifStringOnly(obj.lifeAssrdInfos.lstNm, 1, 30, path + ".lstNm", true);
+    checkDates(obj.lifeAssrdInfos.dob, path + ".dob", true);
+    if (obj.lifeAssrdInfos.annIncme)
+        checkrange(obj.lifeAssrdInfos.annIncme, path + ".annIncme", true);
+    // ifStringOnly(obj.lifeAssrdInfos.fathernm,0,50,path+".fathernm");
+    // ifStringOnly(obj.lifeAssrdInfos.mothersName,0,50,path+".mothersName");
+
+    // ifNumeric(obj.lifeAssrdInfos.mobNo,10,10,path+".mobNo");
+
+    // checkEmail(obj.lifeAssrdInfos.email,path+".email");
+    // ifStringOnly(obj.lifeAssrdInfos.birthplace,0,50,path+".birthplace");
+    //  ifNumeric(obj.lifeAssrdInfos.prmntAddress.pincode,0,6,path+".prmntAddress.pincode");
+    //  ifStringOnly(obj.lifeAssrdInfos.prmntAddress.landmark,0,50,path+".prmntAddress.landmark");
+    //  alphaNumeric(obj.lifeAssrdInfos.prmntAddress.line1,0,50,path+".prmntAddress.line1");
+    //  alphaNumeric(obj.lifeAssrdInfos.prmntAddress.line2,0,50,path+".prmntAddress.line2");
+    //  alphaNumeric(obj.lifeAssrdInfos.prmntAddress.line3,0,50,path+".prmntAddress.line3");
+    //  ifStringOnly(obj.lifeAssrdInfos.prmntAddress.city,0,50,path+".prmntAddress.city");
+
+    //  if(obj.comunctnAddress){
+    //  ifNumeric(obj.lifeAssrdInfos.comunctnAddress.pincode,0,6,path+".comunctnAddress.pincode");
+    //  ifStringOnly(obj.lifeAssrdInfos.comunctnAddress.landmark,0,50,path+".comunctnAddress.landmark");
+    //  alphaNumeric(obj.lifeAssrdInfos.comunctnAddress.line1,0,50,path+".comunctnAddress.line1");
+    //  alphaNumeric(obj.lifeAssrdInfos.comunctnAddress.line2,0,50,path+".comunctnAddress.line2");
+    //  alphaNumeric(obj.lifeAssrdInfos.comunctnAddress.line3,0,50,path+".comunctnAddress.line3");
+    //  ifStringOnly(obj.lifeAssrdInfos.comunctnAddress.city,0,50,path+".comunctnAddress.city");
+    //  }
+    // if(obj.lifeAssrdInfos.spouseDOB)
+    // checkDates(obj.lifeAssrdInfos.spouseDOB,path+".spouseDOB");
+    // if(obj.lifeAssrdInfos.spousenm)
+    // ifStringOnly(obj.lifeAssrdInfos.spousenm,0,50,path+".spousenm");
+    // if(obj.lifeAssrdInfos.spousePlaceOfBirth)
+    // ifStringOnly(obj.lifeAssrdInfos.spousePlaceOfBirth,0,50,path+".spousePlaceOfBirth");
+    ifNumeric(obj.lifeAssrdInfos.adhaarNum, 12, 12, path + ".adhaarNum");
+    alphaNumeric(obj.lifeAssrdInfos.panNo, 10, 10, path + ".panNo");
+    // ifNumeric(obj.lifeAssrdInfos.officePhoneNo,10,20,path+".officePhoneNo");
+    // ifStringOnly(obj.lifeAssrdInfos.natureofoccu,0,50,path+".natureofoccu");
+
+    const payload = obj.lifeAssrdInfos;
+
+    // Helper function to check if fields are filled
+    const areFieldsFilled = (fields) => fields.every(field => field !== "" && field != null);
+
+    // Check for common occupation categories
+    const salariedAndSelfEmployed = [
+        "Salaried", "Self Employed", "Others"
+    ];
+
+    const professionalOccupations = [
+        "Professional", "Self Employed - Lawyer", "Retired", "ICICI Group Employee",
+        "Student", "Agriculturist", "Housewife", "Self Employed - Consultant",
+        "Self Employed - Architect", "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const businessmanOccupations = [
+        "Self Employed - Businessman", "Self Employed - Others"
+    ];
+
+    const professionsWithMyProfRequirement = [
+        "Professional", "Self Employed - Lawyer",
+        "Self Employed - Consultant", "Self Employed - Architect",
+        "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const {
+        orgType,
+        nameOfOrg,
+        orgTypeDesc,
+        nameOfOrgDesc,
+        indsTypeQuestion,
+        indsType,
+        indsTypeDesc,
+        myProf
+    } = payload;
+
+    if (salariedAndSelfEmployed.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled && orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled && !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+
+        if (indsTypeQuestion) {
+            if (!areFieldsFilled([indsType, indsTypeDesc])) {
+                throw new Error(`If 'indsTypeQuestion' is true, at least one of 'indsType' or 'indsTypeDesc' must have a value.`);
+            }
+        } else {
+            if (indsType !== "" && indsType != null) {
+                throw new Error(`'indsType' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+            if (indsTypeDesc !== "" && indsTypeDesc != null) {
+                throw new Error(`'indsTypeDesc' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+        }
+    } else if (professionalOccupations.includes(payload.occ)) {
+        const fieldsToCheck = [nameOfOrg, nameOfOrgDesc, orgType, orgTypeDesc, indsTypeQuestion, indsType, indsTypeDesc];
+
+        fieldsToCheck.forEach((value, index) => {
+            if (value !== "" && value != null) {
+                const fieldNames = ["nameOfOrg", "nameOfOrgDesc", "orgType", "orgTypeDesc", "indsTypeQuestion", "indsType", "indsTypeDesc"];
+                throw new Error(`Field '${fieldNames[index]}' is not required for the occupation '${payload.occ}'`);
+            }
+        });
+
+        if (professionsWithMyProfRequirement.includes(payload.occ) && (myProf === "" || myProf == null)) {
+            throw new Error(`The 'myProf' field must not be empty for the occupation '${payload.occ}'.`);
+        }
+    } else if (businessmanOccupations.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled && orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled && !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+    }
+
+
+
+
+}
+
+function proposerInfoCheck(obj) {
+    //    try {
+    var path = "data.proposerInfos";
+
+    ifStringOnly(obj.proposerInfos.frstNm, 1, 30, path + ".frstNm", true);
+    ifStringOnly(obj.proposerInfos.lstNm, 1, 30, path + ".lstNm", true);
+    checkDates(obj.proposerInfos.dob, path + ".dob", true);
+    checkrange(obj.proposerInfos.annIncme, path + ".annIncme", true);
+    // ifStringOnly(obj.proposerInfos.fathernm,0,50,path+".fathernm");
+    // ifStringOnly(obj.proposerInfos.mothersName,0,50,path+".mothersName");
+	
+    ifNumeric(obj.proposerInfos.mobNo, 10, 50, path + ".mobNo", true);
+    alphaNumeric(obj.proposerInfos.panNo, 10, 10, path + ".panNo", true);
+    checkEmail(obj.proposerInfos.email, 10, 50, path + ".email");
+    // ifStringOnly(obj.proposerInfos.birthplace,0,50,path+".birthplace");
+    ifNumeric(obj.proposerInfos.prmntAddress.pincode, 6, 6, path + ".prmntAddress.pincode", true);
+    ifStringOnly(obj.proposerInfos.prmntAddress.landmark, 2, 30, path + ".prmntAddress.landmark");
+    alphaNumeric(obj.proposerInfos.prmntAddress.line1, 2, 30, path + ".prmntAddress.line1", true);
+    alphaNumeric(obj.proposerInfos.prmntAddress.line2, 2, 30, path + ".prmntAddress.line2");
+    alphaNumeric(obj.proposerInfos.prmntAddress.line3, 2, 30, path + ".prmntAddress.line3");
+    ifStringOnly(obj.proposerInfos.prmntAddress.city, 2, 30, path + ".prmntAddress.city", true);
+
+    if (obj.comunctnAddress) {
+        ifNumeric(obj.proposerInfos.comunctnAddress.pincode, 6, 6, path + ".comunctnAddress.pincode", true);
+        ifStringOnly(obj.proposerInfos.comunctnAddress.landmark, 2, 30, path + ".comunctnAddress.landmark");
+        alphaNumeric(obj.proposerInfos.comunctnAddress.line1, 2, 30, path + ".comunctnAddress.line1", true);
+        alphaNumeric(obj.proposerInfos.comunctnAddress.line2, 2, 30, path + ".comunctnAddress.line2");
+        alphaNumeric(obj.proposerInfos.comunctnAddress.line3, 2, 30, path + ".comunctnAddress.line3");
+        ifStringOnly(obj.proposerInfos.comunctnAddress.city, 3, 20, path + ".comunctnAddress.city", true);
+    }
+    const payload = obj.proposerInfos;
+
+    // Helper function to check if fields are filled
+    const areFieldsFilled = (fields) => fields.every(field => field !== "" && field != null);
+
+    // Check for common occupation categories
+    const salariedAndSelfEmployed = [
+        "Salaried", "Self Employed", "Others"
+    ];
+
+    const professionalOccupations = [
+        "Professional", "Self Employed - Lawyer", "Retired", "ICICI Group Employee",
+        "Student", "Agriculturist", "Housewife", "Self Employed - Consultant",
+        "Self Employed - Architect", "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const businessmanOccupations = [
+        "Self Employed - Businessman", "Self Employed - Others"
+    ];
+
+    const professionsWithMyProfRequirement = [
+        "Professional", "Self Employed - Lawyer",
+        "Self Employed - Consultant", "Self Employed - Architect",
+        "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const {
+        orgType,
+        nameOfOrg,
+        orgTypeDesc,
+        nameOfOrgDesc,
+        indsTypeQuestion,
+        indsType,
+        indsTypeDesc,
+        myProf
+    } = payload;
+
+    if (salariedAndSelfEmployed.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled && orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled && !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+
+        if (indsTypeQuestion) {
+            if (!areFieldsFilled([indsType, indsTypeDesc])) {
+                throw new Error(`If 'indsTypeQuestion' is true, at least one of 'indsType' or 'indsTypeDesc' must have a value.`);
+            }
+        } else {
+            if (indsType !== "" && indsType != null) {
+                throw new Error(`'indsType' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+            if (indsTypeDesc !== "" && indsTypeDesc != null) {
+                throw new Error(`'indsTypeDesc' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+        }
+    } else if (professionalOccupations.includes(payload.occ)) {
+        const fieldsToCheck = [nameOfOrg, nameOfOrgDesc, orgType, orgTypeDesc, indsTypeQuestion, indsType, indsTypeDesc];
+
+        fieldsToCheck.forEach((value, index) => {
+            if (value !== "" && value != null) {
+                const fieldNames = ["nameOfOrg", "nameOfOrgDesc", "orgType", "orgTypeDesc", "indsTypeQuestion", "indsType", "indsTypeDesc"];
+                throw new Error(`Field '${fieldNames[index]}' is not required for the occupation '${payload.occ}'`);
+            }
+        });
+
+        if (professionsWithMyProfRequirement.includes(payload.occ) && (myProf === "" || myProf == null)) {
+            throw new Error(`The 'myProf' field must not be empty for the occupation '${payload.occ}'.`);
+        }
+    } else if (businessmanOccupations.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled && orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled && !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+    }
+
+    // if(obj.proposerInfos.spouseDOB)
+    // checkDates(obj.proposerInfos.spouseDOB,path+".spouseDOB");
+    // if(obj.proposerInfos.spousenm)
+    // ifStringOnly(obj.proposerInfos.spousenm,0,50,path+".spousenm");
+    // if(obj.proposerInfos.spousePlaceOfBirth)
+    // ifStringOnly(obj.proposerInfos.spousePlaceOfBirth,0,50,path+".spousePlaceOfBirth");
+
+    // ifNumeric(obj.proposerInfos.adhaarNum,0,12,path+".adhaarNum");
+    // ifNumeric(obj.proposerInfos.officePhoneNo,10,20,path+".officePhoneNo");
+    // ifStringOnly(obj.proposerInfos.natureofoccu,0,50,path+".natureofoccu");
+    // if(obj.proposerInfos.annIncme)
+    // ifNumeric(obj.proposerInfos.annIncme,0,10,path+".annIncme");
+}
+
+function nomineeeCheck(nominee, count) {
+
+    var path = "data.nomineeInfos[" + count + "].";
+    ifStringOnly(nominee.frstNm, 1, 30, path + "frstNm", true);
+    ifStringOnly(nominee.lstNm, 1, 30, path + "lstNm", true);
+    checkDates(nominee.dob, path + "dob", true);
+    //ifStringOnly(nominee.city ,0,30,path+".city");
+    if (nominee.apnteDtls) {
+        ifStringOnly(nominee.apnteDtls.frstNm, 1, 30, path + "apnteDtls.frstnm", true);
+        ifStringOnly(nominee.apnteDtls.lstNm, 1, 30, path + "apnteDtls.lstnm", true);
+        checkDates(nominee.apnteDtls.dob, path + "apnteDtls.dob", true);
+    }
+
+}
+
+function otherFieldsCheck(obj) {
+    //      try {
+    var path = "data";
+    ifNumeric(obj.ecsDetails.payAccountNo, 4, 40, path + ".ecsDetails.payAccountNo", true);
+    ifStringOnly(obj.ecsDetails.payAccountHolderName, 1, 30, path + ".ecsDetails.payAccountHolderName", true);
+    ifNumeric(obj.ecsDetails.payMicrNo, 9, 9, path + ".ecsDetails.payMicrNo", true);
+    alphaNumeric(obj.ecsDetails.payBankName, 0, 40, path + ".ecsDetails.payBankName", true);
+    alphaNumeric(obj.ecsDetails.payIfscCode, 11, 11, path + ".ecsDetails.payIfscCode", true);
+    ifNumeric(obj.advisorSalesDetails.bankBrnch, 4, 4, path + ".advisorSalesDetails.bankBrnch", true);
+    alphaNumeric(obj.advisorSalesDetails.spCode, 5, 12, path + ".advisorSalesDetails.spCode", true);
+    ifNumeric(obj.advisorCode, 4, 40, path + ".advisorCode", true);
+    ifStringOnly(obj.advisorSalesDetails.bankName, 4, 4, path + ".advisorSalesDetails.bankName", true);
+    ifStringOnly(obj.advisorSalesDetails.source, 4, 4, path + ".advisorSalesDetails.source", true);
+    ifNumeric(obj.advisorSalesDetails.fscCode, 8, 8, path + ".advisorSalesDetails.fscCode", true);
+    ifNumeric(obj.advisorSalesDetails.csrLimCode, 5, 16, path + ".advisorSalesDetails.csrLimCode", true);
+    ifNumeric(obj.advisorSalesDetails.lanNo, 5, 16, path + ".advisorSalesDetails.lanNo", true);
+    ifNumeric(obj.advisorSalesDetails.cafosCode, 5, 8, path + ".advisorSalesDetails.cafosCode", true);
+
+
+    // } catch (ex) {
+    //     return JSON.stringify({
+    //         code: 400,
+    //         msg: ex.message
+    //     });
+    // }
+}
+
+
+
+
+
+
+
+
+function ifStringOnly(field, minLength, maxLength, path, isMandatory) {
+
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+
+    if (field.length < minLength || field.length > maxLength) {
+        throw new Error("Maximum " + maxLength + " characters are allowed for - " + path);
+    }
+    if (/\s{2,}/.test(field)) {
+        throw new Error(path + " cannot contain consecutive spaces");
+    }
+    if (/^[a-zA-Z\s]+$/.test(field)) {
+        return true;
+    } else {
+        throw new Error(path + " must contain only alphabets");
+    }
+}
+// Function to check if a field only contains numbers
+function ifNumeric(field, minLength, maxLength, path, isMandatory) {
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field.length < minLength || field.length > maxLength) {
+        throw new Error("Maximum " + maxLength + " digits are allowed for - " + path);
+    }
+    if (/^[0-9]+$/.test(field)) {
+        return true;
+    } else {
+        throw new Error(path + " must contain only numbers.");
+    }
+
+}
+
+// Function to check if a field contains only alphanumeric characters
+function alphaNumeric(field, minLength, maxLength, path, isMandatory) {
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field.length < minLength || field.length > maxLength) {
+        throw new Error("Maximum " + maxLength + " characters are allowed for - " + path);
+    }
+    if (/^[a-zA-Z0-9 ]+$/.test(field)) {
+        return true;
+    } else {
+        throw new Error(path + " must contain only alphabets and numbers.");
+    }
+}
+
+//check for boolean
+function checkBoolean(field, isMandatory) {
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field == "true" || field == "false") {
+        return true;
+    } else {
+        throw new Error("Please enter a valid value for " + field);
+    }
+}
+// Function to check if a field contains a valid date in the format dd/mm/yyyy
+function checkDates(field, path, isMandatory) {
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    var dateRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d$/;
+    if (dateRegex.test(field)) {
+        return true;
+    } else {
+        throw new Error("date should be in format (dd/mm/yyyy) " + " - " + path);
+    }
+}
+
+// Function to check if a field contains a valid email address
+function checkEmail(field, minLength, maxLength, path, isMandatory) {
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field.length < minLength || field.length > maxLength) {
+        throw new Error("Email should be between " + minLength + " and " + maxLength + " characters for - " + path);
+    }
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (emailRegex.test(field)) {
+        return true;
+    } else {
+        throw new Error("Please enter a valid value for  - " + path);
+    }
+}
+// Function to check if a field contains special characters
+function checkSpecialCharacters(field, isMandatory) {
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    var specialChars = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+    if (specialChars.test(field)) {
+        return true;
+    } else {
+        throw new Error("Please enter a valid value for " + field);;
+    }
+}
+
+function checkrange(field, path, isMandatory) {
+
+    if (isMandatory && (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (parseInt(field) > 0 && parseInt(field) < 10000000000) {
+        return true;
+    } else {
+        throw new Error("Please enter a valid range Range (0 – 10,00,00,00000) for " + path);;
+    }
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-11-08 10:23:35</sys_created_on>
+        <sys_id>615b9cb44779de10e9ddbf66706d4336</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>iciciFieldValidationAppSubsds</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_script_include_615b9cb44779de10e9ddbf66706d4336</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-21 10:02:54</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>615b9cb44779de10e9ddbf66706d4336</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-11-08 10:43:57</sys_created_on>
+        <sys_id>4800a4f047b9de10e9ddbf66706d4324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-11-08 10:43:57</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_script_include_615b9cb44779de10e9ddbf66706d4336</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_rptp_smartinte_0.iciciFieldValidationAppSubsds&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;iciciFieldValidationAppSubsds&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var iciciFieldValidationAppSubsds = Class.create();
+iciciFieldValidationAppSubsds.prototype = {
+    initialize: function() {},
+    validate: function(obj, txnObj) {
+        var txnReq = JSON.parse(txnObj);
+        var jsonObj = (obj);
+        try {
+
+            // if (txnObj.isProposer == "true") {
+            //     //this means dependent flag is true
+
+			//	if(txnReq.isProposer === "true")
+               // proposerInfoCheck(jsonObj.data);
+
+                lifeAssuredCheck(jsonObj.data);
+            
+
+
+            // } else {
+            //     lifeAssuredCheck(jsonObj.data);
+
+            // }
+            //}
+            if (jsonObj.data.nomineeInfos &amp;&amp; jsonObj.data.nomineeInfos.length &gt; 0) {
+                var count = 1;
+                jsonObj.data.nomineeInfos.forEach(function(nominee, count) {
+                    nomineeeCheck(nominee, count);
+                    count++;
+                });
+            }
+            otherFieldsCheck(jsonObj.data);
+            return JSON.stringify({
+                code: 200,
+                msg: "correct"
+            });
+        } catch (ex) {
+            return JSON.stringify({
+                code: 400,
+                msg: ex.message
+            });
+        }
+
+    },
+
+    type: 'iciciFieldValidationAppSubsds'
+};
+
+function lifeAssuredCheck(obj) {
+    var path = "data.lifeAssrdInfos";
+    //      try {
+    ifStringOnly(obj.lifeAssrdInfos.frstNm, 1, 30, path + ".frstNm", true);
+    ifStringOnly(obj.lifeAssrdInfos.lstNm, 1, 30, path + ".lstNm", true);
+    checkDates(obj.lifeAssrdInfos.dob, path + ".dob", true);
+    if (obj.lifeAssrdInfos.annIncme)
+        checkrange(obj.lifeAssrdInfos.annIncme, path + ".annIncme", true);
+    // ifStringOnly(obj.lifeAssrdInfos.fathernm,0,50,path+".fathernm");
+    // ifStringOnly(obj.lifeAssrdInfos.mothersName,0,50,path+".mothersName");
+
+    // ifNumeric(obj.lifeAssrdInfos.mobNo,10,10,path+".mobNo");
+
+    // checkEmail(obj.lifeAssrdInfos.email,path+".email");
+    // ifStringOnly(obj.lifeAssrdInfos.birthplace,0,50,path+".birthplace");
+    //  ifNumeric(obj.lifeAssrdInfos.prmntAddress.pincode,0,6,path+".prmntAddress.pincode");
+    //  ifStringOnly(obj.lifeAssrdInfos.prmntAddress.landmark,0,50,path+".prmntAddress.landmark");
+    //  alphaNumeric(obj.lifeAssrdInfos.prmntAddress.line1,0,50,path+".prmntAddress.line1");
+    //  alphaNumeric(obj.lifeAssrdInfos.prmntAddress.line2,0,50,path+".prmntAddress.line2");
+    //  alphaNumeric(obj.lifeAssrdInfos.prmntAddress.line3,0,50,path+".prmntAddress.line3");
+    //  ifStringOnly(obj.lifeAssrdInfos.prmntAddress.city,0,50,path+".prmntAddress.city");
+
+    //  if(obj.comunctnAddress){
+    //  ifNumeric(obj.lifeAssrdInfos.comunctnAddress.pincode,0,6,path+".comunctnAddress.pincode");
+    //  ifStringOnly(obj.lifeAssrdInfos.comunctnAddress.landmark,0,50,path+".comunctnAddress.landmark");
+    //  alphaNumeric(obj.lifeAssrdInfos.comunctnAddress.line1,0,50,path+".comunctnAddress.line1");
+    //  alphaNumeric(obj.lifeAssrdInfos.comunctnAddress.line2,0,50,path+".comunctnAddress.line2");
+    //  alphaNumeric(obj.lifeAssrdInfos.comunctnAddress.line3,0,50,path+".comunctnAddress.line3");
+    //  ifStringOnly(obj.lifeAssrdInfos.comunctnAddress.city,0,50,path+".comunctnAddress.city");
+    //  }
+    // if(obj.lifeAssrdInfos.spouseDOB)
+    // checkDates(obj.lifeAssrdInfos.spouseDOB,path+".spouseDOB");
+    // if(obj.lifeAssrdInfos.spousenm)
+    // ifStringOnly(obj.lifeAssrdInfos.spousenm,0,50,path+".spousenm");
+    // if(obj.lifeAssrdInfos.spousePlaceOfBirth)
+    // ifStringOnly(obj.lifeAssrdInfos.spousePlaceOfBirth,0,50,path+".spousePlaceOfBirth");
+    ifNumeric(obj.lifeAssrdInfos.adhaarNum, 12, 12, path + ".adhaarNum");
+    alphaNumeric(obj.lifeAssrdInfos.panNo, 10, 10, path + ".panNo");
+    // ifNumeric(obj.lifeAssrdInfos.officePhoneNo,10,20,path+".officePhoneNo");
+    // ifStringOnly(obj.lifeAssrdInfos.natureofoccu,0,50,path+".natureofoccu");
+
+    const payload = obj.lifeAssrdInfos;
+
+    // Helper function to check if fields are filled
+    const areFieldsFilled = (fields) =&gt; fields.every(field =&gt; field !== "" &amp;&amp; field != null);
+
+    // Check for common occupation categories
+    const salariedAndSelfEmployed = [
+        "Salaried", "Self Employed", "Others"
+    ];
+
+    const professionalOccupations = [
+        "Professional", "Self Employed - Lawyer", "Retired", "ICICI Group Employee",
+        "Student", "Agriculturist", "Housewife", "Self Employed - Consultant",
+        "Self Employed - Architect", "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const businessmanOccupations = [
+        "Self Employed - Businessman", "Self Employed - Others"
+    ];
+
+    const professionsWithMyProfRequirement = [
+        "Professional", "Self Employed - Lawyer",
+        "Self Employed - Consultant", "Self Employed - Architect",
+        "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const {
+        orgType,
+        nameOfOrg,
+        orgTypeDesc,
+        nameOfOrgDesc,
+        indsTypeQuestion,
+        indsType,
+        indsTypeDesc,
+        myProf
+    } = payload;
+
+    if (salariedAndSelfEmployed.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled &amp;&amp; orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled &amp;&amp; !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+
+        if (indsTypeQuestion) {
+            if (!areFieldsFilled([indsType, indsTypeDesc])) {
+                throw new Error(`If 'indsTypeQuestion' is true, at least one of 'indsType' or 'indsTypeDesc' must have a value.`);
+            }
+        } else {
+            if (indsType !== "" &amp;&amp; indsType != null) {
+                throw new Error(`'indsType' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+            if (indsTypeDesc !== "" &amp;&amp; indsTypeDesc != null) {
+                throw new Error(`'indsTypeDesc' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+        }
+    } else if (professionalOccupations.includes(payload.occ)) {
+        const fieldsToCheck = [nameOfOrg, nameOfOrgDesc, orgType, orgTypeDesc, indsTypeQuestion, indsType, indsTypeDesc];
+
+        fieldsToCheck.forEach((value, index) =&gt; {
+            if (value !== "" &amp;&amp; value != null) {
+                const fieldNames = ["nameOfOrg", "nameOfOrgDesc", "orgType", "orgTypeDesc", "indsTypeQuestion", "indsType", "indsTypeDesc"];
+                throw new Error(`Field '${fieldNames[index]}' is not required for the occupation '${payload.occ}'`);
+            }
+        });
+
+        if (professionsWithMyProfRequirement.includes(payload.occ) &amp;&amp; (myProf === "" || myProf == null)) {
+            throw new Error(`The 'myProf' field must not be empty for the occupation '${payload.occ}'.`);
+        }
+    } else if (businessmanOccupations.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled &amp;&amp; orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled &amp;&amp; !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+    }
+
+
+
+
+}
+
+function proposerInfoCheck(obj) {
+    //    try {
+    var path = "data.proposerInfos";
+
+    ifStringOnly(obj.proposerInfos.frstNm, 1, 30, path + ".frstNm", true);
+    ifStringOnly(obj.proposerInfos.lstNm, 1, 30, path + ".lstNm", true);
+    checkDates(obj.proposerInfos.dob, path + ".dob", true);
+    checkrange(obj.proposerInfos.annIncme, path + ".annIncme", true);
+    // ifStringOnly(obj.proposerInfos.fathernm,0,50,path+".fathernm");
+    // ifStringOnly(obj.proposerInfos.mothersName,0,50,path+".mothersName");
+	
+    ifNumeric(obj.proposerInfos.mobNo, 10, 50, path + ".mobNo", true);
+    alphaNumeric(obj.proposerInfos.panNo, 10, 10, path + ".panNo", true);
+    checkEmail(obj.proposerInfos.email, 10, 50, path + ".email");
+    // ifStringOnly(obj.proposerInfos.birthplace,0,50,path+".birthplace");
+    ifNumeric(obj.proposerInfos.prmntAddress.pincode, 6, 6, path + ".prmntAddress.pincode", true);
+    ifStringOnly(obj.proposerInfos.prmntAddress.landmark, 2, 30, path + ".prmntAddress.landmark");
+    alphaNumeric(obj.proposerInfos.prmntAddress.line1, 2, 30, path + ".prmntAddress.line1", true);
+    alphaNumeric(obj.proposerInfos.prmntAddress.line2, 2, 30, path + ".prmntAddress.line2");
+    alphaNumeric(obj.proposerInfos.prmntAddress.line3, 2, 30, path + ".prmntAddress.line3");
+    ifStringOnly(obj.proposerInfos.prmntAddress.city, 2, 30, path + ".prmntAddress.city", true);
+
+    if (obj.comunctnAddress) {
+        ifNumeric(obj.proposerInfos.comunctnAddress.pincode, 6, 6, path + ".comunctnAddress.pincode", true);
+        ifStringOnly(obj.proposerInfos.comunctnAddress.landmark, 2, 30, path + ".comunctnAddress.landmark");
+        alphaNumeric(obj.proposerInfos.comunctnAddress.line1, 2, 30, path + ".comunctnAddress.line1", true);
+        alphaNumeric(obj.proposerInfos.comunctnAddress.line2, 2, 30, path + ".comunctnAddress.line2");
+        alphaNumeric(obj.proposerInfos.comunctnAddress.line3, 2, 30, path + ".comunctnAddress.line3");
+        ifStringOnly(obj.proposerInfos.comunctnAddress.city, 3, 20, path + ".comunctnAddress.city", true);
+    }
+    const payload = obj.proposerInfos;
+
+    // Helper function to check if fields are filled
+    const areFieldsFilled = (fields) =&gt; fields.every(field =&gt; field !== "" &amp;&amp; field != null);
+
+    // Check for common occupation categories
+    const salariedAndSelfEmployed = [
+        "Salaried", "Self Employed", "Others"
+    ];
+
+    const professionalOccupations = [
+        "Professional", "Self Employed - Lawyer", "Retired", "ICICI Group Employee",
+        "Student", "Agriculturist", "Housewife", "Self Employed - Consultant",
+        "Self Employed - Architect", "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const businessmanOccupations = [
+        "Self Employed - Businessman", "Self Employed - Others"
+    ];
+
+    const professionsWithMyProfRequirement = [
+        "Professional", "Self Employed - Lawyer",
+        "Self Employed - Consultant", "Self Employed - Architect",
+        "Self Employed - Doctor", "Self Employed - CA"
+    ];
+
+    const {
+        orgType,
+        nameOfOrg,
+        orgTypeDesc,
+        nameOfOrgDesc,
+        indsTypeQuestion,
+        indsType,
+        indsTypeDesc,
+        myProf
+    } = payload;
+
+    if (salariedAndSelfEmployed.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled &amp;&amp; orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled &amp;&amp; !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+
+        if (indsTypeQuestion) {
+            if (!areFieldsFilled([indsType, indsTypeDesc])) {
+                throw new Error(`If 'indsTypeQuestion' is true, at least one of 'indsType' or 'indsTypeDesc' must have a value.`);
+            }
+        } else {
+            if (indsType !== "" &amp;&amp; indsType != null) {
+                throw new Error(`'indsType' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+            if (indsTypeDesc !== "" &amp;&amp; indsTypeDesc != null) {
+                throw new Error(`'indsTypeDesc' should not have a value if 'indsTypeQuestion' is false.`);
+            }
+        }
+    } else if (professionalOccupations.includes(payload.occ)) {
+        const fieldsToCheck = [nameOfOrg, nameOfOrgDesc, orgType, orgTypeDesc, indsTypeQuestion, indsType, indsTypeDesc];
+
+        fieldsToCheck.forEach((value, index) =&gt; {
+            if (value !== "" &amp;&amp; value != null) {
+                const fieldNames = ["nameOfOrg", "nameOfOrgDesc", "orgType", "orgTypeDesc", "indsTypeQuestion", "indsType", "indsTypeDesc"];
+                throw new Error(`Field '${fieldNames[index]}' is not required for the occupation '${payload.occ}'`);
+            }
+        });
+
+        if (professionsWithMyProfRequirement.includes(payload.occ) &amp;&amp; (myProf === "" || myProf == null)) {
+            throw new Error(`The 'myProf' field must not be empty for the occupation '${payload.occ}'.`);
+        }
+    } else if (businessmanOccupations.includes(payload.occ)) {
+        const orgFieldsFilled = areFieldsFilled([orgType, nameOfOrg]);
+        const orgDescFieldsFilled = areFieldsFilled([orgTypeDesc, nameOfOrgDesc]);
+
+        if (orgFieldsFilled &amp;&amp; orgDescFieldsFilled) {
+            throw new Error(`If 'orgType' ('${orgType}') and 'nameOfOrg' ('${nameOfOrg}') have values, then 'orgTypeDesc' and 'nameOfOrgDesc' must be empty.`);
+        }
+
+        if (!orgFieldsFilled &amp;&amp; !orgDescFieldsFilled) {
+            throw new Error(`At least one of the following pairs must have values: (orgType, nameOfOrg) or (orgTypeDesc, nameOfOrgDesc).`);
+        }
+    }
+
+    // if(obj.proposerInfos.spouseDOB)
+    // checkDates(obj.proposerInfos.spouseDOB,path+".spouseDOB");
+    // if(obj.proposerInfos.spousenm)
+    // ifStringOnly(obj.proposerInfos.spousenm,0,50,path+".spousenm");
+    // if(obj.proposerInfos.spousePlaceOfBirth)
+    // ifStringOnly(obj.proposerInfos.spousePlaceOfBirth,0,50,path+".spousePlaceOfBirth");
+
+    // ifNumeric(obj.proposerInfos.adhaarNum,0,12,path+".adhaarNum");
+    // ifNumeric(obj.proposerInfos.officePhoneNo,10,20,path+".officePhoneNo");
+    // ifStringOnly(obj.proposerInfos.natureofoccu,0,50,path+".natureofoccu");
+    // if(obj.proposerInfos.annIncme)
+    // ifNumeric(obj.proposerInfos.annIncme,0,10,path+".annIncme");
+}
+
+function nomineeeCheck(nominee, count) {
+
+    var path = "data.nomineeInfos[" + count + "].";
+    ifStringOnly(nominee.frstNm, 1, 30, path + "frstNm", true);
+    ifStringOnly(nominee.lstNm, 1, 30, path + "lstNm", true);
+    checkDates(nominee.dob, path + "dob", true);
+    //ifStringOnly(nominee.city ,0,30,path+".city");
+    if (nominee.apnteDtls) {
+        ifStringOnly(nominee.apnteDtls.frstNm, 1, 30, path + "apnteDtls.frstnm", true);
+        ifStringOnly(nominee.apnteDtls.lstNm, 1, 30, path + "apnteDtls.lstnm", true);
+        checkDates(nominee.apnteDtls.dob, path + "apnteDtls.dob", true);
+    }
+
+}
+
+function otherFieldsCheck(obj) {
+    //      try {
+    var path = "data";
+    ifNumeric(obj.ecsDetails.payAccountNo, 4, 40, path + ".ecsDetails.payAccountNo", true);
+    ifStringOnly(obj.ecsDetails.payAccountHolderName, 1, 30, path + ".ecsDetails.payAccountHolderName", true);
+    ifNumeric(obj.ecsDetails.payMicrNo, 9, 9, path + ".ecsDetails.payMicrNo", true);
+    alphaNumeric(obj.ecsDetails.payBankName, 0, 40, path + ".ecsDetails.payBankName", true);
+    alphaNumeric(obj.ecsDetails.payIfscCode, 11, 11, path + ".ecsDetails.payIfscCode", true);
+    ifNumeric(obj.advisorSalesDetails.bankBrnch, 4, 4, path + ".advisorSalesDetails.bankBrnch", true);
+    alphaNumeric(obj.advisorSalesDetails.spCode, 5, 12, path + ".advisorSalesDetails.spCode", true);
+    ifNumeric(obj.advisorCode, 4, 40, path + ".advisorCode", true);
+    ifStringOnly(obj.advisorSalesDetails.bankName, 4, 4, path + ".advisorSalesDetails.bankName", true);
+    ifStringOnly(obj.advisorSalesDetails.source, 4, 4, path + ".advisorSalesDetails.source", true);
+    ifNumeric(obj.advisorSalesDetails.fscCode, 8, 8, path + ".advisorSalesDetails.fscCode", true);
+    ifNumeric(obj.advisorSalesDetails.csrLimCode, 5, 16, path + ".advisorSalesDetails.csrLimCode", true);
+    ifNumeric(obj.advisorSalesDetails.lanNo, 5, 16, path + ".advisorSalesDetails.lanNo", true);
+    ifNumeric(obj.advisorSalesDetails.cafosCode, 5, 8, path + ".advisorSalesDetails.cafosCode", true);
+
+
+    // } catch (ex) {
+    //     return JSON.stringify({
+    //         code: 400,
+    //         msg: ex.message
+    //     });
+    // }
+}
+
+
+
+
+
+
+
+
+function ifStringOnly(field, minLength, maxLength, path, isMandatory) {
+
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+
+    if (field.length &lt; minLength || field.length &gt; maxLength) {
+        throw new Error("Maximum " + maxLength + " characters are allowed for - " + path);
+    }
+    if (/\s{2,}/.test(field)) {
+        throw new Error(path + " cannot contain consecutive spaces");
+    }
+    if (/^[a-zA-Z\s]+$/.test(field)) {
+        return true;
+    } else {
+        throw new Error(path + " must contain only alphabets");
+    }
+}
+// Function to check if a field only contains numbers
+function ifNumeric(field, minLength, maxLength, path, isMandatory) {
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field.length &lt; minLength || field.length &gt; maxLength) {
+        throw new Error("Maximum " + maxLength + " digits are allowed for - " + path);
+    }
+    if (/^[0-9]+$/.test(field)) {
+        return true;
+    } else {
+        throw new Error(path + " must contain only numbers.");
+    }
+
+}
+
+// Function to check if a field contains only alphanumeric characters
+function alphaNumeric(field, minLength, maxLength, path, isMandatory) {
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field.length &lt; minLength || field.length &gt; maxLength) {
+        throw new Error("Maximum " + maxLength + " characters are allowed for - " + path);
+    }
+    if (/^[a-zA-Z0-9 ]+$/.test(field)) {
+        return true;
+    } else {
+        throw new Error(path + " must contain only alphabets and numbers.");
+    }
+}
+
+//check for boolean
+function checkBoolean(field, isMandatory) {
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field == "true" || field == "false") {
+        return true;
+    } else {
+        throw new Error("Please enter a valid value for " + field);
+    }
+}
+// Function to check if a field contains a valid date in the format dd/mm/yyyy
+function checkDates(field, path, isMandatory) {
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    var dateRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d$/;
+    if (dateRegex.test(field)) {
+        return true;
+    } else {
+        throw new Error("date should be in format (dd/mm/yyyy) " + " - " + path);
+    }
+}
+
+// Function to check if a field contains a valid email address
+function checkEmail(field, minLength, maxLength, path, isMandatory) {
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (field.length &lt; minLength || field.length &gt; maxLength) {
+        throw new Error("Email should be between " + minLength + " and " + maxLength + " characters for - " + path);
+    }
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (emailRegex.test(field)) {
+        return true;
+    } else {
+        throw new Error("Please enter a valid value for  - " + path);
+    }
+}
+// Function to check if a field contains special characters
+function checkSpecialCharacters(field, isMandatory) {
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    var specialChars = /[!@#$%^&amp;*()_+\-=\[\]{};':"\\|,.&lt;&gt;\/?]/;
+    if (specialChars.test(field)) {
+        return true;
+    } else {
+        throw new Error("Please enter a valid value for " + field);;
+    }
+}
+
+function checkrange(field, path, isMandatory) {
+
+    if (isMandatory &amp;&amp; (!field || field == "")) {
+        throw new Error("the field " + path + " is mandatory");
+    } else if (!field || field == "") {
+        return true;
+    }
+    if (parseInt(field) &gt; 0 &amp;&amp; parseInt(field) &lt; 10000000000) {
+        return true;
+    } else {
+        throw new Error("Please enter a valid range Range (0 – 10,00,00,00000) for " + path);;
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chandan.parmar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-08 10:23:35&lt;/sys_created_on&gt;&lt;sys_id&gt;615b9cb44779de10e9ddbf66706d4336&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;iciciFieldValidationAppSubsds&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_615b9cb44779de10e9ddbf66706d4336&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-21 10:02:54&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;615b9cb44779de10e9ddbf66706d4336&lt;/id&gt;&lt;sys_created_by&gt;chandan.parmar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-08 10:43:57&lt;/sys_created_on&gt;&lt;sys_id&gt;4800a4f047b9de10e9ddbf66706d4324&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;chandan.parmar&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-08 10:43:57&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1477085260</payload_hash>
+        <record_name>iciciFieldValidationAppSubsds</record_name>
+        <reverted_from/>
+        <source>41d86fb4ff91921019a8ffda7c4fd9a5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-21 10:02:54</sys_created_on>
+        <sys_id>154317b0470a1690e9ddbf66706d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1934e2cbb6c0000001</sys_recorded_at>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-21 10:02:54</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>d54317b0750a1690ae2c8940a356c4bb</update_guid>
+        <update_guid_history>d54317b0750a1690ae2c8940a356c4bb:1477085260,fd04054e93391a104350b637fa560a50:2132086183,5091147109b9565095a3436db87692d6:1984117658,fdbb4cb13b3d56106a182d20d0a8e26b:-1252820566,548b8cfd80f95610a33f144948e2ec42:-676653782,b59ac8bd80f956108204e5155a137a4e:-1321419855,f9d948bde3f95610714049848520547c:-1088389558,1ac52fa504b556109f6861231e437939:-1808736367,f4dcf6a938fd1610faec2531d00609ff:621495008,0e1b3e6572fd1610c1d29520126c04c7:-1723979019,6ff168bcf9b9de108a3dda5933428ba8:-1018445381,3fe028b8f9b9de100f27bfd7681ee8d3:832099546,e55b9cb49279de100bab514f1c534838:-1898168366</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-21 10:11:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>021d50e9f84d449b8025b291c0852831</sys_id>
+        <sys_metadata>615b9cb44779de10e9ddbf66706d4336</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>iciciFieldValidationAppSubsds</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_scope_delete display_value="">369325a421bf4d1f809d3b2ab5baaae1</sys_scope_delete>
+        <sys_update_name>sys_script_include_615b9cb44779de10e9ddbf66706d4336</sys_update_name>
+        <sys_update_version display_value="sys_script_include_615b9cb44779de10e9ddbf66706d4336">154317b0470a1690e9ddbf66706d43bc</sys_update_version>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-21 10:11:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

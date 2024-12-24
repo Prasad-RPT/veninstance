@@ -1,0 +1,1822 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>6dd40c2c47320a10e9ddbf66706d43c3</copied_from>
+        <copied_from_name>Validation ULIP</copied_from_name>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>validation_ulip_hdfc</internal_name>
+        <label_cache>[{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.requiredfeilds}}","label":"action➛requiredFeilds","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{}},{"name":"{{action.originalpayload}}","label":"action➛originalPayload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.vendorName}}","label":"step➛request Object➛root➛vendorName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.vendorCode}}","label":"step➛request Object➛root➛vendorCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.agentCode}}","label":"step➛request Object➛root➛agentCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.ipAddr}}","label":"step➛request Object➛root➛ipAddr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.type}}","label":"step➛request Object➛root➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.ipPhSame}}","label":"step➛request Object➛root➛ipPhSame","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.productName}}","label":"step➛request Object➛root➛product➛productName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.productId}}","label":"step➛request Object➛root➛product➛productId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.variant}}","label":"step➛request Object➛root➛product➛variant","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.policyTerm}}","label":"step➛request Object➛root➛product➛policyTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.policyPaymentTerm}}","label":"step➛request Object➛root➛product➛policyPaymentTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.frequency}}","label":"step➛request Object➛root➛product➛frequency","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.premium}}","label":"step➛request Object➛root➛product➛premium","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.firstName}}","label":"step➛request Object➛root➛insuredPerson➛firstName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.sumAssured}}","label":"step➛request Object➛root➛insuredPerson➛sumAssured","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCover}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCover","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCoverSumAssured}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCoverSumAssured","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCoverPT}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCoverPT","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCoverPPT}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCoverPPT","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].__step_status__.code}}","label":"step➛request Object➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].__step_status__.message}}","label":"step➛request Object➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root}}","label":"step➛request Object➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDb6ed4fccf77a46101335902522c857e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"d5359d17-899c-483c-a42b-99b35f81ab5b"}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.tokenUserId}}","label":"step➛request Object➛root➛tokenUserId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.tokenSource}}","label":"step➛request Object➛root➛tokenSource","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.tokenTxnid}}","label":"step➛request Object➛root➛tokenTxnid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.qtDt}}","label":"step➛request Object➛root➛qtDt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.chnlptnr}}","label":"step➛request Object➛root➛chnlptnr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.qniProduct}}","label":"step➛request Object➛root➛product➛qniProduct","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.flsCode}}","label":"step➛request Object➛root➛distsummary➛flsCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.flsName}}","label":"step➛request Object➛root➛distsummary➛flsName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.spCode}}","label":"step➛request Object➛root➛distsummary➛spCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.lgCode}}","label":"step➛request Object➛root➛distsummary➛lgCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.licencePersoncode}}","label":"step➛request Object➛root➛distsummary➛licencePersoncode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.licencePersonname}}","label":"step➛request Object➛root➛distsummary➛licencePersonname","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.flsAgencycode}}","label":"step➛request Object➛root➛distsummary➛flsAgencycode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.branchCode}}","label":"step➛request Object➛root➛distsummary➛branchCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.IACode}}","label":"step➛request Object➛root➛distsummary➛IACode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.payeeClientCode}}","label":"step➛request Object➛root➛distsummary➛payeeClientCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.payeeClientName}}","label":"step➛request Object➛root➛distsummary➛payeeClientName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.teleCode}}","label":"step➛request Object➛root➛distsummary➛teleCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.code}}","label":"step➛JSON Builder step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.message}}","label":"step➛JSON Builder step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.dob}}","label":"step➛request Object➛root➛insuredPerson➛dob","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.gender}}","label":"step➛request Object➛root➛insuredPerson➛gender","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.lastName}}","label":"step➛request Object➛root➛insuredPerson➛lastName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isExistingUser}}","label":"step➛request Object➛root➛isExistingUser","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isNri}}","label":"step➛request Object➛root➛isNri","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.premium}}","label":"step➛request Object➛root➛premium","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.policyTerm}}","label":"step➛request Object➛root➛policyTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.paymentTerm}}","label":"step➛request Object➛root➛paymentTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.mobile}}","label":"step➛request Object➛root➛mobile","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.maritalStatus}}","label":"step➛request Object➛root➛maritalStatus","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.lName}}","label":"step➛request Object➛root➛lName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isProposer}}","label":"step➛request Object➛root➛isProposer","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.gender}}","label":"step➛request Object➛root➛gender","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.frequency}}","label":"step➛request Object➛root➛frequency","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.fName}}","label":"step➛request Object➛root➛fName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.email}}","label":"step➛request Object➛root➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.dateOfBirth}}","label":"step➛request Object➛root➛dateOfBirth","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.currencyType}}","label":"step➛request Object➛root➛currencyType","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.categoryCode}}","label":"step➛request Object➛root➛categoryCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.benefitOption}}","label":"step➛request Object➛root➛benefitOption","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.annualIncome}}","label":"step➛request Object➛root➛annualIncome","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.variantId}}","label":"step➛request Object➛root➛variantId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.productId}}","label":"step➛request Object➛root➛productId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutTerm}}","label":"step➛request Object➛root➛payoutTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutFrequency}}","label":"step➛request Object➛root➛payoutFrequency","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.sumAssured}}","label":"step➛request Object➛root➛sumAssured","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.defermentPeriod}}","label":"step➛request Object➛root➛defermentPeriod","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.apiKey}}","label":"step➛request Object➛root➛apiKey","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].output}}","label":"step➛JSON Builder step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>308a7b2047be4a10e9ddbf66706d438e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Mandatory field Validation ULIP HDFC</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>897ab72047be4a10e9ddbf66706d43df</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>Mandatory field Validation ULIP HDFC</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_897ab72047be4a10e9ddbf66706d43df</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-11 09:37:11</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=897ab72047be4a10e9ddbf66706d43df"/>
+    <sys_variable_value action="delete_multiple" query="document_key=897ab72047be4a10e9ddbf66706d43df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>897ab72047be4a10e9ddbf66706d43df</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:35</sys_created_on>
+        <sys_id>117af72047be4a10e9ddbf66706d4315</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-11 09:37:11</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD957af72043be4a106286c915b6302107":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD957af72043be4a106286c915b6302107.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"5413fcdf-45ab-45b5-9ebc-3613fc8efd34\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD957af72043be4a106286c915b6302107\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">517af72047be4a10e9ddbf66706d4308</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>897ab72047be4a10e9ddbf66706d43df</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:35</sys_created_on>
+        <sys_id>5d7af72047be4a10e9ddbf66706d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:35</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">5d7af72047be4a10e9ddbf66706d430c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=897ab72047be4a10e9ddbf66706d43df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>897ab72047be4a10e9ddbf66706d43df</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:03:32</sys_created_on>
+        <sys_id>a06b9eb747e34690e9ddbf66706d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</table>
+        <value>{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>897ab72047be4a10e9ddbf66706d43df</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:35</sys_created_on>
+        <sys_id>d97af72047be4a10e9ddbf66706d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:35</sys_updated_on>
+        <table>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>897ab72047be4a10e9ddbf66706d43df</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:35</sys_created_on>
+        <sys_id>197af72047be4a10e9ddbf66706d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:35</sys_updated_on>
+        <table>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=897ab72047be4a10e9ddbf66706d43df^sys_idNOT IN4d7ab72047be4a10e9ddbf66706d43f1,ddef05c547b64210e9ddbf66706d435c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</action>
+        <cid>66d6e7f5-e512-44f0-b46e-62396962053a</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>request Object</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>4d7ab72047be4a10e9ddbf66706d43f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:00:50</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4d7ab72047be4a10e9ddbf66706d43f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4d7ab72047be4a10e9ddbf66706d43f1</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>0d7ab72047be4a10e9ddbf66706d43fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:00:51</sys_updated_on>
+        <value>{&#13;
+    "isExistingUser": "False",&#13;
+    "isNri": "False",&#13;
+    "premium": 500000,&#13;
+    "policyTerm": 15,&#13;
+    "paymentTerm": 10,&#13;
+    "mobile": "9405590978",&#13;
+    "maritalStatus": "MS002",&#13;
+    "lName": "Khakhkhar",&#13;
+    "isProposer": "True",&#13;
+    "gender": "G001",&#13;
+    "frequency": "PF003",&#13;
+    "fName": "Mayank",&#13;
+    "email": "mayank9870@testmail.com",&#13;
+    "dateOfBirth": "01/11/2000",&#13;
+    "currencyType": "INR",&#13;
+    "categoryCode": "ULIP",&#13;
+    "benefitOption": "B001",&#13;
+    "annualIncome": 400000,&#13;
+    "variantId": "VRN007",&#13;
+    "productId": "0cf1bf52ca864819914ea1dffc5890d3",&#13;
+    "payoutTerm": 15,&#13;
+    "payoutFrequency": "PF003",&#13;
+    "sumAssured": 5500000,&#13;
+    "defermentPeriod": 0,&#13;
+    "apiKey": "idfc",&#13;
+    "funds": [&#13;
+        {&#13;
+            "name": "Conservative Fund",&#13;
+            "value": "100"&#13;
+        }&#13;
+    ]&#13;
+}&#13;
+</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4d7ab72047be4a10e9ddbf66706d43f1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>c17ab72047be4a10e9ddbf66706d43fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:00:51</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"isExistingUser","children":[],"type":"string","jpath":"$.isExistingUser","previewValue":"False"},{"name":"isNri","children":[],"type":"string","jpath":"$.isNri","previewValue":"False"},{"name":"premium","children":[],"type":"string","jpath":"$.premium","previewValue":"500000"},{"name":"policyTerm","children":[],"type":"string","jpath":"$.policyTerm","previewValue":"15"},{"name":"paymentTerm","children":[],"type":"string","jpath":"$.paymentTerm","previewValue":"10"},{"name":"mobile","children":[],"type":"string","jpath":"$.mobile","previewValue":"9405590978"},{"name":"maritalStatus","children":[],"type":"string","jpath":"$.maritalStatus","previewValue":"MS002"},{"name":"lName","children":[],"type":"string","jpath":"$.lName","previewValue":"Khakhkhar"},{"name":"isProposer","children":[],"type":"string","jpath":"$.isProposer","previewValue":"True"},{"name":"gender","children":[],"type":"string","jpath":"$.gender","previewValue":"G001"},{"name":"frequency","children":[],"type":"string","jpath":"$.frequency","previewValue":"PF003"},{"name":"fName","children":[],"type":"string","jpath":"$.fName","previewValue":"Mayank"},{"name":"email","children":[],"type":"string","jpath":"$.email","previewValue":"mayank9870@testmail.com"},{"name":"dateOfBirth","children":[],"type":"string","jpath":"$.dateOfBirth","previewValue":"01/11/2000"},{"name":"currencyType","children":[],"type":"string","jpath":"$.currencyType","previewValue":"INR"},{"name":"categoryCode","children":[],"type":"string","jpath":"$.categoryCode","previewValue":"ULIP"},{"name":"benefitOption","children":[],"type":"string","jpath":"$.benefitOption","previewValue":"B001"},{"name":"annualIncome","children":[],"type":"string","jpath":"$.annualIncome","previewValue":"400000"},{"name":"variantId","children":[],"type":"string","jpath":"$.variantId","previewValue":"VRN007"},{"name":"productId","children":[],"type":"string","jpath":"$.productId","previewValue":"0cf1bf52ca864819914ea1dffc5890d3"},{"name":"payoutTerm","children":[],"type":"string","jpath":"$.payoutTerm","previewValue":"15"},{"name":"payoutFrequency","children":[],"type":"string","jpath":"$.payoutFrequency","previewValue":"PF003"},{"name":"sumAssured","children":[],"type":"string","jpath":"$.sumAssured","previewValue":"5500000"},{"name":"defermentPeriod","children":[],"type":"string","jpath":"$.defermentPeriod","previewValue":"0"},{"name":"apiKey","children":[],"type":"string","jpath":"$.apiKey","previewValue":"idfc"},{"name":"funds","children":[{"name":"funds_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.funds[*].name","previewValue":"Conservative Fund"},{"name":"value","children":[],"type":"string","jpath":"$.funds[*].value","previewValue":"100"}],"type":"object","jpath":"$.funds[*]","previewValue":""}],"type":"array.object","jpath":"$.funds[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_4d7ab72047be4a10e9ddbf66706d43f1^id=4d7ab72047be4a10e9ddbf66706d43f1"/>
+    <sys_element_mapping action="delete_multiple" query="id=4d7ab72047be4a10e9ddbf66706d43f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>4d7ab72047be4a10e9ddbf66706d43f1</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>417ab72047be4a10e9ddbf66706d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>4d7ab72047be4a10e9ddbf66706d43f1</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>857ab72047be4a10e9ddbf66706d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{action.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>4d7ab72047be4a10e9ddbf66706d43f1</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>8d7ab72047be4a10e9ddbf66706d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=4d7ab72047be4a10e9ddbf66706d43f1"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=4d7ab72047be4a10e9ddbf66706d43f1^sys_idNOT IN497ab72047be4a10e9ddbf66706d43f6"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD41ca9277a2e346902ca965fdc73127ce</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD41ca9277a2e346902ca965fdc73127ce":{"currencyType":"String","currencyType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"currencyType\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"23870683-6659-4a6e-9cef-f07ec40110e3\"}"},"lName":"String","lName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"lName\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"01e65cb1-79a6-4108-a909-c6b081cbffcd\"}"},"annualIncome":"String","annualIncome.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"annualIncome\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\",\"uiUniqueId\":\"d83ac141-8565-4c18-a8f3-4697a1df68f1\"}"},"apiKey":"String","apiKey.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"apiKey\",\"mandatory\":\"false\",\"order\":\"25\",\"max_length\":\"0\",\"uiUniqueId\":\"6584558a-453b-4f81-8c82-76d0842c509c\"}"},"gender":"String","gender.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"gender\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ec8df7b1-bb0b-4348-b539-95dc33261c97\"}"},"isExistingUser":"String","isExistingUser.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"isExistingUser\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"56b954ca-93e0-4168-ba01-17d3541df12e\"}"},"policyTerm":"String","policyTerm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"policyTerm\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"88434141-5d89-42d3-aab6-43b5c67a4ff7\"}"},"defermentPeriod":"String","defermentPeriod.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"defermentPeriod\",\"mandatory\":\"false\",\"order\":\"24\",\"max_length\":\"0\",\"uiUniqueId\":\"c0a7cf7f-5f70-4664-b542-2201d6af07a6\"}"},"frequency":"String","frequency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"frequency\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"53f485dc-7b81-4550-b216-42226552fee6\"}"},"sumAssured":"String","sumAssured.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"sumAssured\",\"mandatory\":\"false\",\"order\":\"23\",\"max_length\":\"0\",\"uiUniqueId\":\"533001d2-3668-42a9-9bf0-50546689d74c\"}"},"fName":"String","fName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"fName\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"1d26d8f4-4a8d-42bf-8cc6-9863f416839d\"}"},"premium":"String","premium.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"premium\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"10885da5-717f-427c-b9bf-c808ffa278df\"}"},"payoutFrequency":"String","payoutFrequency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"payoutFrequency\",\"mandatory\":\"false\",\"order\":\"22\",\"max_length\":\"0\",\"uiUniqueId\":\"2d0b8c93-593a-4cbf-95d9-97a1d8374273\"}"},"funds":[{"$0_funds":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"01046bce-6e11-4933-be80-96bc54966584\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"33f04ea2-8c46-454b-bab9-767cd46702aa\"}"}}}],"funds.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"funds\",\"mandatory\":\"false\",\"child_name\":\"funds_object\",\"uiUniqueId\":\"167309eb-e13f-47fe-bfda-a6fddf924bf3\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"funds_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"26\",\"max_length\":\"0\",\"child_uiUniqueId\":\"e17794fb-574f-41ed-84a8-c82af38a0ac0\"}"},"variantId":"String","variantId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"variantId\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\",\"uiUniqueId\":\"0718552c-a5e4-499b-8252-c59779d35559\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"62e380ab-413f-42c3-9082-071d8aabd828\"}"},"productId":"String","productId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"productId\",\"mandatory\":\"false\",\"order\":\"20\",\"max_length\":\"0\",\"uiUniqueId\":\"da16e121-d714-4534-832c-47c1a6d5014a\"}"},"isNri":"String","isNri.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"isNri\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f9f48d2c-13cb-4c1b-977f-4afac3546542\"}"},"mobile":"String","mobile.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"mobile\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"929e6f55-2990-41d5-97d4-d32b9245c997\"}"},"dateOfBirth":"String","dateOfBirth.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"dateOfBirth\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"e645d467-055a-4f43-8967-3fc52c2fe6ca\"}"},"categoryCode":"String","categoryCode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"categoryCode\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\",\"uiUniqueId\":\"60d92fc5-a8f0-4b79-8ed1-20002241e053\"}"},"payoutTerm":"String","payoutTerm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"payoutTerm\",\"mandatory\":\"false\",\"order\":\"21\",\"max_length\":\"0\",\"uiUniqueId\":\"b0801b76-333d-40ae-9847-710cddbc1966\"}"},"benefitOption":"String","benefitOption.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"benefitOption\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\",\"uiUniqueId\":\"39fbc8e3-f098-4a04-b2ab-12a9cc03a0c4\"}"},"isProposer":"String","isProposer.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"isProposer\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"82f58ac7-b776-4847-8ade-27be7f357204\"}"},"paymentTerm":"String","paymentTerm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"paymentTerm\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"67cd383e-20f6-474e-97de-73be0dba9958\"}"},"maritalStatus":"String","maritalStatus.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"maritalStatus\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"28de3ded-1c19-4e45-8a52-2b59fe9f09c8\"}"}},"FlowDesigner:FD41ca9277a2e346902ca965fdc73127ce.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"987c753c-e02d-4494-a199-c6b8473ba6c2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD41ca9277a2e346902ca965fdc73127ce\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:00:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05ca927747e34690e9ddbf66706d43ce</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-11 09:37:10</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD41ca9277a2e346902ca965fdc73127ce,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=987c753c-e02d-4494-a199-c6b8473ba6c2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="request Object">4d7ab72047be4a10e9ddbf66706d43f1</model>
+        <model_id>4d7ab72047be4a10e9ddbf66706d43f1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_4d7ab72047be4a10e9ddbf66706d43f1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>497ab72047be4a10e9ddbf66706d43f6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:00:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d7ab72047be4a10e9ddbf66706d43f1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_4d7ab72047be4a10e9ddbf66706d43f1^sys_idNOT INc57ab72047be4a10e9ddbf66706d43fa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_4d7ab72047be4a10e9ddbf66706d43f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>c57ab72047be4a10e9ddbf66706d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</action>
+        <cid>a63aa842-0ed1-47b0-b76e-02161f12ec04</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Builder step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 05:43:20</sys_created_on>
+        <sys_id>ddef05c547b64210e9ddbf66706d435c</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:02:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ddef05c547b64210e9ddbf66706d435c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ddef05c547b64210e9ddbf66706d435c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 05:43:20</sys_created_on>
+        <sys_id>95ef05c547b64210e9ddbf66706d4363</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 06:20:29</sys_updated_on>
+        <value/>
+        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ddef05c547b64210e9ddbf66706d435c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>structure</field>
+        <id>ddef05c547b64210e9ddbf66706d435c</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 05:43:20</sys_created_on>
+        <sys_id>11ef05c547b64210e9ddbf66706d4363</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:02:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3</table>
+        <value>[{"id":"a08d6f06-cc4d-4bc4-94d5-c6893654ffb8","name":"isExistingUser","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isExistingUser}}","type":"string","path":[],"choice":"empty string"},{"id":"e6f3afcb-7b08-480d-a803-ca030bc5d8d2","name":"isNri","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isNri}}","type":"string","path":[],"choice":"mandatory"},{"id":"b24bf410-1ca5-4840-9a28-5c32aa39faf2","name":"premium","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.premium}}","type":"string","path":[],"choice":"mandatory"},{"id":"6d961bdd-460f-4205-a212-821fef8d3000","name":"policyTerm","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.policyTerm}}","type":"string","path":[],"choice":"mandatory"},{"id":"dac4a1d8-4c07-4098-8c2e-0b745374ccc1","name":"paymentTerm","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.paymentTerm}}","type":"string","path":[],"choice":"mandatory"},{"id":"854bcf0f-6ed4-4710-936b-46923167bea6","name":"mobile","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.mobile}}","type":"string","path":[],"choice":"mandatory"},{"id":"b9d18445-93bb-4137-b753-a2210928446c","name":"maritalStatus","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.maritalStatus}}","type":"string","path":[],"choice":"empty string"},{"id":"6b201193-eb2c-4960-89a0-4d1223c68ce5","name":"lName","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.lName}}","type":"string","path":[],"choice":"mandatory"},{"id":"0ca67c8f-7d81-4c7a-b9d4-4f38b6608a9e","name":"isProposer","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isProposer}}","type":"string","path":[],"choice":"empty string"},{"id":"ec922c04-4fa6-4beb-aa40-30ea1e69278d","name":"gender","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.gender}}","type":"string","path":[],"choice":"mandatory"},{"id":"ae9d1573-544b-4d04-9987-f086a0ea0477","name":"frequency","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.frequency}}","type":"string","path":[],"choice":"mandatory"},{"id":"f2032c13-bc7b-4ba9-9cf4-3d9d8f872411","name":"fName","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.fName}}","type":"string","path":[],"choice":"mandatory"},{"id":"fce0ec70-aece-465c-82b5-f355e8ae6bbd","name":"email","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.email}}","type":"string","path":[],"choice":"empty string"},{"id":"375f7b7f-445a-445e-b7dd-fde75abbc57c","name":"dateOfBirth","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.dateOfBirth}}","type":"string","path":[],"choice":"mandatory"},{"id":"691e9d88-6ee1-4924-bd4a-bd84406b94a9","name":"currencyType","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.currencyType}}","type":"string","path":[],"choice":"empty string"},{"id":"f924c08d-368e-4937-930a-c44499a8b551","name":"categoryCode","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.categoryCode}}","type":"string","path":[],"choice":"empty string"},{"id":"e3b96198-572d-4432-bd54-c44257c2f57b","name":"benefitOption","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.benefitOption}}","type":"string","path":[],"choice":"empty string"},{"id":"937aeca9-646d-4b0f-8cf0-5ada880379ff","name":"annualIncome","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.annualIncome}}","type":"string","path":[],"choice":"empty string"},{"id":"7e68cab4-0760-4a77-ba22-57523f240af5","name":"variantId","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.variantId}}","type":"string","path":[],"choice":"empty string"},{"id":"2e22e15e-140d-4aaa-bb7f-3bae8bc792b1","name":"productId","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.productId}}","type":"string","path":[],"choice":"empty string"},{"id":"0a5cf9d6-bacd-4117-930d-e840f6b6fb36","name":"payoutTerm","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutTerm}}","type":"string","path":[],"choice":"empty string"},{"id":"48308afa-8524-4a77-9b30-e7b25115ec99","name":"payoutFrequency","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutFrequency}}","type":"string","path":[],"choice":"empty string"},{"id":"6063c1a9-b1b0-49af-bc0a-cfa5ee189387","name":"sumAssured","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.sumAssured}}","type":"string","path":[],"choice":"mandatory"},{"id":"b627f7e4-9baa-4456-9f7b-75d850445405","name":"defermentPeriod","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.defermentPeriod}}","type":"string","path":[],"choice":"empty string"},{"id":"a1211849-8302-4cfe-a7b5-32ee59c8831d","name":"apiKey","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.apiKey}}","type":"string","path":[],"choice":"empty string"}]</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ddef05c547b64210e9ddbf66706d435c"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ddef05c547b64210e9ddbf66706d435c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ddef05c547b64210e9ddbf66706d435c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ddef05c547b64210e9ddbf66706d435c"/>
+    <sys_hub_action_input action="delete_multiple" query="model=897ab72047be4a10e9ddbf66706d43df^sys_idNOT IN497ab72047be4a10e9ddbf66706d43e8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=ea20c6c0-1395-42eb-b588-1e9eead2eccb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</model>
+        <model_id>897ab72047be4a10e9ddbf66706d43df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_897ab72047be4a10e9ddbf66706d43df</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>497ab72047be4a10e9ddbf66706d43e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=497ab72047be4a10e9ddbf66706d43e8"/>
+    <sys_hub_action_output action="delete_multiple" query="model=897ab72047be4a10e9ddbf66706d43df^sys_idNOT IN506b9eb747e34690e9ddbf66706d439f,517af72047be4a10e9ddbf66706d4308,5d7af72047be4a10e9ddbf66706d430c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=1d828b47-3048-4756-9f4c-fd5dd421cd34</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype display_value="Output" element="output" name="var__m_sys_flow_step_definition_output_dfd9f353b733111007402a91de11a9e3">5f7a3f53b733111007402a91de11a95e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</model>
+        <model_id>897ab72047be4a10e9ddbf66706d43df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:03:31</sys_created_on>
+        <sys_id>506b9eb747e34690e9ddbf66706d439f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-11 09:37:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=506b9eb747e34690e9ddbf66706d439f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=506b9eb747e34690e9ddbf66706d439f"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD957af72043be4a106286c915b6302107</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD957af72043be4a106286c915b6302107":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD957af72043be4a106286c915b6302107.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"5413fcdf-45ab-45b5-9ebc-3613fc8efd34\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD957af72043be4a106286c915b6302107\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>597af72047be4a10e9ddbf66706d4307</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-11 09:37:11</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD957af72043be4a106286c915b6302107,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5413fcdf-45ab-45b5-9ebc-3613fc8efd34</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</model>
+        <model_id>897ab72047be4a10e9ddbf66706d43df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>517af72047be4a10e9ddbf66706d4308</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=517af72047be4a10e9ddbf66706d4308"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=517af72047be4a10e9ddbf66706d4308"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=38613257-d0d9-4ce1-b977-24a5675fdb8d,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</model>
+        <model_id>897ab72047be4a10e9ddbf66706d43df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>5d7af72047be4a10e9ddbf66706d430c</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-11 09:37:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5d7af72047be4a10e9ddbf66706d430c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5d7af72047be4a10e9ddbf66706d430c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=897ab72047be4a10e9ddbf66706d43df"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=897ab72047be4a10e9ddbf66706d43df^sys_idNOT IN517af72047be4a10e9ddbf66706d4317"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</action_type_id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:35</sys_created_on>
+        <sys_id>517af72047be4a10e9ddbf66706d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:35</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=517af72047be4a10e9ddbf66706d4317^sys_idNOT IN9def05c547b64210e9ddbf66706d439d"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-06-12 10:21:35">517af72047be4a10e9ddbf66706d4317</action_status_metadata_id>
+        <condition>{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.code}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label/>
+        <order>1</order>
+        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 05:43:21</sys_created_on>
+        <sys_id>9def05c547b64210e9ddbf66706d439d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-11 09:37:11</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_897ab72047be4a10e9ddbf66706d43df^sys_idNOT IN857ab72047be4a10e9ddbf66706d43ef"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_897ab72047be4a10e9ddbf66706d43df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>857ab72047be4a10e9ddbf66706d43ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_897ab72047be4a10e9ddbf66706d43df"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df^sys_idNOT IN917af72047be4a10e9ddbf66706d430c,d97af72047be4a10e9ddbf66706d4311,e46b9eb747e34690e9ddbf66706d43a3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>917af72047be4a10e9ddbf66706d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:34</sys_created_on>
+        <sys_id>d97af72047be4a10e9ddbf66706d4311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:03:32</sys_created_on>
+        <sys_id>e46b9eb747e34690e9ddbf66706d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_897ab72047be4a10e9ddbf66706d43df"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=897ab72047be4a10e9ddbf66706d43df^sys_idNOT IN1d8abb2047be4a10e9ddbf66706d4306"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1d8abb2047be4a10e9ddbf66706d4306","name":"plan","plan_signature":null}}</plan>
+        <snapshot>357b16f747e34690e9ddbf66706d43d8</snapshot>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d8abb2047be4a10e9ddbf66706d4306</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:57</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>6dd40c2c47320a10e9ddbf66706d43c3</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>validation_ulip_hdfc</internal_name>
+        <label_cache>[{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.requiredfeilds}}","label":"action➛requiredFeilds","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{}},{"name":"{{action.originalpayload}}","label":"action➛originalPayload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.vendorName}}","label":"step➛request Object➛root➛vendorName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.vendorCode}}","label":"step➛request Object➛root➛vendorCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.agentCode}}","label":"step➛request Object➛root➛agentCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.ipAddr}}","label":"step➛request Object➛root➛ipAddr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.type}}","label":"step➛request Object➛root➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.ipPhSame}}","label":"step➛request Object➛root➛ipPhSame","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.productName}}","label":"step➛request Object➛root➛product➛productName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.productId}}","label":"step➛request Object➛root➛product➛productId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.variant}}","label":"step➛request Object➛root➛product➛variant","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.policyTerm}}","label":"step➛request Object➛root➛product➛policyTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.policyPaymentTerm}}","label":"step➛request Object➛root➛product➛policyPaymentTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.frequency}}","label":"step➛request Object➛root➛product➛frequency","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.premium}}","label":"step➛request Object➛root➛product➛premium","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.firstName}}","label":"step➛request Object➛root➛insuredPerson➛firstName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.sumAssured}}","label":"step➛request Object➛root➛insuredPerson➛sumAssured","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCover}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCover","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCoverSumAssured}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCoverSumAssured","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCoverPT}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCoverPT","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.coverDetails.mainCover.mainCoverPPT}}","label":"step➛request Object➛root➛product➛coverDetails➛mainCover➛mainCoverPPT","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].__step_status__.code}}","label":"step➛request Object➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].__step_status__.message}}","label":"step➛request Object➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root}}","label":"step➛request Object➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDb6ed4fccf77a46101335902522c857e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"d5359d17-899c-483c-a42b-99b35f81ab5b"}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.tokenUserId}}","label":"step➛request Object➛root➛tokenUserId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.tokenSource}}","label":"step➛request Object➛root➛tokenSource","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.tokenTxnid}}","label":"step➛request Object➛root➛tokenTxnid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.qtDt}}","label":"step➛request Object➛root➛qtDt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.chnlptnr}}","label":"step➛request Object➛root➛chnlptnr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.product.qniProduct}}","label":"step➛request Object➛root➛product➛qniProduct","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.flsCode}}","label":"step➛request Object➛root➛distsummary➛flsCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.flsName}}","label":"step➛request Object➛root➛distsummary➛flsName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.spCode}}","label":"step➛request Object➛root➛distsummary➛spCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.lgCode}}","label":"step➛request Object➛root➛distsummary➛lgCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.licencePersoncode}}","label":"step➛request Object➛root➛distsummary➛licencePersoncode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.licencePersonname}}","label":"step➛request Object➛root➛distsummary➛licencePersonname","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.flsAgencycode}}","label":"step➛request Object➛root➛distsummary➛flsAgencycode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.branchCode}}","label":"step➛request Object➛root➛distsummary➛branchCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.IACode}}","label":"step➛request Object➛root➛distsummary➛IACode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.payeeClientCode}}","label":"step➛request Object➛root➛distsummary➛payeeClientCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.payeeClientName}}","label":"step➛request Object➛root➛distsummary➛payeeClientName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.distsummary.teleCode}}","label":"step➛request Object➛root➛distsummary➛teleCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.code}}","label":"step➛JSON Builder step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.message}}","label":"step➛JSON Builder step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.dob}}","label":"step➛request Object➛root➛insuredPerson➛dob","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.gender}}","label":"step➛request Object➛root➛insuredPerson➛gender","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.insuredPerson.lastName}}","label":"step➛request Object➛root➛insuredPerson➛lastName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isExistingUser}}","label":"step➛request Object➛root➛isExistingUser","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isNri}}","label":"step➛request Object➛root➛isNri","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.premium}}","label":"step➛request Object➛root➛premium","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.policyTerm}}","label":"step➛request Object➛root➛policyTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.paymentTerm}}","label":"step➛request Object➛root➛paymentTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.mobile}}","label":"step➛request Object➛root➛mobile","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.maritalStatus}}","label":"step➛request Object➛root➛maritalStatus","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.lName}}","label":"step➛request Object➛root➛lName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isProposer}}","label":"step➛request Object➛root➛isProposer","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.gender}}","label":"step➛request Object➛root➛gender","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.frequency}}","label":"step➛request Object➛root➛frequency","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.fName}}","label":"step➛request Object➛root➛fName","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.email}}","label":"step➛request Object➛root➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.dateOfBirth}}","label":"step➛request Object➛root➛dateOfBirth","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.currencyType}}","label":"step➛request Object➛root➛currencyType","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.categoryCode}}","label":"step➛request Object➛root➛categoryCode","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.benefitOption}}","label":"step➛request Object➛root➛benefitOption","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.annualIncome}}","label":"step➛request Object➛root➛annualIncome","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.variantId}}","label":"step➛request Object➛root➛variantId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.productId}}","label":"step➛request Object➛root➛productId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutTerm}}","label":"step➛request Object➛root➛payoutTerm","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutFrequency}}","label":"step➛request Object➛root➛payoutFrequency","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.sumAssured}}","label":"step➛request Object➛root➛sumAssured","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.defermentPeriod}}","label":"step➛request Object➛root➛defermentPeriod","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.apiKey}}","label":"step➛request Object➛root➛apiKey","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].output}}","label":"step➛JSON Builder step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Validation ULIP HDFC</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Mandatory field Validation ULIP HDFC">897ab72047be4a10e9ddbf66706d43df</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>308a7b2047be4a10e9ddbf66706d438e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=308a7b2047be4a10e9ddbf66706d438e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=308a7b2047be4a10e9ddbf66706d438e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>308a7b2047be4a10e9ddbf66706d438e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>058a7b2047be4a10e9ddbf66706d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">018a7b2047be4a10e9ddbf66706d43a9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>308a7b2047be4a10e9ddbf66706d438e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>418a7b2047be4a10e9ddbf66706d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">818a7b2047be4a10e9ddbf66706d43ad</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=308a7b2047be4a10e9ddbf66706d438e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>308a7b2047be4a10e9ddbf66706d438e</id>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:03:54</sys_created_on>
+        <sys_id>b97b16f747e34690e9ddbf66706d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:54</sys_updated_on>
+        <table>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</table>
+        <value>{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>308a7b2047be4a10e9ddbf66706d438e</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>cd8a7b2047be4a10e9ddbf66706d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>308a7b2047be4a10e9ddbf66706d438e</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>0d8a7b2047be4a10e9ddbf66706d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=308a7b2047be4a10e9ddbf66706d438e^sys_idNOT IN388a7b2047be4a10e9ddbf66706d4397,71ef45c547b64210e9ddbf66706d430a"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Validation ULIP HDFC">308a7b2047be4a10e9ddbf66706d438e</action>
+        <cid>66d6e7f5-e512-44f0-b46e-62396962053a</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>request Object</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:49</sys_created_on>
+        <sys_id>388a7b2047be4a10e9ddbf66706d4397</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=388a7b2047be4a10e9ddbf66706d4397"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>388a7b2047be4a10e9ddbf66706d4397</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>4d8a7b2047be4a10e9ddbf66706d43a0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+        <value>{&#13;
+    "isExistingUser": "False",&#13;
+    "isNri": "False",&#13;
+    "premium": 500000,&#13;
+    "policyTerm": 15,&#13;
+    "paymentTerm": 10,&#13;
+    "mobile": "9405590978",&#13;
+    "maritalStatus": "MS002",&#13;
+    "lName": "Khakhkhar",&#13;
+    "isProposer": "True",&#13;
+    "gender": "G001",&#13;
+    "frequency": "PF003",&#13;
+    "fName": "Mayank",&#13;
+    "email": "mayank9870@testmail.com",&#13;
+    "dateOfBirth": "01/11/2000",&#13;
+    "currencyType": "INR",&#13;
+    "categoryCode": "ULIP",&#13;
+    "benefitOption": "B001",&#13;
+    "annualIncome": 400000,&#13;
+    "variantId": "VRN007",&#13;
+    "productId": "0cf1bf52ca864819914ea1dffc5890d3",&#13;
+    "payoutTerm": 15,&#13;
+    "payoutFrequency": "PF003",&#13;
+    "sumAssured": 5500000,&#13;
+    "defermentPeriod": 0,&#13;
+    "apiKey": "idfc",&#13;
+    "funds": [&#13;
+        {&#13;
+            "name": "Conservative Fund",&#13;
+            "value": "100"&#13;
+        }&#13;
+    ]&#13;
+}&#13;
+</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>388a7b2047be4a10e9ddbf66706d4397</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>898a7b2047be4a10e9ddbf66706d43a0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"isExistingUser","children":[],"type":"string","jpath":"$.isExistingUser","previewValue":"False"},{"name":"isNri","children":[],"type":"string","jpath":"$.isNri","previewValue":"False"},{"name":"premium","children":[],"type":"string","jpath":"$.premium","previewValue":"500000"},{"name":"policyTerm","children":[],"type":"string","jpath":"$.policyTerm","previewValue":"15"},{"name":"paymentTerm","children":[],"type":"string","jpath":"$.paymentTerm","previewValue":"10"},{"name":"mobile","children":[],"type":"string","jpath":"$.mobile","previewValue":"9405590978"},{"name":"maritalStatus","children":[],"type":"string","jpath":"$.maritalStatus","previewValue":"MS002"},{"name":"lName","children":[],"type":"string","jpath":"$.lName","previewValue":"Khakhkhar"},{"name":"isProposer","children":[],"type":"string","jpath":"$.isProposer","previewValue":"True"},{"name":"gender","children":[],"type":"string","jpath":"$.gender","previewValue":"G001"},{"name":"frequency","children":[],"type":"string","jpath":"$.frequency","previewValue":"PF003"},{"name":"fName","children":[],"type":"string","jpath":"$.fName","previewValue":"Mayank"},{"name":"email","children":[],"type":"string","jpath":"$.email","previewValue":"mayank9870@testmail.com"},{"name":"dateOfBirth","children":[],"type":"string","jpath":"$.dateOfBirth","previewValue":"01/11/2000"},{"name":"currencyType","children":[],"type":"string","jpath":"$.currencyType","previewValue":"INR"},{"name":"categoryCode","children":[],"type":"string","jpath":"$.categoryCode","previewValue":"ULIP"},{"name":"benefitOption","children":[],"type":"string","jpath":"$.benefitOption","previewValue":"B001"},{"name":"annualIncome","children":[],"type":"string","jpath":"$.annualIncome","previewValue":"400000"},{"name":"variantId","children":[],"type":"string","jpath":"$.variantId","previewValue":"VRN007"},{"name":"productId","children":[],"type":"string","jpath":"$.productId","previewValue":"0cf1bf52ca864819914ea1dffc5890d3"},{"name":"payoutTerm","children":[],"type":"string","jpath":"$.payoutTerm","previewValue":"15"},{"name":"payoutFrequency","children":[],"type":"string","jpath":"$.payoutFrequency","previewValue":"PF003"},{"name":"sumAssured","children":[],"type":"string","jpath":"$.sumAssured","previewValue":"5500000"},{"name":"defermentPeriod","children":[],"type":"string","jpath":"$.defermentPeriod","previewValue":"0"},{"name":"apiKey","children":[],"type":"string","jpath":"$.apiKey","previewValue":"idfc"},{"name":"funds","children":[{"name":"funds_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.funds[*].name","previewValue":"Conservative Fund"},{"name":"value","children":[],"type":"string","jpath":"$.funds[*].value","previewValue":"100"}],"type":"object","jpath":"$.funds[*]","previewValue":""}],"type":"array.object","jpath":"$.funds[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_388a7b2047be4a10e9ddbf66706d4397^id=388a7b2047be4a10e9ddbf66706d4397"/>
+    <sys_element_mapping action="delete_multiple" query="id=388a7b2047be4a10e9ddbf66706d4397"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>388a7b2047be4a10e9ddbf66706d4397</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>098a7b2047be4a10e9ddbf66706d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>388a7b2047be4a10e9ddbf66706d4397</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>818a7b2047be4a10e9ddbf66706d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{action.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>388a7b2047be4a10e9ddbf66706d4397</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>458a7b2047be4a10e9ddbf66706d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=388a7b2047be4a10e9ddbf66706d4397"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=388a7b2047be4a10e9ddbf66706d4397^sys_idNOT INbc8a7b2047be4a10e9ddbf66706d439a"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDb08a7b20b8be4a10ff463ae80ec1639a</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FDb08a7b20b8be4a10ff463ae80ec1639a":{"currencyType":"String","currencyType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"currencyType\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"23870683-6659-4a6e-9cef-f07ec40110e3\"}"},"lName":"String","lName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"lName\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"01e65cb1-79a6-4108-a909-c6b081cbffcd\"}"},"annualIncome":"String","annualIncome.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"annualIncome\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\",\"uiUniqueId\":\"d83ac141-8565-4c18-a8f3-4697a1df68f1\"}"},"apiKey":"String","apiKey.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"apiKey\",\"mandatory\":\"false\",\"order\":\"25\",\"max_length\":\"0\",\"uiUniqueId\":\"6584558a-453b-4f81-8c82-76d0842c509c\"}"},"gender":"String","gender.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"gender\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ec8df7b1-bb0b-4348-b539-95dc33261c97\"}"},"isExistingUser":"String","isExistingUser.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"isExistingUser\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"56b954ca-93e0-4168-ba01-17d3541df12e\"}"},"policyTerm":"String","policyTerm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"policyTerm\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"88434141-5d89-42d3-aab6-43b5c67a4ff7\"}"},"defermentPeriod":"String","defermentPeriod.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"defermentPeriod\",\"mandatory\":\"false\",\"order\":\"24\",\"max_length\":\"0\",\"uiUniqueId\":\"c0a7cf7f-5f70-4664-b542-2201d6af07a6\"}"},"frequency":"String","frequency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"frequency\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"53f485dc-7b81-4550-b216-42226552fee6\"}"},"sumAssured":"String","sumAssured.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"sumAssured\",\"mandatory\":\"false\",\"order\":\"23\",\"max_length\":\"0\",\"uiUniqueId\":\"533001d2-3668-42a9-9bf0-50546689d74c\"}"},"fName":"String","fName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"fName\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"1d26d8f4-4a8d-42bf-8cc6-9863f416839d\"}"},"premium":"String","premium.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"premium\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"10885da5-717f-427c-b9bf-c808ffa278df\"}"},"payoutFrequency":"String","payoutFrequency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"payoutFrequency\",\"mandatory\":\"false\",\"order\":\"22\",\"max_length\":\"0\",\"uiUniqueId\":\"2d0b8c93-593a-4cbf-95d9-97a1d8374273\"}"},"funds":[{"$0_funds":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"01046bce-6e11-4933-be80-96bc54966584\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"33f04ea2-8c46-454b-bab9-767cd46702aa\"}"}}}],"funds.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"funds\",\"mandatory\":\"false\",\"child_name\":\"funds_object\",\"uiUniqueId\":\"167309eb-e13f-47fe-bfda-a6fddf924bf3\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"funds_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"26\",\"max_length\":\"0\",\"child_uiUniqueId\":\"e17794fb-574f-41ed-84a8-c82af38a0ac0\"}"},"variantId":"String","variantId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"variantId\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\",\"uiUniqueId\":\"0718552c-a5e4-499b-8252-c59779d35559\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"62e380ab-413f-42c3-9082-071d8aabd828\"}"},"productId":"String","productId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"productId\",\"mandatory\":\"false\",\"order\":\"20\",\"max_length\":\"0\",\"uiUniqueId\":\"da16e121-d714-4534-832c-47c1a6d5014a\"}"},"isNri":"String","isNri.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"isNri\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f9f48d2c-13cb-4c1b-977f-4afac3546542\"}"},"mobile":"String","mobile.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"mobile\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"929e6f55-2990-41d5-97d4-d32b9245c997\"}"},"dateOfBirth":"String","dateOfBirth.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"dateOfBirth\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"e645d467-055a-4f43-8967-3fc52c2fe6ca\"}"},"categoryCode":"String","categoryCode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"categoryCode\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\",\"uiUniqueId\":\"60d92fc5-a8f0-4b79-8ed1-20002241e053\"}"},"payoutTerm":"String","payoutTerm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"payoutTerm\",\"mandatory\":\"false\",\"order\":\"21\",\"max_length\":\"0\",\"uiUniqueId\":\"b0801b76-333d-40ae-9847-710cddbc1966\"}"},"benefitOption":"String","benefitOption.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"benefitOption\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\",\"uiUniqueId\":\"39fbc8e3-f098-4a04-b2ab-12a9cc03a0c4\"}"},"isProposer":"String","isProposer.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"isProposer\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"82f58ac7-b776-4847-8ade-27be7f357204\"}"},"paymentTerm":"String","paymentTerm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"paymentTerm\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"67cd383e-20f6-474e-97de-73be0dba9958\"}"},"maritalStatus":"String","maritalStatus.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"maritalStatus\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"28de3ded-1c19-4e45-8a52-2b59fe9f09c8\"}"}},"FlowDesigner:FDb08a7b20b8be4a10ff463ae80ec1639a.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDb08a7b20b8be4a10ff463ae80ec1639a\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"987c753c-e02d-4494-a199-c6b8473ba6c2\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>748a7b2047be4a10e9ddbf66706d439a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDb08a7b20b8be4a10ff463ae80ec1639a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=987c753c-e02d-4494-a199-c6b8473ba6c2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="request Object">388a7b2047be4a10e9ddbf66706d4397</model>
+        <model_id>388a7b2047be4a10e9ddbf66706d4397</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_388a7b2047be4a10e9ddbf66706d4397</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>bc8a7b2047be4a10e9ddbf66706d439a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=388a7b2047be4a10e9ddbf66706d4397"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_388a7b2047be4a10e9ddbf66706d4397^sys_idNOT INfc8a7b2047be4a10e9ddbf66706d439d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_388a7b2047be4a10e9ddbf66706d4397</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>fc8a7b2047be4a10e9ddbf66706d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Validation ULIP HDFC">308a7b2047be4a10e9ddbf66706d438e</action>
+        <cid>a63aa842-0ed1-47b0-b76e-02161f12ec04</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Builder step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 05:43:23</sys_created_on>
+        <sys_id>71ef45c547b64210e9ddbf66706d430a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=71ef45c547b64210e9ddbf66706d430a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>71ef45c547b64210e9ddbf66706d430a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 05:43:23</sys_created_on>
+        <sys_id>b5ef45c547b64210e9ddbf66706d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-13 05:43:23</sys_updated_on>
+        <value/>
+        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=71ef45c547b64210e9ddbf66706d430a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>structure</field>
+        <id>71ef45c547b64210e9ddbf66706d430a</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 05:43:23</sys_created_on>
+        <sys_id>35ef45c547b64210e9ddbf66706d430e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3</table>
+        <value>[{"id":"a08d6f06-cc4d-4bc4-94d5-c6893654ffb8","name":"isExistingUser","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isExistingUser}}","type":"string","path":[],"choice":"empty string"},{"id":"e6f3afcb-7b08-480d-a803-ca030bc5d8d2","name":"isNri","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isNri}}","type":"string","path":[],"choice":"mandatory"},{"id":"b24bf410-1ca5-4840-9a28-5c32aa39faf2","name":"premium","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.premium}}","type":"string","path":[],"choice":"mandatory"},{"id":"6d961bdd-460f-4205-a212-821fef8d3000","name":"policyTerm","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.policyTerm}}","type":"string","path":[],"choice":"mandatory"},{"id":"dac4a1d8-4c07-4098-8c2e-0b745374ccc1","name":"paymentTerm","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.paymentTerm}}","type":"string","path":[],"choice":"mandatory"},{"id":"854bcf0f-6ed4-4710-936b-46923167bea6","name":"mobile","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.mobile}}","type":"string","path":[],"choice":"mandatory"},{"id":"b9d18445-93bb-4137-b753-a2210928446c","name":"maritalStatus","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.maritalStatus}}","type":"string","path":[],"choice":"empty string"},{"id":"6b201193-eb2c-4960-89a0-4d1223c68ce5","name":"lName","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.lName}}","type":"string","path":[],"choice":"mandatory"},{"id":"0ca67c8f-7d81-4c7a-b9d4-4f38b6608a9e","name":"isProposer","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.isProposer}}","type":"string","path":[],"choice":"empty string"},{"id":"ec922c04-4fa6-4beb-aa40-30ea1e69278d","name":"gender","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.gender}}","type":"string","path":[],"choice":"mandatory"},{"id":"ae9d1573-544b-4d04-9987-f086a0ea0477","name":"frequency","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.frequency}}","type":"string","path":[],"choice":"mandatory"},{"id":"f2032c13-bc7b-4ba9-9cf4-3d9d8f872411","name":"fName","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.fName}}","type":"string","path":[],"choice":"mandatory"},{"id":"fce0ec70-aece-465c-82b5-f355e8ae6bbd","name":"email","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.email}}","type":"string","path":[],"choice":"empty string"},{"id":"375f7b7f-445a-445e-b7dd-fde75abbc57c","name":"dateOfBirth","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.dateOfBirth}}","type":"string","path":[],"choice":"mandatory"},{"id":"691e9d88-6ee1-4924-bd4a-bd84406b94a9","name":"currencyType","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.currencyType}}","type":"string","path":[],"choice":"empty string"},{"id":"f924c08d-368e-4937-930a-c44499a8b551","name":"categoryCode","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.categoryCode}}","type":"string","path":[],"choice":"empty string"},{"id":"e3b96198-572d-4432-bd54-c44257c2f57b","name":"benefitOption","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.benefitOption}}","type":"string","path":[],"choice":"empty string"},{"id":"937aeca9-646d-4b0f-8cf0-5ada880379ff","name":"annualIncome","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.annualIncome}}","type":"string","path":[],"choice":"empty string"},{"id":"7e68cab4-0760-4a77-ba22-57523f240af5","name":"variantId","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.variantId}}","type":"string","path":[],"choice":"empty string"},{"id":"2e22e15e-140d-4aaa-bb7f-3bae8bc792b1","name":"productId","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.productId}}","type":"string","path":[],"choice":"empty string"},{"id":"0a5cf9d6-bacd-4117-930d-e840f6b6fb36","name":"payoutTerm","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutTerm}}","type":"string","path":[],"choice":"empty string"},{"id":"48308afa-8524-4a77-9b30-e7b25115ec99","name":"payoutFrequency","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.payoutFrequency}}","type":"string","path":[],"choice":"empty string"},{"id":"6063c1a9-b1b0-49af-bc0a-cfa5ee189387","name":"sumAssured","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.sumAssured}}","type":"string","path":[],"choice":"mandatory"},{"id":"b627f7e4-9baa-4456-9f7b-75d850445405","name":"defermentPeriod","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.defermentPeriod}}","type":"string","path":[],"choice":"empty string"},{"id":"a1211849-8302-4cfe-a7b5-32ee59c8831d","name":"apiKey","value":"{{step[66d6e7f5-e512-44f0-b46e-62396962053a].root.apiKey}}","type":"string","path":[],"choice":"empty string"}]</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=71ef45c547b64210e9ddbf66706d430a"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=71ef45c547b64210e9ddbf66706d430a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=71ef45c547b64210e9ddbf66706d430a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_71ef45c547b64210e9ddbf66706d430a"/>
+    <sys_hub_action_input action="delete_multiple" query="model=308a7b2047be4a10e9ddbf66706d438e^sys_idNOT IN708a7b2047be4a10e9ddbf66706d4392"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=ea20c6c0-1395-42eb-b588-1e9eead2eccb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Validation ULIP HDFC">308a7b2047be4a10e9ddbf66706d438e</model>
+        <model_id>308a7b2047be4a10e9ddbf66706d438e</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_308a7b2047be4a10e9ddbf66706d438e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:49</sys_created_on>
+        <sys_id>708a7b2047be4a10e9ddbf66706d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=708a7b2047be4a10e9ddbf66706d4392"/>
+    <sys_hub_action_output action="delete_multiple" query="model=308a7b2047be4a10e9ddbf66706d438e^sys_idNOT IN018a7b2047be4a10e9ddbf66706d43a9,818a7b2047be4a10e9ddbf66706d43ad,a97b16f747e34690e9ddbf66706d4379"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5413fcdf-45ab-45b5-9ebc-3613fc8efd34</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Validation ULIP HDFC">308a7b2047be4a10e9ddbf66706d438e</model>
+        <model_id>308a7b2047be4a10e9ddbf66706d438e</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>018a7b2047be4a10e9ddbf66706d43a9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=018a7b2047be4a10e9ddbf66706d43a9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=018a7b2047be4a10e9ddbf66706d43a9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=38613257-d0d9-4ce1-b977-24a5675fdb8d,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Validation ULIP HDFC">308a7b2047be4a10e9ddbf66706d438e</model>
+        <model_id>308a7b2047be4a10e9ddbf66706d438e</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>818a7b2047be4a10e9ddbf66706d43ad</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=818a7b2047be4a10e9ddbf66706d43ad"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=818a7b2047be4a10e9ddbf66706d43ad"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=1d828b47-3048-4756-9f4c-fd5dd421cd34</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype display_value="Output" element="output" name="var__m_sys_flow_step_definition_output_dfd9f353b733111007402a91de11a9e3">5f7a3f53b733111007402a91de11a95e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Validation ULIP HDFC">308a7b2047be4a10e9ddbf66706d438e</model>
+        <model_id>308a7b2047be4a10e9ddbf66706d438e</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:03:53</sys_created_on>
+        <sys_id>a97b16f747e34690e9ddbf66706d4379</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a97b16f747e34690e9ddbf66706d4379"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a97b16f747e34690e9ddbf66706d4379"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=308a7b2047be4a10e9ddbf66706d438e"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=308a7b2047be4a10e9ddbf66706d438e^sys_idNOT INc18a7b2047be4a10e9ddbf66706d43b6"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Validation ULIP HDFC">308a7b2047be4a10e9ddbf66706d438e</action_type_id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>c18a7b2047be4a10e9ddbf66706d43b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=c18a7b2047be4a10e9ddbf66706d43b6^sys_idNOT INfd7b16f747e34690e9ddbf66706d43d6"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-06-12 10:21:50">c18a7b2047be4a10e9ddbf66706d43b6</action_status_metadata_id>
+        <condition>{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.code}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label/>
+        <order>1</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[a63aa842-0ed1-47b0-b76e-02161f12ec04].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:03:54</sys_created_on>
+        <sys_id>fd7b16f747e34690e9ddbf66706d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:54</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_308a7b2047be4a10e9ddbf66706d438e^sys_idNOT INf48a7b2047be4a10e9ddbf66706d4395"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_308a7b2047be4a10e9ddbf66706d438e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:49</sys_created_on>
+        <sys_id>f48a7b2047be4a10e9ddbf66706d4395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_308a7b2047be4a10e9ddbf66706d438e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e^sys_idNOT IN458a7b2047be4a10e9ddbf66706d43b1,c58a7b2047be4a10e9ddbf66706d43ac,e17b16f747e34690e9ddbf66706d4396"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>458a7b2047be4a10e9ddbf66706d43b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-12 04:51:50</sys_created_on>
+        <sys_id>c58a7b2047be4a10e9ddbf66706d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-06-12 04:51:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-07-29 07:03:53</sys_created_on>
+        <sys_id>e17b16f747e34690e9ddbf66706d4396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-07-29 07:03:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_308a7b2047be4a10e9ddbf66706d438e"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>897ab72047be4a10e9ddbf66706d43df</sys_id>
+        <latest_snapshot>308a7b2047be4a10e9ddbf66706d438e</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch9-hotfix2-06-11-2024_06-14-2024_2108.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

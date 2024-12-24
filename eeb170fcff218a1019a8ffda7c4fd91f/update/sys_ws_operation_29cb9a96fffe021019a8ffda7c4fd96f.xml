@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_rptp_smartinte_0/testsaveproposalicici</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>SaveProposalicici</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+
+var insurer=request.headers.insurer;
+var req=request.body.data;
+
+
+try {
+	
+		var inputs = {};
+		inputs['insurer'] =insurer ; // String 
+		inputs['vendorcode'] = req.data.sourceKey; // String 
+		inputs['vendorname'] =req.data.source ; // String 
+		inputs['productname'] = req.data.productSelection.productName; // String 
+		inputs['productid'] = req.data.productSelection.productId  ; // String 
+		inputs['requestbody'] = req; // String 
+
+
+	var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.save_proposal_apiicici').inForeground().withInputs(inputs).timeout(500000).run();
+		var outputs = result.getOutputs();
+		var res = outputs['response']; // String
+ 		response.setContentType('application/json');
+  		response.setBody(JSON.parse(res));
+		
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+		response.setBody((message));
+		
+	}
+	
+    // implement resource here
+
+})(request, response);
+
+]]></operation_script>
+        <operation_uri>/api/x_rptp_smartinte_0/v1/testsaveproposalicici</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-06-17 08:45:27</sys_created_on>
+        <sys_id>29cb9a96fffe021019a8ffda7c4fd96f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SaveProposalicici</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_ws_operation_29cb9a96fffe021019a8ffda7c4fd96f</sys_update_name>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:23:23</sys_updated_on>
+        <web_service_definition display_value="testSaveProposalicici">428b1296fffe021019a8ffda7c4fd9cf</web_service_definition>
+        <web_service_version display_value="v1">c2045d93fff20a1019a8ffda7c4fd930</web_service_version>
+    </sys_ws_operation>
+</record_update>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_rptp_smartinte_0/getpaymentlink</default_operation_uri>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>getPaymentLink</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+var queryParams = request.queryParams;
+
+//var reqBody=request.body.data;
+var req;
+//if(reqBody.appnum && reqBody.productId){
+//req=reqBody;
+//}
+//else{
+req={
+	productId:queryParams.product_id+"",
+	appnum:queryParams.app_num+""
+};
+//} 
+
+var insurer ;
+
+
+	var productID = req.productId;
+	var iGr = new GlideRecord('x_rptp_smartinte_0_integrationproductvariants');
+        iGr.addQuery('product_guid_id', productID);
+        iGr.query();
+        if (iGr.next()) {
+            var iGR = new GlideRecord('x_rptp_smartinte_0_integrationinsurer');
+            iGR.addQuery('sys_id', iGr.insurer);
+            iGR.query();
+            if (iGR.next()) {
+                insurer = iGR.code;
+            }
+        }
+
+	try {
+		var inputs = {};
+		inputs['request'] = req; // String 
+		inputs['insurer'] = insurer; // String 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.get_payment_link').inBackground().withInputs(inputs).run();
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.get_payment_link').inForeground().withInputs(inputs).timeout(50000).run();
+           
+		var outputs = result.getOutputs();
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		var res = outputs['response']; // String
+ 		response.setContentType('application/json');
+  		response.setBody(JSON.parse(res));
+		
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+		response.setContentType('application/json');
+  		response.setBody(message);
+	}
+	
+    // implement resource here
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_rptp_smartinte_0/v1/getpaymentlink</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-05-07 09:45:25</sys_created_on>
+        <sys_id>5fd36fcdff42c61019a8ffda7c4fd969</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>getPaymentLink</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_ws_operation_5fd36fcdff42c61019a8ffda7c4fd969</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:03:53</sys_updated_on>
+        <web_service_definition display_value="GetPaymentLink">1dc3abcdff42c61019a8ffda7c4fd9c7</web_service_definition>
+        <web_service_version display_value="v1">dc9280abff1c16d019a8ffda7c4fd965</web_service_version>
+    </sys_ws_operation>
+</record_update>

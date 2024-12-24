@@ -1,0 +1,3608 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=274736000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>validation_for_mandatory_fields_in_balic_payload</internal_name>
+        <label_cache>[{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.areyoupoliticallyexposedperson","label":"1 - action to extract required elements from payload➛areYouPoliticallyExposedPerson","reference_display":"areYouPoliticallyExposedPerson","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ea8c7fd-2336-4aff-a6a2-2b4350b125c3"}},{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm","label":"1 - action to extract required elements from payload➛pmAddSameAsCm","reference_display":"pmAddSameAsCm","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"461c3ed1-c313-4a5e-989c-664bd6055437"}},{"name":"subflow.ipsameasph","label":"input➛ipSameAsPh","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"28ca517b-23fd-41b9-b3ec-98318ead8b36","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.requestbody","label":"input➛requestBody","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5add61e5-485d-487f-a779-22c4984496d4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ip_","label":"1 - action to extract required elements from payload➛pmAddSameAsCm(ip)","reference_display":"pmAddSameAsCm(ip)","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f36f6c54-da53-4aba-9e22-3ce89fcb19c1"}},{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ph_","label":"1 - action to extract required elements from payload➛pmAddSameAsCm(ph)","reference_display":"pmAddSameAsCm(ph)","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2fab9570-9f6d-4912-9b25-32376084c2a4"}},{"name":"subflow.producttype","label":"input➛productType","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ae0bc4d-425a-4bc8-9000-5563deac1272","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>e3b76897ffcf469019a8ffda7c4fd971</master_snapshot>
+        <master_snapshot_digest/>
+        <name>validation for mandatory fields in BALIC payload</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 06:32:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>70719783ffc3469019a8ffda7c4fd95d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>validation for mandatory fields in BALIC payload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_70719783ffc3469019a8ffda7c4fd95d</sys_update_name>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^id=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=70719783ffc3469019a8ffda7c4fd95d^sys_idNOT INfc719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>70719783ffc3469019a8ffda7c4fd95d</id>
+        <name>validation for mandatory fields in BALIC payload</name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 06:32:56</sys_created_on>
+        <sys_id>fc719783ffc3469019a8ffda7c4fd95d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 06:32:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=fc719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=70719783ffc3469019a8ffda7c4fd95d^sys_idNOT IN03b72897ffcf469019a8ffda7c4fd9dd,4bb72897ffcf469019a8ffda7c4fd9e6,4fb72897ffcf469019a8ffda7c4fd9d9,87b72897ffcf469019a8ffda7c4fd9e3,8bb72897ffcf469019a8ffda7c4fd9d6,b2b72897ffcf469019a8ffda7c4fd9d2,c3b72897ffcf469019a8ffda7c4fd9e0,efe263ccff174e9019a8ffda7c4fd9ef"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=da4b2ab0-f9ee-4762-ad3e-074f8c234ad0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productName</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>03b72897ffcf469019a8ffda7c4fd9dd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=03b72897ffcf469019a8ffda7c4fd9dd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=28ca517b-23fd-41b9-b3ec-98318ead8b36</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ipsameasph</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ipSameAsPh</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>4bb72897ffcf469019a8ffda7c4fd9e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4bb72897ffcf469019a8ffda7c4fd9e6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=521b8535-5826-42f0-9ee8-d389a8f266ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productId</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>4fb72897ffcf469019a8ffda7c4fd9d9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4fb72897ffcf469019a8ffda7c4fd9d9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=23c31a75-df71-420c-bbd0-8be6c793d7a0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurer</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>87b72897ffcf469019a8ffda7c4fd9e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=87b72897ffcf469019a8ffda7c4fd9e3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a120b463-b28c-4b93-8971-2e77fa73e6b1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variant</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variant</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>8bb72897ffcf469019a8ffda7c4fd9d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8bb72897ffcf469019a8ffda7c4fd9d6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5add61e5-485d-487f-a779-22c4984496d4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>b2b72897ffcf469019a8ffda7c4fd9d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b2b72897ffcf469019a8ffda7c4fd9d2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2c939370-523b-404e-b6b4-f3c1bd5e370c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vendorcode</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>vendorCode</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>c3b72897ffcf469019a8ffda7c4fd9e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c3b72897ffcf469019a8ffda7c4fd9e0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5ae0bc4d-425a-4bc8-9000-5563deac1272</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>producttype</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productType</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:23:13</sys_created_on>
+        <sys_id>efe263ccff174e9019a8ffda7c4fd9ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=efe263ccff174e9019a8ffda7c4fd9ef"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=70719783ffc3469019a8ffda7c4fd95d^sys_idNOT IN87b72897ffcf469019a8ffda7c4fd9fa"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b5440a08-0199-4812-97fe-27bbc9568e71</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</model>
+        <model_id>70719783ffc3469019a8ffda7c4fd95d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>87b72897ffcf469019a8ffda7c4fd9fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=87b72897ffcf469019a8ffda7c4fd9fa"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=70719783ffc3469019a8ffda7c4fd95d^sys_idNOT IN13ed492bffc30a9019a8ffda7c4fd91a,7602ada7ff870a9019a8ffda7c4fd924,7e79a7ccff574e9019a8ffda7c4fd9f8,b7ace8efff8fc69019a8ffda7c4fd9bd,b7ace8efff8fc69019a8ffda7c4fd9c5,bbace8efff8fc69019a8ffda7c4fd998,bface8efff8fc69019a8ffda7c4fd966,ccbce8efff8fc69019a8ffda7c4fd9dd,d7b76897ffcf469019a8ffda7c4fd906"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="validate politically exposed person">4a2b81a3ffc30a9019a8ffda7c4fd926</action_type>
+        <action_type_parent display_value="validate politically exposed person">264a49afff830a9019a8ffda7c4fd9b2</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>c69cace3-ec80-49fc-b7f6-02ca62aac3a4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:15</sys_created_on>
+        <sys_id>13ed492bffc30a9019a8ffda7c4fd91a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <ui_id>133463ff-880d-4576-9ded-1d928b47efcc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=13ed492bffc30a9019a8ffda7c4fd91a"/>
+    <sys_element_mapping action="delete_multiple" query="id=13ed492bffc30a9019a8ffda7c4fd91a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>13ed492bffc30a9019a8ffda7c4fd91a</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:15</sys_created_on>
+        <sys_id>1bed492bffc30a9019a8ffda7c4fd91b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4a2b81a3ffc30a9019a8ffda7c4fd926</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=13ed492bffc30a9019a8ffda7c4fd91a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=13ed492bffc30a9019a8ffda7c4fd91a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="mandatory fields validation for policy holder (BALIC)">77391a3eff0f829019a8ffda7c4fd970</action_type>
+        <action_type_parent display_value="mandatory fields validation for policy holder (BALIC)">fbc25abeffcb829019a8ffda7c4fd978</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>b458d9f8-85c4-475c-9bc2-40ed407a3a42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 11:43:09</sys_created_on>
+        <sys_id>7602ada7ff870a9019a8ffda7c4fd924</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>0cd19e07-2c3c-4dfc-a8da-bcabf5dc6954</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7602ada7ff870a9019a8ffda7c4fd924"/>
+    <sys_element_mapping action="delete_multiple" query="id=7602ada7ff870a9019a8ffda7c4fd924"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>7602ada7ff870a9019a8ffda7c4fd924</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 11:43:09</sys_created_on>
+        <sys_id>3e02ada7ff870a9019a8ffda7c4fd925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_77391a3eff0f829019a8ffda7c4fd970</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7602ada7ff870a9019a8ffda7c4fd924"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7602ada7ff870a9019a8ffda7c4fd924"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="validation if product is an ulip product">8df8638cff574e9019a8ffda7c4fd934</action_type>
+        <action_type_parent display_value="validation if product is an ulip product">56f3ab40ff574e9019a8ffda7c4fd999</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>57d1549b-ecb0-4959-8e0f-bb1da581ee0b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:51</sys_created_on>
+        <sys_id>7e79a7ccff574e9019a8ffda7c4fd9f8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>70bd94aa-5089-4348-b140-391afacc5087</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7e79a7ccff574e9019a8ffda7c4fd9f8"/>
+    <sys_element_mapping action="delete_multiple" query="id=7e79a7ccff574e9019a8ffda7c4fd9f8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>7e79a7ccff574e9019a8ffda7c4fd9f8</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:51</sys_created_on>
+        <sys_id>7679a7ccff574e9019a8ffda7c4fd9fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8df8638cff574e9019a8ffda7c4fd934</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7e79a7ccff574e9019a8ffda7c4fd9f8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7e79a7ccff574e9019a8ffda7c4fd9f8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="to validate permanent address for insured person">a5972497ffcf469019a8ffda7c4fd95f</action_type>
+        <action_type_parent display_value="to validate permanent address for insured person">62efd417ff8f469019a8ffda7c4fd93f</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>b7ace8efff8fc69019a8ffda7c4fd9bd</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <ui_id>b852fe87-2b22-4bb5-b5c6-39b176687989</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b7ace8efff8fc69019a8ffda7c4fd9bd"/>
+    <sys_element_mapping action="delete_multiple" query="id=b7ace8efff8fc69019a8ffda7c4fd9bd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>b7ace8efff8fc69019a8ffda7c4fd9bd</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>7bace8efff8fc69019a8ffda7c4fd9be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a5972497ffcf469019a8ffda7c4fd95f</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b7ace8efff8fc69019a8ffda7c4fd9bd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b7ace8efff8fc69019a8ffda7c4fd9bd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="validate permanent address for proposer">d6d69c67ffcbc69019a8ffda7c4fd9b9</action_type>
+        <action_type_parent display_value="validate permanent address for proposer">8763986fff8bc69019a8ffda7c4fd9f4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>b7ace8efff8fc69019a8ffda7c4fd9c5</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <ui_id>5dea279c-363a-4196-8510-5852435a9847</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b7ace8efff8fc69019a8ffda7c4fd9c5"/>
+    <sys_element_mapping action="delete_multiple" query="id=b7ace8efff8fc69019a8ffda7c4fd9c5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>b7ace8efff8fc69019a8ffda7c4fd9c5</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>7bace8efff8fc69019a8ffda7c4fd9c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d6d69c67ffcbc69019a8ffda7c4fd9b9</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b7ace8efff8fc69019a8ffda7c4fd9c5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b7ace8efff8fc69019a8ffda7c4fd9c5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="mandatory field validation for insured person (BALIC)">d9191b0bff07469019a8ffda7c4fd941</action_type>
+        <action_type_parent display_value="mandatory field validation for insured person (BALIC)">d0e3130bffc3469019a8ffda7c4fd9c4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>cce4714d-9902-4048-9181-89da456e8c3b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>bbace8efff8fc69019a8ffda7c4fd998</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>b3a99504-a5e2-4b68-96f8-b7025c35eb97</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bbace8efff8fc69019a8ffda7c4fd998"/>
+    <sys_element_mapping action="delete_multiple" query="id=bbace8efff8fc69019a8ffda7c4fd998"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>bbace8efff8fc69019a8ffda7c4fd998</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>f7ace8efff8fc69019a8ffda7c4fd999</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d9191b0bff07469019a8ffda7c4fd941</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bbace8efff8fc69019a8ffda7c4fd998"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bbace8efff8fc69019a8ffda7c4fd998"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="mandatory field validation for insured person (BALIC)">d9191b0bff07469019a8ffda7c4fd941</action_type>
+        <action_type_parent display_value="mandatory field validation for insured person (BALIC)">d0e3130bffc3469019a8ffda7c4fd9c4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b458d9f8-85c4-475c-9bc2-40ed407a3a42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>bface8efff8fc69019a8ffda7c4fd966</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>b618efbd-7a9d-45f8-a1e0-c0f3302ee522</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bface8efff8fc69019a8ffda7c4fd966"/>
+    <sys_element_mapping action="delete_multiple" query="id=bface8efff8fc69019a8ffda7c4fd966"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>bface8efff8fc69019a8ffda7c4fd966</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>73ace8efff8fc69019a8ffda7c4fd968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d9191b0bff07469019a8ffda7c4fd941</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bface8efff8fc69019a8ffda7c4fd966"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bface8efff8fc69019a8ffda7c4fd966"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="to validate permanent address for insured person">a5972497ffcf469019a8ffda7c4fd95f</action_type>
+        <action_type_parent display_value="to validate permanent address for insured person">62efd417ff8f469019a8ffda7c4fd93f</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>824dcc57-9d19-4a90-ab96-5be77ca20bec</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:02</sys_created_on>
+        <sys_id>ccbce8efff8fc69019a8ffda7c4fd9dd</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <ui_id>d08fad8a-176e-4cef-a490-2a5f72f943b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ccbce8efff8fc69019a8ffda7c4fd9dd"/>
+    <sys_element_mapping action="delete_multiple" query="id=ccbce8efff8fc69019a8ffda7c4fd9dd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>ccbce8efff8fc69019a8ffda7c4fd9dd</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:02</sys_created_on>
+        <sys_id>0cbce8efff8fc69019a8ffda7c4fd9de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a5972497ffcf469019a8ffda7c4fd95f</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ccbce8efff8fc69019a8ffda7c4fd9dd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ccbce8efff8fc69019a8ffda7c4fd9dd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="action to extract required elements from payload">fcd31cd7ff0f469019a8ffda7c4fd91e</action_type>
+        <action_type_parent display_value="action to extract required elements from payload">acc1d893ff0f469019a8ffda7c4fd9f9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>d7b76897ffcf469019a8ffda7c4fd906</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d7b76897ffcf469019a8ffda7c4fd906"/>
+    <sys_element_mapping action="delete_multiple" query="id=d7b76897ffcf469019a8ffda7c4fd906"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>d7b76897ffcf469019a8ffda7c4fd906</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>dbb76897ffcf469019a8ffda7c4fd914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_fcd31cd7ff0f469019a8ffda7c4fd91e</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d7b76897ffcf469019a8ffda7c4fd906"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7b76897ffcf469019a8ffda7c4fd906"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=70719783ffc3469019a8ffda7c4fd95d^sys_idNOT IN1fb76897ffcf469019a8ffda7c4fd915,3f9b41e3ffc30a9019a8ffda7c4fd977,73ace8efff8fc69019a8ffda7c4fd99a,7679a7ccff574e9019a8ffda7c4fd9c6,77ace8efff8fc69019a8ffda7c4fd9c7,f7ace8efff8fc69019a8ffda7c4fd98e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">13b76897ffcf469019a8ffda7c4fd915</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>1fb76897ffcf469019a8ffda7c4fd915</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>b458d9f8-85c4-475c-9bc2-40ed407a3a42</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1fb76897ffcf469019a8ffda7c4fd915"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1fb76897ffcf469019a8ffda7c4fd915</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>dbb76897ffcf469019a8ffda7c4fd919</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:08</sys_updated_on>
+        <value> insured person is not same as policy holder</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1fb76897ffcf469019a8ffda7c4fd915"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1fb76897ffcf469019a8ffda7c4fd915</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>5bb76897ffcf469019a8ffda7c4fd919</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:08</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.ipsameasph}}=N</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>1fb76897ffcf469019a8ffda7c4fd915</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>97b76897ffcf469019a8ffda7c4fd919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^id=1fb76897ffcf469019a8ffda7c4fd915"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1fb76897ffcf469019a8ffda7c4fd915"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1fb76897ffcf469019a8ffda7c4fd915"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">339b41e3ffc30a9019a8ffda7c4fd977</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:05:11</sys_created_on>
+        <sys_id>3f9b41e3ffc30a9019a8ffda7c4fd977</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <ui_id>c69cace3-ec80-49fc-b7f6-02ca62aac3a4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3f9b41e3ffc30a9019a8ffda7c4fd977"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3f9b41e3ffc30a9019a8ffda7c4fd977</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:15</sys_created_on>
+        <sys_id>5fed492bffc30a9019a8ffda7c4fd912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:15</sys_updated_on>
+        <value>validation politically exposed person</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3f9b41e3ffc30a9019a8ffda7c4fd977"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3f9b41e3ffc30a9019a8ffda7c4fd977</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:15</sys_created_on>
+        <sys_id>dbed492bffc30a9019a8ffda7c4fd912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.areyoupoliticallyexposedperson}}=Y</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>3f9b41e3ffc30a9019a8ffda7c4fd977</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:15</sys_created_on>
+        <sys_id>17ed492bffc30a9019a8ffda7c4fd912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^id=3f9b41e3ffc30a9019a8ffda7c4fd977"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3f9b41e3ffc30a9019a8ffda7c4fd977"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3f9b41e3ffc30a9019a8ffda7c4fd977"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bbace8efff8fc69019a8ffda7c4fd999</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>73ace8efff8fc69019a8ffda7c4fd99a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <ui_id>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=73ace8efff8fc69019a8ffda7c4fd99a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>73ace8efff8fc69019a8ffda7c4fd99a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>b3ace8efff8fc69019a8ffda7c4fd9b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <value>address validation</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=73ace8efff8fc69019a8ffda7c4fd99a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>73ace8efff8fc69019a8ffda7c4fd99a</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>33ace8efff8fc69019a8ffda7c4fd9b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.ipsameasph}}=N^{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ip_}}=N^{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ph_}}=N</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>73ace8efff8fc69019a8ffda7c4fd99a</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>7face8efff8fc69019a8ffda7c4fd9b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^id=73ace8efff8fc69019a8ffda7c4fd99a"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=73ace8efff8fc69019a8ffda7c4fd99a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=73ace8efff8fc69019a8ffda7c4fd99a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7a79a7ccff574e9019a8ffda7c4fd9c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:51</sys_created_on>
+        <sys_id>7679a7ccff574e9019a8ffda7c4fd9c6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>57d1549b-ecb0-4959-8e0f-bb1da581ee0b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7679a7ccff574e9019a8ffda7c4fd9c6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7679a7ccff574e9019a8ffda7c4fd9c6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:51</sys_created_on>
+        <sys_id>7a79a7ccff574e9019a8ffda7c4fd9ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:51</sys_updated_on>
+        <value>check if product is an ulip product</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7679a7ccff574e9019a8ffda7c4fd9c6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7679a7ccff574e9019a8ffda7c4fd9c6</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:51</sys_created_on>
+        <sys_id>f679a7ccff574e9019a8ffda7c4fd9ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.producttype}}=UL</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>7679a7ccff574e9019a8ffda7c4fd9c6</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:51</sys_created_on>
+        <sys_id>3279a7ccff574e9019a8ffda7c4fd9ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^id=7679a7ccff574e9019a8ffda7c4fd9c6"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7679a7ccff574e9019a8ffda7c4fd9c6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7679a7ccff574e9019a8ffda7c4fd9c6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bface8efff8fc69019a8ffda7c4fd9c6</block>
+        <comment/>
+        <connected_to>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>77ace8efff8fc69019a8ffda7c4fd9c7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:04</sys_updated_on>
+        <ui_id>824dcc57-9d19-4a90-ab96-5be77ca20bec</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=77ace8efff8fc69019a8ffda7c4fd9c7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>77ace8efff8fc69019a8ffda7c4fd9c7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>bbace8efff8fc69019a8ffda7c4fd9ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <value>address validation when insured person is policy holder</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=77ace8efff8fc69019a8ffda7c4fd9c7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>77ace8efff8fc69019a8ffda7c4fd9c7</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>3bace8efff8fc69019a8ffda7c4fd9ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{subflow.ipsameasph}}=Y^{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ip_}}=N</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>77ace8efff8fc69019a8ffda7c4fd9c7</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>77ace8efff8fc69019a8ffda7c4fd9ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^id=77ace8efff8fc69019a8ffda7c4fd9c7"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=77ace8efff8fc69019a8ffda7c4fd9c7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=77ace8efff8fc69019a8ffda7c4fd9c7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b7ace8efff8fc69019a8ffda7c4fd968</block>
+        <comment/>
+        <connected_to>b458d9f8-85c4-475c-9bc2-40ed407a3a42</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:01</sys_created_on>
+        <sys_id>f7ace8efff8fc69019a8ffda7c4fd98e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+        <ui_id>cce4714d-9902-4048-9181-89da456e8c3b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f7ace8efff8fc69019a8ffda7c4fd98e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^id=f7ace8efff8fc69019a8ffda7c4fd98e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f7ace8efff8fc69019a8ffda7c4fd98e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f7ace8efff8fc69019a8ffda7c4fd98e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d^sys_idNOT IN07b72897ffcf469019a8ffda7c4fd9df,43b72897ffcf469019a8ffda7c4fd9dc,4fb72897ffcf469019a8ffda7c4fd9e8,8bb72897ffcf469019a8ffda7c4fd9e5,8fb72897ffcf469019a8ffda7c4fd9d8,c7b72897ffcf469019a8ffda7c4fd9e2,cbb72897ffcf469019a8ffda7c4fd9d5,efe263ccff174e9019a8ffda7c4fd9f3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productname</element>
+        <help/>
+        <hint/>
+        <label>productName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>07b72897ffcf469019a8ffda7c4fd9df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productid</element>
+        <help/>
+        <hint/>
+        <label>productId</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>43b72897ffcf469019a8ffda7c4fd9dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ipsameasph</element>
+        <help/>
+        <hint/>
+        <label>ipSameAsPh</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>4fb72897ffcf469019a8ffda7c4fd9e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>insurer</element>
+        <help/>
+        <hint/>
+        <label>insurer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>8bb72897ffcf469019a8ffda7c4fd9e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variant</element>
+        <help/>
+        <hint/>
+        <label>variant</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>8fb72897ffcf469019a8ffda7c4fd9d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>vendorcode</element>
+        <help/>
+        <hint/>
+        <label>vendorCode</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>c7b72897ffcf469019a8ffda7c4fd9e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:54</sys_created_on>
+        <sys_id>cbb72897ffcf469019a8ffda7c4fd9d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>producttype</element>
+        <help/>
+        <hint/>
+        <label>productType</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:23:13</sys_created_on>
+        <sys_id>efe263ccff174e9019a8ffda7c4fd9f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d^sys_idNOT IN4fb72897ffcf469019a8ffda7c4fd9fd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:55</sys_created_on>
+        <sys_id>4fb72897ffcf469019a8ffda7c4fd9fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>validation_for_mandatory_fields_in_balic_payload</internal_name>
+        <label_cache>[{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.areyoupoliticallyexposedperson","label":"1 - action to extract required elements from payload➛areYouPoliticallyExposedPerson","reference_display":"areYouPoliticallyExposedPerson","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ea8c7fd-2336-4aff-a6a2-2b4350b125c3"}},{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm","label":"1 - action to extract required elements from payload➛pmAddSameAsCm","reference_display":"pmAddSameAsCm","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"461c3ed1-c313-4a5e-989c-664bd6055437"}},{"name":"subflow.ipsameasph","label":"input➛ipSameAsPh","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"28ca517b-23fd-41b9-b3ec-98318ead8b36","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.requestbody","label":"input➛requestBody","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5add61e5-485d-487f-a779-22c4984496d4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ip_","label":"1 - action to extract required elements from payload➛pmAddSameAsCm(ip)","reference_display":"pmAddSameAsCm(ip)","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f36f6c54-da53-4aba-9e22-3ce89fcb19c1"}},{"name":"0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ph_","label":"1 - action to extract required elements from payload➛pmAddSameAsCm(ph)","reference_display":"pmAddSameAsCm(ph)","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2fab9570-9f6d-4912-9b25-32376084c2a4"}},{"name":"subflow.producttype","label":"input➛productType","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ae0bc4d-425a-4bc8-9000-5563deac1272","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>validation for mandatory fields in BALIC payload</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e3b76897ffcf469019a8ffda7c4fd971</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:59</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^id=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e3b76897ffcf469019a8ffda7c4fd971^sys_idNOT IN27b76897ffcf469019a8ffda7c4fd972"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e3b76897ffcf469019a8ffda7c4fd971</id>
+        <name>validation for mandatory fields in BALIC payload</name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:57</sys_created_on>
+        <sys_id>27b76897ffcf469019a8ffda7c4fd972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=27b76897ffcf469019a8ffda7c4fd972"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e3b76897ffcf469019a8ffda7c4fd971^sys_idNOT IN00c7a897ffcf469019a8ffda7c4fd959,0df267ccff174e9019a8ffda7c4fd960,37b7a897ffcf469019a8ffda7c4fd940,6bb76897ffcf469019a8ffda7c4fd973,73b7a897ffcf469019a8ffda7c4fd930,b3b7a897ffcf469019a8ffda7c4fd938,f7b7a897ffcf469019a8ffda7c4fd948,fbb7a897ffcf469019a8ffda7c4fd950"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=28ca517b-23fd-41b9-b3ec-98318ead8b36</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ipsameasph</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ipSameAsPh</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>00c7a897ffcf469019a8ffda7c4fd959</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=00c7a897ffcf469019a8ffda7c4fd959"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5ae0bc4d-425a-4bc8-9000-5563deac1272</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>producttype</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productType</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:23:20</sys_created_on>
+        <sys_id>0df267ccff174e9019a8ffda7c4fd960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0df267ccff174e9019a8ffda7c4fd960"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=da4b2ab0-f9ee-4762-ad3e-074f8c234ad0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productName</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>37b7a897ffcf469019a8ffda7c4fd940</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=37b7a897ffcf469019a8ffda7c4fd940"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5add61e5-485d-487f-a779-22c4984496d4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:57</sys_created_on>
+        <sys_id>6bb76897ffcf469019a8ffda7c4fd973</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6bb76897ffcf469019a8ffda7c4fd973"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a120b463-b28c-4b93-8971-2e77fa73e6b1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variant</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variant</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:57</sys_created_on>
+        <sys_id>73b7a897ffcf469019a8ffda7c4fd930</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73b7a897ffcf469019a8ffda7c4fd930"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=521b8535-5826-42f0-9ee8-d389a8f266ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>productid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>productId</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>b3b7a897ffcf469019a8ffda7c4fd938</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b3b7a897ffcf469019a8ffda7c4fd938"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2c939370-523b-404e-b6b4-f3c1bd5e370c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vendorcode</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>vendorCode</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>f7b7a897ffcf469019a8ffda7c4fd948</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f7b7a897ffcf469019a8ffda7c4fd948"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=23c31a75-df71-420c-bbd0-8be6c793d7a0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurer</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>fbb7a897ffcf469019a8ffda7c4fd950</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fbb7a897ffcf469019a8ffda7c4fd950"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e3b76897ffcf469019a8ffda7c4fd971^sys_idNOT IN84c7a897ffcf469019a8ffda7c4fd965"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b5440a08-0199-4812-97fe-27bbc9568e71</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</model>
+        <model_id>e3b76897ffcf469019a8ffda7c4fd971</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>84c7a897ffcf469019a8ffda7c4fd965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=84c7a897ffcf469019a8ffda7c4fd965"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e3b76897ffcf469019a8ffda7c4fd971^sys_idNOT IN091221e7ff870a9019a8ffda7c4fd9a4,11bcacefff8fc69019a8ffda7c4fd9ed,19bcecefff8fc69019a8ffda7c4fd900,1dbcacefff8fc69019a8ffda7c4fd9f6,44c7a897ffcf469019a8ffda7c4fd9ae,58896bccff574e9019a8ffda7c4fd929,81bcacefff8fc69019a8ffda7c4fd9cb,91bcecefff8fc69019a8ffda7c4fd908,e4fdc92bffc30a9019a8ffda7c4fd95d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="mandatory fields validation for policy holder (BALIC)">77391a3eff0f829019a8ffda7c4fd970</action_type>
+        <action_type_parent display_value="mandatory fields validation for policy holder (BALIC)">fbc25abeffcb829019a8ffda7c4fd978</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>b458d9f8-85c4-475c-9bc2-40ed407a3a42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 11:43:18</sys_created_on>
+        <sys_id>091221e7ff870a9019a8ffda7c4fd9a4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>0cd19e07-2c3c-4dfc-a8da-bcabf5dc6954</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=091221e7ff870a9019a8ffda7c4fd9a4"/>
+    <sys_element_mapping action="delete_multiple" query="id=091221e7ff870a9019a8ffda7c4fd9a4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>091221e7ff870a9019a8ffda7c4fd9a4</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 11:43:18</sys_created_on>
+        <sys_id>451221e7ff870a9019a8ffda7c4fd9a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_77391a3eff0f829019a8ffda7c4fd970</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=091221e7ff870a9019a8ffda7c4fd9a4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=091221e7ff870a9019a8ffda7c4fd9a4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="mandatory field validation for insured person (BALIC)">d9191b0bff07469019a8ffda7c4fd941</action_type>
+        <action_type_parent display_value="mandatory field validation for insured person (BALIC)">d0e3130bffc3469019a8ffda7c4fd9c4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>cce4714d-9902-4048-9181-89da456e8c3b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>11bcacefff8fc69019a8ffda7c4fd9ed</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>b3a99504-a5e2-4b68-96f8-b7025c35eb97</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11bcacefff8fc69019a8ffda7c4fd9ed"/>
+    <sys_element_mapping action="delete_multiple" query="id=11bcacefff8fc69019a8ffda7c4fd9ed"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>11bcacefff8fc69019a8ffda7c4fd9ed</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>5dbcacefff8fc69019a8ffda7c4fd9ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d9191b0bff07469019a8ffda7c4fd941</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=11bcacefff8fc69019a8ffda7c4fd9ed"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=11bcacefff8fc69019a8ffda7c4fd9ed"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="validate permanent address for proposer">d6d69c67ffcbc69019a8ffda7c4fd9b9</action_type>
+        <action_type_parent display_value="validate permanent address for proposer">8763986fff8bc69019a8ffda7c4fd9f4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>19bcecefff8fc69019a8ffda7c4fd900</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>5dea279c-363a-4196-8510-5852435a9847</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=19bcecefff8fc69019a8ffda7c4fd900"/>
+    <sys_element_mapping action="delete_multiple" query="id=19bcecefff8fc69019a8ffda7c4fd900"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>19bcecefff8fc69019a8ffda7c4fd900</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>55bcecefff8fc69019a8ffda7c4fd901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d6d69c67ffcbc69019a8ffda7c4fd9b9</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=19bcecefff8fc69019a8ffda7c4fd900"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=19bcecefff8fc69019a8ffda7c4fd900"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="to validate permanent address for insured person">a5972497ffcf469019a8ffda7c4fd95f</action_type>
+        <action_type_parent display_value="to validate permanent address for insured person">62efd417ff8f469019a8ffda7c4fd93f</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>1dbcacefff8fc69019a8ffda7c4fd9f6</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>b852fe87-2b22-4bb5-b5c6-39b176687989</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1dbcacefff8fc69019a8ffda7c4fd9f6"/>
+    <sys_element_mapping action="delete_multiple" query="id=1dbcacefff8fc69019a8ffda7c4fd9f6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>1dbcacefff8fc69019a8ffda7c4fd9f6</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>59bcacefff8fc69019a8ffda7c4fd9f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a5972497ffcf469019a8ffda7c4fd95f</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1dbcacefff8fc69019a8ffda7c4fd9f6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1dbcacefff8fc69019a8ffda7c4fd9f6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="action to extract required elements from payload">fcd31cd7ff0f469019a8ffda7c4fd91e</action_type>
+        <action_type_parent display_value="action to extract required elements from payload">acc1d893ff0f469019a8ffda7c4fd9f9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_id>44c7a897ffcf469019a8ffda7c4fd9ae</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=44c7a897ffcf469019a8ffda7c4fd9ae"/>
+    <sys_element_mapping action="delete_multiple" query="id=44c7a897ffcf469019a8ffda7c4fd9ae"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>44c7a897ffcf469019a8ffda7c4fd9ae</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_id>80c7a897ffcf469019a8ffda7c4fd9af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_fcd31cd7ff0f469019a8ffda7c4fd91e</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=44c7a897ffcf469019a8ffda7c4fd9ae"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=44c7a897ffcf469019a8ffda7c4fd9ae"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="validation if product is an ulip product">8df8638cff574e9019a8ffda7c4fd934</action_type>
+        <action_type_parent display_value="validation if product is an ulip product">56f3ab40ff574e9019a8ffda7c4fd999</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>57d1549b-ecb0-4959-8e0f-bb1da581ee0b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:57</sys_created_on>
+        <sys_id>58896bccff574e9019a8ffda7c4fd929</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>70bd94aa-5089-4348-b140-391afacc5087</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=58896bccff574e9019a8ffda7c4fd929"/>
+    <sys_element_mapping action="delete_multiple" query="id=58896bccff574e9019a8ffda7c4fd929"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>58896bccff574e9019a8ffda7c4fd929</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:57</sys_created_on>
+        <sys_id>94896bccff574e9019a8ffda7c4fd92a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8df8638cff574e9019a8ffda7c4fd934</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=58896bccff574e9019a8ffda7c4fd929"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=58896bccff574e9019a8ffda7c4fd929"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="mandatory field validation for insured person (BALIC)">d9191b0bff07469019a8ffda7c4fd941</action_type>
+        <action_type_parent display_value="mandatory field validation for insured person (BALIC)">d0e3130bffc3469019a8ffda7c4fd9c4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b458d9f8-85c4-475c-9bc2-40ed407a3a42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:06</sys_created_on>
+        <sys_id>81bcacefff8fc69019a8ffda7c4fd9cb</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>b618efbd-7a9d-45f8-a1e0-c0f3302ee522</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=81bcacefff8fc69019a8ffda7c4fd9cb"/>
+    <sys_element_mapping action="delete_multiple" query="id=81bcacefff8fc69019a8ffda7c4fd9cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>81bcacefff8fc69019a8ffda7c4fd9cb</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:06</sys_created_on>
+        <sys_id>cdbcacefff8fc69019a8ffda7c4fd9cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d9191b0bff07469019a8ffda7c4fd941</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=81bcacefff8fc69019a8ffda7c4fd9cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=81bcacefff8fc69019a8ffda7c4fd9cb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="to validate permanent address for insured person">a5972497ffcf469019a8ffda7c4fd95f</action_type>
+        <action_type_parent display_value="to validate permanent address for insured person">62efd417ff8f469019a8ffda7c4fd93f</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>824dcc57-9d19-4a90-ab96-5be77ca20bec</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>91bcecefff8fc69019a8ffda7c4fd908</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:59</sys_updated_on>
+        <ui_id>d08fad8a-176e-4cef-a490-2a5f72f943b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=91bcecefff8fc69019a8ffda7c4fd908"/>
+    <sys_element_mapping action="delete_multiple" query="id=91bcecefff8fc69019a8ffda7c4fd908"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>91bcecefff8fc69019a8ffda7c4fd908</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>ddbcecefff8fc69019a8ffda7c4fd908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a5972497ffcf469019a8ffda7c4fd95f</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=91bcecefff8fc69019a8ffda7c4fd908"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=91bcecefff8fc69019a8ffda7c4fd908"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="validate politically exposed person">4a2b81a3ffc30a9019a8ffda7c4fd926</action_type>
+        <action_type_parent display_value="validate politically exposed person">264a49afff830a9019a8ffda7c4fd9b2</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>c69cace3-ec80-49fc-b7f6-02ca62aac3a4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:20</sys_created_on>
+        <sys_id>e4fdc92bffc30a9019a8ffda7c4fd95d</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:59</sys_updated_on>
+        <ui_id>133463ff-880d-4576-9ded-1d928b47efcc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e4fdc92bffc30a9019a8ffda7c4fd95d"/>
+    <sys_element_mapping action="delete_multiple" query="id=e4fdc92bffc30a9019a8ffda7c4fd95d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_json</field>
+        <id>e4fdc92bffc30a9019a8ffda7c4fd95d</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:20</sys_created_on>
+        <sys_id>a0fdc92bffc30a9019a8ffda7c4fd977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4a2b81a3ffc30a9019a8ffda7c4fd926</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e4fdc92bffc30a9019a8ffda7c4fd95d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e4fdc92bffc30a9019a8ffda7c4fd95d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e3b76897ffcf469019a8ffda7c4fd971^sys_idNOT IN04c7a897ffcf469019a8ffda7c4fd9a2,59bcecefff8fc69019a8ffda7c4fd923,68896bccff574e9019a8ffda7c4fd934,9dbcecefff8fc69019a8ffda7c4fd91f,acfdc92bffc30a9019a8ffda7c4fd99c,ddbcecefff8fc69019a8ffda7c4fd91c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">13b76897ffcf469019a8ffda7c4fd915</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_id>04c7a897ffcf469019a8ffda7c4fd9a2</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>b458d9f8-85c4-475c-9bc2-40ed407a3a42</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=04c7a897ffcf469019a8ffda7c4fd9a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>04c7a897ffcf469019a8ffda7c4fd9a2</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_id>ccc7a897ffcf469019a8ffda7c4fd9a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:18</sys_updated_on>
+        <value> insured person is not same as policy holder</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=04c7a897ffcf469019a8ffda7c4fd9a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>04c7a897ffcf469019a8ffda7c4fd9a2</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_id>4cc7a897ffcf469019a8ffda7c4fd9a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.ipsameasph}}=N</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>04c7a897ffcf469019a8ffda7c4fd9a2</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_id>88c7a897ffcf469019a8ffda7c4fd9a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^id=04c7a897ffcf469019a8ffda7c4fd9a2"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=04c7a897ffcf469019a8ffda7c4fd9a2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=04c7a897ffcf469019a8ffda7c4fd9a2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bface8efff8fc69019a8ffda7c4fd9c6</block>
+        <comment/>
+        <connected_to>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>59bcecefff8fc69019a8ffda7c4fd923</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:59</sys_updated_on>
+        <ui_id>824dcc57-9d19-4a90-ab96-5be77ca20bec</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=59bcecefff8fc69019a8ffda7c4fd923"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>59bcecefff8fc69019a8ffda7c4fd923</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>d5bcecefff8fc69019a8ffda7c4fd933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <value>address validation when insured person is policy holder</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=59bcecefff8fc69019a8ffda7c4fd923"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>59bcecefff8fc69019a8ffda7c4fd923</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>55bcecefff8fc69019a8ffda7c4fd933</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{subflow.ipsameasph}}=Y^{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ip_}}=N</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>59bcecefff8fc69019a8ffda7c4fd923</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>91bcecefff8fc69019a8ffda7c4fd933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^id=59bcecefff8fc69019a8ffda7c4fd923"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=59bcecefff8fc69019a8ffda7c4fd923"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=59bcecefff8fc69019a8ffda7c4fd923"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7a79a7ccff574e9019a8ffda7c4fd9c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:57</sys_created_on>
+        <sys_id>68896bccff574e9019a8ffda7c4fd934</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>57d1549b-ecb0-4959-8e0f-bb1da581ee0b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=68896bccff574e9019a8ffda7c4fd934"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>68896bccff574e9019a8ffda7c4fd934</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:57</sys_created_on>
+        <sys_id>e0896bccff574e9019a8ffda7c4fd938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:57</sys_updated_on>
+        <value>check if product is an ulip product</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=68896bccff574e9019a8ffda7c4fd934"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>68896bccff574e9019a8ffda7c4fd934</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:57</sys_created_on>
+        <sys_id>60896bccff574e9019a8ffda7c4fd938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.producttype}}=UL</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>68896bccff574e9019a8ffda7c4fd934</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:51:57</sys_created_on>
+        <sys_id>ac896bccff574e9019a8ffda7c4fd937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^id=68896bccff574e9019a8ffda7c4fd934"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=68896bccff574e9019a8ffda7c4fd934"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=68896bccff574e9019a8ffda7c4fd934"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bbace8efff8fc69019a8ffda7c4fd999</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>9dbcecefff8fc69019a8ffda7c4fd91f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>8539b671-1e4c-44cc-9a77-c0d2dc7b27d0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9dbcecefff8fc69019a8ffda7c4fd91f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9dbcecefff8fc69019a8ffda7c4fd91f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>5dbcecefff8fc69019a8ffda7c4fd922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <value>address validation</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9dbcecefff8fc69019a8ffda7c4fd91f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>9dbcecefff8fc69019a8ffda7c4fd91f</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>d9bcecefff8fc69019a8ffda7c4fd922</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 11:43:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.ipsameasph}}=N^{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ip_}}=N^{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.pmaddsameascm_ph_}}=N</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>9dbcecefff8fc69019a8ffda7c4fd91f</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>19bcecefff8fc69019a8ffda7c4fd922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 07:50:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^id=9dbcecefff8fc69019a8ffda7c4fd91f"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9dbcecefff8fc69019a8ffda7c4fd91f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9dbcecefff8fc69019a8ffda7c4fd91f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">339b41e3ffc30a9019a8ffda7c4fd977</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:20</sys_created_on>
+        <sys_id>acfdc92bffc30a9019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:59</sys_updated_on>
+        <ui_id>c69cace3-ec80-49fc-b7f6-02ca62aac3a4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=acfdc92bffc30a9019a8ffda7c4fd99c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>acfdc92bffc30a9019a8ffda7c4fd99c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:20</sys_created_on>
+        <sys_id>6cfdc92bffc30a9019a8ffda7c4fd99f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:20</sys_updated_on>
+        <value>validation politically exposed person</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=acfdc92bffc30a9019a8ffda7c4fd99c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>acfdc92bffc30a9019a8ffda7c4fd99c</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:20</sys_created_on>
+        <sys_id>e8fdc92bffc30a9019a8ffda7c4fd99f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{0fc5a9b5-335d-4d60-b0b2-ba6f33a8d951.areyoupoliticallyexposedperson}}=Y</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>acfdc92bffc30a9019a8ffda7c4fd99c</id>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 10:15:20</sys_created_on>
+        <sys_id>28fdc92bffc30a9019a8ffda7c4fd99f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-03 10:15:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^id=acfdc92bffc30a9019a8ffda7c4fd99c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=acfdc92bffc30a9019a8ffda7c4fd99c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=acfdc92bffc30a9019a8ffda7c4fd99c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b7ace8efff8fc69019a8ffda7c4fd968</block>
+        <comment/>
+        <connected_to>b458d9f8-85c4-475c-9bc2-40ed407a3a42</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="validation for mandatory fields in BALIC payload">e3b76897ffcf469019a8ffda7c4fd971</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-03 07:50:07</sys_created_on>
+        <sys_id>ddbcecefff8fc69019a8ffda7c4fd91c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:51:58</sys_updated_on>
+        <ui_id>cce4714d-9902-4048-9181-89da456e8c3b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ddbcecefff8fc69019a8ffda7c4fd91c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^id=ddbcecefff8fc69019a8ffda7c4fd91c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ddbcecefff8fc69019a8ffda7c4fd91c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ddbcecefff8fc69019a8ffda7c4fd91c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971^sys_idNOT IN3bb7a897ffcf469019a8ffda7c4fd92c,4cc7a897ffcf469019a8ffda7c4fd95d,7bb7a897ffcf469019a8ffda7c4fd934,b3b7a897ffcf469019a8ffda7c4fd94d,bfb7a897ffcf469019a8ffda7c4fd944,d9f2a7ccff174e9019a8ffda7c4fd91c,f7b7a897ffcf469019a8ffda7c4fd955,fbb7a897ffcf469019a8ffda7c4fd93c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:57</sys_created_on>
+        <sys_id>3bb7a897ffcf469019a8ffda7c4fd92c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ipsameasph</element>
+        <help/>
+        <hint/>
+        <label>ipSameAsPh</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>4cc7a897ffcf469019a8ffda7c4fd95d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variant</element>
+        <help/>
+        <hint/>
+        <label>variant</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>7bb7a897ffcf469019a8ffda7c4fd934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>vendorcode</element>
+        <help/>
+        <hint/>
+        <label>vendorCode</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>b3b7a897ffcf469019a8ffda7c4fd94d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productname</element>
+        <help/>
+        <hint/>
+        <label>productName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>bfb7a897ffcf469019a8ffda7c4fd944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>producttype</element>
+        <help/>
+        <hint/>
+        <label>productType</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-05 10:23:20</sys_created_on>
+        <sys_id>d9f2a7ccff174e9019a8ffda7c4fd91c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:23:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>insurer</element>
+        <help/>
+        <hint/>
+        <label>insurer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>f7b7a897ffcf469019a8ffda7c4fd955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>productid</element>
+        <help/>
+        <hint/>
+        <label>productId</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:58</sys_created_on>
+        <sys_id>fbb7a897ffcf469019a8ffda7c4fd93c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971^sys_idNOT INc0c7a897ffcf469019a8ffda7c4fd96a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_id>c0c7a897ffcf469019a8ffda7c4fd96a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:49:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e3b76897ffcf469019a8ffda7c4fd971"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>70719783ffc3469019a8ffda7c4fd95d</sys_id>
+        <latest_snapshot>e3b76897ffcf469019a8ffda7c4fd971</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch7-hotfix3b-05-23-2024_05-24-2024_1928.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=70719783ffc3469019a8ffda7c4fd95d"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=70719783ffc3469019a8ffda7c4fd95d^sys_idNOT IN14c7a897ffcf469019a8ffda7c4fd9c5"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@158fac4</plan>
+        <plan_id display_value="validation for mandatory fields in BALIC payload">70719783ffc3469019a8ffda7c4fd95d</plan_id>
+        <snapshot>e3b76897ffcf469019a8ffda7c4fd971</snapshot>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-07-02 12:49:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14c7a897ffcf469019a8ffda7c4fd9c5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-07-05 10:52:03</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

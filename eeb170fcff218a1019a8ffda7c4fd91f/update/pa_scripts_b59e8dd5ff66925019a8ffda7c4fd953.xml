@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_scripts">
+    <pa_scripts action="INSERT_OR_UPDATE">
+        <arguments>requesttype</arguments>
+        <description/>
+        <name>Update Request Type .</name>
+        <script><![CDATA[(function mapAndCount(sourceValue) {
+    // Initialize counts for each request type
+    var counts = {
+        Quote: 0,
+        Quote_App_Sub: 0,
+        Save_Proposal: 0
+    };
+
+    // Query the integration_request_log table
+    var gr = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+
+    // Set start of the current day
+    var todayStart = new GlideDateTime();
+    todayStart.setDisplayValue(new GlideDate().getDisplayValue() + " 00:00:00"); // Set to today 00:00:00
+
+    // Set current time
+    var now = new GlideDateTime(); // Fetch the current date and time
+
+    // Add query conditions
+    gr.addQuery('sys_created_on', '>=', todayStart); // Records created today at or after 00:00:00
+    gr.addQuery('sys_created_on', '<=', now); // Records before or equal to current time
+    gr.addQuery('requesttype', '!=', ''); // Exclude null/empty request types
+    gr.query();
+
+    // Iterate through records and count request types based on sourceValue
+    while (gr.next()) {
+        if (gr.getValue('requesttype') === sourceValue) {
+            switch (gr.getValue('requesttype')) {
+                case 'Quote':
+                    counts.Quote++;
+                    break;
+                case 'Quote_App_Sub':
+                    counts.Quote_App_Sub++;
+                    break;
+                case 'Save_Proposal':
+                    counts.Save_Proposal++;
+                    break;
+            }
+        }
+    }
+
+    // Return the result in a format that PA can use
+    var breakdownResult = {
+        "Quote": counts.Quote,
+        "Quote_App_Sub": counts.Quote_App_Sub,
+        "Save_Proposal": counts.Save_Proposal
+    };
+
+    return breakdownResult;
+})(sourceValue); // Pass the dynamic `sourceValue` 
+]]></script>
+        <sys_class_name>pa_scripts</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-17 10:13:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b59e8dd5ff66925019a8ffda7c4fd953</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Update Request Type .</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>pa_scripts_b59e8dd5ff66925019a8ffda7c4fd953</sys_update_name>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:07:14</sys_updated_on>
+        <table>x_rptp_smartinte_0_integration_request_log</table>
+    </pa_scripts>
+    <sys_translated_text action="delete_multiple" query="documentkey=b59e8dd5ff66925019a8ffda7c4fd953"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b59e8dd5ff66925019a8ffda7c4fd953</id>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-17 10:13:18</sys_created_on>
+        <sys_id>8bfec159ff66925019a8ffda7c4fd943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-17 10:13:18</sys_updated_on>
+        <table>pa_scripts</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

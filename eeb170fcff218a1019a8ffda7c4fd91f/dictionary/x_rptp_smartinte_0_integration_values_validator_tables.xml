@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4f49279347b7ce10e9ddbf66706d43b0" label="Integration Values Validator Tables" max_length="40" name="x_rptp_smartinte_0_integration_values_validator_tables" type="collection">
+        <element choice="3" default="year" label="Entry Age Unit" max_length="40" name="entry_age_unit" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Days" value="days"/>
+                <element inactive_on_update="false" label="In Months" value="month"/>
+                <element inactive_on_update="false" label="In Years" value="year"/>
+            </choice>
+        </element>
+        <element label="Frequency" max_length="40" name="frequency" type="string"/>
+        <element label="InsuredPerson" max_length="40" name="insuredperson" type="boolean"/>
+        <element label="Insurer" max_length="40" name="insurer" reference="x_rptp_smartinte_0_integrationinsurer" type="reference"/>
+        <element label="Is NRI" max_length="40" name="is_nri" type="boolean"/>
+        <element label="Max Death Benefit" max_length="40" name="max_death_benefit" type="integer"/>
+        <element label="Max Entry Age" max_length="40" name="max_entry_age" type="integer"/>
+        <element label="Max Maturity Age" max_length="40" name="max_maturity_age" type="integer"/>
+        <element label="Max PPT" max_length="40" name="max_ppt" type="integer"/>
+        <element label="Max Premium" max_length="40" name="max_premium" type="integer"/>
+        <element label="Max PT value" max_length="40" name="max_pt_value" type="string"/>
+        <element label="Max Sum Assured" max_length="40" name="max_sum_assured" type="string"/>
+        <element label="Min Death Benefit" max_length="40" name="min_death_benefit" type="integer"/>
+        <element label="Min Entry Age" max_length="40" name="min_entry_age" type="integer"/>
+        <element label="Min Maturity Age" max_length="40" name="min_maturity_age" type="integer"/>
+        <element label="Min PPT" max_length="40" name="min_ppt" type="integer"/>
+        <element label="Min Premium" max_length="40" name="min_premium" type="integer"/>
+        <element choice="1" label="PPT Option" max_length="40" name="ppt_option" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Limited Pay" value="LP"/>
+                <element inactive_on_update="false" label="Regular Pay" value="RP"/>
+                <element inactive_on_update="false" label="Whole Life" value="WL"/>
+            </choice>
+        </element>
+        <element label="Product Id" max_length="40" name="product_id" type="string"/>
+        <element label="Sum Assured" max_length="40" name="sum_assured" type="integer"/>
+        <element label="Variant Id" max_length="40" name="variant_id" type="string"/>
+    </element>
+</database>

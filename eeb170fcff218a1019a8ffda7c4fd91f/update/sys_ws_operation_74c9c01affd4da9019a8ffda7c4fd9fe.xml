@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_rptp_smartinte_0/document_upload</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>document_upload</name>
+        <operation_script><![CDATA[(function process(request, response) {
+// Extract the insurer from the request headers
+//var insurer = request.headers.insurer;
+// Extract the request body data
+var req = request.body.data;
+var insurer ;
+req.docnm=req.appnum+"_IDFC.pdf";
+ 
+var productID = req.productId;
+ 
+var tid=req.transactionId;
+ 
+ 
+ 
+if (!productID) {
+ 
+response.setContentType('application/json');
+response.setStatus(400);
+response.setBody({
+applicationNumber:req.appnum,
+error: "Missing or empty productId in request body",
+code:400,
+status:"Failure",
+transactionId:tid,
+
+});
+return;
+}
+ 
+ 
+var iGr = new GlideRecord('x_rptp_smartinte_0_integrationproductvariants');
+iGr.addQuery('product_guid_id', productID);
+iGr.query();
+ 
+ 
+ 
+if (!iGr.hasNext()) {
+// Return 400 Bad Request if the productId is invalid (not found)
+response.setContentType('application/json');
+response.setStatus(400);
+response.setBody({
+applicationNumber:req.appnum,
+error: "Invalid productId",
+code:400,
+status:"Failure",
+transactionId:tid
+});
+return; // Stop further execution
+}
+ 
+if (iGr.next()) {
+var iGR = new GlideRecord('x_rptp_smartinte_0_integrationinsurer');
+iGR.addQuery('sys_id', iGr.insurer);
+iGR.query();
+if (iGR.next()) {
+insurer = iGR.code;
+}
+}
+ 
+try {
+var inputs = {};
+inputs['appnum'] = req.appnum; // String
+inputs['insurer'] = insurer; // String
+inputs['requestbody'] = req; // String
+ 
+ 
+ 
+ 
+// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.fullfillment_requirement_hdfc_doc_upload').inForeground().withInputs(inputs).timeout(50000).run();
+//gs.info('Subflow execution result: ' + JSON.stringify(result));
+var outputs = result.getOutputs();
+ 
+// Get Outputs:
+// Note: outputs can only be retrieved when executing synchronously.
+var res = outputs['response']; // JSON
+var requestdetails = outputs['requestdetails']; // JSON
+gs.info("req"+requestdetails);
+// Set the response content type and body
+response.setContentType('application/json');
+//response.setBody(JSON.parse(res));
+
+var resultMessage=JSON.parse(res) ;
+ 
+var responseObject = {
+transactionId:tid,
+productId:productID,
+applicationNumber:req.appnum,
+code: 200,
+//status: "Success",
+message: resultMessage  // Parse the 'res' JSON and embed it into the data
+};
+ 
+//response.setBody(JSON.parse(res));
+response.setBody(responseObject);
+ 
+} catch (ex) {
+//var message = ex.getMessage();
+//var message="hi";
+ 
+var message = ex.message;
+// gs.error("Error: " + message);
+response.setStatus(400);
+ 
+response.setContentType('application/json');
+ 
+response.setBody(({
+//status:"Failure",
+applicationNumber:req.appnum,
+productId:productID,
+transactionId:tid,
+code:400,
+error: message
+}));
+}
+})(request, response);
+ ]]></operation_script>
+        <operation_uri>/api/x_rptp_smartinte_0/v1/document_upload</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-30 11:24:01</sys_created_on>
+        <sys_id>74c9c01affd4da9019a8ffda7c4fd9fe</sys_id>
+        <sys_mod_count>97</sys_mod_count>
+        <sys_name>document_upload</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_ws_operation_74c9c01affd4da9019a8ffda7c4fd9fe</sys_update_name>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-10-10 05:44:36</sys_updated_on>
+        <web_service_definition display_value="Document Upload">a7994c1affd4da9019a8ffda7c4fd965</web_service_definition>
+        <web_service_version display_value="v1">9cf948daffd4da9019a8ffda7c4fd963</web_service_version>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>74c9c01affd4da9019a8ffda7c4fd9fe</id>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-09-23 05:00:12</sys_created_on>
+        <sys_id>7b281271ff34961019a8ffda7c4fd90e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-09-23 05:00:12</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

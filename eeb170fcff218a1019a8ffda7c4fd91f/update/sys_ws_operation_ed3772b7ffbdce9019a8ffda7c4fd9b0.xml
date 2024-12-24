@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_rptp_smartinte_0/get_bi</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Get Bi</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+
+var insurer;
+var req=request.body.data;
+    // implement resource here
+	try {
+		
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.getbi_latest').inBackground().withInputs(inputs).run();
+		//		gs.info("1");
+
+		var gr=new GlideRecord('x_rptp_smartinte_0_integrationproductvariants');
+		gr.addQuery('product_guid_id',req.productId);
+		gr.query();
+			//	gs.info("2");
+
+		if(gr.next()){
+			//	gs.info("3");
+
+			var insurerRecord=new GlideRecord('x_rptp_smartinte_0_integrationinsurer');
+			insurerRecord.addQuery('sys_id',gr.insurer+"");
+			insurerRecord.query();
+			if(insurerRecord.next()){
+			//	gs.info("4");
+
+				insurer=insurerRecord.code;
+				//gs.info(insurer)
+			}
+		}
+		else{
+			response.setContentType("application/json");
+			response.setStatus(400);
+			response.setBody({
+				"code":400,
+				"message":"Invaild Product ID"
+			});
+			return;
+		}
+
+		var inputs = {};
+		inputs['insurer'] = insurer; // String 
+		inputs['application'] = req.quoteId; // String 
+		inputs['txnid'] = req.transactionId; // String 
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.getbi_latest').inForeground().timeout(100000).withInputs(inputs).run();
+		var outputs = result.getOutputs();
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		var requestdetails = outputs['requestdetails']; // String
+		var res = outputs['response']; // String
+		response.setContentType('application/json');
+	//	gs.info(res);
+		if(typeof res =='object'){
+			res=res;
+		}
+		else{
+		
+			res=JSON.parse(res);
+		
+		}
+		if(res.code){
+			if(res.code==1){
+				response.setStatus(400);
+			}
+			else{
+			response.setStatus(res.code);
+			}
+		}
+         //   response.setBody();
+		 	var obj={
+                transactionId: req.transactionId,
+                response: (res)
+            }
+			var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(obj));
+		
+	} catch (ex) {
+		response.setContentType('application/json');
+		if(outputs && outputs.response)
+		var res = outputs['response'];
+		if(!res){
+			var obj={
+                transactionId: req.transactionId,
+                response: {
+					errorMessage:{
+						code:400,
+						message:ex.getMessage()
+					}
+				}
+            }
+			var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(obj));
+		}
+		else{
+			var obj={
+                transactionId: req.transactionId,
+                response: res
+            }
+			var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(obj));
+		}
+			
+		// if(res && res.code){
+		// 	response.setStatus(res.code);
+		// 	response.setContentType('application/json');
+		// 	 response.setBody(res);
+		// }
+		// else{
+		// 	response.setStatus(400);
+		// var message = ex.getMessage();
+		// response.setContentType('application/json');
+		// 	 response.setBody({
+		// 		status:400,
+		// 		message:message
+		// 	 });
+		// }
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_rptp_smartinte_0/v1/get_bi</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-05-03 09:15:56</sys_created_on>
+        <sys_id>ed3772b7ffbdce9019a8ffda7c4fd9b0</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Get Bi</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_ws_operation_ed3772b7ffbdce9019a8ffda7c4fd9b0</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-04 10:07:59</sys_updated_on>
+        <web_service_definition display_value="Get BI">a7173eb7ffbdce9019a8ffda7c4fd9c1</web_service_definition>
+        <web_service_version display_value="v1">0e2d0a5547fec210e9ddbf66706d43ed</web_service_version>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ed3772b7ffbdce9019a8ffda7c4fd9b0</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-02 09:50:54</sys_created_on>
+        <sys_id>280a37dc47925614e9ddbf66706d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-02 09:50:54</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

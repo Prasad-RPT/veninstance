@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_rptp_smartinte_0.BulkAPI</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BulkAPI</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BulkAPI = Class.create();
+BulkAPI.prototype = {
+    initialize: function() {},
+
+    getBulkQuote: function() {
+        // gs.info("testing");
+        // var responseData = '';
+        var productList = new GlideRecord("x_rptp_smartinte_0_integrationproducts");
+        // productList.addQuery('category', '67e8840447220290e9ddbf66706d43c6');
+        productList.query();
+
+
+        // return productList;
+        while (productList.next()) {
+            var productName = productList.getDisplayValue('name');
+            var productId = productList.getDisplayValue('code');
+            // gs.info("Product: " + productName);
+
+            var variantList = new GlideRecord("x_rptp_smartinte_0_integrationproductvariants");
+            variantList.addQuery('product', productList.sys_id);
+            variantList.query();
+
+            while (variantList.next()) {
+                var variant = variantList.getDisplayValue('name');
+                // var categoryName = variantList.getDisplayValue('category');
+                // var pName = variantList.getDisplayValue('product');
+                // gs.info("Variant: " + variant + ", Product: " + productName);
+
+                var vendorName = "IDFC",
+                    vendorCode = "111811",
+                    agentCode = "00000017";
+                // var productName = productName, productId = productId, variant = variant;
+
+                var payload = {
+                    "proposalType": "Self",
+                    "ipPhSame": "Yes",
+                    "txnId": "575576758",
+                    "returnOfPayment": "",
+                    "isNri": "N",
+                    "paymentMethod": "MOP_ONLINE",
+                    "tobstatus": "Y",
+                    "chnlptnr": "Agency",
+                    "serviceTaxNotApplicable": "0",
+                    "product": {
+                        "productType": "ULIP",
+                        "productName": productName,
+                        "productId": productId,
+                        "variant": variant,
+                        "pptOption": "LIMITED",
+                        "option": "0",
+                        "lang": "ENG",
+                        "policyTerm": "30",
+                        "policyPaymentTerm": "10",
+                        "frequency": "Yearly",
+                        "premium": "300000",
+                        "multiplier": "15",
+                        "investmentProtifolio": "Self Managed Plan",
+                        "annualPremium": "300000",
+                        "mode": "ON",
+                        "funds": [{
+                                "name": "Multi Cap Growth Fund",
+                                "value": "65"
+                            },
+                            {
+
+                                "name": "Income Fund",
+                                "value": "35"
+                            }
+                        ],
+                        "deathBenefitDetails": {
+                            "deathBenefit": "4500000"
+                        },
+                        "coverDetails": {
+                            "mainCoverValue": "L183A01",
+                            "riderDetails": []
+                        }
+                    },
+                    "distsummary": {
+                        "flsCode": "108177",
+                        "flsName": "Renjith T. K.",
+                        "spCode": "00345376",
+                        "spName": "SecuritiesSP3SecuritiesSP3",
+                        "lgCode": "HSECH3522",
+                        "bankAccountCode": "",
+                        "lgName": "VenkataP",
+                        "licencePersoncode": "00345376",
+                        "licencePersonname": "SecuritiesSP3SecuritiesSP3",
+                        "flsAgencycode": "00347079",
+                        "branchCode": "1649812",
+                        "IACode": "712894",
+                        "payeeClientCode": "63482",
+                        "teleCode": "3287",
+                        "payeeClientName": "vfuq"
+                    },
+                    "insuredPerson": {
+                        "firstName": "SIGNATURE",
+                        "lastName": "BS",
+                        //"smoker": "N",
+                        "dob": "1980-01-01",
+                        "age": "25",
+                        "gender": "MALE",
+                        "sumAssured": "60000000",
+                        "occupation": "H",
+                        "mobile": "8976090567",
+                        "maritalStatus": ""
+                    }
+                };
+
+                var req = new sn_ws.RESTMessageV2();
+                req.setEndpoint('https://ven06798.service-now.com/api/x_rptp_smartinte_0/v1/get_quote');
+                req.setHttpMethod('POST');
+                req.setBasicAuth("akshay", "Admin@123");
+                req.setRequestHeader('Content-Type', 'application/json');
+                req.setRequestHeader('producttype', 'ULIP');
+                req.setRequestBody(JSON.stringify(payload));
+
+                var res = req.execute();
+                var ans = res.getBody();
+                // gs.info('Response Data ' + ans);    
+                return ans;
+                // gs.info("Response: " + ans);
+            }
+        }
+    },
+
+
+    type: 'BulkAPI'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-01 10:08:08</sys_created_on>
+        <sys_id>18d87636ff43c29019a8ffda7c4fd91e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BulkAPI</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_script_include_18d87636ff43c29019a8ffda7c4fd91e</sys_update_name>
+        <sys_updated_by>chiranjit.behera</sys_updated_by>
+        <sys_updated_on>2024-07-02 04:49:55</sys_updated_on>
+    </sys_script_include>
+</record_update>

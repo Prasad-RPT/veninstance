@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>3</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-07-16 07:48:56</sys_created_on>
+        <sys_id>dec76bef47178210e9ddbf66706d430f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_atf_step_dec76bef47178210e9ddbf66706d430f</sys_update_name>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-07-17 05:16:26</sys_updated_on>
+        <table/>
+        <test display_value="PPT and PT Validation">237a57af47938210e9ddbf66706d43e9</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=dec76bef47178210e9ddbf66706d430f"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>dec76bef47178210e9ddbf66706d430f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-07-16 07:48:56</sys_created_on>
+        <sys_id>3e19e3a347578210e9ddbf66706d43e2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-07-17 05:16:26</sys_updated_on>
+        <value>// (function() {&#13;
+&#13;
+//     var inputs = {&#13;
+//         'PPT': '5',&#13;
+//         'PT': '30'&#13;
+&#13;
+//     };&#13;
+&#13;
+&#13;
+//     var decision = new sn_decision_table.DecisionAPI();&#13;
+//     var decisionResult = decision.executeDecision('f95902ebff5b0a5019a8ffda7c4fd9a7', inputs);&#13;
+&#13;
+&#13;
+//     var expectedOutput = 'true';&#13;
+//     if (decisionResult.result_field != expectedOutput) {&#13;
+//         gs.addErrorMessage('Decision validation failed: Expected ' + expectedOutput + ' but got ' + decisionResult.result_field);&#13;
+//         return false;&#13;
+//     }&#13;
+&#13;
+//     gs.addInfoMessage('Decision validation passed.');&#13;
+//     return true;&#13;
+// })();&#13;
+&#13;
+(function executeStep(inputs, outputs, stepResult, timeout) {&#13;
+    // var ppt = parseInt(inputs.PPT, 10); &#13;
+    var paymentTerm = parseInt(inputs.PPT);&#13;
+    // var pt = parseInt(inputs.PT, 10);&#13;
+    var policyTerm = parseInt(inputs.PT);&#13;
+&#13;
+&#13;
+    var isValidpaymentTerm = false;&#13;
+    var isValidpolicyTerm = false;&#13;
+    var isValidRow = false;&#13;
+    var reason = '';&#13;
+&#13;
+    if (PPT &gt;= 5 &amp;&amp; PPT &lt;= 25) {&#13;
+        isValidPPT = true;&#13;
+    } else {&#13;
+        reason += 'PPT value is invalid; ';&#13;
+    }&#13;
+&#13;
+    if (PT &gt;= 10 &amp;&amp; PT &lt;= 30) {&#13;
+        isValidPT = true;&#13;
+    } else {&#13;
+        reason += 'PT value is invalid; ';&#13;
+    }&#13;
+&#13;
+    if (isValidPPT &amp;&amp; isValidPT) {&#13;
+        isValidRow = true;&#13;
+    }&#13;
+&#13;
+&#13;
+    gs.info('paymentTerm: ' + ppt + ', Is Valid: ' + isValidPPT);&#13;
+    gs.info('policyTerm: ' + pt + ', Is Valid: ' + isValidPT);&#13;
+    gs.info('Overall Validation Passed: ' + isValidRow);&#13;
+&#13;
+&#13;
+    outputs.Is_Valid_PPT = isValidPPT;&#13;
+    outputs.PPT_Value = ppt;&#13;
+    outputs.Is_Valid_PT = isValidPT;&#13;
+    outputs.PT_Value = pt;&#13;
+    outputs.Is_Valid_Row = isValidRow;&#13;
+    outputs.Reason = reason.trim();&#13;
+&#13;
+&#13;
+    if (isValidRow) {&#13;
+        stepResult.true //setSuccess();&#13;
+    } else {&#13;
+        stepResult.false //setFailure();&#13;
+    }&#13;
+&#13;
+}(inputs, outputs, stepResult, timeout));</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>dec76bef47178210e9ddbf66706d430f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-07-16 07:48:56</sys_created_on>
+        <sys_id>72192b2347578210e9ddbf66706d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-07-16 07:48:56</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_atf_step_dec76bef47178210e9ddbf66706d430f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Run Server Side Validation Script</description><display_name>Run Server Side Script</display_name><inputs/><mugshots_cache_json/><notes/><order>3</order><step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-07-16 07:48:56</sys_created_on><sys_id>dec76bef47178210e9ddbf66706d430f</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Run Server Side Script</sys_name><sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package><sys_policy/><sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope><sys_update_name>sys_atf_step_dec76bef47178210e9ddbf66706d430f</sys_update_name><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-07-17 05:16:26</sys_updated_on><table/><test display_value="PPT and PT Validation">237a57af47938210e9ddbf66706d43e9</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=dec76bef47178210e9ddbf66706d430f"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>dec76bef47178210e9ddbf66706d430f</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-07-16 07:48:56</sys_created_on><sys_id>3e19e3a347578210e9ddbf66706d43e2</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-07-17 05:16:26</sys_updated_on><value>// (function() {&#13;
+&#13;
+//     var inputs = {&#13;
+//         'PPT': '5',&#13;
+//         'PT': '30'&#13;
+&#13;
+//     };&#13;
+&#13;
+&#13;
+//     var decision = new sn_decision_table.DecisionAPI();&#13;
+//     var decisionResult = decision.executeDecision('f95902ebff5b0a5019a8ffda7c4fd9a7', inputs);&#13;
+&#13;
+&#13;
+//     var expectedOutput = 'true';&#13;
+//     if (decisionResult.result_field != expectedOutput) {&#13;
+//         gs.addErrorMessage('Decision validation failed: Expected ' + expectedOutput + ' but got ' + decisionResult.result_field);&#13;
+//         return false;&#13;
+//     }&#13;
+&#13;
+//     gs.addInfoMessage('Decision validation passed.');&#13;
+//     return true;&#13;
+// })();&#13;
+&#13;
+(function executeStep(inputs, outputs, stepResult, timeout) {&#13;
+    // var ppt = parseInt(inputs.PPT, 10); &#13;
+    var paymentTerm = parseInt(inputs.PPT);&#13;
+    // var pt = parseInt(inputs.PT, 10);&#13;
+    var policyTerm = parseInt(inputs.PT);&#13;
+&#13;
+&#13;
+    var isValidpaymentTerm = false;&#13;
+    var isValidpolicyTerm = false;&#13;
+    var isValidRow = false;&#13;
+    var reason = '';&#13;
+&#13;
+    if (PPT &gt;= 5 &amp;&amp; PPT &lt;= 25) {&#13;
+        isValidPPT = true;&#13;
+    } else {&#13;
+        reason += 'PPT value is invalid; ';&#13;
+    }&#13;
+&#13;
+    if (PT &gt;= 10 &amp;&amp; PT &lt;= 30) {&#13;
+        isValidPT = true;&#13;
+    } else {&#13;
+        reason += 'PT value is invalid; ';&#13;
+    }&#13;
+&#13;
+    if (isValidPPT &amp;&amp; isValidPT) {&#13;
+        isValidRow = true;&#13;
+    }&#13;
+&#13;
+&#13;
+    gs.info('paymentTerm: ' + ppt + ', Is Valid: ' + isValidPPT);&#13;
+    gs.info('policyTerm: ' + pt + ', Is Valid: ' + isValidPT);&#13;
+    gs.info('Overall Validation Passed: ' + isValidRow);&#13;
+&#13;
+&#13;
+    outputs.Is_Valid_PPT = isValidPPT;&#13;
+    outputs.PPT_Value = ppt;&#13;
+    outputs.Is_Valid_PT = isValidPT;&#13;
+    outputs.PT_Value = pt;&#13;
+    outputs.Is_Valid_Row = isValidRow;&#13;
+    outputs.Reason = reason.trim();&#13;
+&#13;
+&#13;
+    if (isValidRow) {&#13;
+        stepResult.true //setSuccess();&#13;
+    } else {&#13;
+        stepResult.false //setFailure();&#13;
+    }&#13;
+&#13;
+}(inputs, outputs, stepResult, timeout));</value><variable display_value="Test script">989d9e235324220002c6435723dc3484</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>dec76bef47178210e9ddbf66706d430f</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-07-16 07:48:56</sys_created_on><sys_id>72192b2347578210e9ddbf66706d436f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-07-16 07:48:56</sys_updated_on><value>3.1</value><variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-1691380576</payload_hash>
+        <record_name>Run Server Side Script</record_name>
+        <reverted_from/>
+        <source>45769fde47ed8610e9ddbf66706d4387</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-07-17 05:16:26</sys_created_on>
+        <sys_id>f6cf488cff6bca5019a8ffda7c4fd926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190bf1ed1d50000001</sys_recorded_at>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-07-17 05:16:26</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>7ecf488c9b6bca5026dab086366a5d25</update_guid>
+        <update_guid_history>7ecf488c9b6bca5026dab086366a5d25:-1691380576,7d9d8808de6bca50e9267192ba690bd9:-1617046716,7babac734adf8210a9ea3ae753f969be:-1184430619,5eb7a0f3269f821091caef750b0f8b65:-924159255,85a7243b3a9f8210ca1d4c65668d9ddc:-1597637488,7a6b3be7d8d78210b06d73ed99445e6b:-1906765216,7e19e3a3ab5782106515cb33ed37bae4:606297063</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-11-15 09:05:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>4de8a905afcc425ba68078bcffd61659</sys_id>
+        <sys_metadata>dec76bef47178210e9ddbf66706d430f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_scope_delete display_value="">369325a421bf4d1f809d3b2ab5baaae1</sys_scope_delete>
+        <sys_update_name>sys_atf_step_dec76bef47178210e9ddbf66706d430f</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_dec76bef47178210e9ddbf66706d430f">f6cf488cff6bca5019a8ffda7c4fd926</sys_update_version>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-11-15 09:05:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rptp_smartinte_0_integrationoptiondatatypemaster</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>dulipcate record check</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    // Define the condition for the record that should not be duplicated
+    var optionToExclude = current.getValue('data_type');
+	if(optionToExclude=='80a41057474b0a50e9ddbf66706d4306')
+    {
+    // Query to check for duplicate records
+    var gr = new GlideRecord('x_rptp_smartinte_0_integrationoptiondatatypemaster');
+    gr.addQuery('data_type','80a41057474b0a50e9ddbf66706d4306');
+    gr.addQuery('sourcefieldmap', current.sourcefieldmap);
+    gr.query();
+
+    if (gr.next()) {
+        gs.addErrorMessage("THIS Field can't have two records for string type option");
+        current.setAbortAction(true); // Prevent the record from being saved
+    }
+	}
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-07-19 10:01:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6504e3a447a78a10e9ddbf66706d439b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>dulipcate record check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_script_6504e3a447a78a10e9ddbf66706d439b</sys_update_name>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-11 11:11:45</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6504e3a447a78a10e9ddbf66706d439b"/>
+</record_update>

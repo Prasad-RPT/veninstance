@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6775b5f247034650e9ddbf66706d434b" label="Integration Option Mapper" max_length="40" name="x_rptp_smartinte_0_integration_option_mapper" type="collection">
+        <element label="Insurer" max_length="40" name="insurer" reference="x_rptp_smartinte_0_integrationinsurer" type="reference"/>
+        <element dependent="sourcefieldmap" dependent_on_field="sourcefieldmap" display="true" label="Option" max_length="40" name="option" reference="x_rptp_smartinte_0_integrationoptiondatatypemaster" type="reference" use_dependent_field="true"/>
+        <element label="SourceFieldMap" max_length="40" name="sourcefieldmap" reference="x_rptp_smartinte_0_integration_source_field_mapper" type="reference" use_dependent_field="true"/>
+        <element label="value" max_length="40" name="value" type="string"/>
+    </element>
+</database>

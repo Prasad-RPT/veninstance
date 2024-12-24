@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7e606407fffd129019a8ffda7c4fd984" label="Integration FundsperVariant" max_length="40" name="x_rptp_smartinte_0_integration_fundspervariant" type="collection">
+        <element label="Fundcode" max_length="40" name="fundcode" reference="x_rptp_smartinte_0_funds" type="reference"/>
+        <element label="Id" max_length="40" name="id" type="string"/>
+        <element label="Insurer" max_length="32" name="insurer" reference="x_rptp_smartinte_0_integrationinsurer" type="reference"/>
+        <element label="IsDefault" max_length="10000" name="isdefault" type="boolean"/>
+        <element label="percentage" max_length="10000" name="percentage" type="string"/>
+        <element label="productID" max_length="10000" name="productid" type="string"/>
+        <element label="VariantID" max_length="32" name="variantid" reference="x_rptp_smartinte_0_integrationproductvariants" type="reference"/>
+        <index name="index">
+            <element name="insurer"/>
+        </index>
+        <index name="index2">
+            <element name="variantid"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,2470 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2867686000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>get_payment_link</internal_name>
+        <label_cache>[{"name":"0f8eccce-a547-4078-9ec8-abef8c8e78a1.response","label":"8 - ICICI Payment link➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7ca6184c-0938-4edb-b525-7951845d6e3f"}},{"name":"8e1d0677-f5ac-4c90-ba46-756702c1dbe9.res","label":"2 - Policy Status BALIC➛res","reference_display":"res","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4031005a-97e2-40bc-a531-a992d6ab441d"}},{"name":"subflow.request","label":"input➛request","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"79cee696-7eb4-4fa1-9ccf-c33fe2e522e6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.insurer","label":"input➛insurer","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9c223dd4-2003-4fe3-8b90-17bedf017692","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"2ffe5edf-87a6-43dc-9e4b-1a0389ded450.response","label":"5 - HDFC Payment Link➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7e46d63c-d54c-49a4-a789-62c8ecb7065b"}}]</label_cache>
+        <master_snapshot>61468fa5ff405a1019a8ffda7c4fd942</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Get Payment Link</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:36:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9bd1c7adff005a1019a8ffda7c4fd9bb</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Get Payment Link</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_9bd1c7adff005a1019a8ffda7c4fd9bb</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:46</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb^id=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT IN5bd1c7adff005a1019a8ffda7c4fd9be"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9bd1c7adff005a1019a8ffda7c4fd9bb</id>
+        <name>Get Payment Link</name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:36:43</sys_created_on>
+        <sys_id>5bd1c7adff005a1019a8ffda7c4fd9be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:36:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5bd1c7adff005a1019a8ffda7c4fd9be"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT IN45464fa5ff405a1019a8ffda7c4fd993,cd464fa5ff405a1019a8ffda7c4fd997"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=79cee696-7eb4-4fa1-9ccf-c33fe2e522e6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>request</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</model>
+        <model_id>9bd1c7adff005a1019a8ffda7c4fd9bb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9bd1c7adff005a1019a8ffda7c4fd9bb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>45464fa5ff405a1019a8ffda7c4fd993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=45464fa5ff405a1019a8ffda7c4fd993"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9c223dd4-2003-4fe3-8b90-17bedf017692</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurer</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</model>
+        <model_id>9bd1c7adff005a1019a8ffda7c4fd9bb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9bd1c7adff005a1019a8ffda7c4fd9bb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>cd464fa5ff405a1019a8ffda7c4fd997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cd464fa5ff405a1019a8ffda7c4fd997"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT INcd464fa5ff405a1019a8ffda7c4fd99c"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c0abc4a3-7c58-4b9f-8132-ced997814e6a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</model>
+        <model_id>9bd1c7adff005a1019a8ffda7c4fd9bb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>cd464fa5ff405a1019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cd464fa5ff405a1019a8ffda7c4fd99c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT IN41464fa5ff405a1019a8ffda7c4fd9df,6af64729ff405a1019a8ffda7c4fd965,89464fa5ff405a1019a8ffda7c4fd9b0,c5464fa5ff405a1019a8ffda7c4fd9da,cd464fa5ff405a1019a8ffda7c4fd9d5,e1a8fe75ff5c1a9019a8ffda7c4fd96a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">89464fa5ff405a1019a8ffda7c4fd9de</block>
+        <comment/>
+        <connected_to>8f6ee836-9112-451b-a117-7d13311ff809</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>41464fa5ff405a1019a8ffda7c4fd9df</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:46</sys_updated_on>
+        <ui_id>27174851-21a7-42d6-9bf4-02c8daa4eaa2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=41464fa5ff405a1019a8ffda7c4fd9df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>41464fa5ff405a1019a8ffda7c4fd9df</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>01464fa5ff405a1019a8ffda7c4fd9e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <value>ICICI</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=41464fa5ff405a1019a8ffda7c4fd9df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>41464fa5ff405a1019a8ffda7c4fd9df</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>8d464fa5ff405a1019a8ffda7c4fd9e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{subflow.insurer}}=ICICI</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>41464fa5ff405a1019a8ffda7c4fd9df</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>c9464fa5ff405a1019a8ffda7c4fd9e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb^id=41464fa5ff405a1019a8ffda7c4fd9df"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=41464fa5ff405a1019a8ffda7c4fd9df"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=41464fa5ff405a1019a8ffda7c4fd9df"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6ef64729ff405a1019a8ffda7c4fd964</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>6141628c-ca6e-4ab0-b912-616e62c9d7b9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:04</sys_created_on>
+        <sys_id>6af64729ff405a1019a8ffda7c4fd965</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:45</sys_updated_on>
+        <ui_id>76224c99-1e90-4fd1-bd42-53f98b4795af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6af64729ff405a1019a8ffda7c4fd965"/>
+    <sys_element_mapping action="delete_multiple" query="id=6af64729ff405a1019a8ffda7c4fd965"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>6af64729ff405a1019a8ffda7c4fd965</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:04</sys_created_on>
+        <sys_id>22f64729ff405a1019a8ffda7c4fd969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:04</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb</table>
+        <value>{{2ffe5edf-87a6-43dc-9e4b-1a0389ded450.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6af64729ff405a1019a8ffda7c4fd965"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6af64729ff405a1019a8ffda7c4fd965"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8d464fa5ff405a1019a8ffda7c4fd9af</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>89464fa5ff405a1019a8ffda7c4fd9b0</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:44</sys_updated_on>
+        <ui_id>8f6ee836-9112-451b-a117-7d13311ff809</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=89464fa5ff405a1019a8ffda7c4fd9b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>89464fa5ff405a1019a8ffda7c4fd9b0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>05464fa5ff405a1019a8ffda7c4fd9b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <value>Balic</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=89464fa5ff405a1019a8ffda7c4fd9b0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>89464fa5ff405a1019a8ffda7c4fd9b0</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>81464fa5ff405a1019a8ffda7c4fd9b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.insurer}}=BALIC</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>89464fa5ff405a1019a8ffda7c4fd9b0</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>c9464fa5ff405a1019a8ffda7c4fd9b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb^id=89464fa5ff405a1019a8ffda7c4fd9b0"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=89464fa5ff405a1019a8ffda7c4fd9b0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=89464fa5ff405a1019a8ffda7c4fd9b0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">01464fa5ff405a1019a8ffda7c4fd9da</block>
+        <comment/>
+        <connected_to>8f6ee836-9112-451b-a117-7d13311ff809</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>c5464fa5ff405a1019a8ffda7c4fd9da</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:45</sys_updated_on>
+        <ui_id>6141628c-ca6e-4ab0-b912-616e62c9d7b9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c5464fa5ff405a1019a8ffda7c4fd9da"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c5464fa5ff405a1019a8ffda7c4fd9da</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>05464fa5ff405a1019a8ffda7c4fd9de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <value>HDFC</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c5464fa5ff405a1019a8ffda7c4fd9da"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c5464fa5ff405a1019a8ffda7c4fd9da</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>81464fa5ff405a1019a8ffda7c4fd9de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{subflow.insurer}}=HDFC</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c5464fa5ff405a1019a8ffda7c4fd9da</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>cd464fa5ff405a1019a8ffda7c4fd9dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb^id=c5464fa5ff405a1019a8ffda7c4fd9da"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c5464fa5ff405a1019a8ffda7c4fd9da"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c5464fa5ff405a1019a8ffda7c4fd9da"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">09464fa5ff405a1019a8ffda7c4fd9d5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>8f6ee836-9112-451b-a117-7d13311ff809</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>cd464fa5ff405a1019a8ffda7c4fd9d5</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:45</sys_updated_on>
+        <ui_id>2bc5ab30-5c08-4908-ba20-a8af9196c478</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=cd464fa5ff405a1019a8ffda7c4fd9d5"/>
+    <sys_element_mapping action="delete_multiple" query="id=cd464fa5ff405a1019a8ffda7c4fd9d5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>cd464fa5ff405a1019a8ffda7c4fd9d5</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>c9464fa5ff405a1019a8ffda7c4fd9d9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 07:08:39</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb</table>
+        <value>{{8e1d0677-f5ac-4c90-ba46-756702c1dbe9.res}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cd464fa5ff405a1019a8ffda7c4fd9d5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cd464fa5ff405a1019a8ffda7c4fd9d5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e5a8fe75ff5c1a9019a8ffda7c4fd969</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>27174851-21a7-42d6-9bf4-02c8daa4eaa2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:50:38</sys_created_on>
+        <sys_id>e1a8fe75ff5c1a9019a8ffda7c4fd96a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:46</sys_updated_on>
+        <ui_id>b835eba6-0bb6-41af-8683-65e8b68a0c40</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e1a8fe75ff5c1a9019a8ffda7c4fd96a"/>
+    <sys_element_mapping action="delete_multiple" query="id=e1a8fe75ff5c1a9019a8ffda7c4fd96a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>e1a8fe75ff5c1a9019a8ffda7c4fd96a</id>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:50:39</sys_created_on>
+        <sys_id>ada8fe75ff5c1a9019a8ffda7c4fd96d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:50:39</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb</table>
+        <value>{{0f8eccce-a547-4078-9ec8-abef8c8e78a1.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e1a8fe75ff5c1a9019a8ffda7c4fd96a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e1a8fe75ff5c1a9019a8ffda7c4fd96a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT IN8d464fa5ff405a1019a8ffda7c4fd9b4,9ef64729ff405a1019a8ffda7c4fd951,a968f235ff5c1a9019a8ffda7c4fd93b"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id>8f6ee836-9112-451b-a117-7d13311ff809</parent_ui_id>
+        <subflow display_value="Policy Status BALIC">a5354f25ff405a1019a8ffda7c4fd971</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>8d464fa5ff405a1019a8ffda7c4fd9b4</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:45</sys_updated_on>
+        <ui_id>8e1d0677-f5ac-4c90-ba46-756702c1dbe9</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d464fa5ff405a1019a8ffda7c4fd9b4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>8d464fa5ff405a1019a8ffda7c4fd9b4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>81464fa5ff405a1019a8ffda7c4fd9d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">45464fa5ff405a1019a8ffda7c4fd9b6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8d464fa5ff405a1019a8ffda7c4fd9b4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>req</field>
+        <id>8d464fa5ff405a1019a8ffda7c4fd9b4</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>85464fa5ff405a1019a8ffda7c4fd9d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_a5354f25ff405a1019a8ffda7c4fd971</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>8d464fa5ff405a1019a8ffda7c4fd9b4</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>01464fa5ff405a1019a8ffda7c4fd9d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_8d464fa5ff405a1019a8ffda7c4fd9b4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_8d464fa5ff405a1019a8ffda7c4fd9b4^id=8d464fa5ff405a1019a8ffda7c4fd9b4"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=8d464fa5ff405a1019a8ffda7c4fd9b4^sys_idNOT IN45464fa5ff405a1019a8ffda7c4fd9b6"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">8d464fa5ff405a1019a8ffda7c4fd9b4</model>
+        <model_id>8d464fa5ff405a1019a8ffda7c4fd9b4</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_8d464fa5ff405a1019a8ffda7c4fd9b4</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:58</sys_created_on>
+        <sys_id>45464fa5ff405a1019a8ffda7c4fd9b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d464fa5ff405a1019a8ffda7c4fd9b4"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>5</order>
+        <parent_ui_id>6141628c-ca6e-4ab0-b912-616e62c9d7b9</parent_ui_id>
+        <subflow display_value="HDFC Payment Link">3a718b854782c610e9ddbf66706d4318</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:03</sys_created_on>
+        <sys_id>9ef64729ff405a1019a8ffda7c4fd951</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:45</sys_updated_on>
+        <ui_id>2ffe5edf-87a6-43dc-9e4b-1a0389ded450</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ef64729ff405a1019a8ffda7c4fd951"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9ef64729ff405a1019a8ffda7c4fd951</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:04</sys_created_on>
+        <sys_id>a2f64729ff405a1019a8ffda7c4fd964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:04</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">aef64729ff405a1019a8ffda7c4fd952</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9ef64729ff405a1019a8ffda7c4fd951"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurer</field>
+        <id>9ef64729ff405a1019a8ffda7c4fd951</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:04</sys_created_on>
+        <sys_id>a6f64729ff405a1019a8ffda7c4fd963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:04</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_3a718b854782c610e9ddbf66706d4318</table>
+        <value>{{subflow.insurer}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>9ef64729ff405a1019a8ffda7c4fd951</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:04</sys_created_on>
+        <sys_id>e2f64729ff405a1019a8ffda7c4fd963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:04</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_3a718b854782c610e9ddbf66706d4318</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>9ef64729ff405a1019a8ffda7c4fd951</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:04</sys_created_on>
+        <sys_id>22f64729ff405a1019a8ffda7c4fd964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:04</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_9ef64729ff405a1019a8ffda7c4fd951</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_9ef64729ff405a1019a8ffda7c4fd951^id=9ef64729ff405a1019a8ffda7c4fd951"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=9ef64729ff405a1019a8ffda7c4fd951^sys_idNOT INaef64729ff405a1019a8ffda7c4fd952"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">9ef64729ff405a1019a8ffda7c4fd951</model>
+        <model_id>9ef64729ff405a1019a8ffda7c4fd951</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_9ef64729ff405a1019a8ffda7c4fd951</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:03</sys_created_on>
+        <sys_id>aef64729ff405a1019a8ffda7c4fd952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ef64729ff405a1019a8ffda7c4fd951"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>8</order>
+        <parent_ui_id>27174851-21a7-42d6-9bf4-02c8daa4eaa2</parent_ui_id>
+        <subflow display_value="ICICI Payment link">3c3b62f9ff981a9019a8ffda7c4fd939</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:33</sys_created_on>
+        <sys_id>a968f235ff5c1a9019a8ffda7c4fd93b</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:46</sys_updated_on>
+        <ui_id>0f8eccce-a547-4078-9ec8-abef8c8e78a1</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a968f235ff5c1a9019a8ffda7c4fd93b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>a968f235ff5c1a9019a8ffda7c4fd93b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:33</sys_created_on>
+        <sys_id>2d68f235ff5c1a9019a8ffda7c4fd973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:33</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">a968f235ff5c1a9019a8ffda7c4fd93c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a968f235ff5c1a9019a8ffda7c4fd93b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>a968f235ff5c1a9019a8ffda7c4fd93b</id>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:33</sys_created_on>
+        <sys_id>ad68f235ff5c1a9019a8ffda7c4fd959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_3c3b62f9ff981a9019a8ffda7c4fd939</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>a968f235ff5c1a9019a8ffda7c4fd93b</id>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:33</sys_created_on>
+        <sys_id>a968f235ff5c1a9019a8ffda7c4fd973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:33</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_a968f235ff5c1a9019a8ffda7c4fd93b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_a968f235ff5c1a9019a8ffda7c4fd93b^id=a968f235ff5c1a9019a8ffda7c4fd93b"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=a968f235ff5c1a9019a8ffda7c4fd93b^sys_idNOT INa968f235ff5c1a9019a8ffda7c4fd93c"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">a968f235ff5c1a9019a8ffda7c4fd93b</model>
+        <model_id>a968f235ff5c1a9019a8ffda7c4fd93b</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_a968f235ff5c1a9019a8ffda7c4fd93b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:33</sys_created_on>
+        <sys_id>a968f235ff5c1a9019a8ffda7c4fd93c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a968f235ff5c1a9019a8ffda7c4fd93b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT IN01464fa5ff405a1019a8ffda7c4fd997,c1464fa5ff405a1019a8ffda7c4fd99a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request</element>
+        <help/>
+        <hint/>
+        <label>request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9bd1c7adff005a1019a8ffda7c4fd9bb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>01464fa5ff405a1019a8ffda7c4fd997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>insurer</element>
+        <help/>
+        <hint/>
+        <label>insurer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9bd1c7adff005a1019a8ffda7c4fd9bb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>c1464fa5ff405a1019a8ffda7c4fd99a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT IN0d464fa5ff405a1019a8ffda7c4fd9ac"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:57</sys_created_on>
+        <sys_id>0d464fa5ff405a1019a8ffda7c4fd9ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>get_payment_link</internal_name>
+        <label_cache>[{"name":"0f8eccce-a547-4078-9ec8-abef8c8e78a1.response","label":"8 - ICICI Payment link➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7ca6184c-0938-4edb-b525-7951845d6e3f"}},{"name":"8e1d0677-f5ac-4c90-ba46-756702c1dbe9.res","label":"2 - Policy Status BALIC➛res","reference_display":"res","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4031005a-97e2-40bc-a531-a992d6ab441d"}},{"name":"subflow.request","label":"input➛request","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"79cee696-7eb4-4fa1-9ccf-c33fe2e522e6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.insurer","label":"input➛insurer","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9c223dd4-2003-4fe3-8b90-17bedf017692","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"2ffe5edf-87a6-43dc-9e4b-1a0389ded450.response","label":"5 - HDFC Payment Link➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7e46d63c-d54c-49a4-a789-62c8ecb7065b"}}]</label_cache>
+        <master>true</master>
+        <name>Get Payment Link</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>61468fa5ff405a1019a8ffda7c4fd942</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:41</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_variable_value action="delete_multiple" query="document_key=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942^id=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=61468fa5ff405a1019a8ffda7c4fd942^sys_idNOT IN21468fa5ff405a1019a8ffda7c4fd943"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>61468fa5ff405a1019a8ffda7c4fd942</id>
+        <name>Get Payment Link</name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:59</sys_created_on>
+        <sys_id>21468fa5ff405a1019a8ffda7c4fd943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=21468fa5ff405a1019a8ffda7c4fd943"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=61468fa5ff405a1019a8ffda7c4fd942^sys_idNOT INe1468fa5ff405a1019a8ffda7c4fd944,ed468fa5ff405a1019a8ffda7c4fd950"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=79cee696-7eb4-4fa1-9ccf-c33fe2e522e6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>request</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</model>
+        <model_id>61468fa5ff405a1019a8ffda7c4fd942</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_61468fa5ff405a1019a8ffda7c4fd942</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:59</sys_created_on>
+        <sys_id>e1468fa5ff405a1019a8ffda7c4fd944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e1468fa5ff405a1019a8ffda7c4fd944"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9c223dd4-2003-4fe3-8b90-17bedf017692</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurer</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</model>
+        <model_id>61468fa5ff405a1019a8ffda7c4fd942</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_61468fa5ff405a1019a8ffda7c4fd942</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:59</sys_created_on>
+        <sys_id>ed468fa5ff405a1019a8ffda7c4fd950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ed468fa5ff405a1019a8ffda7c4fd950"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=61468fa5ff405a1019a8ffda7c4fd942^sys_idNOT IN6d468fa5ff405a1019a8ffda7c4fd95a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c0abc4a3-7c58-4b9f-8132-ced997814e6a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</model>
+        <model_id>61468fa5ff405a1019a8ffda7c4fd942</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>6d468fa5ff405a1019a8ffda7c4fd95a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6d468fa5ff405a1019a8ffda7c4fd95a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=61468fa5ff405a1019a8ffda7c4fd942^sys_idNOT IN69468fa5ff405a1019a8ffda7c4fd96a,9ff68729ff405a1019a8ffda7c4fd96b,a1468fa5ff405a1019a8ffda7c4fd966,b2a872b5ff5c1a9019a8ffda7c4fd97b,b5468fa5ff405a1019a8ffda7c4fd972,e1468fa5ff405a1019a8ffda7c4fd96e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">09464fa5ff405a1019a8ffda7c4fd9d5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>8f6ee836-9112-451b-a117-7d13311ff809</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>69468fa5ff405a1019a8ffda7c4fd96a</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:39</sys_updated_on>
+        <ui_id>2bc5ab30-5c08-4908-ba20-a8af9196c478</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=69468fa5ff405a1019a8ffda7c4fd96a"/>
+    <sys_element_mapping action="delete_multiple" query="id=69468fa5ff405a1019a8ffda7c4fd96a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>69468fa5ff405a1019a8ffda7c4fd96a</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>a5468fa5ff405a1019a8ffda7c4fd96d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 07:08:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942</table>
+        <value>{{8e1d0677-f5ac-4c90-ba46-756702c1dbe9.res}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=69468fa5ff405a1019a8ffda7c4fd96a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=69468fa5ff405a1019a8ffda7c4fd96a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6ef64729ff405a1019a8ffda7c4fd964</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>6141628c-ca6e-4ab0-b912-616e62c9d7b9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:06</sys_created_on>
+        <sys_id>9ff68729ff405a1019a8ffda7c4fd96b</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:40</sys_updated_on>
+        <ui_id>76224c99-1e90-4fd1-bd42-53f98b4795af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9ff68729ff405a1019a8ffda7c4fd96b"/>
+    <sys_element_mapping action="delete_multiple" query="id=9ff68729ff405a1019a8ffda7c4fd96b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>9ff68729ff405a1019a8ffda7c4fd96b</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:06</sys_created_on>
+        <sys_id>d3f68729ff405a1019a8ffda7c4fd96e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942</table>
+        <value>{{2ffe5edf-87a6-43dc-9e4b-1a0389ded450.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9ff68729ff405a1019a8ffda7c4fd96b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ff68729ff405a1019a8ffda7c4fd96b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8d464fa5ff405a1019a8ffda7c4fd9af</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>a1468fa5ff405a1019a8ffda7c4fd966</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:39</sys_updated_on>
+        <ui_id>8f6ee836-9112-451b-a117-7d13311ff809</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a1468fa5ff405a1019a8ffda7c4fd966"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a1468fa5ff405a1019a8ffda7c4fd966</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>6d468fa5ff405a1019a8ffda7c4fd969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <value>Balic</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a1468fa5ff405a1019a8ffda7c4fd966"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a1468fa5ff405a1019a8ffda7c4fd966</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>e9468fa5ff405a1019a8ffda7c4fd969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.insurer}}=BALIC</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>a1468fa5ff405a1019a8ffda7c4fd966</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>29468fa5ff405a1019a8ffda7c4fd969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942^id=a1468fa5ff405a1019a8ffda7c4fd966"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a1468fa5ff405a1019a8ffda7c4fd966"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a1468fa5ff405a1019a8ffda7c4fd966"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e5a8fe75ff5c1a9019a8ffda7c4fd969</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>27174851-21a7-42d6-9bf4-02c8daa4eaa2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:50:43</sys_created_on>
+        <sys_id>b2a872b5ff5c1a9019a8ffda7c4fd97b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:41</sys_updated_on>
+        <ui_id>b835eba6-0bb6-41af-8683-65e8b68a0c40</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b2a872b5ff5c1a9019a8ffda7c4fd97b"/>
+    <sys_element_mapping action="delete_multiple" query="id=b2a872b5ff5c1a9019a8ffda7c4fd97b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>b2a872b5ff5c1a9019a8ffda7c4fd97b</id>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:50:43</sys_created_on>
+        <sys_id>faa872b5ff5c1a9019a8ffda7c4fd97d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:50:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942</table>
+        <value>{{0f8eccce-a547-4078-9ec8-abef8c8e78a1.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b2a872b5ff5c1a9019a8ffda7c4fd97b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b2a872b5ff5c1a9019a8ffda7c4fd97b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">89464fa5ff405a1019a8ffda7c4fd9de</block>
+        <comment/>
+        <connected_to>8f6ee836-9112-451b-a117-7d13311ff809</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>b5468fa5ff405a1019a8ffda7c4fd972</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:40</sys_updated_on>
+        <ui_id>27174851-21a7-42d6-9bf4-02c8daa4eaa2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b5468fa5ff405a1019a8ffda7c4fd972"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b5468fa5ff405a1019a8ffda7c4fd972</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>75468fa5ff405a1019a8ffda7c4fd975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <value>ICICI</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b5468fa5ff405a1019a8ffda7c4fd972"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b5468fa5ff405a1019a8ffda7c4fd972</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>f1468fa5ff405a1019a8ffda7c4fd975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{subflow.insurer}}=ICICI</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>b5468fa5ff405a1019a8ffda7c4fd972</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>31468fa5ff405a1019a8ffda7c4fd975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942^id=b5468fa5ff405a1019a8ffda7c4fd972"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b5468fa5ff405a1019a8ffda7c4fd972"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b5468fa5ff405a1019a8ffda7c4fd972"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">01464fa5ff405a1019a8ffda7c4fd9da</block>
+        <comment/>
+        <connected_to>8f6ee836-9112-451b-a117-7d13311ff809</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>e1468fa5ff405a1019a8ffda7c4fd96e</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:39</sys_updated_on>
+        <ui_id>6141628c-ca6e-4ab0-b912-616e62c9d7b9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e1468fa5ff405a1019a8ffda7c4fd96e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e1468fa5ff405a1019a8ffda7c4fd96e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>b9468fa5ff405a1019a8ffda7c4fd971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <value>HDFC</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e1468fa5ff405a1019a8ffda7c4fd96e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e1468fa5ff405a1019a8ffda7c4fd96e</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>39468fa5ff405a1019a8ffda7c4fd971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{subflow.insurer}}=HDFC</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e1468fa5ff405a1019a8ffda7c4fd96e</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>75468fa5ff405a1019a8ffda7c4fd971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942^id=e1468fa5ff405a1019a8ffda7c4fd96e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e1468fa5ff405a1019a8ffda7c4fd96e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e1468fa5ff405a1019a8ffda7c4fd96e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=61468fa5ff405a1019a8ffda7c4fd942^sys_idNOT IN1ff68729ff405a1019a8ffda7c4fd97e,39468fa5ff405a1019a8ffda7c4fd975,7a68b635ff5c1a9019a8ffda7c4fd901"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>5</order>
+        <parent_ui_id>6141628c-ca6e-4ab0-b912-616e62c9d7b9</parent_ui_id>
+        <subflow display_value="HDFC Payment Link">3a718b854782c610e9ddbf66706d4318</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:07</sys_created_on>
+        <sys_id>1ff68729ff405a1019a8ffda7c4fd97e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:40</sys_updated_on>
+        <ui_id>2ffe5edf-87a6-43dc-9e4b-1a0389ded450</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1ff68729ff405a1019a8ffda7c4fd97e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>1ff68729ff405a1019a8ffda7c4fd97e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:07</sys_created_on>
+        <sys_id>17f68729ff405a1019a8ffda7c4fd98b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:07</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">d7f68729ff405a1019a8ffda7c4fd97f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1ff68729ff405a1019a8ffda7c4fd97e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurer</field>
+        <id>1ff68729ff405a1019a8ffda7c4fd97e</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:07</sys_created_on>
+        <sys_id>9bf68729ff405a1019a8ffda7c4fd98a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_3a718b854782c610e9ddbf66706d4318</table>
+        <value>{{subflow.insurer}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>1ff68729ff405a1019a8ffda7c4fd97e</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:07</sys_created_on>
+        <sys_id>d7f68729ff405a1019a8ffda7c4fd98a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_3a718b854782c610e9ddbf66706d4318</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>1ff68729ff405a1019a8ffda7c4fd97e</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:07</sys_created_on>
+        <sys_id>93f68729ff405a1019a8ffda7c4fd98b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:07</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_1ff68729ff405a1019a8ffda7c4fd97e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_1ff68729ff405a1019a8ffda7c4fd97e^id=1ff68729ff405a1019a8ffda7c4fd97e"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=1ff68729ff405a1019a8ffda7c4fd97e^sys_idNOT INd7f68729ff405a1019a8ffda7c4fd97f"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">1ff68729ff405a1019a8ffda7c4fd97e</model>
+        <model_id>1ff68729ff405a1019a8ffda7c4fd97e</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_1ff68729ff405a1019a8ffda7c4fd97e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:59:07</sys_created_on>
+        <sys_id>d7f68729ff405a1019a8ffda7c4fd97f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:59:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1ff68729ff405a1019a8ffda7c4fd97e"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id>8f6ee836-9112-451b-a117-7d13311ff809</parent_ui_id>
+        <subflow display_value="Policy Status BALIC">a5354f25ff405a1019a8ffda7c4fd971</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>39468fa5ff405a1019a8ffda7c4fd975</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:39</sys_updated_on>
+        <ui_id>8e1d0677-f5ac-4c90-ba46-756702c1dbe9</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=39468fa5ff405a1019a8ffda7c4fd975"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>39468fa5ff405a1019a8ffda7c4fd975</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>fd468fa5ff405a1019a8ffda7c4fd983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">f1468fa5ff405a1019a8ffda7c4fd976</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=39468fa5ff405a1019a8ffda7c4fd975"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>req</field>
+        <id>39468fa5ff405a1019a8ffda7c4fd975</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>75468fa5ff405a1019a8ffda7c4fd983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_a5354f25ff405a1019a8ffda7c4fd971</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>39468fa5ff405a1019a8ffda7c4fd975</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>7d468fa5ff405a1019a8ffda7c4fd983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_39468fa5ff405a1019a8ffda7c4fd975</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_39468fa5ff405a1019a8ffda7c4fd975^id=39468fa5ff405a1019a8ffda7c4fd975"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=39468fa5ff405a1019a8ffda7c4fd975^sys_idNOT INf1468fa5ff405a1019a8ffda7c4fd976"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">39468fa5ff405a1019a8ffda7c4fd975</model>
+        <model_id>39468fa5ff405a1019a8ffda7c4fd975</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_39468fa5ff405a1019a8ffda7c4fd975</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>f1468fa5ff405a1019a8ffda7c4fd976</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=39468fa5ff405a1019a8ffda7c4fd975"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Payment Link">61468fa5ff405a1019a8ffda7c4fd942</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>8</order>
+        <parent_ui_id>27174851-21a7-42d6-9bf4-02c8daa4eaa2</parent_ui_id>
+        <subflow display_value="ICICI Payment link">3c3b62f9ff981a9019a8ffda7c4fd939</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:38</sys_created_on>
+        <sys_id>7a68b635ff5c1a9019a8ffda7c4fd901</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:40</sys_updated_on>
+        <ui_id>0f8eccce-a547-4078-9ec8-abef8c8e78a1</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7a68b635ff5c1a9019a8ffda7c4fd901"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>7a68b635ff5c1a9019a8ffda7c4fd901</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:38</sys_created_on>
+        <sys_id>7e68b635ff5c1a9019a8ffda7c4fd940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">3668b635ff5c1a9019a8ffda7c4fd902</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7a68b635ff5c1a9019a8ffda7c4fd901"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>7a68b635ff5c1a9019a8ffda7c4fd901</id>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:38</sys_created_on>
+        <sys_id>f268b635ff5c1a9019a8ffda7c4fd940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_3c3b62f9ff981a9019a8ffda7c4fd939</table>
+        <value>{{subflow.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>7a68b635ff5c1a9019a8ffda7c4fd901</id>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:38</sys_created_on>
+        <sys_id>fa68b635ff5c1a9019a8ffda7c4fd940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:38</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_7a68b635ff5c1a9019a8ffda7c4fd901</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_7a68b635ff5c1a9019a8ffda7c4fd901^id=7a68b635ff5c1a9019a8ffda7c4fd901"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=7a68b635ff5c1a9019a8ffda7c4fd901^sys_idNOT IN3668b635ff5c1a9019a8ffda7c4fd902"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">7a68b635ff5c1a9019a8ffda7c4fd901</model>
+        <model_id>7a68b635ff5c1a9019a8ffda7c4fd901</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_7a68b635ff5c1a9019a8ffda7c4fd901</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>nikita</sys_created_by>
+        <sys_created_on>2024-08-29 10:49:38</sys_created_on>
+        <sys_id>3668b635ff5c1a9019a8ffda7c4fd902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nikita</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:49:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7a68b635ff5c1a9019a8ffda7c4fd901"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_61468fa5ff405a1019a8ffda7c4fd942^sys_idNOT INa5468fa5ff405a1019a8ffda7c4fd94d,e5468fa5ff405a1019a8ffda7c4fd955"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request</element>
+        <help/>
+        <hint/>
+        <label>request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_61468fa5ff405a1019a8ffda7c4fd942</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:55:59</sys_created_on>
+        <sys_id>a5468fa5ff405a1019a8ffda7c4fd94d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>insurer</element>
+        <help/>
+        <hint/>
+        <label>insurer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_61468fa5ff405a1019a8ffda7c4fd942</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>e5468fa5ff405a1019a8ffda7c4fd955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942^sys_idNOT INe9468fa5ff405a1019a8ffda7c4fd95f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:00</sys_created_on>
+        <sys_id>e9468fa5ff405a1019a8ffda7c4fd95f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-16 06:56:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_61468fa5ff405a1019a8ffda7c4fd942"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>9bd1c7adff005a1019a8ffda7c4fd9bb</sys_id>
+        <latest_snapshot>61468fa5ff405a1019a8ffda7c4fd942</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix3b-11-14-2024_11-25-2024_0807.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9bd1c7adff005a1019a8ffda7c4fd9bb"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9bd1c7adff005a1019a8ffda7c4fd9bb^sys_idNOT IN35468fa5ff405a1019a8ffda7c4fd9b0"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"35468fa5ff405a1019a8ffda7c4fd9b0","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Get Payment Link">9bd1c7adff005a1019a8ffda7c4fd9bb</plan_id>
+        <snapshot>60bfa3f1476a9a50e9ddbf66706d4373</snapshot>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-16 06:56:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35468fa5ff405a1019a8ffda7c4fd9b0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-09-18 11:11:44</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

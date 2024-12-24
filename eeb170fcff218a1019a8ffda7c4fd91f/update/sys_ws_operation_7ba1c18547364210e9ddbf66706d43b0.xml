@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_rptp_smartinte_0/get_quote/quote</default_operation_uri>
+        <enforce_acl>c7092e05ffb2821019a8ffda7c4fd98c,cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>quote</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+    var sysID = logGR.insert();
+
+    var res;
+    var inputs;
+    var message;
+    var outputs;
+    var result;
+
+    var insurer = request.headers.insurer || "all";
+    var productID = request.headers.productid;
+    var variant = request.headers.productvariant;
+    var req = request.body.data;
+
+
+    logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+    logGR.addQuery('sys_id', sysID);
+    logGR.query();
+    if (logGR.next()) {
+        logGR.requesttype = "Quote";
+        logGR.clientrequestbody = JSON.stringify(req);
+        logGR.insurer = insurer;
+        logGR.update();
+    }
+
+    // var checkCache = new global.storeCache().checkForCache(req);
+    // //gs.info(checkCache);
+    // if (!checkCache === false) {
+    // 	response.setContentType('application/json');
+    // 	response.setBody(JSON.parse(checkCache));
+    // 	gs.info("cache");
+    // 	logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+    // 	logGR.addQuery('sys_id', sysID);
+    // 	logGR.query();
+    // 	if (logGR.next()) {
+    // 		logGR.receviedresponse = (receivedresponse);
+    // 		logGR.transformedrequest = JSON.stringify(formatedrequest);
+    // 		logGR.responsereturened = (res);
+    // 		logGR.update();
+    // 	}
+    // 	return;
+    // }
+
+    if (insurer != "all") {
+        gs.info("normal");
+        // implement resource heretry {
+        try {
+            inputs = {};
+            //inputs['sysid'] = sysID; // String 
+            inputs['producttype'] = request.headers.type || ""; // String 
+            inputs['insurer'] = insurer;
+            //	inputs['vendorcode'] = ; // String 
+            //inputs['productname'] =""; // String 
+            inputs['productid'] = productID; // String 
+            inputs['variant'] = variant; // String 
+            inputs['requestbody'] = req; // Object 
+
+            // Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+            // sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.premium_sub_flow').inBackground().withInputs(inputs).run();
+
+            // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+            result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.premium_sub_flow').inForeground().withInputs(inputs).timeout(50000).run();
+            outputs = result.getOutputs();
+
+            //var requestdetails = outputs['requestdetails']; // String
+            res = outputs['response']; // String
+            var receivedresponse = outputs['receivedresponse']; // String
+            var formatedrequest = outputs['formatedrequest']; // String
+            var tostore = outputs['tostore'];
+
+            var id;
+            logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+            logGR.addQuery('sys_id', sysID);
+            logGR.query();
+            if (logGR.next()) {
+                id = logGR.request_id;
+                logGR.receviedresponse = (receivedresponse);
+                logGR.transformedrequest = JSON.stringify(formatedrequest);
+                logGR.responsereturened = (res);
+                logGR.clientrequestbody = tostore;
+                logGR.update();
+
+            }
+
+
+
+            response.setContentType('application/json');
+            response.setBody({
+                transactionID: id,
+                respone: JSON.parse(res)
+            });
+            //new global.storeCache().setValue(req, JSON.parse(res));//set the cache value to the response 
+
+
+        } catch (ex) {
+
+            response.setContentType('application/json');
+            if (outputs) {
+                res = outputs['response']; // String
+                if (res.code || res.investment) {
+                    response.setBody((res));
+                } else
+                    response.setBody(JSON.parse(res));
+                logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+                logGR.addQuery('sys_id', sysID);
+                logGR.query();
+                if (logGR.next()) {
+                    logGR.responsereturened = res;
+                    logGR.update();
+                }
+            } else {
+                message = ex.getMessage();
+                gs.error(message);
+                //response.setBody(({"response":"Application Number Already exists"}));
+
+                response.setBody((message));
+                logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+                logGR.addQuery('sys_id', sysID);
+                logGR.query();
+                if (logGR.next()) {
+                    logGR.responsereturened = message;
+                    logGR.update();
+                }
+            }
+        }
+
+    } else if (insurer == "all") {
+
+        try {
+            inputs = {};
+            inputs['requestbody'] = req; // JSON 
+            inputs['producttype'] = "ULIP";
+
+            // Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+            // sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.bulk_qoute').inBackground().withInputs(inputs).run();
+
+            // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+            result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.bulk_qoute').inForeground().withInputs(inputs).timeout(100000).run();
+            outputs = result.getOutputs();
+
+            // // Get Outputs:
+            // // Note: outputs can only be retrieved when executing synchronously.
+            // //   var requestdetails = outputs['requestdetails']; // String
+            // res = outputs['response']; // String
+            // response.setContentType('application/json');
+            // result = JSON.parse(res);
+            // var id;
+            // logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+            // logGR.addQuery('sys_id', sysID);
+            // logGR.query();
+            // if (logGR.next()) {
+            //     id = logGR.request_id;
+            // }
+            // var code;
+            // var msg;
+            // var succeedCount = 0;
+            // var failedCount = 0;
+
+            // result.responses.forEach(function(rec) {
+            //      var status = rec.status||"";
+            //     if (status.toLowerCase() != "success") {
+            //          failedCount ++;
+            //     } else {
+            //        succeedCount++;
+            //     }
+            //     var key = "status";
+            //     delete rec[key];
+            // });
+
+            // if (result.responses.length > 0) {
+            //     code = 0;
+            //     msg = "Success";
+            // } else {
+            //     code = 1;
+            //     msg = "Failed";
+            // }
+            // var responseObj = {
+            //     code: code,
+            //     message: msg,
+            //     payload: {
+            //         enquiryId: id,
+            //         succeed: parseInt(succeedCount),
+            //         failed: parseInt(failedCount),
+            //         quote: []
+            //     }
+            // };
+            // result = JSON.stringify(result);
+            // responseObj.payload.quote.push(JSON.parse(result));
+            // response.setBody(responseObj);
+
+			// Get Outputs:
+            // Note: outputs can only be retrieved when executing synchronously.
+            //   var requestdetails = outputs['requestdetails']; // String
+            res = outputs['response']; // String
+
+            result = JSON.parse(res);
+            var id;
+            logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
+            logGR.addQuery('sys_id', sysID);
+            logGR.query();
+            if (logGR.next()) {
+                id = logGR.request_id;
+            }
+            var code;
+            var msg;
+
+
+            if (result.combinedResponses.length > 0) {
+                code = 0;
+                msg = "Success";
+            } else {
+                code = 1;
+                msg = "Failed";
+            }
+
+			var array=(result).combinedResponses;
+			var len=0;
+			
+			array.forEach(function(arr){
+				var a =arr.calculations;
+				len=a.length+len;
+			});
+			//gs.info(array.length);
+            var responseObj = {
+                code: code,
+                message: msg,
+                payload: {
+                    transactionId: id + "",
+                    succeed: result.scount,
+                    failed: len - result.scount,
+                    quote: []
+                }
+            };
+
+			
+            result = JSON.stringify(result);
+            responseObj.payload.quote = (JSON.parse(result).combinedResponses);
+            response.setContentType('application/json');
+            var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(responseObj));
+            //   response.setBody(responseObj);
+
+
+
+        } catch (ex) {
+            response.setContentType('application/json');
+            if (outputs) {
+                res = outputs['response']; // String
+                response.setBody(JSON.parse(res));
+            } else {
+                message = ex.getMessage();
+                gs.error(message);
+                response.setContentType('application/json');
+                response.setBody((message));
+            }
+        }
+    }
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_rptp_smartinte_0/v1/get_quote/quote</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/quote</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-06-13 04:44:10</sys_created_on>
+        <sys_id>7ba1c18547364210e9ddbf66706d43b0</sys_id>
+        <sys_mod_count>87</sys_mod_count>
+        <sys_name>quote</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_ws_operation_7ba1c18547364210e9ddbf66706d43b0</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 15:48:38</sys_updated_on>
+        <web_service_definition display_value="Get Quote">884672b7ffbdce9019a8ffda7c4fd943</web_service_definition>
+        <web_service_version display_value="v1">86618d4547364210e9ddbf66706d4316</web_service_version>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>7ba1c18547364210e9ddbf66706d43b0</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-29 06:58:00</sys_created_on>
+        <sys_id>fea57f1fff8ed25019a8ffda7c4fd93b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-29 06:58:00</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

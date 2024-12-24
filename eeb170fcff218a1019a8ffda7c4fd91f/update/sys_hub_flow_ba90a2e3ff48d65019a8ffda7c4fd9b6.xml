@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=8916060000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>08b650ec47778a90e9ddbf66706d4367</copied_from>
+        <copied_from_name>Copy1 of ICICIGetQuote</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>copy_of_copy1_of_icicigetquote_test</internal_name>
+        <label_cache>[{"name":"subflow.requestbody","label":"input➛requestBody","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c"}},{"name":"608d9fdc-c2ff-4be6-8174-202687a6da11.variable","label":"2 - Copy of Call Rest ICICI test➛response","type":"string","base_type":"string","usedInstances":{"64c4dc37-4cbc-4760-832c-abe3931d2594":["response-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"2977654b-d88e-4146-a0e2-c704be6f09c7.response","label":"1 - Fetch token for ICICI➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4bd960b9-c33f-47b4-b730-0575b31b06d6"}},{"name":"e4f6fb58-9a0a-4618-b640-c1898fd618eb.__action_status__","label":"2 - Format the request Object ICICI(quote)➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"70c1523b-7eb4-4a30-8c7e-76a5a31afd7a"}},{"name":"e4f6fb58-9a0a-4618-b640-c1898fd618eb.variable","label":"2 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"a0846528-c2b2-4658-bb42-baff1746ac6c.variable","label":"23 - Get DT PT Value➛req","reference_display":"req","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfa12a93-d65b-42ee-9471-b702c057b756"}},{"name":"2b57fdc2-3013-4979-98dd-36a248c5a749.variable","label":"20 - Get DT PT Value➛req","reference_display":"req","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfa12a93-d65b-42ee-9471-b702c057b756"}},{"name":"flow_variable.request","label":"Flow Variables➛request","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"edac868e-210b-486f-ba99-7e91fff65faf"}},{"name":"a9383de6-b0ae-4df6-9f10-0706faf1269e.variable","label":"23 - Get DT PPT Value➛req","reference_display":"req","type":"object","base_type":"object","attributes":{"sourceId":"435ca26f-36f9-410f-bae1-689614a0cefd","uiTypeLabel":"Object","co_type_name":"FD121b5348293fc69012bd55d2c33b2bae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b45d8ebb-b281-4c33-8a17-7bb0e5f00805","pwd2droppable":"true","uiType":"object","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"da0cd1e2-995b-4888-acdf-f1a575bcbb4d.variable","label":"19 - Get DT PPT Value➛req","reference_display":"req","type":"object","base_type":"object","attributes":{"sourceId":"435ca26f-36f9-410f-bae1-689614a0cefd","uiTypeLabel":"Object","co_type_name":"FD121b5348293fc69012bd55d2c33b2bae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b45d8ebb-b281-4c33-8a17-7bb0e5f00805","pwd2droppable":"true","uiType":"object","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"7e5a82b0-b820-4f39-b8fc-d51215e7070c.receivedresponse","label":"8 - ICICIGetQuotePT➛receivedResponse","reference_display":"receivedResponse","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d8df8d28-7258-462e-be6c-31909153737e"}},{"name":"7e5a82b0-b820-4f39-b8fc-d51215e7070c.insurerresponse","label":"8 - ICICIGetQuotePT➛insurerResponse","reference_display":"insurerResponse","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9a481624-1238-4bc4-adb8-bae5066719c9"}},{"name":"88a2b1c0-eaaf-4e05-967e-50f4c884ebb0.variable","label":"14 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"1d293392-d6d2-4045-805b-2be8bc738639.variable","label":"13 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"e08b1f7f-c06d-4810-8dfa-6c34910a79a7.variable","label":"10 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"f2d23034-b090-4b2b-886d-c761a99faaeb.variable","label":"11 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"af27a456-5c52-476a-9a76-8f31599829b0.variable","label":"25 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"563813c5-f79f-4f68-bd04-c86c617c821d.variable","label":"23 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"fd87e5df-d9af-4ef6-87a4-0339bfd3a2ae.variable","label":"20 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"13c62e29-5620-4c61-bc17-81272f0c53eb.variable","label":"21 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"3dd34d17-451d-49a0-86d0-ab2f89e7b2fc.variable","label":"13 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"e324a8b7-42e4-418f-aaf0-09e60c3f6d67.variable","label":"22 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"616c2bb9-e36d-455e-a9c0-9d37807d4354.variable","label":"11 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"a46385a2-bed9-4f2e-892d-d1c3811419b4.variable","label":"8 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a0477cc6-6d87-4cea-a475-19953b4c9b36.variable","label":"9 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"23d253ab-0b3f-4033-9a42-5e3883014fc8.variable","label":"39 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"655516be-db12-4edd-9a7a-91a2e9e6c478.variable","label":"37 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"63f0d3a2-abf2-4497-bb0a-ae709c47b8c2.variable","label":"34 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a2026568-77ff-4876-aa3b-2269e132416d.variable","label":"35 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"subflow.insurer","label":"input➛insurer","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"215527c7-4998-4718-8cdc-e6f79f98aeff","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"80c75517-47d6-49bb-a39a-b83ca1f841a2.variable","label":"33 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"5e497596-2fef-4de0-95cf-72d56c03999e.variable","label":"29 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"ecca1416-3ae0-4f5e-b3fb-96f6c14d9e19.variable","label":"31 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"74d38524-5db6-4880-9919-72ebcf79539a.variable","label":"28 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"subflow.type","label":"input➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c6848f94-db70-413a-bffb-dd2bae2515aa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__","label":"4 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87b4cc8-be78-4c94-aa4f-b9eb0436400f.variable","label":"7 - Get DT PPT Value➛req","reference_display":"req","type":"object","base_type":"object","attributes":{"sourceId":"435ca26f-36f9-410f-bae1-689614a0cefd","uiTypeLabel":"Object","co_type_name":"FD121b5348293fc69012bd55d2c33b2bae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b45d8ebb-b281-4c33-8a17-7bb0e5f00805","pwd2droppable":"true","uiType":"object","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"a13a319f-3b4e-480a-9107-8db3ebdfea4a.receivedresponse","label":"18 - ICICIGetQuotePT➛receivedResponse","reference_display":"receivedResponse","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d8df8d28-7258-462e-be6c-31909153737e"}},{"name":"7e5a82b0-b820-4f39-b8fc-d51215e7070c.requestbody","label":"8 - ICICIGetQuotePT➛requestbody","reference_display":"requestbody","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc562aee5faaf42502b5ac413c15efef3","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"343b7cee-7ab3-4de8-9eab-a05610d9fae3","pwd2droppable":"true","uiType":"object","uiUniqueId":"c3014f53-4592-450e-b313-3705b0a2ebab"}},{"name":"e4f6fb58-9a0a-4618-b640-c1898fd618eb.__action_status__.message","label":"2 - Format the request Object ICICI(quote)➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__.message","label":"4 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"58882ab1-c862-4187-9db0-452102fd1852.variable","label":"4 - Handling Errors➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d4e96113-1f84-4925-85ae-3606fb015e7e"}},{"name":"e49d7bf1-04f7-4834-9b6d-60a8bfa5d162.req","label":"3 - Get DT PPT and PT➛req","reference_display":"req","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7cacacb6-7c8f-4eb7-b0b9-a1e86b604bb3"}},{"name":"74cc509e-5f65-457b-bc91-fcc097dc4fd4.req","label":"8 - Get DT PPT and PT➛req","reference_display":"req","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7cacacb6-7c8f-4eb7-b0b9-a1e86b604bb3"}}]</label_cache>
+        <master_snapshot>8061e667ff48d65019a8ffda7c4fd933</master_snapshot>
+        <master_snapshot_digest/>
+        <name>ICICI Direct Insurer Call</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-22 09:19:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba90a2e3ff48d65019a8ffda7c4fd9b6</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>ICICI Direct Insurer Call</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_ba90a2e3ff48d65019a8ffda7c4fd9b6</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:28</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ba90a2e3ff48d65019a8ffda7c4fd9b6^id=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT INba90a2e3ff48d65019a8ffda7c4fd9b7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ba90a2e3ff48d65019a8ffda7c4fd9b6</id>
+        <name>Copy of Copy1 of ICICIGetQuote test</name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-22 09:19:16</sys_created_on>
+        <sys_id>ba90a2e3ff48d65019a8ffda7c4fd9b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-22 09:19:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ba90a2e3ff48d65019a8ffda7c4fd9b7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT IN9163b2f3ffc85a5019a8ffda7c4fd9eb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</model>
+        <model_id>ba90a2e3ff48d65019a8ffda7c4fd9b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ba90a2e3ff48d65019a8ffda7c4fd9b6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 05:19:50</sys_created_on>
+        <sys_id>9163b2f3ffc85a5019a8ffda7c4fd9eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:19:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9163b2f3ffc85a5019a8ffda7c4fd9eb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT IN68f41ff3ff009a5019a8ffda7c4fd9f1"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a3232515-10fc-46e2-8d0b-7f64714f7e71</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</model>
+        <model_id>ba90a2e3ff48d65019a8ffda7c4fd9b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_ba90a2e3ff48d65019a8ffda7c4fd9b6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 07:46:26</sys_created_on>
+        <sys_id>68f41ff3ff009a5019a8ffda7c4fd9f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 07:46:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=68f41ff3ff009a5019a8ffda7c4fd9f1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT IN4fee6d7447da1a14e9ddbf66706d4365,8fee6d7447da1a14e9ddbf66706d436c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Copy of Call Rest ICICI test">00c9da27ff08d65019a8ffda7c4fd9f0</action_type>
+        <action_type_parent display_value="Copy of Call Rest ICICI test">bb2b0ae3ff84d65019a8ffda7c4fd9f1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>00c9da27ff08d65019a8ffda7c4fd9f0</compiled_snapshot>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:11</sys_created_on>
+        <sys_id>4fee6d7447da1a14e9ddbf66706d4365</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:01:41</sys_updated_on>
+        <ui_id>608d9fdc-c2ff-4be6-8174-202687a6da11</ui_id>
+        <values>H4sIAAAAAAAA/+1TXU8bMRD8L37ORXeX++StBSEhtUUqlBeEorW9JlYd33H2AWmU/9517hJSilpQ+1T10ePZ3dmx53rNQHjd2DPrPFiBFyt3JtkRy8o8gaIolcoqWeRxUkOllIRSZErWecYmTAdeks7iEhXxqiqH5zwIPAtLJGaHdz06zxu5IvAeTB/Q9dr1XJnmYXpwv9kQQ2rXGlhd/ZYoFtrIDi07ur6ZsBY6muexY0frZ1evFWyAo3lS/H5Q/OIaftUG0PlO29vx/GEsv9iBTSeDnGTC8NGjlUg6FBiHE7YEK8E33WqPdAjy3JonYKGtp24skB+d/kbzqjiOA1Mh7SZwuN0fL4EbPBncG67UCXggOb3wfTfSxaLRAt3gjEQFvfHHh9hAOG/D7xhKfGg8VjemX9pPgyVs32D3WIT0DucS27Bu0D8uoy4WzcPnndJTbbfOjJemEWD2J/DkH+990LNmvb58ZvWA/GQ2GlzSxPkS2paQeds193o7hUQvp7eGDtPwj0id07d2Ovz/KT0DTE8JP9nCV9DpsO5HakPFYdwXq+npt+mo07iseQVRMUt4lNWIEdTIo0LEsihlms8qyTYT5lbu2IBzT0bRK83v+rDmYNto0HzwOJSITrf+HYm6x9GLzeRPUyrxV5+eH6QUBH0A55uvFJrDlKZ1WRZ5xiNZVRhlSVZEEGMaiTLOOBYqrkVJyXRtY0nwi/l9e4u3JfsVS+6S/eOWL67+lmSn/5P9ryS7qOMsyeUsilMuo0ykaQSqSiJI+Exhmeciq/9ism++AxEsAICBBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Handling Errors">d6b06aa6476f8a50e9ddbf66706d4340</action_type>
+        <action_type_parent display_value="Handling Errors">fdae1222476f8a50e9ddbf66706d4385</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>d6b06aa6476f8a50e9ddbf66706d4340</compiled_snapshot>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:11</sys_created_on>
+        <sys_id>8fee6d7447da1a14e9ddbf66706d436c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:01:41</sys_updated_on>
+        <ui_id>58882ab1-c862-4187-9db0-452102fd1852</ui_id>
+        <values>H4sIAAAAAAAA/+1VTU/cMBD9LzlvVk7ifJhbBUJCaotUKBeEook9BkuOE2IH2K72v9fZZD/KSghaDhXiFj/PeN68madcLwPgTjXmzFgHhuPFwp6J4CiIK0biDBMpaSGylEQMCikF5JxKwSgGs0ANcWlckQwgo3kmC0gJMiEqmWU5yQRNKPVxBmr0kR3e92idBx5A9wPiP4WyrYbF1Q7hd0qLDk1wdH0zC1rofLbDLjhaPrt6bXkNFeo/6h8Qcot2AKzrlLmdzl+ntIsN2HRioBHNAnxyaAT6+hK0xVlQgxHgmm6xRToEcW70DrhTxo0N1vBk1S9fryCEDJESfU98an97vIRK48koz3glT8CBp9Nz13dbtRrF0Y6KCJTQa3e8j40B5+0w4zHFDQ9P2Y3ua/N9lCPYPrA3jd5iKbAd2h34T83Ii7vm8ceG6akya2WmS91w0NsTOK9f1buBzzLo1eUzqUfkQGzUWPuKZQ1t65Gy7ZoHta7iSdfzW+0Pc6mbR8/OqlszH7d47scA81OPn6zhK+jU0O43/4xPHsr9NMqPfb3jGUurhBAeRpJHIZVIwkJGNCSSMCYSglXFg9UssAt7rMHanVB+SuV9P7Q5yjYJVI4aDym8U6374kk94KTFavavXmMvLnua7q+2bRtjcc9syyVBmsR5IcMqjdOQMhaFBaZVGEPMgQlMiyidl6Xn5npblqvVoT//7pG3WfoVXe4svW3zsPG3mDr+NPVHMTVHKVku/VrmjIbUL2XIcu9xEkMmsphwFuf/k6kFvrjuxW63lbF+Rbr3/YG+ovzGbbv6B4Te4rXk02sfxWspjSTSvAjjpBAhTUkWVpXAMI8KUSTIICbxO3rt5jchI4dCrgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT IN0bee6d7447da1a14e9ddbf66706d4364"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <subflow display_value="Fetch token for ICICI">2f0a7ed747ff8e10e9ddbf66706d4360</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:11</sys_created_on>
+        <sys_id>0bee6d7447da1a14e9ddbf66706d4364</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:11</sys_updated_on>
+        <ui_id>2977654b-d88e-4146-a0e2-c704be6f09c7</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT IN0bee6d7447da1a14e9ddbf66706d436c,0fee6d7447da1a14e9ddbf66706d4363,87ee6d7447da1a14e9ddbf66706d4369,c7ee6d7447da1a14e9ddbf66706d4388"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ba3faf1effdbce1019a8ffda7c4fd943</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:11</sys_created_on>
+        <sys_id>0bee6d7447da1a14e9ddbf66706d436c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:11</sys_updated_on>
+        <ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</ui_id>
+        <values>H4sIAAAAAAAA/+1YUW/bOAz+Kwejj23ObpIlzVvRXoAeri1wyfpyLgzZYlLtFMuz5bRdkP8+0pJlO+ltQ5ftYVcgMGxSoih+H0kpG0+VOit1MVfnRSGWqTf55/7YEynJ8H3jpWwF3sSLokIzXRZR5B17ayZLEm5Cbw15IVQaepPQC3p+6B2HXqJWmYSn2/gDJBo1GxJxMG9Hybp+qSZ9YGvWkyxd9mY6F+mysnC0rnSht93i1wqKgi1fOX+769AseYAVMzamUj1eAu0b8sn08vxifnV7M5ufz9/POn6H3lWqYQm53R+H3tFCgOTRgiWgCzN4JmiZa5ZNSVhN24Rh6JVi/pzBXywGSZ8TetT2QrKIjxwYj1Qqn90InZfg1A8i1ZUmLaU8boy60WLH3oplGXCn3mydhsOClVJHFYhugFOzRCOeEeS5yiNDjpddkp39XFCgmsVTzrTKm80smCwavcq5cbXSBa15T5GEdKkfnHLg03OLvw4RMNgN2lb8vZBYi4dCpOia2w+7m/jKkF/baLwu6qdfjrrv4k6B/0Ke9I407vrVQbdFovYlUVFljqqOG7OTmIcCSHWX/kpedGN/XkH226yqifseRbbiRM0a+w4eMEt8pyzF+1R8LOGqyf0x9CHunw1PkrMz/2TARvwkHnN24o8DFrCExSOI22AXkAsmxSdGW5yqfMUMhn/Obm9wCNZ/LopMsue7tzbw1gbe2sBbG3hrA//LNpA8CMlzSKt7guDYCVBo7wtUHFs3he5ovGEUSS4yTfFbo77acS1E8qADexZten+PURySsRzNachR0N1AVTUqqiJlSWtqJ/U32myLtSiydRvlL2Qt6glhrFVtV7/i3O5eSnFpuiwtixaEW7HKDLnnSB2uWnNhEOjioXeNVezyJsGxB08aUk4btr45YjoJEfsWee0ElFxmVWRjIT6h7YFP4xaAG0kcSEokcJtRoIxEs1jWSiXLVXpjvKSzhcm/uyZwVnLZPXQQJAVEHDLymtywPi1mD+rx79qDqUirDVqlVAmT7otpLM5xqaEwCKDf0ceSBph1renIuE2c3CNJlxamd/xEVhT1gh1SODd2OXHtcmgvqfSOQUuM0wMSw/91qXG/g4DpZzUC/mJ0yobsdBgH/VM/8ON3ATB86Y/GQTIanLUQ+oMYYxtKA1Pn3xeLlKqXqFOYwnsgrMY/AKvDQmITrx2Hbio6BNpnCZR3TxGoBwkrQpLKPVI/ynK1FpUXdGHoLSV+9BZ48kHv6ejTM7ndw7CyXnMiumPYLuPqvJPh5G+oJi/lPtUY6yikZI63+l2wf/WqKspukfivHrdL0jlO/n1Ky9ZE5XzkB+NRkvTfARF1OBz249HAZ3zgc86TFlEb9/b8tQSNlZLA0h/D0AO3mYWNwssFpdb+9IbzIkXuiRGGbIVBlUMi6Po9J9lV/d8tKZ4RHJG0RY8q/5fY3Mi2nwGcawjABRYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca3f6f1effdbce1019a8ffda7c4fd985</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:11</sys_created_on>
+        <sys_id>0fee6d7447da1a14e9ddbf66706d4363</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:11</sys_updated_on>
+        <ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ad62a22bff48d65019a8ffda7c4fd97c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>response</outputs_assigned>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:11</sys_created_on>
+        <sys_id>87ee6d7447da1a14e9ddbf66706d4369</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:11</sys_updated_on>
+        <ui_id>64c4dc37-4cbc-4760-832c-abe3931d2594</ui_id>
+        <values>H4sIAAAAAAAA/6VTTY/aMBD9Lz6TKAkhCdxWqlZC2nalQvdSVdFgj8GqY2djB5Yi/nvHJCwr9lT16OfneR8an5jtfdt7t7YPzqmtYYufJya1PTzZreJL4zwYjqujWwq2YDAvMsiyjZR5JYpZks6hklJAyXMp5qVgE6YCr6hknko5lTJJ5nDPkynxDDRIzA5da41DQvag+wCdTkVSEUvwiGdSRvkGi6hKyzzKkqyoSigEpGm8h07BRuP5TG+Fcq2G48t/jOA7pUWHoYFfE9ZCRwY9dmxxurvyxxZrDRvUpLTynTLbf8h9ffgh+OcqggQh7jrcdiI4SScM3zwagSQmQTucsAaMAG+74zvSIYhno2/AThlP01ggvzn1h0ZXSZIEpkSKxXG45TurOD63XlkzID60M15a3Tfm22A1NI4Seu2vjRPSO6wFtsFe0BvF5WpnD9+vQo/KXJKMl9py0O8n8JR303t0ofRere9aGJCn++ZRY0OKdQNtS0jddnavLipkuom3mg5xWGlyF1Y8Bh4SxlQbxI+Ef7nAL+MyfKUx9DjI/TDqtcdh86fZNJulsyhNJI/yArOoEskmKmWRl2kuSyxTdr5UWr/2IdRQ0lhHPTRKBMc71foHsrDHMfmZlkqZ8AuHBbuu5XgUyJUjw+uALT/wxJE2J3zSG3Sw3e8Q9Yad/wIqknMF4wMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b63faf1effdbce1019a8ffda7c4fd948</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:11</sys_created_on>
+        <sys_id>c7ee6d7447da1a14e9ddbf66706d4388</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:11</sys_updated_on>
+        <ui_id>81bca4ab-d737-426e-a485-607e1841e0a3</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT IN9963b2f3ffc85a5019a8ffda7c4fd9ee"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ba90a2e3ff48d65019a8ffda7c4fd9b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 05:19:51</sys_created_on>
+        <sys_id>9963b2f3ffc85a5019a8ffda7c4fd9ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:19:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT INecf41ff3ff009a5019a8ffda7c4fd9f4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_ba90a2e3ff48d65019a8ffda7c4fd9b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 07:46:26</sys_created_on>
+        <sys_id>ecf41ff3ff009a5019a8ffda7c4fd9f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 07:46:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=edge,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1830394000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>08b650ec47778a90e9ddbf66706d4367</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>copy_of_copy1_of_icicigetquote_test</internal_name>
+        <label_cache>[{"name":"subflow.requestbody","label":"input➛requestBody","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c"}},{"name":"608d9fdc-c2ff-4be6-8174-202687a6da11.variable","label":"2 - Copy of Call Rest ICICI test➛response","type":"string","base_type":"string","usedInstances":{"64c4dc37-4cbc-4760-832c-abe3931d2594":["response-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"2977654b-d88e-4146-a0e2-c704be6f09c7.response","label":"1 - Fetch token for ICICI➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4bd960b9-c33f-47b4-b730-0575b31b06d6"}},{"name":"e4f6fb58-9a0a-4618-b640-c1898fd618eb.__action_status__","label":"2 - Format the request Object ICICI(quote)➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"70c1523b-7eb4-4a30-8c7e-76a5a31afd7a"}},{"name":"e4f6fb58-9a0a-4618-b640-c1898fd618eb.variable","label":"2 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"a0846528-c2b2-4658-bb42-baff1746ac6c.variable","label":"23 - Get DT PT Value➛req","reference_display":"req","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfa12a93-d65b-42ee-9471-b702c057b756"}},{"name":"2b57fdc2-3013-4979-98dd-36a248c5a749.variable","label":"20 - Get DT PT Value➛req","reference_display":"req","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfa12a93-d65b-42ee-9471-b702c057b756"}},{"name":"flow_variable.request","label":"Flow Variables➛request","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"edac868e-210b-486f-ba99-7e91fff65faf"}},{"name":"a9383de6-b0ae-4df6-9f10-0706faf1269e.variable","label":"23 - Get DT PPT Value➛req","reference_display":"req","type":"object","base_type":"object","attributes":{"sourceId":"435ca26f-36f9-410f-bae1-689614a0cefd","uiTypeLabel":"Object","co_type_name":"FD121b5348293fc69012bd55d2c33b2bae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b45d8ebb-b281-4c33-8a17-7bb0e5f00805","pwd2droppable":"true","uiType":"object","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"da0cd1e2-995b-4888-acdf-f1a575bcbb4d.variable","label":"19 - Get DT PPT Value➛req","reference_display":"req","type":"object","base_type":"object","attributes":{"sourceId":"435ca26f-36f9-410f-bae1-689614a0cefd","uiTypeLabel":"Object","co_type_name":"FD121b5348293fc69012bd55d2c33b2bae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b45d8ebb-b281-4c33-8a17-7bb0e5f00805","pwd2droppable":"true","uiType":"object","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"7e5a82b0-b820-4f39-b8fc-d51215e7070c.receivedresponse","label":"8 - ICICIGetQuotePT➛receivedResponse","reference_display":"receivedResponse","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d8df8d28-7258-462e-be6c-31909153737e"}},{"name":"7e5a82b0-b820-4f39-b8fc-d51215e7070c.insurerresponse","label":"8 - ICICIGetQuotePT➛insurerResponse","reference_display":"insurerResponse","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9a481624-1238-4bc4-adb8-bae5066719c9"}},{"name":"88a2b1c0-eaaf-4e05-967e-50f4c884ebb0.variable","label":"14 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"1d293392-d6d2-4045-805b-2be8bc738639.variable","label":"13 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"e08b1f7f-c06d-4810-8dfa-6c34910a79a7.variable","label":"10 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"f2d23034-b090-4b2b-886d-c761a99faaeb.variable","label":"11 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"af27a456-5c52-476a-9a76-8f31599829b0.variable","label":"25 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"563813c5-f79f-4f68-bd04-c86c617c821d.variable","label":"23 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"fd87e5df-d9af-4ef6-87a4-0339bfd3a2ae.variable","label":"20 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"13c62e29-5620-4c61-bc17-81272f0c53eb.variable","label":"21 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"3dd34d17-451d-49a0-86d0-ab2f89e7b2fc.variable","label":"13 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"e324a8b7-42e4-418f-aaf0-09e60c3f6d67.variable","label":"22 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"616c2bb9-e36d-455e-a9c0-9d37807d4354.variable","label":"11 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"a46385a2-bed9-4f2e-892d-d1c3811419b4.variable","label":"8 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a0477cc6-6d87-4cea-a475-19953b4c9b36.variable","label":"9 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"23d253ab-0b3f-4033-9a42-5e3883014fc8.variable","label":"39 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"655516be-db12-4edd-9a7a-91a2e9e6c478.variable","label":"37 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"63f0d3a2-abf2-4497-bb0a-ae709c47b8c2.variable","label":"34 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a2026568-77ff-4876-aa3b-2269e132416d.variable","label":"35 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"subflow.insurer","label":"input➛insurer","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"215527c7-4998-4718-8cdc-e6f79f98aeff","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"80c75517-47d6-49bb-a39a-b83ca1f841a2.variable","label":"33 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"5e497596-2fef-4de0-95cf-72d56c03999e.variable","label":"29 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"ecca1416-3ae0-4f5e-b3fb-96f6c14d9e19.variable","label":"31 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"74d38524-5db6-4880-9919-72ebcf79539a.variable","label":"28 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"subflow.type","label":"input➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c6848f94-db70-413a-bffb-dd2bae2515aa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__","label":"4 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87b4cc8-be78-4c94-aa4f-b9eb0436400f.variable","label":"7 - Get DT PPT Value➛req","reference_display":"req","type":"object","base_type":"object","attributes":{"sourceId":"435ca26f-36f9-410f-bae1-689614a0cefd","uiTypeLabel":"Object","co_type_name":"FD121b5348293fc69012bd55d2c33b2bae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b45d8ebb-b281-4c33-8a17-7bb0e5f00805","pwd2droppable":"true","uiType":"object","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"a13a319f-3b4e-480a-9107-8db3ebdfea4a.receivedresponse","label":"18 - ICICIGetQuotePT➛receivedResponse","reference_display":"receivedResponse","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d8df8d28-7258-462e-be6c-31909153737e"}},{"name":"7e5a82b0-b820-4f39-b8fc-d51215e7070c.requestbody","label":"8 - ICICIGetQuotePT➛requestbody","reference_display":"requestbody","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc562aee5faaf42502b5ac413c15efef3","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"343b7cee-7ab3-4de8-9eab-a05610d9fae3","pwd2droppable":"true","uiType":"object","uiUniqueId":"c3014f53-4592-450e-b313-3705b0a2ebab"}},{"name":"e4f6fb58-9a0a-4618-b640-c1898fd618eb.__action_status__.message","label":"2 - Format the request Object ICICI(quote)➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__.message","label":"4 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"58882ab1-c862-4187-9db0-452102fd1852.variable","label":"4 - Handling Errors➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d4e96113-1f84-4925-85ae-3606fb015e7e"}},{"name":"e49d7bf1-04f7-4834-9b6d-60a8bfa5d162.req","label":"3 - Get DT PPT and PT➛req","reference_display":"req","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7cacacb6-7c8f-4eb7-b0b9-a1e86b604bb3"}},{"name":"74cc509e-5f65-457b-bc91-fcc097dc4fd4.req","label":"8 - Get DT PPT and PT➛req","reference_display":"req","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7cacacb6-7c8f-4eb7-b0b9-a1e86b604bb3"}}]</label_cache>
+        <master>true</master>
+        <name>ICICI Direct Insurer Call</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-22 09:22:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8061e667ff48d65019a8ffda7c4fd933</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:26</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_8061e667ff48d65019a8ffda7c4fd933^id=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8061e667ff48d65019a8ffda7c4fd933^sys_idNOT INc061e667ff48d65019a8ffda7c4fd934"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8061e667ff48d65019a8ffda7c4fd933</id>
+        <name>Copy of Copy1 of ICICIGetQuote test</name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-22 09:22:37</sys_created_on>
+        <sys_id>c061e667ff48d65019a8ffda7c4fd934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-22 09:22:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c061e667ff48d65019a8ffda7c4fd934"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8061e667ff48d65019a8ffda7c4fd933^sys_idNOT IN666336f3ffc85a5019a8ffda7c4fd958"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</model>
+        <model_id>8061e667ff48d65019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8061e667ff48d65019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 05:19:55</sys_created_on>
+        <sys_id>666336f3ffc85a5019a8ffda7c4fd958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:19:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=666336f3ffc85a5019a8ffda7c4fd958"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8061e667ff48d65019a8ffda7c4fd933^sys_idNOT IN2df49ff3ff009a5019a8ffda7c4fd9a6"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a3232515-10fc-46e2-8d0b-7f64714f7e71</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</model>
+        <model_id>8061e667ff48d65019a8ffda7c4fd933</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_8061e667ff48d65019a8ffda7c4fd933</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 07:46:30</sys_created_on>
+        <sys_id>2df49ff3ff009a5019a8ffda7c4fd9a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 07:46:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2df49ff3ff009a5019a8ffda7c4fd9a6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8061e667ff48d65019a8ffda7c4fd933^sys_idNOT IN1afe61b447da1a14e9ddbf66706d438f,4afe61b447da1a14e9ddbf66706d4361"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Handling Errors">d6b06aa6476f8a50e9ddbf66706d4340</action_type>
+        <action_type_parent display_value="Handling Errors">fdae1222476f8a50e9ddbf66706d4385</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>d6b06aa6476f8a50e9ddbf66706d4340</compiled_snapshot>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:24</sys_created_on>
+        <sys_id>1afe61b447da1a14e9ddbf66706d438f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:24</sys_updated_on>
+        <ui_id>58882ab1-c862-4187-9db0-452102fd1852</ui_id>
+        <values>H4sIAAAAAAAA/+1VTU/cMBD9LzlvVk7ifJhbBUJCaotUKBeEook9BkuOE2IH2K72v9fZZD/KSghaDhXiFj/PeN68madcLwPgTjXmzFgHhuPFwp6J4CiIK0biDBMpaSGylEQMCikF5JxKwSgGs0ANcWlckQwgo3kmC0gJMiEqmWU5yQRNKPVxBmr0kR3e92idBx5A9wPiP4WyrYbF1Q7hd0qLDk1wdH0zC1rofLbDLjhaPrt6bXkNFeo/6h8Qcot2AKzrlLmdzl+ntIsN2HRioBHNAnxyaAT6+hK0xVlQgxHgmm6xRToEcW70DrhTxo0N1vBk1S9fryCEDJESfU98an97vIRK48koz3glT8CBp9Nz13dbtRrF0Y6KCJTQa3e8j40B5+0w4zHFDQ9P2Y3ua/N9lCPYPrA3jd5iKbAd2h34T83Ii7vm8ceG6akya2WmS91w0NsTOK9f1buBzzLo1eUzqUfkQGzUWPuKZQ1t65Gy7ZoHta7iSdfzW+0Pc6mbR8/OqlszH7d47scA81OPn6zhK+jU0O43/4xPHsr9NMqPfb3jGUurhBAeRpJHIZVIwkJGNCSSMCYSglXFg9UssAt7rMHanVB+SuV9P7Q5yjYJVI4aDym8U6374kk94KTFavavXmMvLnua7q+2bRtjcc9syyVBmsR5IcMqjdOQMhaFBaZVGEPMgQlMiyidl6Xn5npblqvVoT//7pG3WfoVXe4svW3zsPG3mDr+NPVHMTVHKVku/VrmjIbUL2XIcu9xEkMmsphwFuf/k6kFvrjuxW63lbF+Rbr3/YG+ovzGbbv6B4Te4rXk02sfxWspjSTSvAjjpBAhTUkWVpXAMI8KUSTIICbxO3rt5jchI4dCrgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Copy of Call Rest ICICI test">00c9da27ff08d65019a8ffda7c4fd9f0</action_type>
+        <action_type_parent display_value="Copy of Call Rest ICICI test">bb2b0ae3ff84d65019a8ffda7c4fd9f1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>00c9da27ff08d65019a8ffda7c4fd9f0</compiled_snapshot>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:24</sys_created_on>
+        <sys_id>4afe61b447da1a14e9ddbf66706d4361</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:24</sys_updated_on>
+        <ui_id>608d9fdc-c2ff-4be6-8174-202687a6da11</ui_id>
+        <values>H4sIAAAAAAAA/+1TXU8bMRD8L37ORXeX++StBSEhtUUqlBeEorW9JlYd33H2AWmU/9517hJSilpQ+1T10ePZ3dmx53rNQHjd2DPrPFiBFyt3JtkRy8o8gaIolcoqWeRxUkOllIRSZErWecYmTAdeks7iEhXxqiqH5zwIPAtLJGaHdz06zxu5IvAeTB/Q9dr1XJnmYXpwv9kQQ2rXGlhd/ZYoFtrIDi07ur6ZsBY6muexY0frZ1evFWyAo3lS/H5Q/OIaftUG0PlO29vx/GEsv9iBTSeDnGTC8NGjlUg6FBiHE7YEK8E33WqPdAjy3JonYKGtp24skB+d/kbzqjiOA1Mh7SZwuN0fL4EbPBncG67UCXggOb3wfTfSxaLRAt3gjEQFvfHHh9hAOG/D7xhKfGg8VjemX9pPgyVs32D3WIT0DucS27Bu0D8uoy4WzcPnndJTbbfOjJemEWD2J/DkH+990LNmvb58ZvWA/GQ2GlzSxPkS2paQeds193o7hUQvp7eGDtPwj0id07d2Ovz/KT0DTE8JP9nCV9DpsO5HakPFYdwXq+npt+mo07iseQVRMUt4lNWIEdTIo0LEsihlms8qyTYT5lbu2IBzT0bRK83v+rDmYNto0HzwOJSITrf+HYm6x9GLzeRPUyrxV5+eH6QUBH0A55uvFJrDlKZ1WRZ5xiNZVRhlSVZEEGMaiTLOOBYqrkVJyXRtY0nwi/l9e4u3JfsVS+6S/eOWL67+lmSn/5P9ryS7qOMsyeUsilMuo0ykaQSqSiJI+Exhmeciq/9ism++AxEsAICBBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8061e667ff48d65019a8ffda7c4fd933^sys_idNOT IN8efe61b447da1a14e9ddbf66706d435f"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <subflow display_value="Fetch token for ICICI">2f0a7ed747ff8e10e9ddbf66706d4360</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:23</sys_created_on>
+        <sys_id>8efe61b447da1a14e9ddbf66706d435f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:24</sys_updated_on>
+        <ui_id>2977654b-d88e-4146-a0e2-c704be6f09c7</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8061e667ff48d65019a8ffda7c4fd933^sys_idNOT IN1afe61b447da1a14e9ddbf66706d4365,56fe61b447da1a14e9ddbf66706d4392,86fe61b447da1a14e9ddbf66706d435f,d2fe61b447da1a14e9ddbf66706d4369"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ad62a22bff48d65019a8ffda7c4fd97c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>response</outputs_assigned>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:24</sys_created_on>
+        <sys_id>1afe61b447da1a14e9ddbf66706d4365</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:24</sys_updated_on>
+        <ui_id>64c4dc37-4cbc-4760-832c-abe3931d2594</ui_id>
+        <values>H4sIAAAAAAAA/6VUTU/jMBD9Lz43VRJCknJDICQkdpEWlstqVU3tcbFw7GA7hW7V/77jOm2BXlbaW/w8H++98WTD7BD6IfhHe+m9Whp28WvDpLZvd3ap+K3xAQzHh7W/FeyCwawuoSwXUlatqM/zYgatlAIaXkkxawSbMBXj6lZWhZRnUub5DL7GyYLiDHRIkQ59b41HQlaghwhtNnXeUpTgGS+lzKoF1llbNFVW5mXdNlALKIrpCpyChcbtlnKF8r2G9dN/lODPSguH0YHfE9aDI4IBHbvYMGXow4C+U+aFqp8E/6tmDQvUn0Wf2hDWfUR8cMosx/PdmPiwB60TkVoxYfge0AgkBhK0xwnrwAgI1q0PiEMQ90YfgWcSlHR08O7VH+rX5nkeIyWSKo7p9nB8jC5dJ4/TlbyGAERn4GFwuDfFKo4+eSJQwqDD1UcsBdz3QVmTUkIsPGZbPXTme/KDHQrsR0rI4HEusI9yI/9RjHx4tm8/9kxvlNk5M15qy0EfThDIv8UQIp8NG9TjF6sTcmI2auyo47yDvidk3ju7UrsuRLqbLjUdpnFniF3coSnwqHBKY4DpDeHXO/hpfG3fqAwlx3Y/jXodMK3WWXlWnhfnWZFLnlU1llkr8kXWyLpqiko22BRsO2F+7a80eH80iqY0fx2izGTbaNA8eRxTuFN9uCRSKxy92MZXa+Lip8nsN+EwPK48SdjN/fZDnFjTg43/hSP0Zt1LFH/Etn8BQajJalYEAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b63faf1effdbce1019a8ffda7c4fd948</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:24</sys_created_on>
+        <sys_id>56fe61b447da1a14e9ddbf66706d4392</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:24</sys_updated_on>
+        <ui_id>81bca4ab-d737-426e-a485-607e1841e0a3</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca3f6f1effdbce1019a8ffda7c4fd985</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:23</sys_created_on>
+        <sys_id>86fe61b447da1a14e9ddbf66706d435f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:23</sys_updated_on>
+        <ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ba3faf1effdbce1019a8ffda7c4fd943</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="ICICI Direct Insurer Call">8061e667ff48d65019a8ffda7c4fd933</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-03 13:00:24</sys_created_on>
+        <sys_id>d2fe61b447da1a14e9ddbf66706d4369</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:24</sys_updated_on>
+        <ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</ui_id>
+        <values>H4sIAAAAAAAA/+1YUW/iOBD+K6eoj5QLBRbKW0UPqadtkQ52Xy5V5MSGetck2dih7SL++83YjpMQbveuy+lOOiSEkhl7MjPfNzNOdl5aqKxQcpneSMnXiTf5/bHj8QRlcL3zErJh3sQLQ6mIKmQYeh1vS0SBwl3gbVkueZoE3iTwel0/8DqBF6ebTLCXefSJxQo0OxRRZq4u4m15oTd9IlvSFSRZdxcq58laW7jYal3g7fdwt2FSkvUb9+8PHVrET2xDjI2ZSJ9vGcbN8sns9ma6vJs/LJY3yw+Lht+Bd5cotma5jY+y7sWKM0HDFYmZkmbxguNj7kk2Q6HetguCwCv48jVj70nEBN5O8K+0F6BF+MsZoWGaiFe3QuUFc+onniitSQohOpVRt5of2NuQLGPUqXd7p6FsRQqhQg2iW+DUJFaAZ8jyPM1DQ47jLolGPFNMVPXwhBKV5lUwKyJkpU9zalzVul5t30soWLJWT0458PF/D78GESDZFdpW/KOQWIunQkQ2zbXT7ja+MeX3Nhtvy/rVt7Puu7xj4r9RJ90LBVG/Oem2SZS+xGmozWHXcWsOCvNUAKXNR3+nLpq5v9GQ/bTQPbHtUWg7Tlg9o+3gCavEd8qCf0j4l4LdVbU/Zn0W9a+Hl/H1tX85ICN6GY0pufTHPdIjMYlGLKqDLVnOieBfCYY4S/MNMRj+upg/wBLo/5TLTJDXj+cxcB4D5zFwHgPnMfC/HAPxExc0Z4l+T+AUJgEI7fsCNsfam0JzNbxhyDjnmcL8bUGvIy6FQB5woGXRlvePGIUlGcnBnGI5CJoB6K6hqQqURa3pnTjfMNgaa0Fk+zbIj1Qt6BFh6FV1Vw+Gpvdddzu6m+cJEe958vlYvAW/NUbRNVjAnVe6ekTL2TKlpWZqUGpipo4ZaweueelNeh2PvSiWUEyVjcFR2kmwJOZQEd4EM9PRVWlcARpL/hUeOPBx2YpBdLFNkLtdkkgwG6tRrW6JItCqi1gVuSNDymMmTW7MzTxDdIxaoRG7MhXFJnkwYSM2puhr2FjJbQu0QrKQsgwDxhBsfKvFU/r8W+nujCc6N1Yp0pgId0cUTISoUOgogixf5VQQKStvIOzwS4FbjCf2YaEJBEujxdUmO80I+4+RU5ZONbjpXD2k5r0r91b9qyMGW6Fbel6djp7+maB/jaCPFk1/NboiQ3I1jHr9K7/nR+96jMBFfzTuxaPBdQ3tX5Chdo5WkDc+OlnUzSg9QH1eCsumhFj9Ldyt4Ajw41MDb5GbnpAMp8XcdpN6spv9xaW7fk4DefOEBnom2AaJgaMUyjLM8nTLtRf4MtZdC7jpruBUCd7jsbJrGlYXYCLd6rT5kcBRJNJnyQw2v6lpHmto2Eqt6yzBB9Da6aLXbou6cR72uT87UZRVQOnI741Hcdx/x7AKhsNhPxoNfEIHPqU0rlVB5UTLK8v+KE0FI8kB/Zfg188zjOifKYETj+ZTF8DKRn68JZbaf78vHufgI1LO8NvlJ+b4NUWn9q78FI+KV+AFj+ui5zT/jAVUyfZ/ALfWxXjUFwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_8061e667ff48d65019a8ffda7c4fd933^sys_idNOT IN6e6336f3ffc85a5019a8ffda7c4fd95c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8061e667ff48d65019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 05:19:55</sys_created_on>
+        <sys_id>6e6336f3ffc85a5019a8ffda7c4fd95c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 05:19:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_8061e667ff48d65019a8ffda7c4fd933^sys_idNOT IN35f49ff3ff009a5019a8ffda7c4fd9ab"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_8061e667ff48d65019a8ffda7c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-23 07:46:30</sys_created_on>
+        <sys_id>35f49ff3ff009a5019a8ffda7c4fd9ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-08-23 07:46:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8061e667ff48d65019a8ffda7c4fd933"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ba90a2e3ff48d65019a8ffda7c4fd9b6</sys_id>
+        <latest_snapshot>8061e667ff48d65019a8ffda7c4fd933</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix3b-11-14-2024_11-25-2024_0807.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ba90a2e3ff48d65019a8ffda7c4fd9b6"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ba90a2e3ff48d65019a8ffda7c4fd9b6^sys_idNOT INed61aa67ff48d65019a8ffda7c4fd91b"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"ed61aa67ff48d65019a8ffda7c4fd91b","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="ICICI Direct Insurer Call">ba90a2e3ff48d65019a8ffda7c4fd9b6</plan_id>
+        <snapshot>9b50c088ffe2d61019a8ffda7c4fd97a</snapshot>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-08-22 09:22:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed61aa67ff48d65019a8ffda7c4fd91b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-03 13:00:28</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

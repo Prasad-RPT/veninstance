@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=10936549000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>app_submission_balic_internal_call</internal_name>
+        <label_cache>[{"name":"f919514e-8544-45e1-ba0b-02db2e938647.receivedresponse","label":"2 - BALIC Quote➛receivedResponse","reference_display":"receivedResponse","type":"string","base_type":"string","usedInstances":{"a086d014-3865-48ee-bad4-b20b2a3646e1":["quoteres-1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"550c3154-07e3-495d-aa35-3b7837949518"}},{"name":"f919514e-8544-45e1-ba0b-02db2e938647.formatedreq","label":"2 - BALIC Quote➛formatedReq","reference_display":"formatedReq","type":"string","base_type":"string","usedInstances":{"a086d014-3865-48ee-bad4-b20b2a3646e1":["quotereq-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"71379740-1e6e-4bc8-9cb6-94da230a69a3"}},{"name":"043972fc-d509-4ad8-b32d-4946c8785898.applicationno","label":"4 - Format quote response for app submission balic➛applicationNO","reference_display":"applicationNO","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5abfda4b-f19e-45f3-a689-f0819d323426"}},{"name":"d68f63a1-45bd-42dd-b3a0-5d792c152899.quoteid","label":"5 - Save proposal Get BI BALIC➛quoteId","reference_display":"quoteId","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c0c54c26-62bf-4849-b35d-10a15352ff30"}},{"name":"d68f63a1-45bd-42dd-b3a0-5d792c152899.application_num","label":"5 - Save proposal Get BI BALIC➛application num","reference_display":"application num","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5031de28-c1f6-4bde-9315-a33449fd7842"}},{"name":"subflow.transaction","label":"input➛transaction","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b6b817af-5852-42ca-9abf-9c475af9b956","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5c1eb275-cc5f-4cb1-94ab-855d1358d8d7.Record.clientrequestbody","label":"1 - Look Up Record➛Integration Request Log Record➛clientRequestBody","reference":"","reference_display":"clientRequestBody","type":"json","base_type":"json","parent_table_name":"x_rptp_smartinte_0_integration_request_log","column_name":"clientrequestbody"},{"name":"5c1eb275-cc5f-4cb1-94ab-855d1358d8d7.Record.insurer","label":"1 - Look Up Record➛Integration Request Log Record➛Insurer","reference":"","reference_display":"Insurer","type":"string","base_type":"string","parent_table_name":"x_rptp_smartinte_0_integration_request_log","column_name":"insurer"},{"name":"f919514e-8544-45e1-ba0b-02db2e938647.response","label":"2 - BALIC Quote➛response","reference_display":"response","type":"object","base_type":"object","attributes":{"sourceId":"cd76ade2-cba0-4cf2-916f-034a5ef08e7c","uiTypeLabel":"Object","co_type_name":"FDe89f3bff0ad6ca50eeac6ba1b8ff6151","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","sourceUiUniqueId":"cd76ade2-cba0-4cf2-916f-034a5ef08e7c","pwd2droppable":"true","uiType":"object","uiUniqueId":"ec251efe-232d-4993-a867-646b597aef14"}},{"name":"043972fc-d509-4ad8-b32d-4946c8785898.variable","label":"3 - Format quote response for app submission balic➛applicationNO","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"3e27f246-7118-467a-b5f2-bc760a0040fc"}},{"name":"d68f63a1-45bd-42dd-b3a0-5d792c152899.response","label":"4 - Save proposal Get BI BALIC➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b22b473b-b92d-4d42-b093-2484b1cd9464"}}]</label_cache>
+        <master_snapshot>f1f587c9473702d0e9ddbf66706d4361</master_snapshot>
+        <master_snapshot_digest/>
+        <name>App Submission BALIC Internal Call</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-01 17:32:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19188845477f8e90e9ddbf66706d4336</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>App Submission BALIC Internal Call</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_19188845477f8e90e9ddbf66706d4336</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:16</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_variable_value action="delete_multiple" query="document_key=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336^id=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=19188845477f8e90e9ddbf66706d4336^sys_idNOT IN95188845477f8e90e9ddbf66706d4337"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>19188845477f8e90e9ddbf66706d4336</id>
+        <name>App Submission BALIC Internal Call</name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-01 17:32:22</sys_created_on>
+        <sys_id>95188845477f8e90e9ddbf66706d4337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-01 17:32:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=95188845477f8e90e9ddbf66706d4337"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=19188845477f8e90e9ddbf66706d4336^sys_idNOT INb8f507c9473702d0e9ddbf66706d436d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b6b817af-5852-42ca-9abf-9c475af9b956</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>transaction</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</model>
+        <model_id>19188845477f8e90e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_19188845477f8e90e9ddbf66706d4336</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:54</sys_created_on>
+        <sys_id>b8f507c9473702d0e9ddbf66706d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-02 07:21:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b8f507c9473702d0e9ddbf66706d436d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=19188845477f8e90e9ddbf66706d4336^sys_idNOT IN799bbf73474c1250e9ddbf66706d43cf,799bbf73474c1250e9ddbf66706d43d4,7fef3a02ffca5a1019a8ffda7c4fd907,8cff3a02ffca5a1019a8ffda7c4fd90c"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c6fb0aa4-375c-4bc0-9ac9-b276bc0aef85</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>quoteid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>quoteID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</model>
+        <model_id>19188845477f8e90e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:16</sys_created_on>
+        <sys_id>799bbf73474c1250e9ddbf66706d43cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=799bbf73474c1250e9ddbf66706d43cf"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ca6d5a67-2fd9-45bb-88de-61cb67989e0d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>applicationnum</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>applicationNum</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</model>
+        <model_id>19188845477f8e90e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:16</sys_created_on>
+        <sys_id>799bbf73474c1250e9ddbf66706d43d4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=799bbf73474c1250e9ddbf66706d43d4"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=92fe4e09-13a6-4349-a278-392418e68e7f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>quotereq</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>quoteReq</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</model>
+        <model_id>19188845477f8e90e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>7fef3a02ffca5a1019a8ffda7c4fd907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7fef3a02ffca5a1019a8ffda7c4fd907"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8d6cbd9a-3280-47af-8d3c-30b7d7a87b83</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>quoteres</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>quoteRes</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</model>
+        <model_id>19188845477f8e90e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>8cff3a02ffca5a1019a8ffda7c4fd90c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8cff3a02ffca5a1019a8ffda7c4fd90c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=19188845477f8e90e9ddbf66706d4336^sys_idNOT IN40ff3a02ffca5a1019a8ffda7c4fd91d,8cff3a02ffca5a1019a8ffda7c4fd918"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Format quote response for app submission balic">7e550b49473702d0e9ddbf66706d436f</action_type>
+        <action_type_parent display_value="Format quote response for app submission balic">55358309473702d0e9ddbf66706d43ad</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7e550b49473702d0e9ddbf66706d436f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>40ff3a02ffca5a1019a8ffda7c4fd91d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:29:53</sys_updated_on>
+        <ui_id>043972fc-d509-4ad8-b32d-4946c8785898</ui_id>
+        <values>H4sIAAAAAAAA/6VTYWvbMBD9L/ocGzux47jfSkOhsK2wdP1SSjhJ50Qgy64kp81C/vtOkZNuLYPBPt67d3fvPdlPBwbCq87cGefBCFzt3Z1kV0zIpiwqURfVrMqmMsNaSt7M51U2l8Usn7EJU4HHoSwzXvyFVwWegRaJadH1nXFIyA70EKDDoanzuswLTBZlUSRFiXnCIeMJreJTrGeLeVGl58njkWalcr2G/eN/rBBbpaVFw66eniesB0sCPVp2dfjQ+leHGjjqPy1+Nu33fUCct8psxvrLOLg6g52VQUg+Yfjm0UgkBQ1ohxPWgpHgO7u/IBZB3hv9DmyV8bSNBfKbUz/p3iLLssBskFwJjN1L+QBc4zImGlvNEjyQnEH4wY50se2UQBczkdjAoP3N71gk3PfhQ4ojPiwepzs9tOZbzINdFpwfkJDB4VpiH+wG/aOZZrXtXr+fld4qc0pmbOpOgL5U4Ck/Pvig58AG9fAh6oh8Chs1tnRx3ULfE7LubbdTpyskuk03moq00d0rqXNqY9L4q6T0DJDeEr48wY9gVbD7ldbQcDj3w6iXAeOPVEEmpciTqsyrpKgrntS8apIia3DKZ3Upas6OE+b27kaDc+9B0SutX4ZgM8Y2BrSOGYcRYVXvr0nUDscsjs+/AMez7KzSAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>8cff3a02ffca5a1019a8ffda7c4fd918</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:29:53</sys_updated_on>
+        <ui_id>5c1eb275-cc5f-4cb1-94ab-855d1358d8d7</ui_id>
+        <values>H4sIAAAAAAAA/+VY0W7iOBT9lSjPlHUIEOjbqlWlSrNT7bQ7L7OzlhM7YK2xU9tpSxH/PtdxAghoS7ZUotonZPvaPuf6nGuHH4uQZJYreS2NJTJjt3NzTcPzMEX5ACXZuJ/ECepRxMaUpvlwmKAh7cejQdgJuYujYzTOx+PBKEEojhEaDuOMRGkaD7MUpaQPcZLMGERakgoGzQciStd+wrqwBTYzoi2XlmGE3c9EE4cHa3ZfMmOxUBOYRLkpBJl//y9zsykXVDMZnv/42QkLogGPZTo8X2wNHUpIkJQJCL2rGW0RtPNi1cTVmO/7sjkt+OoHlKYOCuqE7MkySRlgyIkwrBPOiKTEKj1f9WhG6I0U644psIYVQxf8ZPgz7DtCLi5nwCpjfmzVrHa+9Kn0Q/klseTW6jKzpa7Ds6niGTM+J5TlpBT2YrPPB9wULtd+iqfuZytRzuRXn5JwtUBzctBTGoYpKxxZh76mkt9O1eO3BukVl1Ve6kGhMiJWLWKt5mlpHZ5FyASbwUJ4RoqCywkutHrg1WTAMutOBDS6uVCPsKnhE9n1gu9Cbkn3Cvovq+7vRHPH4g9YBiYDIC5AJdgfo1GlrtL5gDNRmmpAE2n8WuGyE5q5uRDEmDVzSDu+Lx1un4eaMfZJc1MyzQv7OyzxwGpyy867DTl4Vb/jtV4zJSl3W5kNVzbW4fTvEhagi4UpU5e97gbf5fKfOs7p2gf+WSrLdp367vVauvdt9o17Lzbp70tJ7eOdvi/7Fqh9HB3Nx32EPpuTYfPTM3J7a/oUfJQ/I/qqQulajEZpi/0hbBh012KtTXIAhMYkN07WQTp/CVXtkZwzQffddVduYOuu6/1/77qTdAgAotifIJeCy+rxAkBPzjqDV3WbRlsirbS5Nk7VR0y2ayASWBU8t7bRAXAaG93C3sGdx7MHYnPTVFrbvmWazto98dHcE/eO557FiuoqmXvy3jx2nRSa+GcXT7bjQb8bE6LlPne22jNqu2dvuev+uJX9NwXnRy5f0N2RX8Qv2LnzkfVjClPr/bA3P37kdMLsevcmiir7SMS/+8ZrY+LmoCp6p/S6jl79Okw3Xtc8xzM4cl7A14NmGajKYKIZzlUpKa6/G9YKdBLIuYaXsg/erVLfGBhPBgpcHdgpC6roYBXd8gnwNo/mDK7zoCFS72YCIBJURIIVkXa021S8/hHf1B9R8a4IF9WJwGdhsXGkTGulX6h6bxzmK6o4sCQeCCo6Kqj318x9NthbO9/A+in+YzihupYxkvZ7ZJjEUYRQhGiCRkkSjYYQTJJ+vjY4xkZmUMMBUg4aA1y40VQjELRbvHwhb1ulDkDVaPdSSfe/QS+xgYMFwggaWG8Dr6tRqpRgRG6Vozu4nX67qvHXQh+cZEn6FH/XlfxuO9u+a2++P+rFUvK/JL8vWWWSEUO9UUSzs1ESJWf9nA7PxpQMzsg4HSQxZVk/P+Yj5Ocv0/E5DXUXAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=19188845477f8e90e9ddbf66706d4336^sys_idNOT IN04ff3a02ffca5a1019a8ffda7c4fd91a,48ff3a02ffca5a1019a8ffda7c4fd91d"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="BALIC Quote">c49ff7ffffd6ca5019a8ffda7c4fd9a3</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/9WVXU/bMBSG/0uu685JnNjhbhNCYtpAArYbhCp/HLfeXCfkA+iq/vfZTVqgcDEKY1rufHx8/J4355Evl1HTiSNb3h67puVOwrGKDiIqdYapLAhNKU4UhkIpofOc4lyRlLFoFJmQJ3CeZmnMtRaC5TGOC860VpxKolWBsc9zfA4+0zSisz/9+obbLgTCnjJNZfni+xDS3Dbgw3JmrKrBRQeXV6Oo4rUv0UIdHSx3ttpFBRPLBVh/+qLu4MPRUOJP1W0Om+ZTL29XbrgilCpLC9z5QFmrICUeRXDXglPgb1oLH0Vz7hRvy3qxjdTA1amz94GZca0vF4Xku8b88rUJDnkafFcS+j05K42E06o1pesjLRd2s1nabu5Oep3BRNC8s+2uiUP48HmLuwYmCqqgPwga1OnzWXl7ttFyZNy61WHTlpLb7Yq3bW1E10ITfktnLnZ96kNfnvs5YGHur53MeVUZN51UdXlj1lf55ubjqfWLsfYz6SU2ZurGXAYnxt5cPg6zergOf+e1CbZ89WX84XDlN2euu36EtcwxS3KF4pTEiGgNiMUgEM6IgoKqjCRxtFpbP7nuQme9mYMnk955n9DI2lTtRy/hBob2V6PXYUNJHCcxaEJlKnm2k0ezB3Pomq5eN7fhZrnMpO8joRmSMtOISBGjgnCBWJapOM2YYoqOz0D6SR0P51erp7TtX2g/Ps/9wLjpCyzYsrn14IkpA53NpvQAZ/JmcDKM3xbPv8je1oXH6G19fxfsYkVwLgAjVoBCBEuKmIwZKhIsUpzRNFP4X2GXsUJrqv2n8jBzj98D/gC7Gnw/Tbs3dtIa38xQRZRq8XoAny+5H4qfz09PXmDK5ti9K09sGkD80ZQP3sj0Dd/I/wfDwYPHEA6OvwuCNFcJIZIg5WFAJOEcsZRRxJXgjKk814XYG8Gr30c7gbcyCgAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>04ff3a02ffca5a1019a8ffda7c4fd91a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <ui_id>f919514e-8544-45e1-ba0b-02db2e938647</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <subflow display_value="Save proposal Get BI BALIC">2828020c47481650e9ddbf66706d43ef</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1VXU/jMBD8L3muIyexE4e3k05ISHcgwR0vCFUb26GWXCckDh9X8d9v3TRUFHriAIkXHj1e785MdtqLVdQP1aFtbo9c78FJfaSigyiluqSaUlYIkeQcT0pVdZ4XNFcsY1U0i0yoA5YKmlLJCvZCXZ1gnYOlxkrj+qHTHQI3YIeArFZcJrpKC06k5DVhskpIyaAignOVZFwooYr4VMumU/Hm/cMDdlCmby3cn7+7kVwYqzrtooOLy1nUQodcPZI8WO1c+ftWzy1U2uK8M98Zd/UfFkwPtx48MyUMQKCfWiPTwCOZRfrOa6c0jqrB9noWLcEp8E13/4h0GtSJs1tgYZzHblEovuvNH2wtKKWhstYoSurxVi4aI/VJ603jRsRDZafLxg5LdzwyDa7rGgbrJ9cRGXo9V7oN9MK8zfD6bNHcnk6DDo1bK9lc2kaCfTyBR73V4HUfLB/Mrx0XRuTHru/a6iVOnC+hbRGZt11zY9ZTkPQyvrJ4iGvcaWTXmysXgwwKY7QN4rDr39fwOXQmyP2JbdYfYTC/nbkexggUjOmkyjmhNeBOgaoICJ4SlsoE8kpxkGn0sLZ0fj0EUaNJGzvmo6NY0MvOtP4bUrjRG+UPs/fFLhWpYHt3jqnthvk7Z9ST0OHcYE3sO3D9aMzLodpX+BGheYWA6eGkYEfQnsCkX4H5rMCUqcpywTjJueKE6aomUBaCZCCLRACtGBSfFZj8n/vG+Xa/UJprngSGsqws0loSxWkZfggEqbJUEVayXIpCcFGKGJ9ZIyG45pqX8/TGPh8Rt1fInx4igePmuR174pZ9xe2z4sZpVoDEv6aUQUZYkhSk5IITUeeU80xp4OzNcbv8C83PHqIYCgAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>48ff3a02ffca5a1019a8ffda7c4fd91d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <ui_id>d68f63a1-45bd-42dd-b3a0-5d792c152899</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=19188845477f8e90e9ddbf66706d4336^sys_idNOT IN44ff3a02ffca5a1019a8ffda7c4fd921,80ff3a02ffca5a1019a8ffda7c4fd91c"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c5f547c9473702d0e9ddbf66706d4329</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>quoteid,applicationnum</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>44ff3a02ffca5a1019a8ffda7c4fd921</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:11</sys_updated_on>
+        <ui_id>d8ccf739-0007-40ab-8050-d8e9881b75a9</ui_id>
+        <values>H4sIAAAAAAAA/+1VS2vbQBD+L3u2jKy3cguEgCFNoElzKUWMdkf20tWuIq2cuMb/vbOSHAeTHJIQeulR387M92AG7ZjpbdPb7s6cd51caXb2c8cqZR6vzErype4saI63224p2BnjiyqOUp5HaZj6gfAxF6KskiT1ExGFAbAZk64uzfOyrNIwSiO+COKTOl5RnYYaqfKhNxapZ8Y2oHqH7HYiyaokhIUXxaXwokAIrwzB92KR5gFfxEGW5/Opcb+nViG7RsH2/uMT+Foq0aKz/2vGGmhJncWWne1Onuy2wUJBiYqIbm0r9eodpg+NA/Xy4rUYHAEB3WG0aYXTEc4YPlnUAomqAtXhjNWgBVjTbp+RFkHcaHUE1lJbmsZc8VMn/9DozPd9V1khmeI4vvK1kRxvGiuNHhELpTo8GtXX+npU6uLGCnplD3ET0ndYCGycPMc3kVe3a/P4/UB0KfXgZHpUhoN6/gJLfsveYuci7+XdSQojcnWaOyqsibGooWkIKZrWbOTAQqLr+UrRx9xtM6lz2z0H7hzOKTaYXxJ+McD30Epn9xuNoWZH90PLhx7HpU+q0geIvDCNuReV3Pdy4LlXBmlCH4BVFrP9EGnx0DtTY0hTHMWYKBV0vJWNPScJG5yc72dffm0iOq4Z+VOSg8tA9/X7j+5Ff0EDPnF8r036+iMcsjg0vpBwPYTxVkhvnGT0/yT/2UlCImJIUi+oRO72rPSyTKCXLHiZpHmWoy8+fJK0YFK7f+K4bJtJyfQpkMuOBN85bPmiTmxpf9wRH6FH0/52Vo/Y/i8tI9qpcQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4ff3a02ffca5a1019a8ffda7c4fd91b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>quotereq,quoteres</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>80ff3a02ffca5a1019a8ffda7c4fd91c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:11</sys_updated_on>
+        <ui_id>a086d014-3865-48ee-bad4-b20b2a3646e1</ui_id>
+        <values>H4sIAAAAAAAA/+1V3U/bMBD/X/zcVPlqk/CGhJCQtiEB42Waqot9ptYcO42dQlf1f9+5SQEVNjE2aS979M/n+33kTtky2/u29+7Gnjqn7gw7+bJlSrATVkiUGcSplBxmkMRJBaWUAgqeS1HFBZswAw1S5aq3HjtcEbIG3Qdou5VVUs2SHKNyludRPsMkqiGuozgVdYpVVs7zYipt14BHQY93O3oulGs1bG7/rAtfKk2H4OXrhLXQkUwSyE62R1d+0+JCQ42ayK59p8wdPX+r+8PDvf2rvf2XgQQKQtyhue1EUJJMGD54NAKJTIJ2OGENGAHedptHpEMQl0Y/AUtlPHVjofjBqe/UuozjOFRKIjQch1u+tIrjZeuVNQPiodaHS6v7xnwapIbQUUKv/SF0QnqHC4FtkBf4RnJ5vbT3Vweic2X2TsZLbTnoxxN48lv3Hl0IvVc3RykMyIfj5FFjQ4yLBtqWkEXb2bXas5DoZnqn6TCV2t6TujCsU+DB4ZRig+k54Wd7+BY6Fex+pDb0ONB9NmrV40X4slUqMce4ipIM5lGe5VUEaVFGWZXmSYnzEgvJdvtIF6s+mBpCGuNYDIlSgeOdav0pSVjj6Hw3GZen5PJX48NfzIr7/eXpkCNR0zi71hoif/8Gvdrqb6zRG3I4WiP3ajQ/WaP0/xr9qzUqxZzXooIoS8s4yguQUSkyHmVxXYgCyqIus3evEQ2VMuG3NAzYelQyHgVy5UjwTcAuntWJDU2O4s+he9t9C1afsN0P2pZFOvQGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_19188845477f8e90e9ddbf66706d4336^sys_idNOT IN34f507c9473702d0e9ddbf66706d4371"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transaction</element>
+        <help/>
+        <hint/>
+        <label>transaction</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_19188845477f8e90e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:55</sys_created_on>
+        <sys_id>34f507c9473702d0e9ddbf66706d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-02 07:21:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_19188845477f8e90e9ddbf66706d4336"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336^sys_idNOT IN00ff3a02ffca5a1019a8ffda7c4fd90f,40ff3a02ffca5a1019a8ffda7c4fd90c,4e9bbf73474c1250e9ddbf66706d43d6,b99bbf73474c1250e9ddbf66706d43d3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>quoteres</element>
+        <help/>
+        <hint/>
+        <label>quoteRes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>00ff3a02ffca5a1019a8ffda7c4fd90f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>quotereq</element>
+        <help/>
+        <hint/>
+        <label>quoteReq</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:51</sys_created_on>
+        <sys_id>40ff3a02ffca5a1019a8ffda7c4fd90c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>applicationnum</element>
+        <help/>
+        <hint/>
+        <label>applicationNum</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:16</sys_created_on>
+        <sys_id>4e9bbf73474c1250e9ddbf66706d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-08-23 10:35:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>quoteid</element>
+        <help/>
+        <hint/>
+        <label>quoteID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:16</sys_created_on>
+        <sys_id>b99bbf73474c1250e9ddbf66706d43d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-08-23 10:35:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_19188845477f8e90e9ddbf66706d4336"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>app_submission_balic_internal_call</internal_name>
+        <label_cache>[{"name":"f919514e-8544-45e1-ba0b-02db2e938647.receivedresponse","label":"2 - BALIC Quote➛receivedResponse","reference_display":"receivedResponse","type":"string","base_type":"string","usedInstances":{"a086d014-3865-48ee-bad4-b20b2a3646e1":["quoteres-1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"550c3154-07e3-495d-aa35-3b7837949518"}},{"name":"f919514e-8544-45e1-ba0b-02db2e938647.formatedreq","label":"2 - BALIC Quote➛formatedReq","reference_display":"formatedReq","type":"string","base_type":"string","usedInstances":{"a086d014-3865-48ee-bad4-b20b2a3646e1":["quotereq-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"71379740-1e6e-4bc8-9cb6-94da230a69a3"}},{"name":"043972fc-d509-4ad8-b32d-4946c8785898.applicationno","label":"4 - Format quote response for app submission balic➛applicationNO","reference_display":"applicationNO","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5abfda4b-f19e-45f3-a689-f0819d323426"}},{"name":"d68f63a1-45bd-42dd-b3a0-5d792c152899.quoteid","label":"5 - Save proposal Get BI BALIC➛quoteId","reference_display":"quoteId","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c0c54c26-62bf-4849-b35d-10a15352ff30"}},{"name":"d68f63a1-45bd-42dd-b3a0-5d792c152899.application_num","label":"5 - Save proposal Get BI BALIC➛application num","reference_display":"application num","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5031de28-c1f6-4bde-9315-a33449fd7842"}},{"name":"subflow.transaction","label":"input➛transaction","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b6b817af-5852-42ca-9abf-9c475af9b956","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5c1eb275-cc5f-4cb1-94ab-855d1358d8d7.Record.clientrequestbody","label":"1 - Look Up Record➛Integration Request Log Record➛clientRequestBody","reference":"","reference_display":"clientRequestBody","type":"json","base_type":"json","parent_table_name":"x_rptp_smartinte_0_integration_request_log","column_name":"clientrequestbody"},{"name":"5c1eb275-cc5f-4cb1-94ab-855d1358d8d7.Record.insurer","label":"1 - Look Up Record➛Integration Request Log Record➛Insurer","reference":"","reference_display":"Insurer","type":"string","base_type":"string","parent_table_name":"x_rptp_smartinte_0_integration_request_log","column_name":"insurer"},{"name":"f919514e-8544-45e1-ba0b-02db2e938647.response","label":"2 - BALIC Quote➛response","reference_display":"response","type":"object","base_type":"object","attributes":{"sourceId":"cd76ade2-cba0-4cf2-916f-034a5ef08e7c","uiTypeLabel":"Object","co_type_name":"FDe89f3bff0ad6ca50eeac6ba1b8ff6151","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","sourceUiUniqueId":"cd76ade2-cba0-4cf2-916f-034a5ef08e7c","pwd2droppable":"true","uiType":"object","uiUniqueId":"ec251efe-232d-4993-a867-646b597aef14"}},{"name":"043972fc-d509-4ad8-b32d-4946c8785898.variable","label":"3 - Format quote response for app submission balic➛applicationNO","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"3e27f246-7118-467a-b5f2-bc760a0040fc"}},{"name":"d68f63a1-45bd-42dd-b3a0-5d792c152899.response","label":"4 - Save proposal Get BI BALIC➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b22b473b-b92d-4d42-b093-2484b1cd9464"}}]</label_cache>
+        <master>true</master>
+        <name>App Submission BALIC Internal Call</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f1f587c9473702d0e9ddbf66706d4361</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:14</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361^id=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f1f587c9473702d0e9ddbf66706d4361^sys_idNOT INb1f587c9473702d0e9ddbf66706d4362"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f1f587c9473702d0e9ddbf66706d4361</id>
+        <name>App Submission BALIC Internal Call</name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:58</sys_created_on>
+        <sys_id>b1f587c9473702d0e9ddbf66706d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-02 07:21:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b1f587c9473702d0e9ddbf66706d4362"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f1f587c9473702d0e9ddbf66706d4361^sys_idNOT IN75f587c9473702d0e9ddbf66706d4363"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b6b817af-5852-42ca-9abf-9c475af9b956</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>transaction</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</model>
+        <model_id>f1f587c9473702d0e9ddbf66706d4361</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f1f587c9473702d0e9ddbf66706d4361</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:58</sys_created_on>
+        <sys_id>75f587c9473702d0e9ddbf66706d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-02 07:21:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=75f587c9473702d0e9ddbf66706d4363"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f1f587c9473702d0e9ddbf66706d4361^sys_idNOT IN0b9b33b3474c1250e9ddbf66706d43f5,30ff7a02ffca5a1019a8ffda7c4fd987,7cff7a02ffca5a1019a8ffda7c4fd97f,8f9b33b3474c1250e9ddbf66706d43ec"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ca6d5a67-2fd9-45bb-88de-61cb67989e0d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>applicationnum</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>applicationNum</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</model>
+        <model_id>f1f587c9473702d0e9ddbf66706d4361</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:21</sys_created_on>
+        <sys_id>0b9b33b3474c1250e9ddbf66706d43f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0b9b33b3474c1250e9ddbf66706d43f5"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8d6cbd9a-3280-47af-8d3c-30b7d7a87b83</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>quoteres</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>quoteRes</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</model>
+        <model_id>f1f587c9473702d0e9ddbf66706d4361</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:55</sys_created_on>
+        <sys_id>30ff7a02ffca5a1019a8ffda7c4fd987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=30ff7a02ffca5a1019a8ffda7c4fd987"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=92fe4e09-13a6-4349-a278-392418e68e7f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>quotereq</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>quoteReq</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</model>
+        <model_id>f1f587c9473702d0e9ddbf66706d4361</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:55</sys_created_on>
+        <sys_id>7cff7a02ffca5a1019a8ffda7c4fd97f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7cff7a02ffca5a1019a8ffda7c4fd97f"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c6fb0aa4-375c-4bc0-9ac9-b276bc0aef85</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>quoteid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>quoteID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</model>
+        <model_id>f1f587c9473702d0e9ddbf66706d4361</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:21</sys_created_on>
+        <sys_id>8f9b33b3474c1250e9ddbf66706d43ec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8f9b33b3474c1250e9ddbf66706d43ec"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f1f587c9473702d0e9ddbf66706d4361^sys_idNOT IN15ffba02ffca5a1019a8ffda7c4fd91f,15ffba02ffca5a1019a8ffda7c4fd925"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:56</sys_created_on>
+        <sys_id>15ffba02ffca5a1019a8ffda7c4fd91f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:14</sys_updated_on>
+        <ui_id>5c1eb275-cc5f-4cb1-94ab-855d1358d8d7</ui_id>
+        <values>H4sIAAAAAAAA/+VY0W7iOBT9lSjPlHUIEOjbqlWlSrNT7bQ7L7OzlhM7YK2xU9tpSxH/PtdxAghoS7ZUotonZPvaPuf6nGuHH4uQZJYreS2NJTJjt3NzTcPzMEX5ACXZuJ/ECepRxMaUpvlwmKAh7cejQdgJuYujYzTOx+PBKEEojhEaDuOMRGkaD7MUpaQPcZLMGERakgoGzQciStd+wrqwBTYzoi2XlmGE3c9EE4cHa3ZfMmOxUBOYRLkpBJl//y9zsykXVDMZnv/42QkLogGPZTo8X2wNHUpIkJQJCL2rGW0RtPNi1cTVmO/7sjkt+OoHlKYOCuqE7MkySRlgyIkwrBPOiKTEKj1f9WhG6I0U644psIYVQxf8ZPgz7DtCLi5nwCpjfmzVrHa+9Kn0Q/klseTW6jKzpa7Ds6niGTM+J5TlpBT2YrPPB9wULtd+iqfuZytRzuRXn5JwtUBzctBTGoYpKxxZh76mkt9O1eO3BukVl1Ve6kGhMiJWLWKt5mlpHZ5FyASbwUJ4RoqCywkutHrg1WTAMutOBDS6uVCPsKnhE9n1gu9Cbkn3Cvovq+7vRHPH4g9YBiYDIC5AJdgfo1GlrtL5gDNRmmpAE2n8WuGyE5q5uRDEmDVzSDu+Lx1un4eaMfZJc1MyzQv7OyzxwGpyy867DTl4Vb/jtV4zJSl3W5kNVzbW4fTvEhagi4UpU5e97gbf5fKfOs7p2gf+WSrLdp367vVauvdt9o17Lzbp70tJ7eOdvi/7Fqh9HB3Nx32EPpuTYfPTM3J7a/oUfJQ/I/qqQulajEZpi/0hbBh012KtTXIAhMYkN07WQTp/CVXtkZwzQffddVduYOuu6/1/77qTdAgAotifIJeCy+rxAkBPzjqDV3WbRlsirbS5Nk7VR0y2ayASWBU8t7bRAXAaG93C3sGdx7MHYnPTVFrbvmWazto98dHcE/eO557FiuoqmXvy3jx2nRSa+GcXT7bjQb8bE6LlPne22jNqu2dvuev+uJX9NwXnRy5f0N2RX8Qv2LnzkfVjClPr/bA3P37kdMLsevcmiir7SMS/+8ZrY+LmoCp6p/S6jl79Okw3Xtc8xzM4cl7A14NmGajKYKIZzlUpKa6/G9YKdBLIuYaXsg/erVLfGBhPBgpcHdgpC6roYBXd8gnwNo/mDK7zoCFS72YCIBJURIIVkXa021S8/hHf1B9R8a4IF9WJwGdhsXGkTGulX6h6bxzmK6o4sCQeCCo6Kqj318x9NthbO9/A+in+YzihupYxkvZ7ZJjEUYRQhGiCRkkSjYYQTJJ+vjY4xkZmUMMBUg4aA1y40VQjELRbvHwhb1ulDkDVaPdSSfe/QS+xgYMFwggaWG8Dr6tRqpRgRG6Vozu4nX67qvHXQh+cZEn6FH/XlfxuO9u+a2++P+rFUvK/JL8vWWWSEUO9UUSzs1ESJWf9nA7PxpQMzsg4HSQxZVk/P+Yj5Ocv0/E5DXUXAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Format quote response for app submission balic">7e550b49473702d0e9ddbf66706d436f</action_type>
+        <action_type_parent display_value="Format quote response for app submission balic">55358309473702d0e9ddbf66706d43ad</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7e550b49473702d0e9ddbf66706d436f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:56</sys_created_on>
+        <sys_id>15ffba02ffca5a1019a8ffda7c4fd925</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:56</sys_updated_on>
+        <ui_id>043972fc-d509-4ad8-b32d-4946c8785898</ui_id>
+        <values>H4sIAAAAAAAA/6VTYWvbMBD9L/ocGzux47jfSkOhsK2wdP1SSjhJ50Qgy64kp81C/vtOkZNuLYPBPt67d3fvPdlPBwbCq87cGefBCFzt3Z1kV0zIpiwqURfVrMqmMsNaSt7M51U2l8Usn7EJU4HHoSwzXvyFVwWegRaJadH1nXFIyA70EKDDoanzuswLTBZlUSRFiXnCIeMJreJTrGeLeVGl58njkWalcr2G/eN/rBBbpaVFw66eniesB0sCPVp2dfjQ+leHGjjqPy1+Nu33fUCct8psxvrLOLg6g52VQUg+Yfjm0UgkBQ1ohxPWgpHgO7u/IBZB3hv9DmyV8bSNBfKbUz/p3iLLssBskFwJjN1L+QBc4zImGlvNEjyQnEH4wY50se2UQBczkdjAoP3N71gk3PfhQ4ojPiwepzs9tOZbzINdFpwfkJDB4VpiH+wG/aOZZrXtXr+fld4qc0pmbOpOgL5U4Ck/Pvig58AG9fAh6oh8Chs1tnRx3ULfE7LubbdTpyskuk03moq00d0rqXNqY9L4q6T0DJDeEr48wY9gVbD7ldbQcDj3w6iXAeOPVEEmpciTqsyrpKgrntS8apIia3DKZ3Upas6OE+b27kaDc+9B0SutX4ZgM8Y2BrSOGYcRYVXvr0nUDscsjs+/AMez7KzSAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f1f587c9473702d0e9ddbf66706d4361^sys_idNOT IN1dffba02ffca5a1019a8ffda7c4fd925,95ffba02ffca5a1019a8ffda7c4fd920"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <subflow display_value="Save proposal Get BI BALIC">2828020c47481650e9ddbf66706d43ef</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1VXU/bMBT9L3muo3zYicPbBEJC2kACxguaqhvboZZcJyQO0FX977tu0nZ8TXTsYUI8+vje63OOfZLrZdD15bGp709s58AKdSKDgyCJVBGpKKI553HGcCVlWWVZHmWSprQMJoH2dUATHiWRoDl9oa6Ksc7CXGGltl3fqhaBOzC9R5ZLJmJVJjkjQrCKUFHGpKBQEs6YjFPGJZd5eK5E3cpw7F+tcILUXWNgcfXuQWKmjWyVDQ6uf0yCBlrk6pDkwfLJ1lvFGiiVeaT2mXy3aDzQuVbbm3H9dWy72IBI1NOIJ4F6cMpKhedXYDo1CeZgJbi6XWyRVoE8s2YHzLR1OC3wxQ+d/onn8SiKfGWlUJNQw+52eQmlUUeDq8NWdQQOkE4vHPIeMDGrtVDd4IhUFfTGHf6ODQVnjdO1HVqcHzx216af29PBjmA7YHOJiPSdmkrVeLme/yimupjV9+cbpsfarp0ZN00twGxX4NC/sneezzLo9eUTqwfkmdnKqDmeOJ1D0yAybdr6Tq9PQdLz8MbgIqwwIsiu0zc2BOEVhngNEProHK3hK2i1l/sNx6xvutffrb7th0TllKq4zBiJKsAnCrIkwFlCaCJiyErJQCTBahJ0i+7QQNftjMJbmt72XuZg22jQdPDYt4hWN+4LkrpToxeryftynfCE01efOpW7h+0erJaPUo3nerNC14LtBqteTu1rhful8g1UN6nccH1CfZ9EJp+J/CiJLBKZZpwykjHJCFVlRaDIOUlB5DGHqKSQ/z+JzP74zBnbPWsUa+tHiYxoWuRJJYhkUeG/PZyUaSIJLWgmeM4ZL3iIbUYL8D7a+uXA/uWc/fL8BqGbPONRp/Vz4fvkOf3M80fJM4vSHAT+XBMKKaFxnJOCcUZ4lUWMpVIBo/8wzz9+Af4AgkU7CwAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:56</sys_created_on>
+        <sys_id>1dffba02ffca5a1019a8ffda7c4fd925</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:56</sys_updated_on>
+        <ui_id>d68f63a1-45bd-42dd-b3a0-5d792c152899</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="BALIC Quote">c49ff7ffffd6ca5019a8ffda7c4fd9a3</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+WV30/bMBDH/5c8N52TOLHD20aFxLSBBIwXhCr/pN5cJ8QOrKv432c3ppTCA7+GkJY3n+/Od9/zxzlbJrane7q53jfWEcPEPk92EsRkCRCrISoQyDkQNedUVhUCFYcFxskoUcGPgqooi4xISSmuMpDVBEvJCWJQ8hoA72fIXHhPZWmvf/n1FdF9MIQ9rmyryeI0miTRVngzmynNO2GSnbPzUdKSzqdwokt2lltbT61BEyr0qogvQxHbRblFG9a0abQgJhq+xaiTrhef9mJtTcdDJdkoEb+dMFz4ElZ1j5I5MZy4plusLZ0g/NDoO8NMGeczJsH5t1V//KEQBD8pfFNMDHvr5QmhWkwGkYYtOSGOHLuuZ67vojubNYoJO0jChSS9drubtsHhsHWqMUOIC4ljdKP7uTkYBEnWCbZnEs2TxyfWWzHlog16hAZjt/J41lwf3Tazp8xKuripG0b0ekWc6xTtXSh5mfTqZHsgg+nRkQgt5v7Y6Zy0rTIX07ZrrtTqKN/cfHyh/WIs/RX3JVp1YcaEBSXGflhkHK7+ZGU+JZ0Ksnz3aXxwOPKHUZf9QIRkFcB5xdOsgFkKpRQpzgRNQQm5qBEvYZ4lN6PELuyuJtbeCeqnOb3sQ6+DvFGl6TCLEMI61brPvqgrEQW5Gb2OSwSzLM+EhIgVjJRbfqjcQMBYf5G6DTCXy5L5znJUpoyVMoWMZmkNCU1xWfKsKDHHHI2PBPMsjGP8zc1DnF+e6HkPwBOaXT8A624ftB+fAOvvobnYegGOb42R/vzN6McAfGz+/yHca6nvs70W+124zjgEFRUgxbXgKQQMpZhlOK1zQAtQoqLk4ONwXeJaSiT9x6tw1e//68gG153wHVr3Yq6ZVr6ZmIU2fPF6wh9P+TzWnyDALet3CjyQJLL+0zbb//qvx4cHd5wXb/iX/385jzLfpzwK/S6Mo4rnEDKYcs9WCnNCUlxglBJOCca8qmRN35Dx87/NWkR4VQsAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:56</sys_created_on>
+        <sys_id>95ffba02ffca5a1019a8ffda7c4fd920</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:56</sys_updated_on>
+        <ui_id>f919514e-8544-45e1-ba0b-02db2e938647</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f1f587c9473702d0e9ddbf66706d4361^sys_idNOT IN15ffba02ffca5a1019a8ffda7c4fd924,ddffba02ffca5a1019a8ffda7c4fd95a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4ff3a02ffca5a1019a8ffda7c4fd91b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>quotereq,quoteres</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:56</sys_created_on>
+        <sys_id>15ffba02ffca5a1019a8ffda7c4fd924</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:14</sys_updated_on>
+        <ui_id>a086d014-3865-48ee-bad4-b20b2a3646e1</ui_id>
+        <values>H4sIAAAAAAAA/+1V0U7bMBT9Fz83VdKkTcIbAiEhsSEB42Waqhv7GiwcO42dQlf133fdpAVRNMHY07S3+NjX95xzfZQ1s51vOu9u7LFz6s6wo+9rpgQ7YrlEmUI8kZLDFJI4KaGQUkDOMynKOGcjZqBGOrnorMcWF4QsQXcBWq9lmZTTJMOomGZZlE0xiSqIqyieiGqCZVrMsnwsbVuDR0HFmw2VC+UaDavbz93C75WmRdDyY8QaaIkmEWRHpMzQhwF9ocwDNTg4/F7lGirUO+lXW+mHZvhVExDnW2XuhvXFUHi9A20rArVkxPDJoxFIDCRohyNWgxHgbbvaIy2CuDT6GbgnQb2OGp6c+kn9ijiOw0lJLAzHfne/vIFK42lvc78lT8ED0em471rcmWIVR9d7IlBCp/3JS6w/cNl4ZU1f4sPFQ7XVXW2+9n6w/QW7qRLSOZwLbILcwH8QI6/v7ePVjumZMltnhk1tOej9Cjz5V3U+8FmzTt28srpHDsxGjTV1nNfQNITMm9Yu1bYLka7Hd5oWY6ntI7ELaRgDDwrHNAYYnxF+uoVvoVVB7he6hopDu29GLTo8D8+nnEjMMC6jJIVZlKVZGcEkL6K0nGRJgbMCc8k2I+ZW7kSDc89G0ZTmiy7I7G0bDJr3HocS3qrGHxOpJQ5ebEZDXgsuf/dq+cETdR/Pa4scqTXlxTXWUPM/D+2bV302ue/w4FVy3Zu2fCS5k//J/VeSW4gZr0QJUTop4ijLQUaFSHmUxlUucijyqkj/YnLDqzXh59tPZjlw2w+PK0cStnM/f3FOrOjBKv4SerTtQxD/jG1+AcUYnVvaBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c5f547c9473702d0e9ddbf66706d4329</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="App Submission BALIC Internal Call">f1f587c9473702d0e9ddbf66706d4361</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>quoteid,applicationnum</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:56</sys_created_on>
+        <sys_id>ddffba02ffca5a1019a8ffda7c4fd95a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:14</sys_updated_on>
+        <ui_id>d8ccf739-0007-40ab-8050-d8e9881b75a9</ui_id>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9F54lQ9Zq5RbECGAgTYAmzaUojBEXmwhFKSLpxDX87x1a8oIkBZq2uRS9aR5ne2841IY0zrbOmrvm3Bi50OTs64YI1TxdNQtJZ9pY0JTfrs2MkTNCxyJLC1qmRVJEMYt4yVgl8ryIcpYmMZCASO9XlGVViSJJi5SO4+yFHxXop6Hm6PnoGssxJiArUM4jmw3LJyJPYBymWcXCNGYsrBKIwowVZUzHWTwpy9EQuN1iKJOmVbC+//0MdCkV67in/y0gLXTYneUdOdsQqfFDg7qS+gGTv3L+VcIKKq72jGfTtySw69YDxnZSLwb7agi73YNNx3xjSUD4s+WacawvQBkekBo0A9t06wPScWA3Wh2BJdLpWdTwbOR3rDeJosh7Co6cKO9PD+YdVIpPe4H7IzEFC9iOo9Z1fC9JIyk3vSKMC3DKXpxivcNNa2Wj+xDrEw/RjXK1vu7lIIcE+3ki4gyfM956ur7/gYy4XTZPn/edXkq9U2Y4VA0FdbDAon6Vs76fDXHy7oXUPfJKbK54jRXnNbQtIvO2a1ZyVwWbrkcLhcbIrwt259dnBNQzHOEYYHSJ+HQH30MnPd1PmAaDfbkvWj463m9VLqoIIA2TIqNhWtEoLIGWYRUXORrAxSQj24CYtblQYMxRKJzS/NF5mr1sg0DzXmMfQjvZ2nNsasUHLbbBhy84S4+3GxkrScGrol39/j0/iZ9jgj/Y97cyfeze73TY7/1J+eudED8T6D2vQPr/FfhnXgHIWQZ5EcaClf4iV+FkwniYj2mVF+Wk5BH7i6+Av8Ha//n7yayG3g7Do9Ighd3cZyd+bI3X1r8bR+ip6R48+SO2/QG1m/F2VwgAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f1f587c9473702d0e9ddbf66706d4361^sys_idNOT INfdf587c9473702d0e9ddbf66706d436e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transaction</element>
+        <help/>
+        <hint/>
+        <label>transaction</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f1f587c9473702d0e9ddbf66706d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:59</sys_created_on>
+        <sys_id>fdf587c9473702d0e9ddbf66706d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-08-02 07:21:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361^sys_idNOT IN09ff7a02ffca5a1019a8ffda7c4fd98b,179b33b3474c1250e9ddbf66706d43fa,78ff7a02ffca5a1019a8ffda7c4fd984,cf9b33b3474c1250e9ddbf66706d43f1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>quoteres</element>
+        <help/>
+        <hint/>
+        <label>quoteRes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:55</sys_created_on>
+        <sys_id>09ff7a02ffca5a1019a8ffda7c4fd98b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>applicationnum</element>
+        <help/>
+        <hint/>
+        <label>applicationNum</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:21</sys_created_on>
+        <sys_id>179b33b3474c1250e9ddbf66706d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-08-23 10:35:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>quotereq</element>
+        <help/>
+        <hint/>
+        <label>quoteReq</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-11-25 05:50:55</sys_created_on>
+        <sys_id>78ff7a02ffca5a1019a8ffda7c4fd984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-11-25 05:50:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>quoteid</element>
+        <help/>
+        <hint/>
+        <label>quoteID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chandan.parmar</sys_created_by>
+        <sys_created_on>2024-08-23 10:35:21</sys_created_on>
+        <sys_id>cf9b33b3474c1250e9ddbf66706d43f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chandan.parmar</sys_updated_by>
+        <sys_updated_on>2024-08-23 10:35:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f1f587c9473702d0e9ddbf66706d4361"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>19188845477f8e90e9ddbf66706d4336</sys_id>
+        <latest_snapshot>f1f587c9473702d0e9ddbf66706d4361</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix3b-11-14-2024_11-25-2024_0807.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=19188845477f8e90e9ddbf66706d4336"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=19188845477f8e90e9ddbf66706d4336^sys_idNOT INa6f50bc9473702d0e9ddbf66706d4310"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"a6f50bc9473702d0e9ddbf66706d4310","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="App Submission BALIC Internal Call">19188845477f8e90e9ddbf66706d4336</plan_id>
+        <snapshot>6ca7680f47965610e9ddbf66706d4345</snapshot>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-08-02 07:22:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a6f50bc9473702d0e9ddbf66706d4310</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:28:16</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

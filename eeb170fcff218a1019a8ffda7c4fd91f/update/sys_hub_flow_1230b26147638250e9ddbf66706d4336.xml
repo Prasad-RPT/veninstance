@@ -1,0 +1,2161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1904000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-vancouver-07-06-2023__patch9-hotfix2-06-11-2024_06-14-2024_2108.zip</compiler_build>
+        <copied_from>0f1d5ee1476f4250e9ddbf66706d437f</copied_from>
+        <copied_from_name>ICICIGetQuotePT</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>copy_of_icicigetquotept_copy</internal_name>
+        <label_cache>[{"name":"subflow.requestbody","label":"input➛requestBody","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"343b7cee-7ab3-4de8-9eab-a05610d9fae3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"960179e9-3724-495a-ae64-c1a805923e45.pt","label":"1 - Fetch PT Age➛pt","reference_display":"pt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1d3cf91f-d770-491e-b66c-159a6d51ad34"}},{"name":"960179e9-3724-495a-ae64-c1a805923e45.age","label":"1 - Fetch PT Age➛age","reference_display":"age","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cd9fd9cb-0014-4991-b147-1022a10554a8"}},{"name":"65975163-1cef-4fd5-8a9e-266837783dc9.answer.result_elements.u_pt_value","label":"2 - Make a decision➛Decision Table Multiple Result Record➛Result elements➛PT Value","reference":"","reference_display":"PT Value","type":"integer","base_type":"integer","parent_table_name":"var__m_sys_decision_multi_result_element_1bfb17a0ff67429019a8ffda7c4fd971","column_name":"u_pt_value"},{"name":"17fd6f5e-0534-469f-8dde-a4eb49109202.variable","label":"4 - Get DT PT Value➛req","reference_display":"req","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfa12a93-d65b-42ee-9471-b702c057b756"}},{"name":"subflow.type","label":"input➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"22ad8df5-0a89-4d30-8a51-89a0e57844a5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"ecee7587-a620-46ce-b018-554b86fdbb09.variable","label":"6 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"35aa3d33-a7d6-4ff5-b566-9a6212773b44.variable","label":"5 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"0c023bfc-a163-4dcd-9128-d3b07b69284e.variable","label":"8 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"subflow.insurer","label":"input➛insurer","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"47199394-8a89-4ac1-a664-dccd433b59cb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"830ef16a-b691-4999-971f-5c1003bff5ab.variable","label":"10 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"1790446e-e7db-4242-871b-c5492903dfcb.variable","label":"22 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"cea42f0c-681a-483d-bd46-0c6eaa82f8a8.__status__","label":"24 - Error Handler➛Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Copy of ICICIGetQuotePT -Copy</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1230b26147638250e9ddbf66706d4336</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Copy of ICICIGetQuotePT -Copy</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_1230b26147638250e9ddbf66706d4336</sys_update_name>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:20</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1230b26147638250e9ddbf66706d4336"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1230b26147638250e9ddbf66706d4336"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=1230b26147638250e9ddbf66706d4336"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1230b26147638250e9ddbf66706d4336"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1230b26147638250e9ddbf66706d4336^sys_idNOT INda30b26147638250e9ddbf66706d4338"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1230b26147638250e9ddbf66706d4336</id>
+        <name>Copy of ICICIGetQuotePT -Copy</name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>da30b26147638250e9ddbf66706d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=da30b26147638250e9ddbf66706d4338"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1230b26147638250e9ddbf66706d4336^sys_idNOT IN6a30b26147638250e9ddbf66706d434e,6e30b26147638250e9ddbf66706d4357,a230b26147638250e9ddbf66706d4355"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=47199394-8a89-4ac1-a664-dccd433b59cb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurer</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</model>
+        <model_id>1230b26147638250e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>6a30b26147638250e9ddbf66706d434e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6a30b26147638250e9ddbf66706d434e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=343b7cee-7ab3-4de8-9eab-a05610d9fae3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</model>
+        <model_id>1230b26147638250e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>6e30b26147638250e9ddbf66706d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6e30b26147638250e9ddbf66706d4357"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=22ad8df5-0a89-4d30-8a51-89a0e57844a5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>type</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</model>
+        <model_id>1230b26147638250e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>a230b26147638250e9ddbf66706d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a230b26147638250e9ddbf66706d4355"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1230b26147638250e9ddbf66706d4336^sys_idNOT IN2230b26147638250e9ddbf66706d435e,2a30b26147638250e9ddbf66706d4364,6e30b26147638250e9ddbf66706d4361,e230b26147638250e9ddbf66706d4367"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9a481624-1238-4bc4-adb8-bae5066719c9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurerresponse</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurerResponse</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</model>
+        <model_id>1230b26147638250e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>2230b26147638250e9ddbf66706d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2230b26147638250e9ddbf66706d435e"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d8df8d28-7258-462e-be6c-31909153737e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receivedresponse</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>receivedResponse</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</model>
+        <model_id>1230b26147638250e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>2a30b26147638250e9ddbf66706d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2a30b26147638250e9ddbf66706d4364"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c3e41bfd-2b75-4d0d-afb5-3c5d1496a7df</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatedrequestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatedRequestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</model>
+        <model_id>1230b26147638250e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>6e30b26147638250e9ddbf66706d4361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6e30b26147638250e9ddbf66706d4361"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD6a30b261c8638250736cb160e6fa5f5c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD6a30b261c8638250736cb160e6fa5f5c":{},"FlowDesigner:FD6a30b261c8638250736cb160e6fa5f5c.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6a30b261c8638250736cb160e6fa5f5c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"requestbody\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"65000\",\"uiUniqueId\":\"c3014f53-4592-450e-b313-3705b0a2ebab\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e30b26147638250e9ddbf66706d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD6a30b261c8638250736cb160e6fa5f5c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=c3014f53-4592-450e-b313-3705b0a2ebab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestbody</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</model>
+        <model_id>1230b26147638250e9ddbf66706d4336</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>e230b26147638250e9ddbf66706d4367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e230b26147638250e9ddbf66706d4367"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1230b26147638250e9ddbf66706d4336"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1230b26147638250e9ddbf66706d4336"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1230b26147638250e9ddbf66706d4336^sys_idNOT IN0330f26147638250e9ddbf66706d435a,0f30f26147638250e9ddbf66706d4334,1730f26147638250e9ddbf66706d4381,1f30f26147638250e9ddbf66706d43e3,3a30b26147638250e9ddbf66706d43e8,4330f26147638250e9ddbf66706d431c,5730f26147638250e9ddbf66706d43cb,5f30f26147638250e9ddbf66706d4367,ba30b26147638250e9ddbf66706d43df,c330b26147638250e9ddbf66706d43f6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format Response for Quote ICICI (v1)">cfb22e5affdf8e1019a8ffda7c4fd9fa</action_type>
+        <action_type_parent display_value="Format Response for Quote ICICI (v1)">8e001f03ffc3469019a8ffda7c4fd9a5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cfb22e5affdf8e1019a8ffda7c4fd9fa</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>0330f26147638250e9ddbf66706d435a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <ui_id>830ef16a-b691-4999-971f-5c1003bff5ab</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0330f26147638250e9ddbf66706d435a"/>
+    <sys_element_mapping action="delete_multiple" query="id=0330f26147638250e9ddbf66706d435a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurer</field>
+        <id>0330f26147638250e9ddbf66706d435a</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>0b30f26147638250e9ddbf66706d435b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cfb22e5affdf8e1019a8ffda7c4fd9fa</table>
+        <value>{{subflow.insurer}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>0330f26147638250e9ddbf66706d435a</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>4730f26147638250e9ddbf66706d435b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cfb22e5affdf8e1019a8ffda7c4fd9fa</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>0330f26147638250e9ddbf66706d435a</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>cb30f26147638250e9ddbf66706d435b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cfb22e5affdf8e1019a8ffda7c4fd9fa</table>
+        <value>{{0c023bfc-a163-4dcd-9128-d3b07b69284e.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0330f26147638250e9ddbf66706d435a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0330f26147638250e9ddbf66706d435a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Call Rest ICICI">1bd30b91471e8210e9ddbf66706d43f8</action_type>
+        <action_type_parent display_value="Call Rest ICICI">7a87e61947d68210e9ddbf66706d434c</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>1bd30b91471e8210e9ddbf66706d43f8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>0f30f26147638250e9ddbf66706d4334</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <ui_id>0c023bfc-a163-4dcd-9128-d3b07b69284e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0f30f26147638250e9ddbf66706d4334"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0f30f26147638250e9ddbf66706d4334</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>0730f26147638250e9ddbf66706d4336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <value/>
+        <variable display_value="requestBody">17d30b91471e8210e9ddbf66706d43fc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0f30f26147638250e9ddbf66706d4334"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>0f30f26147638250e9ddbf66706d4334</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>cf30f26147638250e9ddbf66706d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1bd30b91471e8210e9ddbf66706d43f8</table>
+        <value>{{ecee7587-a620-46ce-b018-554b86fdbb09.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>0f30f26147638250e9ddbf66706d4334</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>8330f26147638250e9ddbf66706d4336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1bd30b91471e8210e9ddbf66706d43f8</table>
+        <value>{{35aa3d33-a7d6-4ff5-b566-9a6212773b44.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0f30f26147638250e9ddbf66706d4334"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0f30f26147638250e9ddbf66706d4334"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format the request Object ICICI(quote)">a238c29d47928210e9ddbf66706d43b1</action_type>
+        <action_type_parent display_value="Format the request Object ICICI(quote)">f4aa8654ff524e5019a8ffda7c4fd9f2</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a238c29d47928210e9ddbf66706d43b1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>18</order>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>1730f26147638250e9ddbf66706d4381</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <ui_id>01bbaf62-f2fb-4c29-8bb0-8f85b813cf4e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1730f26147638250e9ddbf66706d4381"/>
+    <sys_element_mapping action="delete_multiple" query="id=1730f26147638250e9ddbf66706d4381"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>1730f26147638250e9ddbf66706d4381</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>9730f26147638250e9ddbf66706d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a238c29d47928210e9ddbf66706d43b1</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>type</field>
+        <id>1730f26147638250e9ddbf66706d4381</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>d330f26147638250e9ddbf66706d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a238c29d47928210e9ddbf66706d43b1</table>
+        <value>{{subflow.type}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1730f26147638250e9ddbf66706d4381"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1730f26147638250e9ddbf66706d4381"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format Response for Quote ICICI (v1)">cfb22e5affdf8e1019a8ffda7c4fd9fa</action_type>
+        <action_type_parent display_value="Format Response for Quote ICICI (v1)">8e001f03ffc3469019a8ffda7c4fd9a5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cfb22e5affdf8e1019a8ffda7c4fd9fa</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>22</order>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:20</sys_created_on>
+        <sys_id>1f30f26147638250e9ddbf66706d43e3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:20</sys_updated_on>
+        <ui_id>1790446e-e7db-4242-871b-c5492903dfcb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1f30f26147638250e9ddbf66706d43e3"/>
+    <sys_element_mapping action="delete_multiple" query="id=1f30f26147638250e9ddbf66706d43e3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurer</field>
+        <id>1f30f26147638250e9ddbf66706d43e3</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:20</sys_created_on>
+        <sys_id>1330f26147638250e9ddbf66706d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cfb22e5affdf8e1019a8ffda7c4fd9fa</table>
+        <value>{{subflow.insurer}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>1f30f26147638250e9ddbf66706d43e3</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:20</sys_created_on>
+        <sys_id>5f30f26147638250e9ddbf66706d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cfb22e5affdf8e1019a8ffda7c4fd9fa</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>1f30f26147638250e9ddbf66706d43e3</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:20</sys_created_on>
+        <sys_id>d330f26147638250e9ddbf66706d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cfb22e5affdf8e1019a8ffda7c4fd9fa</table>
+        <value>{{0c023bfc-a163-4dcd-9128-d3b07b69284e.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1f30f26147638250e9ddbf66706d43e3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1f30f26147638250e9ddbf66706d43e3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get DT PT Value">dc874e21472b4250e9ddbf66706d43a8</action_type>
+        <action_type_parent display_value="Get DT PT Value">2d540665ff230a9019a8ffda7c4fd9a7</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>dc874e21472b4250e9ddbf66706d43a8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>3a30b26147638250e9ddbf66706d43e8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <ui_id>17fd6f5e-0534-469f-8dde-a4eb49109202</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3a30b26147638250e9ddbf66706d43e8"/>
+    <sys_element_mapping action="delete_multiple" query="id=3a30b26147638250e9ddbf66706d43e8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dt_pt_value</field>
+        <id>3a30b26147638250e9ddbf66706d43e8</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>fa30b26147638250e9ddbf66706d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_dc874e21472b4250e9ddbf66706d43a8</table>
+        <value>{{65975163-1cef-4fd5-8a9e-266837783dc9.answer.result_elements.u_pt_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>req</field>
+        <id>3a30b26147638250e9ddbf66706d43e8</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>be30b26147638250e9ddbf66706d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_dc874e21472b4250e9ddbf66706d43a8</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3a30b26147638250e9ddbf66706d43e8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3a30b26147638250e9ddbf66706d43e8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Format the request Object ICICI(quote)">a238c29d47928210e9ddbf66706d43b1</action_type>
+        <action_type_parent display_value="Format the request Object ICICI(quote)">f4aa8654ff524e5019a8ffda7c4fd9f2</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a238c29d47928210e9ddbf66706d43b1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>4330f26147638250e9ddbf66706d431c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <ui_id>ecee7587-a620-46ce-b018-554b86fdbb09</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4330f26147638250e9ddbf66706d431c"/>
+    <sys_element_mapping action="delete_multiple" query="id=4330f26147638250e9ddbf66706d431c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>4330f26147638250e9ddbf66706d431c</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>c730f26147638250e9ddbf66706d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a238c29d47928210e9ddbf66706d43b1</table>
+        <value>{{17fd6f5e-0534-469f-8dde-a4eb49109202.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>type</field>
+        <id>4330f26147638250e9ddbf66706d431c</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>0730f26147638250e9ddbf66706d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a238c29d47928210e9ddbf66706d43b1</table>
+        <value>{{subflow.type}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4330f26147638250e9ddbf66706d431c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4330f26147638250e9ddbf66706d431c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Call Rest ICICI">1bd30b91471e8210e9ddbf66706d43f8</action_type>
+        <action_type_parent display_value="Call Rest ICICI">7a87e61947d68210e9ddbf66706d434c</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>1bd30b91471e8210e9ddbf66706d43f8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>20</order>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>5730f26147638250e9ddbf66706d43cb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <ui_id>66a13b60-65d4-4530-ad9d-bfab9e895fab</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5730f26147638250e9ddbf66706d43cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5730f26147638250e9ddbf66706d43cb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>5b30f26147638250e9ddbf66706d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <value/>
+        <variable display_value="requestBody">17d30b91471e8210e9ddbf66706d43fc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5730f26147638250e9ddbf66706d43cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestbody</field>
+        <id>5730f26147638250e9ddbf66706d43cb</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>1730f26147638250e9ddbf66706d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1bd30b91471e8210e9ddbf66706d43f8</table>
+        <value>{{ecee7587-a620-46ce-b018-554b86fdbb09.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>5730f26147638250e9ddbf66706d43cb</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>d730f26147638250e9ddbf66706d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1bd30b91471e8210e9ddbf66706d43f8</table>
+        <value>{{35aa3d33-a7d6-4ff5-b566-9a6212773b44.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5730f26147638250e9ddbf66706d43cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5730f26147638250e9ddbf66706d43cb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Token ICICI">cc5a8a14ff524e5019a8ffda7c4fd9d3</action_type>
+        <action_type_parent display_value="Get Token ICICI">983802dcff124e5019a8ffda7c4fd995</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cc5a8a14ff524e5019a8ffda7c4fd9d3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>17</order>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:19</sys_created_on>
+        <sys_id>5f30f26147638250e9ddbf66706d4367</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:19</sys_updated_on>
+        <ui_id>f324964b-992c-440e-af37-165b8cc320cc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5f30f26147638250e9ddbf66706d4367"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5f30f26147638250e9ddbf66706d4367"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5f30f26147638250e9ddbf66706d4367"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Fetch PT Age">13994a29472b4250e9ddbf66706d43e8</action_type>
+        <action_type_parent display_value="Fetch PT Age">0ca8c225472b4250e9ddbf66706d430d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>13994a29472b4250e9ddbf66706d43e8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>a3002a81-f1a8-4bb2-8900-14264bd82eee</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>ba30b26147638250e9ddbf66706d43df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>960179e9-3724-495a-ae64-c1a805923e45</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ba30b26147638250e9ddbf66706d43df"/>
+    <sys_element_mapping action="delete_multiple" query="id=ba30b26147638250e9ddbf66706d43df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>ba30b26147638250e9ddbf66706d43df</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>f630b26147638250e9ddbf66706d43e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_13994a29472b4250e9ddbf66706d43e8</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ba30b26147638250e9ddbf66706d43df"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ba30b26147638250e9ddbf66706d43df"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Token ICICI">cc5a8a14ff524e5019a8ffda7c4fd9d3</action_type>
+        <action_type_parent display_value="Get Token ICICI">983802dcff124e5019a8ffda7c4fd995</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cc5a8a14ff524e5019a8ffda7c4fd9d3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:18</sys_created_on>
+        <sys_id>c330b26147638250e9ddbf66706d43f6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:18</sys_updated_on>
+        <ui_id>35aa3d33-a7d6-4ff5-b566-9a6212773b44</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c330b26147638250e9ddbf66706d43f6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c330b26147638250e9ddbf66706d43f6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c330b26147638250e9ddbf66706d43f6"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1230b26147638250e9ddbf66706d4336^sys_idNOT IN3230b26147638250e9ddbf66706d4379,3230b26147638250e9ddbf66706d43b7,3630b26147638250e9ddbf66706d43bd,3a30b26147638250e9ddbf66706d43a5,7230b26147638250e9ddbf66706d43ae,7630b26147638250e9ddbf66706d43b4,7630b26147638250e9ddbf66706d43ba,7e30b26147638250e9ddbf66706d43c5,aa30b26147638250e9ddbf66706d436d,b230b26147638250e9ddbf66706d43c3,b630b26147638250e9ddbf66706d43ab,b630b26147638250e9ddbf66706d43b1,ee30b26147638250e9ddbf66706d4370,f230b26147638250e9ddbf66706d43c0,f230b26147638250e9ddbf66706d43d6,f630b26147638250e9ddbf66706d43a8,fa30b26147638250e9ddbf66706d437c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4a12aaa547af4250e9ddbf66706d4307</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>65975163-1cef-4fd5-8a9e-266837783dc9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3230b26147638250e9ddbf66706d4379</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3230b26147638250e9ddbf66706d4379"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3230b26147638250e9ddbf66706d4379</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7230b26147638250e9ddbf66706d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <value>13ad1ba4ff67429019a8ffda7c4fd990</value>
+        <variable display_value="answer">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_b1f542d673331300612c273ffff6a7c7^id=3230b26147638250e9ddbf66706d4379"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=3230b26147638250e9ddbf66706d4379"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3230b26147638250e9ddbf66706d4379"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3230b26147638250e9ddbf66706d4379"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5a12eaa547af4250e9ddbf66706d4331</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>16</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>65975163-1cef-4fd5-8a9e-266837783dc9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3230b26147638250e9ddbf66706d43b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3230b26147638250e9ddbf66706d43b7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3230b26147638250e9ddbf66706d43b7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7e30b26147638250e9ddbf66706d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <value>13ad1ba4ff67429019a8ffda7c4fd993</value>
+        <variable display_value="answer">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_b1f542d673331300612c273ffff6a7c7^id=3230b26147638250e9ddbf66706d43b7"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=3230b26147638250e9ddbf66706d43b7"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3230b26147638250e9ddbf66706d43b7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3230b26147638250e9ddbf66706d43b7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6e12eaa547af4250e9ddbf66706d43a8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>21</order>
+        <outputs_assigned>receivedresponse</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3630b26147638250e9ddbf66706d43bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>aa562e3d-0983-4373-a17c-4bb6eea5621d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3630b26147638250e9ddbf66706d43bd"/>
+    <sys_element_mapping action="delete_multiple" query="id=3630b26147638250e9ddbf66706d43bd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>receivedresponse</field>
+        <id>3630b26147638250e9ddbf66706d43bd</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3e30b26147638250e9ddbf66706d43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{0c023bfc-a163-4dcd-9128-d3b07b69284e.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3630b26147638250e9ddbf66706d43bd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3630b26147638250e9ddbf66706d43bd"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da12aaa547af4250e9ddbf66706d43c7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>receivedresponse</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3a30b26147638250e9ddbf66706d43a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>7dba16db-2be1-43ed-b7d5-c8042c0cd0a5</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3a30b26147638250e9ddbf66706d43a5"/>
+    <sys_element_mapping action="delete_multiple" query="id=3a30b26147638250e9ddbf66706d43a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>receivedresponse</field>
+        <id>3a30b26147638250e9ddbf66706d43a5</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3230b26147638250e9ddbf66706d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{0c023bfc-a163-4dcd-9128-d3b07b69284e.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3a30b26147638250e9ddbf66706d43a5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3a30b26147638250e9ddbf66706d43a5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5212eaa547af4250e9ddbf66706d4328</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>65975163-1cef-4fd5-8a9e-266837783dc9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7230b26147638250e9ddbf66706d43ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>9ec289b0-7f50-4be5-9880-28b0d93d19e0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7230b26147638250e9ddbf66706d43ae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7230b26147638250e9ddbf66706d43ae</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>be30b26147638250e9ddbf66706d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <value>a14c9be0ff67429019a8ffda7c4fd985</value>
+        <variable display_value="answer">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_b1f542d673331300612c273ffff6a7c7^id=7230b26147638250e9ddbf66706d43ae"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=7230b26147638250e9ddbf66706d43ae"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7230b26147638250e9ddbf66706d43ae"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7230b26147638250e9ddbf66706d43ae"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da12eaa547af4250e9ddbf66706d432e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9ec289b0-7f50-4be5-9880-28b0d93d19e0</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7630b26147638250e9ddbf66706d43b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>e841414a-38db-407b-9ebd-238ec7707c6b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7630b26147638250e9ddbf66706d43b4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=7630b26147638250e9ddbf66706d43b4"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7630b26147638250e9ddbf66706d43b4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7630b26147638250e9ddbf66706d43b4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ea12eaa547af4250e9ddbf66706d4399</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>19</order>
+        <outputs_assigned>formatedrequestbody</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7630b26147638250e9ddbf66706d43ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>07563d62-a444-44ae-a574-8bfd3ba7dcfd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7630b26147638250e9ddbf66706d43ba"/>
+    <sys_element_mapping action="delete_multiple" query="id=7630b26147638250e9ddbf66706d43ba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>formatedrequestbody</field>
+        <id>7630b26147638250e9ddbf66706d43ba</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7e30b26147638250e9ddbf66706d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{ecee7587-a620-46ce-b018-554b86fdbb09.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7630b26147638250e9ddbf66706d43ba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7630b26147638250e9ddbf66706d43ba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0c642aa147ef4250e9ddbf66706d436a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>25</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7e30b26147638250e9ddbf66706d43c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>cea42f0c-681a-483d-bd46-0c6eaa82f8a8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7e30b26147638250e9ddbf66706d43c5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7e30b26147638250e9ddbf66706d43c5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>7a30b26147638250e9ddbf66706d43d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7e30b26147638250e9ddbf66706d43c5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>b630b26147638250e9ddbf66706d43d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=7e30b26147638250e9ddbf66706d43c5"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=7e30b26147638250e9ddbf66706d43c5"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7e30b26147638250e9ddbf66706d43c5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7e30b26147638250e9ddbf66706d43c5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3754e6a147ef4250e9ddbf66706d4384</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>aa30b26147638250e9ddbf66706d436d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>a3002a81-f1a8-4bb2-8900-14264bd82eee</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=aa30b26147638250e9ddbf66706d436d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=aa30b26147638250e9ddbf66706d436d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=aa30b26147638250e9ddbf66706d436d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aa30b26147638250e9ddbf66706d436d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6a12eaa547af4250e9ddbf66706d43c7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>24</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>b230b26147638250e9ddbf66706d43c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>071d541f-eb5e-4af6-b3c4-8cc19758b327</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b230b26147638250e9ddbf66706d43c3"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=b230b26147638250e9ddbf66706d43c3"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b230b26147638250e9ddbf66706d43c3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b230b26147638250e9ddbf66706d43c3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9212eaa547af4250e9ddbf66706d4325</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>b630b26147638250e9ddbf66706d43ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>1a44fcf1-e11f-4d3c-81a3-b11d78ec9850</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b630b26147638250e9ddbf66706d43ab"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=b630b26147638250e9ddbf66706d43ab"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b630b26147638250e9ddbf66706d43ab"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b630b26147638250e9ddbf66706d43ab"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5a12eaa547af4250e9ddbf66706d432b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>14</order>
+        <outputs_assigned>insurerresponse</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>9ec289b0-7f50-4be5-9880-28b0d93d19e0</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>b630b26147638250e9ddbf66706d43b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>e5c572c2-f3eb-4318-bb17-75c1bdc2a3f9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b630b26147638250e9ddbf66706d43b1"/>
+    <sys_element_mapping action="delete_multiple" query="id=b630b26147638250e9ddbf66706d43b1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurerresponse</field>
+        <id>b630b26147638250e9ddbf66706d43b1</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>be30b26147638250e9ddbf66706d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{830ef16a-b691-4999-971f-5c1003bff5ab.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b630b26147638250e9ddbf66706d43b1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b630b26147638250e9ddbf66706d43b1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">31126aa547af4250e9ddbf66706d43e5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a3002a81-f1a8-4bb2-8900-14264bd82eee</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>ee30b26147638250e9ddbf66706d4370</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>65975163-1cef-4fd5-8a9e-266837783dc9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ee30b26147638250e9ddbf66706d4370"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee30b26147638250e9ddbf66706d4370</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3630b26147638250e9ddbf66706d4377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <value>1bfb17a0ff67429019a8ffda7c4fd971</value>
+        <variable display_value="Decision Table">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee30b26147638250e9ddbf66706d4370</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>3e30b26147638250e9ddbf66706d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <value>sys_decision_multi_result</value>
+        <variable display_value="Answer Table">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_578e90270b2313009002cab937673a7d^id=ee30b26147638250e9ddbf66706d4370"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^id=ee30b26147638250e9ddbf66706d4370"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ee30b26147638250e9ddbf66706d4370"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ee30b26147638250e9ddbf66706d4370"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e612eaa547af4250e9ddbf66706d43c4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>23</order>
+        <outputs_assigned>insurerresponse</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>28fff23c-e7ce-4c44-94af-eea13761e6c8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>f230b26147638250e9ddbf66706d43c0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>a54925e5-ea32-4def-a3d7-184abaae3dcc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f230b26147638250e9ddbf66706d43c0"/>
+    <sys_element_mapping action="delete_multiple" query="id=f230b26147638250e9ddbf66706d43c0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurerresponse</field>
+        <id>f230b26147638250e9ddbf66706d43c0</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>fa30b26147638250e9ddbf66706d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{1790446e-e7db-4242-871b-c5492903dfcb.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f230b26147638250e9ddbf66706d43c0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f230b26147638250e9ddbf66706d43c0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40642aa147ef4250e9ddbf66706d437c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>26</order>
+        <outputs_assigned>insurerresponse</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>cea42f0c-681a-483d-bd46-0c6eaa82f8a8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>f230b26147638250e9ddbf66706d43d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>269bd0cf-b42c-4a85-9d98-31935b26daf5</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f230b26147638250e9ddbf66706d43d6"/>
+    <sys_element_mapping action="delete_multiple" query="id=f230b26147638250e9ddbf66706d43d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurerresponse</field>
+        <id>f230b26147638250e9ddbf66706d43d6</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>fa30b26147638250e9ddbf66706d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{cea42f0c-681a-483d-bd46-0c6eaa82f8a8.__status__}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f230b26147638250e9ddbf66706d43d6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f230b26147638250e9ddbf66706d43d6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9212eaa547af4250e9ddbf66706d4309</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned>insurerresponse</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>f630b26147638250e9ddbf66706d43a8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>2466c05a-cc34-4513-917d-81881aad842a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f630b26147638250e9ddbf66706d43a8"/>
+    <sys_element_mapping action="delete_multiple" query="id=f630b26147638250e9ddbf66706d43a8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>insurerresponse</field>
+        <id>f630b26147638250e9ddbf66706d43a8</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>fe30b26147638250e9ddbf66706d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{830ef16a-b691-4999-971f-5c1003bff5ab.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f630b26147638250e9ddbf66706d43a8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f630b26147638250e9ddbf66706d43a8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0612aaa547af4250e9ddbf66706d4392</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuotePT -Copy">1230b26147638250e9ddbf66706d4336</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>formatedrequestbody</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>40e8e8cc-7b4e-4af9-9746-0ca9b37af2c9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>fa30b26147638250e9ddbf66706d437c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <ui_id>17c313a1-3b65-4043-9a2d-9007e886aa1f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fa30b26147638250e9ddbf66706d437c"/>
+    <sys_element_mapping action="delete_multiple" query="id=fa30b26147638250e9ddbf66706d437c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>formatedrequestbody</field>
+        <id>fa30b26147638250e9ddbf66706d437c</id>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>fe30b26147638250e9ddbf66706d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</table>
+        <value>{{65975163-1cef-4fd5-8a9e-266837783dc9.answer.result_elements.u_pt_value}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=fa30b26147638250e9ddbf66706d437c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fa30b26147638250e9ddbf66706d437c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1230b26147638250e9ddbf66706d4336"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1230b26147638250e9ddbf66706d4336"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1230b26147638250e9ddbf66706d4336"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336^sys_idNOT IN6e30b26147638250e9ddbf66706d4359,a230b26147638250e9ddbf66706d4357,e230b26147638250e9ddbf66706d4354"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>6e30b26147638250e9ddbf66706d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>type</element>
+        <help/>
+        <hint/>
+        <label>type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>a230b26147638250e9ddbf66706d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>insurer</element>
+        <help/>
+        <hint/>
+        <label>insurer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>e230b26147638250e9ddbf66706d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1230b26147638250e9ddbf66706d4336"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336^sys_idNOT IN2630b26147638250e9ddbf66706d4369,2a30b26147638250e9ddbf66706d4366,6e30b26147638250e9ddbf66706d4363,a230b26147638250e9ddbf66706d4361"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestbody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:17</sys_created_on>
+        <sys_id>2630b26147638250e9ddbf66706d4369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>receivedresponse</element>
+        <help/>
+        <hint/>
+        <label>receivedResponse</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>2a30b26147638250e9ddbf66706d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>formatedrequestbody</element>
+        <help/>
+        <hint/>
+        <label>formatedRequestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>6e30b26147638250e9ddbf66706d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>insurerresponse</element>
+        <help/>
+        <hint/>
+        <label>insurerResponse</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>karthik.udaykumar</sys_created_by>
+        <sys_created_on>2024-07-22 08:48:16</sys_created_on>
+        <sys_id>a230b26147638250e9ddbf66706d4361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>karthik.udaykumar</sys_updated_by>
+        <sys_updated_on>2024-07-22 08:48:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1230b26147638250e9ddbf66706d4336"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1230b26147638250e9ddbf66706d4336"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1230b26147638250e9ddbf66706d4336"/>
+</record_update>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Send a 'POST' request to '/api/x_rptp_smartinte_0/v1/get_quote'</description>
+        <display_name>Send REST Request - Inbound</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>67735ed547641610e9ddbf66706d4317</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Send REST Request - Inbound</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_atf_step_67735ed547641610e9ddbf66706d4317</sys_update_name>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-10 09:47:16</sys_updated_on>
+        <table/>
+        <test display_value="BALIC LLG Without(IP != PH)">f7e27e94472456d0e9ddbf66706d434b</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=67735ed547641610e9ddbf66706d4317"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>67735ed547641610e9ddbf66706d4317</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>3d24d61947641610e9ddbf66706d4342</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-10 09:47:16</sys_updated_on>
+        <value>{&#13;
+    "isExCustomer":"false",&#13;
+    "isNri":"false",&#13;
+    "premium": {{Parameters.Premium}},&#13;
+    "policyTerm": {{Parameters.PT}},&#13;
+    "paymentTerm": {{Parameters.PPT}},&#13;
+    "mobile": "9405590978",&#13;
+    "maritalStatus": "MS002",&#13;
+    "lName": "Khakhkhar",&#13;
+    "isProposer": "true",&#13;
+    "proposerDob":"{{Parameters.PH DOB}}",&#13;
+    "proposerFName":"akshay",&#13;
+    "proposerGender":"M",&#13;
+    "proposerLName":"s",&#13;
+    "gender": "G001",&#13;
+    "frequency": "{{Parameters.Frequency}}",&#13;
+    "fName": "Mayank",&#13;
+    "email": "mayank9870@testmail.com",&#13;
+    "dateOfBirth": "{{Parameters.DOB}}",&#13;
+    "currencyType": "INR",&#13;
+    "categoryCode": "ULIP",&#13;
+    "annualIncome": "400000",&#13;
+    "variantId": "VRN001",&#13;
+    "productId": "6017bdb8ee33446abe361de25c2bc9f0",&#13;
+    "payoutTerm": 15,&#13;
+    "payoutFrequency": "PF003",&#13;
+    "occupation":"Student"&#13;
+}</value>
+        <variable display_value="Body">81e042650b3222000b7da95e93673aa2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>67735ed547641610e9ddbf66706d4317</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>7924d61947641610e9ddbf66706d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <value>post</value>
+        <variable display_value="Method">59877da10b3222000b7da95e93673a56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>67735ed547641610e9ddbf66706d4317</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>b124d61947641610e9ddbf66706d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <value/>
+        <variable display_value="Query Parameters">58408e250b3222000b7da95e93673a5c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>67735ed547641610e9ddbf66706d4317</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>b524d61947641610e9ddbf66706d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <value>{"x-frame-options":"DENY","content-security-policy":"frame-ancestors 'none'"}</value>
+        <variable display_value="Headers">cec002650b3222000b7da95e93673aae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>67735ed547641610e9ddbf66706d4317</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>f124d61947641610e9ddbf66706d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <value>4dc7be3fffc85a5019a8ffda7c4fd9ff</value>
+        <variable display_value="Basic authentication">020a6af09fd32200ef4afa7dc67fcfec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>67735ed547641610e9ddbf66706d4317</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>fd24d61947641610e9ddbf66706d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <value>/api/x_rptp_smartinte_0/v1/get_quote</value>
+        <variable display_value="Path">50bff9250b3222000b7da95e93673a9b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=67735ed547641610e9ddbf66706d4317"/>
+    <sys_element_mapping action="DELETE">
+        <field>basic_auth</field>
+        <id>67735ed547641610e9ddbf66706d4317</id>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>7524d61947641610e9ddbf66706d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>end_point</field>
+        <id>67735ed547641610e9ddbf66706d4317</id>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>bd24d61947641610e9ddbf66706d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>headers</field>
+        <id>67735ed547641610e9ddbf66706d4317</id>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>3924d61947641610e9ddbf66706d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>query_params</field>
+        <id>67735ed547641610e9ddbf66706d4317</id>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>7124d61947641610e9ddbf66706d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>request_body</field>
+        <id>67735ed547641610e9ddbf66706d4317</id>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-09 05:09:55</sys_created_on>
+        <sys_id>f924d61947641610e9ddbf66706d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-09 05:09:55</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value>{&#13;
+    "isExCustomer":"false",&#13;
+    "isNri":"false",&#13;
+    "premium": {{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_premium}},&#13;
+    "policyTerm": {{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_pt}},&#13;
+    "paymentTerm": {{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_ppt}},&#13;
+    "mobile": "9405590978",&#13;
+    "maritalStatus": "MS002",&#13;
+    "lName": "Khakhkhar",&#13;
+    "isProposer": "true",&#13;
+    "proposerDob":"{{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_ph_dob}}",&#13;
+    "proposerFName":"akshay",&#13;
+    "proposerGender":"M",&#13;
+    "proposerLName":"s",&#13;
+    "gender": "G001",&#13;
+    "frequency": "{{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_frequency}}",&#13;
+    "fName": "Mayank",&#13;
+    "email": "mayank9870@testmail.com",&#13;
+    "dateOfBirth": "{{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_dob}}",&#13;
+    "currencyType": "INR",&#13;
+    "categoryCode": "ULIP",&#13;
+    "annualIncome": "400000",&#13;
+    "variantId": "VRN001",&#13;
+    "productId": "6017bdb8ee33446abe361de25c2bc9f0",&#13;
+    "payoutTerm": 15,&#13;
+    "payoutFrequency": "PF003",&#13;
+    "occupation":"Student"&#13;
+}</value>
+    </sys_element_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_atf_step_67735ed547641610e9ddbf66706d4317</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Send a 'POST' request to '/api/x_rptp_smartinte_0/v1/get_quote'</description><display_name>Send REST Request - Inbound</display_name><inputs/><inputs/><mugshots_cache_json/><notes/><order>1</order><step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>67735ed547641610e9ddbf66706d4317</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Send REST Request - Inbound</sys_name><sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package><sys_policy/><sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope><sys_update_name>sys_atf_step_67735ed547641610e9ddbf66706d4317</sys_update_name><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-10 09:47:16</sys_updated_on><table/><test display_value="BALIC LLG Without(IP != PH)">f7e27e94472456d0e9ddbf66706d434b</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=67735ed547641610e9ddbf66706d4317"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>67735ed547641610e9ddbf66706d4317</document_key><order>5</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>3d24d61947641610e9ddbf66706d4342</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-10 09:47:16</sys_updated_on><value>{&#13;
+    "isExCustomer":"false",&#13;
+    "isNri":"false",&#13;
+    "premium": {{Parameters.Premium}},&#13;
+    "policyTerm": {{Parameters.PT}},&#13;
+    "paymentTerm": {{Parameters.PPT}},&#13;
+    "mobile": "9405590978",&#13;
+    "maritalStatus": "MS002",&#13;
+    "lName": "Khakhkhar",&#13;
+    "isProposer": "true",&#13;
+    "proposerDob":"{{Parameters.PH DOB}}",&#13;
+    "proposerFName":"akshay",&#13;
+    "proposerGender":"M",&#13;
+    "proposerLName":"s",&#13;
+    "gender": "G001",&#13;
+    "frequency": "{{Parameters.Frequency}}",&#13;
+    "fName": "Mayank",&#13;
+    "email": "mayank9870@testmail.com",&#13;
+    "dateOfBirth": "{{Parameters.DOB}}",&#13;
+    "currencyType": "INR",&#13;
+    "categoryCode": "ULIP",&#13;
+    "annualIncome": "400000",&#13;
+    "variantId": "VRN001",&#13;
+    "productId": "6017bdb8ee33446abe361de25c2bc9f0",&#13;
+    "payoutTerm": 15,&#13;
+    "payoutFrequency": "PF003",&#13;
+    "occupation":"Student"&#13;
+}</value><variable display_value="Body">81e042650b3222000b7da95e93673aa2</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>67735ed547641610e9ddbf66706d4317</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>7924d61947641610e9ddbf66706d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><value>post</value><variable display_value="Method">59877da10b3222000b7da95e93673a56</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>67735ed547641610e9ddbf66706d4317</document_key><order>3</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>b124d61947641610e9ddbf66706d4343</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><value/><variable display_value="Query Parameters">58408e250b3222000b7da95e93673a5c</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>67735ed547641610e9ddbf66706d4317</document_key><order>4</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>b524d61947641610e9ddbf66706d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><value>{"x-frame-options":"DENY","content-security-policy":"frame-ancestors 'none'"}</value><variable display_value="Headers">cec002650b3222000b7da95e93673aae</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>67735ed547641610e9ddbf66706d4317</document_key><order>0</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>f124d61947641610e9ddbf66706d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><value>4dc7be3fffc85a5019a8ffda7c4fd9ff</value><variable display_value="Basic authentication">020a6af09fd32200ef4afa7dc67fcfec</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>67735ed547641610e9ddbf66706d4317</document_key><order>2</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>fd24d61947641610e9ddbf66706d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><value>/api/x_rptp_smartinte_0/v1/get_quote</value><variable display_value="Path">50bff9250b3222000b7da95e93673a9b</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=67735ed547641610e9ddbf66706d4317"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>basic_auth</field><id>67735ed547641610e9ddbf66706d4317</id><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>7524d61947641610e9ddbf66706d4341</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>end_point</field><id>67735ed547641610e9ddbf66706d4317</id><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>bd24d61947641610e9ddbf66706d4341</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>headers</field><id>67735ed547641610e9ddbf66706d4317</id><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>3924d61947641610e9ddbf66706d4341</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>query_params</field><id>67735ed547641610e9ddbf66706d4317</id><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>7124d61947641610e9ddbf66706d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>request_body</field><id>67735ed547641610e9ddbf66706d4317</id><sys_created_by>jabbar.nurbash</sys_created_by><sys_created_on>2024-09-09 05:09:55</sys_created_on><sys_id>f924d61947641610e9ddbf66706d4341</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jabbar.nurbash</sys_updated_by><sys_updated_on>2024-09-09 05:09:55</sys_updated_on><table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table><value>{&#13;
+    "isExCustomer":"false",&#13;
+    "isNri":"false",&#13;
+    "premium": {{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_premium}},&#13;
+    "policyTerm": {{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_pt}},&#13;
+    "paymentTerm": {{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_ppt}},&#13;
+    "mobile": "9405590978",&#13;
+    "maritalStatus": "MS002",&#13;
+    "lName": "Khakhkhar",&#13;
+    "isProposer": "true",&#13;
+    "proposerDob":"{{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_ph_dob}}",&#13;
+    "proposerFName":"akshay",&#13;
+    "proposerGender":"M",&#13;
+    "proposerLName":"s",&#13;
+    "gender": "G001",&#13;
+    "frequency": "{{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_frequency}}",&#13;
+    "fName": "Mayank",&#13;
+    "email": "mayank9870@testmail.com",&#13;
+    "dateOfBirth": "{{parameter['f7e27e94472456d0e9ddbf66706d434b'].u_dob}}",&#13;
+    "currencyType": "INR",&#13;
+    "categoryCode": "ULIP",&#13;
+    "annualIncome": "400000",&#13;
+    "variantId": "VRN001",&#13;
+    "productId": "6017bdb8ee33446abe361de25c2bc9f0",&#13;
+    "payoutTerm": 15,&#13;
+    "payoutFrequency": "PF003",&#13;
+    "occupation":"Student"&#13;
+}</value></sys_element_mapping></record_update>]]></payload>
+        <payload_hash>646683048</payload_hash>
+        <record_name>Send REST Request - Inbound</record_name>
+        <reverted_from/>
+        <source>efd887004728d2d0e9ddbf66706d4346</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-09-10 09:47:17</sys_created_on>
+        <sys_id>da3dd4b9ff20d61019a8ffda7c4fd949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191db548ce10000001</sys_recorded_at>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-09-10 09:47:17</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>9e3dd4b91920d6101fbad610cadf4f48</update_guid>
+        <update_guid_history>9e3dd4b91920d6101fbad610cadf4f48:646683048,3124d6194f641610375a31ae3b713946:-728155945</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jabbar.nurbash</sys_created_by>
+        <sys_created_on>2024-11-15 09:09:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>1d122724ae734da9b1f0a8de96e69b41</sys_id>
+        <sys_metadata>67735ed547641610e9ddbf66706d4317</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send REST Request - Inbound</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_scope_delete display_value="">369325a421bf4d1f809d3b2ab5baaae1</sys_scope_delete>
+        <sys_update_name>sys_atf_step_67735ed547641610e9ddbf66706d4317</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_67735ed547641610e9ddbf66706d4317">da3dd4b9ff20d61019a8ffda7c4fd949</sys_update_version>
+        <sys_updated_by>jabbar.nurbash</sys_updated_by>
+        <sys_updated_on>2024-11-15 09:09:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

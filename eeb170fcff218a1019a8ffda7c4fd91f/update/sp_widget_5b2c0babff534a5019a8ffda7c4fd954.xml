@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	$scope.redirect=function(){
+		c.server.get({action:'generateApp'}).then(
+			function(res){
+				var redUrl=res.data.redUrl;
+				location.href=redUrl;
+			}
+		)
+	}
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn {
+  width: 100%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{
+	"href": "www.google.com",
+	"button_text": "Go to google"
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>redirection_button_1</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>redirection button 1</name>
+        <option_schema>[{"name":"href","section":"Presentation","label":"Link for button","type":"string"},{"name":"button_text","section":"Presentation","label":"Contents of button","type":"string"},{"displayValue":"Table","name":"table","section":"Data","default_value":"","label":"Table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function(){
+data.buttonMsg = gs.getMessage(options.button_text || "Click Here");
+data.socialQAEnabled = true;
+data.canReadKnowledgeBase = true;
+
+
+if (input && input.action == 'generateApp') {
+    var gr = new GlideRecord('sn_bom_clo_b2c_custom_csm_consumer');
+    gr.newRecord();
+
+    var id = gr.insert();
+    //options.href += '&sys_id=' + id;
+	data.redUrl=options.href;
+
+}
+})()
+
+
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-07-16 05:42:32</sys_created_on>
+        <sys_id>5b2c0babff534a5019a8ffda7c4fd954</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>redirection button 1</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sp_widget_5b2c0babff534a5019a8ffda7c4fd954</sys_update_name>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-07-23 11:41:20</sys_updated_on>
+        <template><![CDATA[<button ng-click="redirect()" class="btn btn-{{options.color}} m-b">{{data.buttonMsg}}</button>]]></template>
+    </sp_widget>
+</record_update>
