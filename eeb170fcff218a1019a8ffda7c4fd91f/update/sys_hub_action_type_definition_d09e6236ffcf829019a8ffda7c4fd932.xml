@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>converting_date</internal_name>
-        <label_cache>[{"name":"{{action.req}}","label":"action➛req","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}","label":"step➛Script step➛requestbody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8123ecd0-1893-4b2b-838b-ba12e7719e8f"}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].__step_status__.code}}","label":"step➛Script step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.req}}","label":"action➛req","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}","label":"step➛Script step➛requestbody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8123ecd0-1893-4b2b-838b-ba12e7719e8f"}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].__step_status__.code}}","label":"step➛Script step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[52c6df22-c255-4cd1-b6f2-6feec67e2e7a].req}}","label":"step➛Add riders according to the insurers➛req","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"80aa1ce1-f197-4b49-8576-4726a9cef6c3"}}]</label_cache>
         <master_snapshot>e2c4f636ff03c29019a8ffda7c4fd945</master_snapshot>
         <master_snapshot_digest/>
         <name>converting date &amp; Sum Assured calculation</name>
@@ -31,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d09e6236ffcf829019a8ffda7c4fd932</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>converting date &amp; Sum Assured calculation</sys_name>
         <sys_overrides/>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_d09e6236ffcf829019a8ffda7c4fd932</sys_update_name>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:58:16</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-24 20:58:57</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -67,10 +67,10 @@
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-01 09:52:18</sys_created_on>
         <sys_id>ef7576b6ff03c29019a8ffda7c4fd909</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:41:18</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</value>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:56</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">d37536b6ff03c29019a8ffda7c4fd9fc</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=d09e6236ffcf829019a8ffda7c4fd932"/>
@@ -80,11 +80,11 @@
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-01 09:58:32</sys_created_on>
         <sys_id>72e6ba7aff03c29019a8ffda7c4fd9fb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-07-01 09:58:32</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:49</sys_updated_on>
         <table>var__m_sys_hub_action_output_d09e6236ffcf829019a8ffda7c4fd932</table>
-        <value>{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}</value>
+        <value>{{step[52c6df22-c255-4cd1-b6f2-6feec67e2e7a].req}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
@@ -110,7 +110,465 @@
         <table>var__m_sys_hub_action_output_d09e6236ffcf829019a8ffda7c4fd932</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=d09e6236ffcf829019a8ffda7c4fd932^sys_idNOT INd2c4b636ff03c29019a8ffda7c4fd9df"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=d09e6236ffcf829019a8ffda7c4fd932^sys_idNOT IN404dccc12b229210c692feb2f291bf3c,d2c4b636ff03c29019a8ffda7c4fd9df"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="converting date &amp; Sum Assured calculation">d09e6236ffcf829019a8ffda7c4fd932</action>
+        <cid>52c6df22-c255-4cd1-b6f2-6feec67e2e7a</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Add riders according to the insurers</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:37</sys_created_on>
+        <sys_id>404dccc12b229210c692feb2f291bf3c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=404dccc12b229210c692feb2f291bf3c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>404dccc12b229210c692feb2f291bf3c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:37</sys_created_on>
+        <sys_id>444dccc12b229210c692feb2f291bf4c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:56</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var req=inputs.req;&#13;
+    if(typeof req =='object'){&#13;
+        req=req;&#13;
+    }else{&#13;
+        req=JSON.parse(req);&#13;
+    }&#13;
+&#13;
+&#13;
+//calll script include and validate for riderssss &#13;
+&#13;
+&#13;
+var ridersArray=[];&#13;
+var variantId=req.variantId;&#13;
+var variantGr=new GlideRecord("x_rptp_smartinte_0_integrationproductvariants");&#13;
+variantGr.addQuery("variant_id",variantId+"");&#13;
+variantGr.query();&#13;
+if(variantGr.next()){&#13;
+variantSysId=variantGr.sys_id+"";&#13;
+}&#13;
+//if(inputs.isBulk || !inputs.req.rider){&#13;
+if(!inputs.req.rider){&#13;
+var riderPerVariantGr=new GlideRecord('x_rptp_smartinte_0_integration_rider_per_variant');&#13;
+riderPerVariantGr.addQuery("u_variant_id",variantSysId);&#13;
+riderPerVariantGr.query();&#13;
+while(riderPerVariantGr.next()){&#13;
+	var mul=1;&#13;
+			if(riderPerVariantGr.u_rider_duration_unit=="month"){&#13;
+				mul=calculatePPT(req.input_frequency);&#13;
+			}&#13;
+&#13;
+			&#13;
+&#13;
+			var pt=parseInt(req.policyTerm) * mul;&#13;
+            pt=pt.toString().split(".")[0];&#13;
+&#13;
+            var ppt=parseInt(req.paymentTerm) * mul;&#13;
+            ppt=ppt.toString().split(".")[0];&#13;
+&#13;
+			&#13;
+            var sumAssured;&#13;
+&#13;
+            if(req.sumAssured &amp;&amp; req.sumAssured!="0"&amp;&amp; req.sumAssured!=0){&#13;
+                sumAssured=req.sumAssured;&#13;
+            }&#13;
+            else{&#13;
+                if(req.multiplier){&#13;
+                    sumAssured=parseInt(req.annualPremium) * parseInt(req.multiplier);&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+                else{&#13;
+                    sumAssured=parseInt(req.annualPremium) * 10;&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+            }&#13;
+			// if(rider.sumAssured &amp;&amp; rider.sumAssured!="" &amp;&amp; rider.sumAssured!=null){&#13;
+			// 	sumAssured=rider.sumAssured;&#13;
+			// }&#13;
+&#13;
+			if(riderPerVariantGr.getDisplayValue("u_rider_id") == "RD001"){&#13;
+				sumAssured=parseInt(sumAssured) * 3;&#13;
+				sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+			}&#13;
+			if(riderPerVariantGr.u_min_base_sumassured || riderPerVariantGr.u_max_base_sumassured){&#13;
+				if(riderPerVariantGr.u_min_base_sumassured){&#13;
+				if(parseInt(riderPerVariantGr.u_min_base_sumassured) &lt;= parseInt(req.sumAssured)){&#13;
+					var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+			ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				 var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+ &#13;
+            ridersArray.push(scriptIncludeObj);&#13;
+				// ridersArray.push(obj);&#13;
+			}&#13;
+				}&#13;
+			}&#13;
+&#13;
+			else if(riderPerVariantGr.u_max_base_sumassured){&#13;
+				if(parseInt(riderPerVariantGr.u_max_base_sumassured) &gt; parseInt(req.sumAssured)){&#13;
+					var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+					ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+				  ridersArray.push(scriptIncludeObj);&#13;
+				//ridersArray.push(obj);&#13;
+			}&#13;
+				}&#13;
+			}&#13;
+			}&#13;
+			else{&#13;
+			var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+			ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+				//ridersArray.push(obj);&#13;
+				  ridersArray.push(scriptIncludeObj);&#13;
+				}&#13;
+			}&#13;
+}&#13;
+&#13;
+}&#13;
+else{&#13;
+	//gs.info("riders "+JSON.stringify(req.rider));&#13;
+    var riders=req.rider;&#13;
+    riders.forEach(function(rider){&#13;
+			//gs.info("riders ind"+JSON.stringify(rider));&#13;
+&#13;
+        var riderPerVariantGr=new GlideRecord('x_rptp_smartinte_0_integration_rider_per_variant');&#13;
+        riderPerVariantGr.addQuery("u_variant_id",variantSysId);&#13;
+        riderPerVariantGr.query();&#13;
+        while(riderPerVariantGr.next()){&#13;
+			//gs.info(riderPerVariantGr.getDisplayValue("u_rider_id"))&#13;
+            if(rider.name==riderPerVariantGr.getDisplayValue("u_rider_id")){&#13;
+				//gs.info(riderPerVariantGr.getDisplayValue("u_rider_id"))&#13;
+                var mul=1;&#13;
+			&#13;
+			&#13;
+			if(riderPerVariantGr.u_rider_duration_unit=="month"){&#13;
+				mul=calculatePPT(req.input_frequency);&#13;
+			}&#13;
+            var pt=parseInt(req.policyTerm) * mul;&#13;
+            pt=pt.toString().split(".")[0];&#13;
+&#13;
+            var ppt=parseInt(req.paymentTerm) * mul;&#13;
+            ppt=ppt.toString().split(".")[0];&#13;
+&#13;
+            var sumAssured;&#13;
+&#13;
+            if(req.sumAssured &amp;&amp; req.sumAssured!="0"&amp;&amp; req.sumAssured!=0){&#13;
+                sumAssured=req.sumAssured;&#13;
+            }&#13;
+            else{&#13;
+                if(req.multiplier){&#13;
+                    sumAssured=parseInt(req.annualPremium) * parseInt(req.multiplier);&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+                else{&#13;
+                    sumAssured=parseInt(req.annualPremium) * 10;&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+            }&#13;
+			if(rider.sumAssured &amp;&amp; rider.sumAssured!="" &amp;&amp; rider.sumAssured!=null){&#13;
+				sumAssured=rider.sumAssured;&#13;
+			}&#13;
+            var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+			ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+				//ridersArray.push(obj);&#13;
+				  ridersArray.push(scriptIncludeObj);&#13;
+				}&#13;
+            }&#13;
+        }&#13;
+    })&#13;
+};&#13;
+req.rider=ridersArray;&#13;
+outputs.req=(req);&#13;
+})(inputs, outputs);&#13;
+function calculatePPT(freq) {&#13;
+     // gs.info("Freq: {0}, Premium: {1}", freq, premium);&#13;
+      switch(freq) {&#13;
+        case "PF003": return 12;&#13;
+        case "PF001": return 1; &#13;
+        case "PF002": return 6;&#13;
+        case "PF004": return 3; &#13;
+        default: return 0;&#13;
+      }&#13;
+}</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>404dccc12b229210c692feb2f291bf3c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:37</sys_created_on>
+        <sys_id>4c4dccc12b229210c692feb2f291bf4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:37</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=404dccc12b229210c692feb2f291bf3c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>req</field>
+        <id>404dccc12b229210c692feb2f291bf3c</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:37</sys_created_on>
+        <sys_id>004dccc12b229210c692feb2f291bf4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:37</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_404dccc12b229210c692feb2f291bf3c</table>
+        <value>{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_404dccc12b229210c692feb2f291bf3c^id=404dccc12b229210c692feb2f291bf3c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=404dccc12b229210c692feb2f291bf3c"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=404dccc12b229210c692feb2f291bf3c^sys_idNOT IN084dccc12b229210c692feb2f291bf3f"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add riders according to the insurers">404dccc12b229210c692feb2f291bf3c</model>
+        <model_id>404dccc12b229210c692feb2f291bf3c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_404dccc12b229210c692feb2f291bf3c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:37</sys_created_on>
+        <sys_id>084dccc12b229210c692feb2f291bf3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=404dccc12b229210c692feb2f291bf3c^sys_idNOT IN084dccc12b229210c692feb2f291bf43"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=80aa1ce1-f197-4b49-8576-4726a9cef6c3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>req</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add riders according to the insurers">404dccc12b229210c692feb2f291bf3c</model>
+        <model_id>404dccc12b229210c692feb2f291bf3c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_404dccc12b229210c692feb2f291bf3c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:37</sys_created_on>
+        <sys_id>084dccc12b229210c692feb2f291bf43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=404dccc12b229210c692feb2f291bf3c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_404dccc12b229210c692feb2f291bf3c^sys_idNOT IN404dccc12b229210c692feb2f291bf47"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>req</element>
+        <help/>
+        <hint/>
+        <label>req</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_404dccc12b229210c692feb2f291bf3c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:37</sys_created_on>
+        <sys_id>404dccc12b229210c692feb2f291bf47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>req</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_404dccc12b229210c692feb2f291bf3c_req_en</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="converting date &amp; Sum Assured calculation">d09e6236ffcf829019a8ffda7c4fd932</action>
         <cid>914c964c-e4d9-448d-9716-3207ecdc32ca</cid>
@@ -206,18 +664,6 @@ outputs.requestbody=req;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=d2c4b636ff03c29019a8ffda7c4fd9df"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>d2c4b636ff03c29019a8ffda7c4fd9df</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-07-01 09:49:12</sys_created_on>
-        <sys_id>1ec4b636ff03c29019a8ffda7c4fd9ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-07-01 09:49:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>request</field>
         <id>d2c4b636ff03c29019a8ffda7c4fd9df</id>
         <sys_created_by>nikita</sys_created_by>
@@ -228,18 +674,6 @@ outputs.requestbody=req;
         <sys_updated_on>2024-07-01 09:49:12</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_d2c4b636ff03c29019a8ffda7c4fd9df</table>
         <value>{{action.req}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>d2c4b636ff03c29019a8ffda7c4fd9df</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-07-01 09:49:12</sys_created_on>
-        <sys_id>d2c4f636ff03c29019a8ffda7c4fd900</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-07-01 09:49:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d2c4b636ff03c29019a8ffda7c4fd9df^id=d2c4b636ff03c29019a8ffda7c4fd9df"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d2c4b636ff03c29019a8ffda7c4fd9df"/>
@@ -426,7 +860,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:49:12</sys_created_on>
         <sys_id>9ec4b636ff03c29019a8ffda7c4fd9ee</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -674,14 +1108,14 @@ outputs.requestbody=req;
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-01 09:52:17</sys_created_on>
         <sys_id>a37576b6ff03c29019a8ffda7c4fd901</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:58:15</sys_updated_on>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -801,13 +1235,13 @@ outputs.requestbody=req;
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>1</order>
-        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Internal Server Error"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
+        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Internal Server Error"}}}}</status>
         <sys_created_by>prasad.n</sys_created_by>
         <sys_created_on>2024-09-30 12:10:29</sys_created_on>
         <sys_id>dfcd3f4447899a50e9ddbf66706d43c6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:41:18</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:56</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_d09e6236ffcf829019a8ffda7c4fd932^sys_idNOT IN4ec4b636ff03c29019a8ffda7c4fd9dc"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -823,7 +1257,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:49:12</sys_created_on>
         <sys_id>4ec4b636ff03c29019a8ffda7c4fd9dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>req</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -848,7 +1282,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:52:17</sys_created_on>
         <sys_id>637576b6ff03c29019a8ffda7c4fd906</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -871,7 +1305,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:58:32</sys_created_on>
         <sys_id>bee6ba7aff03c29019a8ffda7c4fd9f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -894,7 +1328,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:52:17</sys_created_on>
         <sys_id>e37576b6ff03c29019a8ffda7c4fd900</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -909,17 +1343,17 @@ outputs.requestbody=req;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="converting date &amp; Sum Assured calculation">d09e6236ffcf829019a8ffda7c4fd932</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"36c43a36ff03c29019a8ffda7c4fd979","name":"plan","plan_signature":null}}</plan>
-        <snapshot>de63fd49ff12529019a8ffda7c4fd9bf</snapshot>
+        <snapshot>11b229e933aad610798ab3373e5c7b0a</snapshot>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-01 09:49:15</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>36c43a36ff03c29019a8ffda7c4fd979</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:58:17</sys_updated_on>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:59</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -936,7 +1370,7 @@ outputs.requestbody=req;
         <description/>
         <flow_priority/>
         <internal_name>converting_date</internal_name>
-        <label_cache>[{"name":"{{action.req}}","label":"action➛req","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}","label":"step➛Script step➛requestbody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8123ecd0-1893-4b2b-838b-ba12e7719e8f"}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].__step_status__.code}}","label":"step➛Script step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.req}}","label":"action➛req","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}","label":"step➛Script step➛requestbody","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8123ecd0-1893-4b2b-838b-ba12e7719e8f"}},{"name":"{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].__step_status__.code}}","label":"step➛Script step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[52c6df22-c255-4cd1-b6f2-6feec67e2e7a].req}}","label":"step➛Add riders according to the insurers➛req","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"80aa1ce1-f197-4b49-8576-4726a9cef6c3"}}]</label_cache>
         <master>true</master>
         <name>converting date &amp; Sum Assured calculation</name>
         <natlang/>
@@ -949,7 +1383,7 @@ outputs.requestbody=req;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e2c4f636ff03c29019a8ffda7c4fd945</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -957,7 +1391,7 @@ outputs.requestbody=req;
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-10-01 05:18:12</sys_updated_on>
+        <sys_updated_on>2024-12-16 10:47:50</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -985,10 +1419,10 @@ outputs.requestbody=req;
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-01 09:52:19</sys_created_on>
         <sys_id>f37576b6ff03c29019a8ffda7c4fd9c1</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:41:19</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</value>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:58</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">eec4f636ff03c29019a8ffda7c4fd992</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=e2c4f636ff03c29019a8ffda7c4fd945"/>
@@ -998,11 +1432,11 @@ outputs.requestbody=req;
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-01 09:58:33</sys_created_on>
         <sys_id>d7e6fa7aff03c29019a8ffda7c4fd9f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-07-01 09:58:33</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:51</sys_updated_on>
         <table>var__m_sys_hub_action_output_e2c4f636ff03c29019a8ffda7c4fd945</table>
-        <value>{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}</value>
+        <value>{{step[52c6df22-c255-4cd1-b6f2-6feec67e2e7a].req}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
@@ -1028,7 +1462,7 @@ outputs.requestbody=req;
         <table>var__m_sys_hub_action_output_e2c4f636ff03c29019a8ffda7c4fd945</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=e2c4f636ff03c29019a8ffda7c4fd945^sys_idNOT IN2ac4f636ff03c29019a8ffda7c4fd967"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=e2c4f636ff03c29019a8ffda7c4fd945^sys_idNOT IN2ac4f636ff03c29019a8ffda7c4fd967,e84dccc12b229210c692feb2f291bfdb"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="converting date &amp; Sum Assured calculation">e2c4f636ff03c29019a8ffda7c4fd945</action>
         <cid>914c964c-e4d9-448d-9716-3207ecdc32ca</cid>
@@ -1124,18 +1558,6 @@ outputs.requestbody=req;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=2ac4f636ff03c29019a8ffda7c4fd967"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>2ac4f636ff03c29019a8ffda7c4fd967</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-07-01 09:49:14</sys_created_on>
-        <sys_id>aac4f636ff03c29019a8ffda7c4fd98e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-07-01 09:49:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>request</field>
         <id>2ac4f636ff03c29019a8ffda7c4fd967</id>
         <sys_created_by>nikita</sys_created_by>
@@ -1146,18 +1568,6 @@ outputs.requestbody=req;
         <sys_updated_on>2024-07-01 09:49:14</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_2ac4f636ff03c29019a8ffda7c4fd967</table>
         <value>{{action.req}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>2ac4f636ff03c29019a8ffda7c4fd967</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-07-01 09:49:14</sys_created_on>
-        <sys_id>6ec4f636ff03c29019a8ffda7c4fd98e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-07-01 09:49:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2ac4f636ff03c29019a8ffda7c4fd967^id=2ac4f636ff03c29019a8ffda7c4fd967"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=2ac4f636ff03c29019a8ffda7c4fd967"/>
@@ -1344,13 +1754,471 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:49:14</sys_created_on>
         <sys_id>eec4f636ff03c29019a8ffda7c4fd98a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nikita</sys_updated_by>
         <sys_updated_on>2024-07-01 09:49:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="converting date &amp; Sum Assured calculation">e2c4f636ff03c29019a8ffda7c4fd945</action>
+        <cid>52c6df22-c255-4cd1-b6f2-6feec67e2e7a</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Add riders according to the insurers</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:39</sys_created_on>
+        <sys_id>e84dccc12b229210c692feb2f291bfdb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:57</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e84dccc12b229210c692feb2f291bfdb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e84dccc12b229210c692feb2f291bfdb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:39</sys_created_on>
+        <sys_id>244dccc12b229210c692feb2f291bfea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:39</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e84dccc12b229210c692feb2f291bfdb</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:39</sys_created_on>
+        <sys_id>e44dccc12b229210c692feb2f291bfea</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:57</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var req=inputs.req;&#13;
+    if(typeof req =='object'){&#13;
+        req=req;&#13;
+    }else{&#13;
+        req=JSON.parse(req);&#13;
+    }&#13;
+&#13;
+&#13;
+//calll script include and validate for riderssss &#13;
+&#13;
+&#13;
+var ridersArray=[];&#13;
+var variantId=req.variantId;&#13;
+var variantGr=new GlideRecord("x_rptp_smartinte_0_integrationproductvariants");&#13;
+variantGr.addQuery("variant_id",variantId+"");&#13;
+variantGr.query();&#13;
+if(variantGr.next()){&#13;
+variantSysId=variantGr.sys_id+"";&#13;
+}&#13;
+//if(inputs.isBulk || !inputs.req.rider){&#13;
+if(!inputs.req.rider){&#13;
+var riderPerVariantGr=new GlideRecord('x_rptp_smartinte_0_integration_rider_per_variant');&#13;
+riderPerVariantGr.addQuery("u_variant_id",variantSysId);&#13;
+riderPerVariantGr.query();&#13;
+while(riderPerVariantGr.next()){&#13;
+	var mul=1;&#13;
+			if(riderPerVariantGr.u_rider_duration_unit=="month"){&#13;
+				mul=calculatePPT(req.input_frequency);&#13;
+			}&#13;
+&#13;
+			&#13;
+&#13;
+			var pt=parseInt(req.policyTerm) * mul;&#13;
+            pt=pt.toString().split(".")[0];&#13;
+&#13;
+            var ppt=parseInt(req.paymentTerm) * mul;&#13;
+            ppt=ppt.toString().split(".")[0];&#13;
+&#13;
+			&#13;
+            var sumAssured;&#13;
+&#13;
+            if(req.sumAssured &amp;&amp; req.sumAssured!="0"&amp;&amp; req.sumAssured!=0){&#13;
+                sumAssured=req.sumAssured;&#13;
+            }&#13;
+            else{&#13;
+                if(req.multiplier){&#13;
+                    sumAssured=parseInt(req.annualPremium) * parseInt(req.multiplier);&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+                else{&#13;
+                    sumAssured=parseInt(req.annualPremium) * 10;&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+            }&#13;
+			// if(rider.sumAssured &amp;&amp; rider.sumAssured!="" &amp;&amp; rider.sumAssured!=null){&#13;
+			// 	sumAssured=rider.sumAssured;&#13;
+			// }&#13;
+&#13;
+			if(riderPerVariantGr.getDisplayValue("u_rider_id") == "RD001"){&#13;
+				sumAssured=parseInt(sumAssured) * 3;&#13;
+				sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+			}&#13;
+			if(riderPerVariantGr.u_min_base_sumassured || riderPerVariantGr.u_max_base_sumassured){&#13;
+				if(riderPerVariantGr.u_min_base_sumassured){&#13;
+				if(parseInt(riderPerVariantGr.u_min_base_sumassured) &lt;= parseInt(req.sumAssured)){&#13;
+					var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+			ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				 var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+ &#13;
+            ridersArray.push(scriptIncludeObj);&#13;
+				// ridersArray.push(obj);&#13;
+			}&#13;
+				}&#13;
+			}&#13;
+&#13;
+			else if(riderPerVariantGr.u_max_base_sumassured){&#13;
+				if(parseInt(riderPerVariantGr.u_max_base_sumassured) &gt; parseInt(req.sumAssured)){&#13;
+					var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+					ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+				  ridersArray.push(scriptIncludeObj);&#13;
+				//ridersArray.push(obj);&#13;
+			}&#13;
+				}&#13;
+			}&#13;
+			}&#13;
+			else{&#13;
+			var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+			ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+				//ridersArray.push(obj);&#13;
+				  ridersArray.push(scriptIncludeObj);&#13;
+				}&#13;
+			}&#13;
+}&#13;
+&#13;
+}&#13;
+else{&#13;
+	//gs.info("riders "+JSON.stringify(req.rider));&#13;
+    var riders=req.rider;&#13;
+    riders.forEach(function(rider){&#13;
+			//gs.info("riders ind"+JSON.stringify(rider));&#13;
+&#13;
+        var riderPerVariantGr=new GlideRecord('x_rptp_smartinte_0_integration_rider_per_variant');&#13;
+        riderPerVariantGr.addQuery("u_variant_id",variantSysId);&#13;
+        riderPerVariantGr.query();&#13;
+        while(riderPerVariantGr.next()){&#13;
+			//gs.info(riderPerVariantGr.getDisplayValue("u_rider_id"))&#13;
+            if(rider.name==riderPerVariantGr.getDisplayValue("u_rider_id")){&#13;
+				//gs.info(riderPerVariantGr.getDisplayValue("u_rider_id"))&#13;
+                var mul=1;&#13;
+			&#13;
+			&#13;
+			if(riderPerVariantGr.u_rider_duration_unit=="month"){&#13;
+				mul=calculatePPT(req.input_frequency);&#13;
+			}&#13;
+            var pt=parseInt(req.policyTerm) * mul;&#13;
+            pt=pt.toString().split(".")[0];&#13;
+&#13;
+            var ppt=parseInt(req.paymentTerm) * mul;&#13;
+            ppt=ppt.toString().split(".")[0];&#13;
+&#13;
+            var sumAssured;&#13;
+&#13;
+            if(req.sumAssured &amp;&amp; req.sumAssured!="0"&amp;&amp; req.sumAssured!=0){&#13;
+                sumAssured=req.sumAssured;&#13;
+            }&#13;
+            else{&#13;
+                if(req.multiplier){&#13;
+                    sumAssured=parseInt(req.annualPremium) * parseInt(req.multiplier);&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+                else{&#13;
+                    sumAssured=parseInt(req.annualPremium) * 10;&#13;
+                    sumAssured=sumAssured.toString().split(".")[0]+"";&#13;
+                }&#13;
+            }&#13;
+			if(rider.sumAssured &amp;&amp; rider.sumAssured!="" &amp;&amp; rider.sumAssured!=null){&#13;
+				sumAssured=rider.sumAssured;&#13;
+			}&#13;
+            var ridersGr=new GlideRecord('x_rptp_smartinte_0_integration_riders');&#13;
+			ridersGr.addQuery('sys_id',riderPerVariantGr.u_rider_id+"");&#13;
+			ridersGr.query();&#13;
+			if(ridersGr.next()){&#13;
+				var obj={&#13;
+					name:ridersGr.u_code+"",&#13;
+					term:pt,&#13;
+					ppt:ppt,&#13;
+					sumAssured:sumAssured,&#13;
+					mul:mul&#13;
+				};&#13;
+				var scriptIncludeObj =  new x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation().validate((obj),riderPerVariantGr.sys_id,req,riderPerVariantGr.getDisplayValue("u_rider_id"));&#13;
+				//ridersArray.push(obj);&#13;
+				  ridersArray.push(scriptIncludeObj);&#13;
+				}&#13;
+            }&#13;
+        }&#13;
+    })&#13;
+};&#13;
+req.rider=ridersArray;&#13;
+outputs.req=(req);&#13;
+})(inputs, outputs);&#13;
+function calculatePPT(freq) {&#13;
+     // gs.info("Freq: {0}, Premium: {1}", freq, premium);&#13;
+      switch(freq) {&#13;
+        case "PF003": return 12;&#13;
+        case "PF001": return 1; &#13;
+        case "PF002": return 6;&#13;
+        case "PF004": return 3; &#13;
+        default: return 0;&#13;
+      }&#13;
+}</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e84dccc12b229210c692feb2f291bfdb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>req</field>
+        <id>e84dccc12b229210c692feb2f291bfdb</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:39</sys_created_on>
+        <sys_id>204dccc12b229210c692feb2f291bfeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_e84dccc12b229210c692feb2f291bfdb</table>
+        <value>{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_e84dccc12b229210c692feb2f291bfdb^id=e84dccc12b229210c692feb2f291bfdb"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=e84dccc12b229210c692feb2f291bfdb"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e84dccc12b229210c692feb2f291bfdb^sys_idNOT IN6c4dccc12b229210c692feb2f291bfde"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>req</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add riders according to the insurers">e84dccc12b229210c692feb2f291bfdb</model>
+        <model_id>e84dccc12b229210c692feb2f291bfdb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_e84dccc12b229210c692feb2f291bfdb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:39</sys_created_on>
+        <sys_id>6c4dccc12b229210c692feb2f291bfde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e84dccc12b229210c692feb2f291bfdb^sys_idNOT IN244dccc12b229210c692feb2f291bfe3"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=80aa1ce1-f197-4b49-8576-4726a9cef6c3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>req</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add riders according to the insurers">e84dccc12b229210c692feb2f291bfdb</model>
+        <model_id>e84dccc12b229210c692feb2f291bfdb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e84dccc12b229210c692feb2f291bfdb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:39</sys_created_on>
+        <sys_id>244dccc12b229210c692feb2f291bfe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e84dccc12b229210c692feb2f291bfdb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e84dccc12b229210c692feb2f291bfdb^sys_idNOT INa44dccc12b229210c692feb2f291bfe6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>req</element>
+        <help/>
+        <hint/>
+        <label>req</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_e84dccc12b229210c692feb2f291bfdb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 10:47:39</sys_created_on>
+        <sys_id>a44dccc12b229210c692feb2f291bfe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>req</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_e84dccc12b229210c692feb2f291bfdb_req_en</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 10:47:39</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1505,14 +2373,14 @@ outputs.requestbody=req;
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-01 09:49:14</sys_created_on>
         <sys_id>22c4f636ff03c29019a8ffda7c4fd9a4</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:58:16</sys_updated_on>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1712,20 +2580,20 @@ outputs.requestbody=req;
         <sys_updated_by>nikita</sys_updated_by>
         <sys_updated_on>2024-07-01 09:49:14</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2ac4f636ff03c29019a8ffda7c4fd9ad^sys_idNOT IN5a63fd49ff12529019a8ffda7c4fd9be"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2ac4f636ff03c29019a8ffda7c4fd9ad^sys_idNOT IN5db229e933aad610798ab3373e5c7b08"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-07-01 15:19:14">2ac4f636ff03c29019a8ffda7c4fd9ad</action_status_metadata_id>
         <condition>{{step[914c964c-e4d9-448d-9716-3207ecdc32ca].__step_status__.code}}=1</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>1</order>
-        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Internal Server Error"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-04 07:58:16</sys_created_on>
-        <sys_id>5a63fd49ff12529019a8ffda7c4fd9be</sys_id>
+        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Internal Server Error"}}}}</status>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-12-18 06:17:58</sys_created_on>
+        <sys_id>5db229e933aad610798ab3373e5c7b08</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 07:58:16</sys_updated_on>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:17:58</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e2c4f636ff03c29019a8ffda7c4fd945^sys_idNOT INe2c4f636ff03c29019a8ffda7c4fd965"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -1741,7 +2609,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:49:13</sys_created_on>
         <sys_id>e2c4f636ff03c29019a8ffda7c4fd965</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>req</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1766,7 +2634,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:49:14</sys_created_on>
         <sys_id>62c4f636ff03c29019a8ffda7c4fd9a3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1789,7 +2657,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:49:14</sys_created_on>
         <sys_id>6ec4f636ff03c29019a8ffda7c4fd9a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1812,7 +2680,7 @@ outputs.requestbody=req;
         <sys_created_on>2024-07-01 09:58:33</sys_created_on>
         <sys_id>dfe6fa7aff03c29019a8ffda7c4fd9ed</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1826,6 +2694,6 @@ outputs.requestbody=req;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>d09e6236ffcf829019a8ffda7c4fd932</sys_id>
         <latest_snapshot>e2c4f636ff03c29019a8ffda7c4fd945</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix3b-11-14-2024_11-25-2024_0807.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

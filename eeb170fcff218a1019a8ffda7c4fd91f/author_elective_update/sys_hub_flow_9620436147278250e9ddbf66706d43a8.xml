@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5711782000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-vancouver-07-06-2023__patch9-hotfix2-06-11-2024_06-14-2024_2108.zip</compiler_build>
+        <copied_from>d3c6c2d8ff124e5019a8ffda7c4fd9ff</copied_from>
+        <copied_from_name>ICICIGetQuote</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>copy_of_icicigetquote</internal_name>
+        <label_cache>[{"name":"32bb4b70-b097-4bed-982b-f9ea47298f25.variable2","label":"1 - Fetch PPt, Pt, Age➛Age","reference_display":"Age","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9d454e05-746c-4dd1-9a2b-1d848f6554c0"}},{"name":"32bb4b70-b097-4bed-982b-f9ea47298f25.variable1","label":"1 - Fetch PPt, Pt, Age➛PT","reference_display":"PT","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"80c4d92a-1cb3-469e-8dc6-0e9154a046a5"}},{"name":"32bb4b70-b097-4bed-982b-f9ea47298f25._","label":"1 - Fetch PPt, Pt, Age➛PPT","reference_display":"PPT","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"93ee88bc-9e08-4983-94c5-4bb1421d1723"}},{"name":"88a2b1c0-eaaf-4e05-967e-50f4c884ebb0.variable","label":"11 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"1d293392-d6d2-4045-805b-2be8bc738639.variable","label":"9 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"e08b1f7f-c06d-4810-8dfa-6c34910a79a7.variable","label":"6 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"f2d23034-b090-4b2b-886d-c761a99faaeb.variable","label":"7 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.answer.result_elements.u_ppt_value","label":"2 - Make a decision➛Decision Table Multiple Result Record➛Result elements➛PPT Value","reference":"","reference_display":"PPT Value","type":"integer","base_type":"integer","parent_table_name":"var__m_sys_decision_multi_result_element_61d9b624ff23429019a8ffda7c4fd986","column_name":"u_ppt_value"},{"name":"af27a456-5c52-476a-9a76-8f31599829b0.variable","label":"9 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"563813c5-f79f-4f68-bd04-c86c617c821d.variable","label":"7 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"fd87e5df-d9af-4ef6-87a4-0339bfd3a2ae.variable","label":"4 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"13c62e29-5620-4c61-bc17-81272f0c53eb.variable","label":"5 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"3dd34d17-451d-49a0-86d0-ab2f89e7b2fc.variable","label":"13 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"e324a8b7-42e4-418f-aaf0-09e60c3f6d67.variable","label":"22 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"616c2bb9-e36d-455e-a9c0-9d37807d4354.variable","label":"11 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"a46385a2-bed9-4f2e-892d-d1c3811419b4.variable","label":"8 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a0477cc6-6d87-4cea-a475-19953b4c9b36.variable","label":"9 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"23d253ab-0b3f-4033-9a42-5e3883014fc8.variable","label":"39 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"655516be-db12-4edd-9a7a-91a2e9e6c478.variable","label":"37 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"63f0d3a2-abf2-4497-bb0a-ae709c47b8c2.variable","label":"34 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a2026568-77ff-4876-aa3b-2269e132416d.variable","label":"35 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"subflow.insurer","label":"input➛insurer","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"215527c7-4998-4718-8cdc-e6f79f98aeff","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"80c75517-47d6-49bb-a39a-b83ca1f841a2.variable","label":"33 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"subflow.requestbody","label":"input➛requestBody","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5e497596-2fef-4de0-95cf-72d56c03999e.variable","label":"29 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"ecca1416-3ae0-4f5e-b3fb-96f6c14d9e19.variable","label":"31 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"74d38524-5db6-4880-9919-72ebcf79539a.variable","label":"28 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"subflow.type","label":"input➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c6848f94-db70-413a-bffb-dd2bae2515aa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__","label":"5 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87b4cc8-be78-4c94-aa4f-b9eb0436400f.variable","label":"4 - Get DT PPT Value➛req","reference_display":"req","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.records","label":"2 - Make a decision➛Decision Table Multiple Result Records","reference":"sys_decision_multi_result","reference_display":"Decision Table Multiple Result","type":"records","base_type":"records","attributes":{}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.count","label":"2 - Make a decision➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.ordered_ids","label":"2 - Make a decision➛Ordered IDs","reference":"sys_decision_multi_result","reference_display":"Ordered IDs","type":"glide_list","base_type":"glide_list","attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Copy of ICICIGetQuote</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9620436147278250e9ddbf66706d43a8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Copy of ICICIGetQuote</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_9620436147278250e9ddbf66706d43a8</sys_update_name>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_hub_flow_stage action="DELETE" query="flow=9620436147278250e9ddbf66706d43a8"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=9620436147278250e9ddbf66706d43a8^sys_idNOT INa620436147278250e9ddbf66706d43a9"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>9620436147278250e9ddbf66706d43a8</id>
+        <name>Copy of ICICIGetQuote</name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>a620436147278250e9ddbf66706d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=a620436147278250e9ddbf66706d43a9"/>
+    <sys_hub_flow_input action="DELETE" query="model=9620436147278250e9ddbf66706d43a8^sys_idNOT INa220436147278250e9ddbf66706d43fb,aa20836147278250e9ddbf66706d4302,e620436147278250e9ddbf66706d43ff"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=215527c7-4998-4718-8cdc-e6f79f98aeff</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurer</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</model>
+        <model_id>9620436147278250e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>a220436147278250e9ddbf66706d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=a220436147278250e9ddbf66706d43fb"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</model>
+        <model_id>9620436147278250e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>aa20836147278250e9ddbf66706d4302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=aa20836147278250e9ddbf66706d4302"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c6848f94-db70-413a-bffb-dd2bae2515aa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>type</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</model>
+        <model_id>9620436147278250e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>e620436147278250e9ddbf66706d43ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=e620436147278250e9ddbf66706d43ff"/>
+    <sys_hub_flow_output action="DELETE" query="model=9620436147278250e9ddbf66706d43a8^sys_idNOT IN2220836147278250e9ddbf66706d431d,6a20836147278250e9ddbf66706d4315,6e20836147278250e9ddbf66706d4319,e220836147278250e9ddbf66706d4320"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c07733ad-5747-40d8-bef6-84ae405af205</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receivedresponse</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>receivedResponse</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</model>
+        <model_id>9620436147278250e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>2220836147278250e9ddbf66706d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=2220836147278250e9ddbf66706d431d"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c1c99fc6-9c99-4b2a-add4-8024fa2cd246</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>insurerresponse</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>insurerResponse</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</model>
+        <model_id>9620436147278250e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>6a20836147278250e9ddbf66706d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=6a20836147278250e9ddbf66706d4315"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f414cdb8-c80a-4d05-a32c-97a1681d29f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatedrequestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatedRequestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</model>
+        <model_id>9620436147278250e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>6e20836147278250e9ddbf66706d4319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=6e20836147278250e9ddbf66706d4319"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FD66208361a82782509085c43581eeae14</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD66208361a82782509085c43581eeae14":{},"FlowDesigner:FD66208361a82782509085c43581eeae14.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"requestbody\",\"mandatory\":\"false\",\"uiUniqueId\":\"62b435b7-57f7-48f3-b05f-244d03ea736d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD66208361a82782509085c43581eeae14\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"4\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2a20836147278250e9ddbf66706d4314</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:37</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD66208361a82782509085c43581eeae14,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=object,uiTypeLabel=Object,uiUniqueId=62b435b7-57f7-48f3-b05f-244d03ea736d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestbody</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</model>
+        <model_id>9620436147278250e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>e220836147278250e9ddbf66706d4320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=e220836147278250e9ddbf66706d4320"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=9620436147278250e9ddbf66706d43a8"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=9620436147278250e9ddbf66706d43a8"/>
+    <sys_hub_action_instance action="DELETE" query="flow=9620436147278250e9ddbf66706d43a8^sys_idNOT IN64d14b2947278250e9ddbf66706d4362,bd896365472f8250e9ddbf66706d437a,ce896365472f8250e9ddbf66706d4380"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Fetch PPt, Pt, Age">d94b1fda47130250e9ddbf66706d433d</action_type>
+        <action_type_parent display_value="Fetch PPt, Pt, Age">404a175647130250e9ddbf66706d433f</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 10:05:08</sys_created_on>
+        <sys_id>64d14b2947278250e9ddbf66706d4362</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:37</sys_updated_on>
+        <ui_id>32bb4b70-b097-4bed-982b-f9ea47298f25</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=64d14b2947278250e9ddbf66706d4362"/>
+    <sys_element_mapping action="DELETE" query="id=64d14b2947278250e9ddbf66706d4362"/>
+    <sys_element_mapping action="DELETE">
+        <field>variable</field>
+        <id>64d14b2947278250e9ddbf66706d4362</id>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 10:05:08</sys_created_on>
+        <sys_id>e0d14b2947278250e9ddbf66706d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 10:05:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d94b1fda47130250e9ddbf66706d433d</table>
+        <value>{{subflow.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=64d14b2947278250e9ddbf66706d4362"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=64d14b2947278250e9ddbf66706d4362"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 12:58:38</sys_created_on>
+        <sys_id>bd896365472f8250e9ddbf66706d437a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <ui_id>d998abde-b852-4c99-8e16-696f95828196</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=bd896365472f8250e9ddbf66706d437a"/>
+    <sys_element_mapping action="DELETE" query="id=bd896365472f8250e9ddbf66706d437a"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>bd896365472f8250e9ddbf66706d437a</id>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 12:58:38</sys_created_on>
+        <sys_id>4a896365472f8250e9ddbf66706d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{0d1174b4-7cf4-4f21-8d13-0f2fa022008a.ordered_ids}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=bd896365472f8250e9ddbf66706d437a"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=bd896365472f8250e9ddbf66706d437a"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 12:58:38</sys_created_on>
+        <sys_id>ce896365472f8250e9ddbf66706d4380</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <ui_id>b749ff1e-b498-495b-a1ff-47160cf7ca83</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=ce896365472f8250e9ddbf66706d4380"/>
+    <sys_element_mapping action="DELETE" query="id=ce896365472f8250e9ddbf66706d4380"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>ce896365472f8250e9ddbf66706d4380</id>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 12:58:38</sys_created_on>
+        <sys_id>8e896365472f8250e9ddbf66706d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{0d1174b4-7cf4-4f21-8d13-0f2fa022008a.records}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=ce896365472f8250e9ddbf66706d4380"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=ce896365472f8250e9ddbf66706d4380"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=9620436147278250e9ddbf66706d43a8^sys_idNOT IN7620836147278250e9ddbf66706d43a7,a620836147278250e9ddbf66706d4327,ba20836147278250e9ddbf66706d43ab,ee20836147278250e9ddbf66706d432a"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">ba3faf1effdbce1019a8ffda7c4fd943</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:55</sys_created_on>
+        <sys_id>7620836147278250e9ddbf66706d43a7</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=7620836147278250e9ddbf66706d43a7"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7620836147278250e9ddbf66706d43a7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:55</sys_created_on>
+        <sys_id>3e20836147278250e9ddbf66706d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:55</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7620836147278250e9ddbf66706d43a7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:55</sys_created_on>
+        <sys_id>7a20836147278250e9ddbf66706d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:55</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=7620836147278250e9ddbf66706d43a7"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^id=7620836147278250e9ddbf66706d43a7"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=7620836147278250e9ddbf66706d43a7"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=7620836147278250e9ddbf66706d43a7"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">ca3f6f1effdbce1019a8ffda7c4fd985</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>a620836147278250e9ddbf66706d4327</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:37</sys_updated_on>
+        <ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=a620836147278250e9ddbf66706d4327"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^id=a620836147278250e9ddbf66706d4327"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=a620836147278250e9ddbf66706d4327"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=a620836147278250e9ddbf66706d4327"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">b63faf1effdbce1019a8ffda7c4fd948</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>insurerresponse</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>0e43278f-b525-4991-8e5b-2a2ca9de5815</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:55</sys_created_on>
+        <sys_id>ba20836147278250e9ddbf66706d43ab</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <ui_id>81bca4ab-d737-426e-a485-607e1841e0a3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=ba20836147278250e9ddbf66706d43ab"/>
+    <sys_element_mapping action="DELETE" query="id=ba20836147278250e9ddbf66706d43ab"/>
+    <sys_element_mapping action="DELETE">
+        <field>insurerresponse</field>
+        <id>ba20836147278250e9ddbf66706d43ab</id>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:55</sys_created_on>
+        <sys_id>7620836147278250e9ddbf66706d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</table>
+        <value>{{0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=ba20836147278250e9ddbf66706d43ab"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=ba20836147278250e9ddbf66706d43ab^sys_idNOT IN7a20836147278250e9ddbf66706d43ac"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>false</active>
+        <input_name>insurerresponse</input_name>
+        <instance>ba20836147278250e9ddbf66706d43ab</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"insurerresponse":{"scriptActive":false}}</script>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:55</sys_created_on>
+        <sys_id>7a20836147278250e9ddbf66706d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:55</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">62c727a0ffe7429019a8ffda7c4fd9d2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of ICICIGetQuote">9620436147278250e9ddbf66706d43a8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>97580ca2-8dca-4c7d-b293-b8961e5dac43</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>ee20836147278250e9ddbf66706d432a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <ui_id>0d1174b4-7cf4-4f21-8d13-0f2fa022008a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=ee20836147278250e9ddbf66706d432a"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee20836147278250e9ddbf66706d432a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>2220836147278250e9ddbf66706d4332</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 10:05:09</sys_updated_on>
+        <value>f95902ebff5b0a5019a8ffda7c4fd9a7</value>
+        <variable display_value="Decision Table">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee20836147278250e9ddbf66706d432a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>2a20836147278250e9ddbf66706d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <value>sys_decision_multi_result</value>
+        <variable display_value="Answer Table">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee20836147278250e9ddbf66706d432a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 12:58:38</sys_created_on>
+        <sys_id>75896365472f8250e9ddbf66706d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 12:58:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Use Branches">7f2f5f9173020010cbfec9d234f6a79b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee20836147278250e9ddbf66706d432a</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 10:05:09</sys_created_on>
+        <sys_id>e0d14b2947278250e9ddbf66706d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 10:05:09</sys_updated_on>
+        <value>run_all</value>
+        <variable display_value="Execution Approach">8c6638af0b2313009002cab937673a3f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee20836147278250e9ddbf66706d432a</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>e220836147278250e9ddbf66706d4332</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 10:05:09</sys_updated_on>
+        <value>Nearest Value ICICI</value>
+        <variable display_value="Decision Label">2d6a2ca70b2313009002cab937673aff</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_logic_input_578e90270b2313009002cab937673a7d^id=ee20836147278250e9ddbf66706d432a"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^id=ee20836147278250e9ddbf66706d432a"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=ee20836147278250e9ddbf66706d432a"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=ee20836147278250e9ddbf66706d432a"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=9620436147278250e9ddbf66706d43a8"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=9620436147278250e9ddbf66706d43a8"/>
+    <sys_hub_flow_variable action="DELETE" query="model=9620436147278250e9ddbf66706d43a8"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8^sys_idNOT IN2a20436147278250e9ddbf66706d43fe,ae20836147278250e9ddbf66706d4304,ea20836147278250e9ddbf66706d4301"/>
+    <sys_documentation action="DELETE">
+        <element>insurer</element>
+        <help/>
+        <hint/>
+        <label>insurer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>2a20436147278250e9ddbf66706d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>insurer</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>ae20836147278250e9ddbf66706d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requestBody</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>type</element>
+        <help/>
+        <hint/>
+        <label>type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>ea20836147278250e9ddbf66706d4301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>type</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^sys_idNOT IN2620836147278250e9ddbf66706d431f,6220836147278250e9ddbf66706d431c,6a20836147278250e9ddbf66706d4322,ae20836147278250e9ddbf66706d4318"/>
+    <sys_documentation action="DELETE">
+        <element>receivedresponse</element>
+        <help/>
+        <hint/>
+        <label>receivedResponse</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>2620836147278250e9ddbf66706d431f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>receivedResponse</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>formatedrequestbody</element>
+        <help/>
+        <hint/>
+        <label>formatedRequestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>6220836147278250e9ddbf66706d431c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>formatedRequestBody</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestbody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>6a20836147278250e9ddbf66706d4322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requestbody</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>insurerresponse</element>
+        <help/>
+        <hint/>
+        <label>insurerResponse</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-07-22 09:57:54</sys_created_on>
+        <sys_id>ae20836147278250e9ddbf66706d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>insurerResponse</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-07-22 09:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=9620436147278250e9ddbf66706d43a8"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=9620436147278250e9ddbf66706d43a8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</application>
+        <file_path/>
+        <instance_id>d634b9cd1ba13d9c52a243f4bd4bcb01</instance_id>
+        <instance_name>rptdev02</instance_name>
+        <name>sys_hub_flow_9620436147278250e9ddbf66706d43a8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5711782000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build&gt;glide-vancouver-07-06-2023__patch9-hotfix2-06-11-2024_06-14-2024_2108.zip&lt;/compiler_build&gt;&lt;copied_from&gt;d3c6c2d8ff124e5019a8ffda7c4fd9ff&lt;/copied_from&gt;&lt;copied_from_name&gt;ICICIGetQuote&lt;/copied_from_name&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;copy_of_icicigetquote&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"32bb4b70-b097-4bed-982b-f9ea47298f25.variable2","label":"1 - Fetch PPt, Pt, Age➛Age","reference_display":"Age","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9d454e05-746c-4dd1-9a2b-1d848f6554c0"}},{"name":"32bb4b70-b097-4bed-982b-f9ea47298f25.variable1","label":"1 - Fetch PPt, Pt, Age➛PT","reference_display":"PT","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"80c4d92a-1cb3-469e-8dc6-0e9154a046a5"}},{"name":"32bb4b70-b097-4bed-982b-f9ea47298f25._","label":"1 - Fetch PPt, Pt, Age➛PPT","reference_display":"PPT","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"93ee88bc-9e08-4983-94c5-4bb1421d1723"}},{"name":"88a2b1c0-eaaf-4e05-967e-50f4c884ebb0.variable","label":"11 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"1d293392-d6d2-4045-805b-2be8bc738639.variable","label":"9 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"e08b1f7f-c06d-4810-8dfa-6c34910a79a7.variable","label":"6 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"f2d23034-b090-4b2b-886d-c761a99faaeb.variable","label":"7 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.answer.result_elements.u_ppt_value","label":"2 - Make a decision➛Decision Table Multiple Result Record➛Result elements➛PPT Value","reference":"","reference_display":"PPT Value","type":"integer","base_type":"integer","parent_table_name":"var__m_sys_decision_multi_result_element_61d9b624ff23429019a8ffda7c4fd986","column_name":"u_ppt_value"},{"name":"af27a456-5c52-476a-9a76-8f31599829b0.variable","label":"9 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"563813c5-f79f-4f68-bd04-c86c617c821d.variable","label":"7 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"fd87e5df-d9af-4ef6-87a4-0339bfd3a2ae.variable","label":"4 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"13c62e29-5620-4c61-bc17-81272f0c53eb.variable","label":"5 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"3dd34d17-451d-49a0-86d0-ab2f89e7b2fc.variable","label":"13 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"e324a8b7-42e4-418f-aaf0-09e60c3f6d67.variable","label":"22 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"616c2bb9-e36d-455e-a9c0-9d37807d4354.variable","label":"11 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"a46385a2-bed9-4f2e-892d-d1c3811419b4.variable","label":"8 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a0477cc6-6d87-4cea-a475-19953b4c9b36.variable","label":"9 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"23d253ab-0b3f-4033-9a42-5e3883014fc8.variable","label":"39 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"655516be-db12-4edd-9a7a-91a2e9e6c478.variable","label":"37 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"63f0d3a2-abf2-4497-bb0a-ae709c47b8c2.variable","label":"34 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"a2026568-77ff-4876-aa3b-2269e132416d.variable","label":"35 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"subflow.insurer","label":"input➛insurer","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"215527c7-4998-4718-8cdc-e6f79f98aeff","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"80c75517-47d6-49bb-a39a-b83ca1f841a2.variable","label":"33 - Format Response for Quote ICICI (v1)➛response","reference_display":"response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7b729a2c-1c86-4f0c-903f-fde7c9a2c809"}},{"name":"subflow.requestbody","label":"input➛requestBody","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5e497596-2fef-4de0-95cf-72d56c03999e.variable","label":"29 - Format the request Object ICICI(quote)➛result","reference_display":"result","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b138c07a-eeef-4c62-84a3-33b8d5e2797c"}},{"name":"ecca1416-3ae0-4f5e-b3fb-96f6c14d9e19.variable","label":"31 - Call Rest ICICI➛response","reference_display":"response","type":"xml","base_type":"xml","attributes":{"uiType":"xml","uiTypeLabel":"XML","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a00a6527-14ec-48c6-9a41-75abbf847ca8"}},{"name":"74d38524-5db6-4880-9919-72ebcf79539a.variable","label":"28 - Get Token ICICI➛token","reference_display":"token","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2038e8b6-49ad-4870-abc7-ef5ef02ce47f"}},{"name":"subflow.type","label":"input➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c6848f94-db70-413a-bffb-dd2bae2515aa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__","label":"5 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f87b4cc8-be78-4c94-aa4f-b9eb0436400f.variable","label":"4 - Get DT PPT Value➛req","reference_display":"req","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ce136f18-cc0c-4e39-919d-d44a5bbee7e0"}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.records","label":"2 - Make a decision➛Decision Table Multiple Result Records","reference":"sys_decision_multi_result","reference_display":"Decision Table Multiple Result","type":"records","base_type":"records","attributes":{}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.count","label":"2 - Make a decision➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{}},{"name":"0d1174b4-7cf4-4f21-8d13-0f2fa022008a.ordered_ids","label":"2 - Make a decision➛Ordered IDs","reference":"sys_decision_multi_result","reference_display":"Ordered IDs","type":"glide_list","base_type":"glide_list","attributes":{}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Copy of ICICIGetQuote&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9620436147278250e9ddbf66706d43a8&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of ICICIGetQuote&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_9620436147278250e9ddbf66706d43a8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;version&gt;1&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=9620436147278250e9ddbf66706d43a8^sys_idNOT INa620436147278250e9ddbf66706d43a9"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;9620436147278250e9ddbf66706d43a8&lt;/id&gt;&lt;name&gt;Copy of ICICIGetQuote&lt;/name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;a620436147278250e9ddbf66706d43a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a620436147278250e9ddbf66706d43a9"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=9620436147278250e9ddbf66706d43a8^sys_idNOT INa220436147278250e9ddbf66706d43fb,aa20836147278250e9ddbf66706d4302,e620436147278250e9ddbf66706d43ff"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=215527c7-4998-4718-8cdc-e6f79f98aeff&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;insurer&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;insurer&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/model&gt;&lt;model_id&gt;9620436147278250e9ddbf66706d43a8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;a220436147278250e9ddbf66706d43fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a220436147278250e9ddbf66706d43fb"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=489ab92f-dcdd-41ec-8c09-7f4f1aa09e7c&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="JSON"&gt;json&lt;/internal_type&gt;&lt;label&gt;requestBody&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/model&gt;&lt;model_id&gt;9620436147278250e9ddbf66706d43a8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;aa20836147278250e9ddbf66706d4302&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aa20836147278250e9ddbf66706d4302"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c6848f94-db70-413a-bffb-dd2bae2515aa&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;type&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;type&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/model&gt;&lt;model_id&gt;9620436147278250e9ddbf66706d43a8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;e620436147278250e9ddbf66706d43ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e620436147278250e9ddbf66706d43ff"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=9620436147278250e9ddbf66706d43a8^sys_idNOT IN2220836147278250e9ddbf66706d431d,6a20836147278250e9ddbf66706d4315,6e20836147278250e9ddbf66706d4319,e220836147278250e9ddbf66706d4320"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c07733ad-5747-40d8-bef6-84ae405af205&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;receivedresponse&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;receivedResponse&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/model&gt;&lt;model_id&gt;9620436147278250e9ddbf66706d43a8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;2220836147278250e9ddbf66706d431d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2220836147278250e9ddbf66706d431d"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c1c99fc6-9c99-4b2a-add4-8024fa2cd246&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;insurerresponse&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;insurerResponse&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/model&gt;&lt;model_id&gt;9620436147278250e9ddbf66706d43a8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;6a20836147278250e9ddbf66706d4315&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6a20836147278250e9ddbf66706d4315"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f414cdb8-c80a-4d05-a32c-97a1681d29f6&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;formatedrequestbody&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;formatedRequestBody&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/model&gt;&lt;model_id&gt;9620436147278250e9ddbf66706d43a8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;6e20836147278250e9ddbf66706d4319&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6e20836147278250e9ddbf66706d4319"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FD66208361a82782509085c43581eeae14&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FD66208361a82782509085c43581eeae14":{},"FlowDesigner:FD66208361a82782509085c43581eeae14.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"requestbody\",\"mandatory\":\"false\",\"uiUniqueId\":\"62b435b7-57f7-48f3-b05f-244d03ea736d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD66208361a82782509085c43581eeae14\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"4\",\"max_length\":\"65000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2a20836147278250e9ddbf66706d4314&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:37&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_schema&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;co_type_name=FD66208361a82782509085c43581eeae14,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=object,uiTypeLabel=Object,uiUniqueId=62b435b7-57f7-48f3-b05f-244d03ea736d&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;requestbody&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/model&gt;&lt;model_id&gt;9620436147278250e9ddbf66706d43a8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;4&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;e220836147278250e9ddbf66706d4320&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e220836147278250e9ddbf66706d4320"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=9620436147278250e9ddbf66706d43a8^sys_idNOT IN64d14b2947278250e9ddbf66706d4362,bd896365472f8250e9ddbf66706d437a,ce896365472f8250e9ddbf66706d4380"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Fetch PPt, Pt, Age"&gt;d94b1fda47130250e9ddbf66706d433d&lt;/action_type&gt;&lt;action_type_parent display_value="Fetch PPt, Pt, Age"&gt;404a175647130250e9ddbf66706d433f&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id&gt;97580ca2-8dca-4c7d-b293-b8961e5dac43&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 10:05:08&lt;/sys_created_on&gt;&lt;sys_id&gt;64d14b2947278250e9ddbf66706d4362&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:37&lt;/sys_updated_on&gt;&lt;ui_id&gt;32bb4b70-b097-4bed-982b-f9ea47298f25&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=64d14b2947278250e9ddbf66706d4362"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=64d14b2947278250e9ddbf66706d4362"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;variable&lt;/field&gt;&lt;id&gt;64d14b2947278250e9ddbf66706d4362&lt;/id&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 10:05:08&lt;/sys_created_on&gt;&lt;sys_id&gt;e0d14b2947278250e9ddbf66706d4364&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 10:05:08&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_d94b1fda47130250e9ddbf66706d433d&lt;/table&gt;&lt;value&gt;{{subflow.requestbody}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=64d14b2947278250e9ddbf66706d4362"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=64d14b2947278250e9ddbf66706d4362"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;97580ca2-8dca-4c7d-b293-b8961e5dac43&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 12:58:38&lt;/sys_created_on&gt;&lt;sys_id&gt;bd896365472f8250e9ddbf66706d437a&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;ui_id&gt;d998abde-b852-4c99-8e16-696f95828196&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=bd896365472f8250e9ddbf66706d437a"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=bd896365472f8250e9ddbf66706d437a"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;log_message&lt;/field&gt;&lt;id&gt;bd896365472f8250e9ddbf66706d437a&lt;/id&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 12:58:38&lt;/sys_created_on&gt;&lt;sys_id&gt;4a896365472f8250e9ddbf66706d437c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4&lt;/table&gt;&lt;value&gt;{{0d1174b4-7cf4-4f21-8d13-0f2fa022008a.ordered_ids}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=bd896365472f8250e9ddbf66706d437a"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=bd896365472f8250e9ddbf66706d437a"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;97580ca2-8dca-4c7d-b293-b8961e5dac43&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 12:58:38&lt;/sys_created_on&gt;&lt;sys_id&gt;ce896365472f8250e9ddbf66706d4380&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;ui_id&gt;b749ff1e-b498-495b-a1ff-47160cf7ca83&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ce896365472f8250e9ddbf66706d4380"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=ce896365472f8250e9ddbf66706d4380"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;log_message&lt;/field&gt;&lt;id&gt;ce896365472f8250e9ddbf66706d4380&lt;/id&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 12:58:38&lt;/sys_created_on&gt;&lt;sys_id&gt;8e896365472f8250e9ddbf66706d4381&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4&lt;/table&gt;&lt;value&gt;{{0d1174b4-7cf4-4f21-8d13-0f2fa022008a.records}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=ce896365472f8250e9ddbf66706d4380"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=ce896365472f8250e9ddbf66706d4380"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=9620436147278250e9ddbf66706d43a8^sys_idNOT IN7620836147278250e9ddbf66706d43a7,a620836147278250e9ddbf66706d4327,ba20836147278250e9ddbf66706d43ab,ee20836147278250e9ddbf66706d432a"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;ba3faf1effdbce1019a8ffda7c4fd943&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Top Level Catch"&gt;35d60003e6022010a5e40cdd1254dd23&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7620836147278250e9ddbf66706d43a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;ui_id&gt;0e43278f-b525-4991-8e5b-2a2ca9de5815&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7620836147278250e9ddbf66706d43a7"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;7620836147278250e9ddbf66706d43a7&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:55&lt;/sys_created_on&gt;&lt;sys_id&gt;3e20836147278250e9ddbf66706d43aa&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:55&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="enabled"&gt;dd70187cc36e20105553b740ad40dddc&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;7620836147278250e9ddbf66706d43a7&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7a20836147278250e9ddbf66706d43aa&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:55&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Error Status"&gt;0f72a5a25b132010b61ea2013781c749&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=7620836147278250e9ddbf66706d43a7"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^id=7620836147278250e9ddbf66706d43a7"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7620836147278250e9ddbf66706d43a7"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=7620836147278250e9ddbf66706d43a7"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;ca3f6f1effdbce1019a8ffda7c4fd985&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Top Level Try"&gt;e9060aa2c3013010ace8b740ad40dd51&lt;/logic_definition&gt;&lt;order&gt;0&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;a620836147278250e9ddbf66706d4327&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:37&lt;/sys_updated_on&gt;&lt;ui_id&gt;97580ca2-8dca-4c7d-b293-b8961e5dac43&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a620836147278250e9ddbf66706d4327"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^id=a620836147278250e9ddbf66706d4327"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a620836147278250e9ddbf66706d4327"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=a620836147278250e9ddbf66706d4327"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;b63faf1effdbce1019a8ffda7c4fd948&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Assign Subflow Outputs"&gt;df4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned&gt;insurerresponse&lt;/outputs_assigned&gt;&lt;outputs_to_assign/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;0e43278f-b525-4991-8e5b-2a2ca9de5815&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:55&lt;/sys_created_on&gt;&lt;sys_id&gt;ba20836147278250e9ddbf66706d43ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;ui_id&gt;81bca4ab-d737-426e-a485-607e1841e0a3&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ba20836147278250e9ddbf66706d43ab"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=ba20836147278250e9ddbf66706d43ab"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;insurerresponse&lt;/field&gt;&lt;id&gt;ba20836147278250e9ddbf66706d43ab&lt;/id&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7620836147278250e9ddbf66706d43ae&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/table&gt;&lt;value&gt;{{0e43278f-b525-4991-8e5b-2a2ca9de5815.__status__}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ba20836147278250e9ddbf66706d43ab"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=ba20836147278250e9ddbf66706d43ab^sys_idNOT IN7a20836147278250e9ddbf66706d43ac"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;input_name&gt;insurerresponse&lt;/input_name&gt;&lt;instance&gt;ba20836147278250e9ddbf66706d43ab&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_flow_logic&lt;/referenced_table&gt;&lt;script&gt;{"insurerresponse":{"scriptActive":false}}&lt;/script&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7a20836147278250e9ddbf66706d43ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:55&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;62c727a0ffe7429019a8ffda7c4fd9d2&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of ICICIGetQuote"&gt;9620436147278250e9ddbf66706d43a8&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Make a decision"&gt;578e90270b2313009002cab937673a7d&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;97580ca2-8dca-4c7d-b293-b8961e5dac43&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;ee20836147278250e9ddbf66706d432a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;ui_id&gt;0d1174b4-7cf4-4f21-8d13-0f2fa022008a&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ee20836147278250e9ddbf66706d432a"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;ee20836147278250e9ddbf66706d432a&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;2220836147278250e9ddbf66706d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 10:05:09&lt;/sys_updated_on&gt;&lt;value&gt;f95902ebff5b0a5019a8ffda7c4fd9a7&lt;/value&gt;&lt;variable display_value="Decision Table"&gt;a9a0bc2b0b2313009002cab937673ac6&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;ee20836147278250e9ddbf66706d432a&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;2a20836147278250e9ddbf66706d4331&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;value&gt;sys_decision_multi_result&lt;/value&gt;&lt;variable display_value="Answer Table"&gt;4cbdbf94c35823002841b63b12d3aeb6&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;ee20836147278250e9ddbf66706d432a&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 12:58:38&lt;/sys_created_on&gt;&lt;sys_id&gt;75896365472f8250e9ddbf66706d4376&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 12:58:38&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Use Branches"&gt;7f2f5f9173020010cbfec9d234f6a79b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;ee20836147278250e9ddbf66706d432a&lt;/document_key&gt;&lt;order&gt;15&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 10:05:09&lt;/sys_created_on&gt;&lt;sys_id&gt;e0d14b2947278250e9ddbf66706d43ee&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 10:05:09&lt;/sys_updated_on&gt;&lt;value&gt;run_all&lt;/value&gt;&lt;variable display_value="Execution Approach"&gt;8c6638af0b2313009002cab937673a3f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;ee20836147278250e9ddbf66706d432a&lt;/document_key&gt;&lt;order&gt;5&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;e220836147278250e9ddbf66706d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 10:05:09&lt;/sys_updated_on&gt;&lt;value&gt;Nearest Value ICICI&lt;/value&gt;&lt;variable display_value="Decision Label"&gt;2d6a2ca70b2313009002cab937673aff&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_578e90270b2313009002cab937673a7d^id=ee20836147278250e9ddbf66706d432a"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^id=ee20836147278250e9ddbf66706d432a"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ee20836147278250e9ddbf66706d432a"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=ee20836147278250e9ddbf66706d432a"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8^sys_idNOT IN2a20436147278250e9ddbf66706d43fe,ae20836147278250e9ddbf66706d4304,ea20836147278250e9ddbf66706d4301"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;insurer&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;insurer&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;2a20436147278250e9ddbf66706d43fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;insurer&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;requestBody&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;ae20836147278250e9ddbf66706d4304&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;requestBody&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;type&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;type&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;ea20836147278250e9ddbf66706d4301&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;type&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8^sys_idNOT IN2620836147278250e9ddbf66706d431f,6220836147278250e9ddbf66706d431c,6a20836147278250e9ddbf66706d4322,ae20836147278250e9ddbf66706d4318"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;receivedresponse&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;receivedResponse&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;2620836147278250e9ddbf66706d431f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;receivedResponse&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;formatedrequestbody&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;formatedRequestBody&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;6220836147278250e9ddbf66706d431c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;formatedRequestBody&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;requestbody&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;6a20836147278250e9ddbf66706d4322&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;requestbody&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;insurerresponse&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;insurerResponse&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bhavani&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-22 09:57:54&lt;/sys_created_on&gt;&lt;sys_id&gt;ae20836147278250e9ddbf66706d4318&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;insurerResponse&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bhavani&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-22 09:57:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=9620436147278250e9ddbf66706d43a8"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=9620436147278250e9ddbf66706d43a8"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>554863757</payload_hash>
+        <record_name>Copy of ICICIGetQuote</record_name>
+        <reverted_from/>
+        <source>ae658a1233121210798ab3373e5c7bb2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-08 06:29:20</sys_created_on>
+        <sys_id>a003a80d2ba29210c692feb2f291bfd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193a4f54e000000000</sys_recorded_at>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-24 21:01:48</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>6003a80d17a29210afdf82a8346751d5</update_guid>
+        <update_guid_history>6003a80d17a29210afdf82a8346751d5:554863757</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2024-12-16 12:22:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>a9fb8698619143bcad555641ff1fbd84</sys_id>
+        <sys_metadata>9620436147278250e9ddbf66706d43a8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of ICICIGetQuote</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_scope_delete display_value="">369325a421bf4d1f809d3b2ab5baaae1</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_9620436147278250e9ddbf66706d43a8</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_9620436147278250e9ddbf66706d43a8">a003a80d2ba29210c692feb2f291bfd5</sys_update_version>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:22:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

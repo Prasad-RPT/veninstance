@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="85c313e7339e1a10798ab3373e5c7bbc" label="Integration Rider Per Variant" max_length="40" name="x_rptp_smartinte_0_integration_rider_per_variant" type="collection">
+        <element label="Max PPT" max_length="40" name="max_ppt" type="string"/>
+        <element label="Min PPT" max_length="40" name="min_ppt" type="string"/>
+        <element choice="1" label="Conditional Mandatory Field Name" max_length="1550061" name="u_conditional_mandatory_field_name" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="PPT" value="paymentTerm"/>
+                <element inactive_on_update="false" label="PT" value="policyTerm"/>
+                <element inactive_on_update="false" label="SA" value="sumAssured"/>
+            </choice>
+        </element>
+        <element label="Conditional Mandatory Value" max_length="40" name="u_conditional_mandatory_value" type="string"/>
+        <element label="Id" max_length="40" name="u_id" type="string"/>
+        <element label="Is Default" max_length="40" name="u_is_default" type="string"/>
+        <element label="Is Mandatory" max_length="40" name="u_is_mandatory" type="boolean"/>
+        <element label="Max Base SumAssured" max_length="40" name="u_max_base_sumassured" type="string"/>
+        <element label="Max Entry Age" max_length="40" name="u_max_entry_age" type="string"/>
+        <element label="Max PT" max_length="40" name="u_max_pt" type="string"/>
+        <element label="Max SumAssured" max_length="40" name="u_max_sumassured" type="string"/>
+        <element label="Min Base SumAssured" max_length="40" name="u_min_base_sumassured" type="string"/>
+        <element label="Min Entry Age" max_length="40" name="u_min_entry_age" type="string"/>
+        <element label="Min PT" max_length="40" name="u_min_pt" type="string"/>
+        <element label="Min SumAssured" max_length="40" name="u_min_sumassured" type="string"/>
+        <element choice="1" label="Operator for Conditional Mandatory" max_length="40" name="u_operator_for_conditional_mandatory" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Equal" value="=="/>
+                <element inactive_on_update="false" label="Greater than" value="&gt;"/>
+                <element inactive_on_update="false" label="Greater than or equal" value="&gt;="/>
+                <element inactive_on_update="false" label="Less than" value="&lt;"/>
+                <element inactive_on_update="false" label="Less than or equal to" value="&lt;="/>
+            </choice>
+        </element>
+        <element label="Product Id" max_length="40" name="u_product_id" type="string"/>
+        <element choice="1" default="year" label="Rider Duration Unit" max_length="40" name="u_rider_duration_unit" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Months" value="month"/>
+                <element inactive_on_update="false" label="Years" value="year"/>
+            </choice>
+        </element>
+    </element>
+</database>

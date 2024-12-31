@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_rptp_smartinte_0.ICICI_IPRU_Rider_Validation</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ICICI_IPRU_Rider_Validation</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ICICI_IPRU_Rider_Validation = Class.create();
+ICICI_IPRU_Rider_Validation.prototype = {
+    initialize: function() {},
+
+    type: 'ICICI_IPRU_Rider_Validation',
+    validate: function(riderObj, variantSysId, req) {
+      
+        var gr = new GlideRecord("x_rptp_smartinte_0_integration_rider_per_variant");
+        gr.addQuery("sys_id", variantSysId+"");
+        gs.info("sysidsent " + variantSysId);
+        gr.query();
+        
+        if (gr.next()) {
+            gs.info("ridertest " + JSON.stringify(riderObj));
+            gs.info("reqbody " + req.age);
+
+          
+            if (riderObj.name == "RD022" || riderObj.name == "RD021") {
+                gs.info("rider sumAssured: " + riderObj.sumAssured + "");
+                var maxSumAssured = parseInt(gr.u_max_sumassured);
+                var riderSumAssured = parseInt(riderObj.sumAssured);
+
+            
+                if (riderSumAssured > maxSumAssured) {
+                    var maxSumAssuredFormatted = maxSumAssured.toLocaleString(); // Format max sum assured with 
+                    gs.error("Error: Max sum assured is " + maxSumAssuredFormatted + ". It should not be more than that.");
+                    throw new Error("Max sum assured is " + maxSumAssuredFormatted + ". It should not be more than that.");
+                }
+            }
+        }
+        gs.info("sinchana");
+        return riderObj;
+    }
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sinchana.shridhar</sys_created_by>
+        <sys_created_on>2024-12-18 06:00:09</sys_created_on>
+        <sys_id>dcae55e133aad610798ab3373e5c7b0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ICICI_IPRU_Rider_Validation</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_script_include_dcae55e133aad610798ab3373e5c7b0b</sys_update_name>
+        <sys_updated_by>sinchana.shridhar</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:00:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

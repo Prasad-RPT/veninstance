@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_rptp_smartinte_0.BalicIntegration </api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BalicIntegration </name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var BalicIntegration  = Class.create();
+BalicIntegration .prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getPremium:function(prodId,coverCode,coverName,varCode){
+		var payloadData={};
+		if(prodId=="331"){
+			payloadData=this.get331(coverCode,coverName,varCode);
+		}
+		else if(prodId=="345"){
+			payloadData=this.get345(coverCode,coverName,varCode);
+		}
+		if(prodId=="316"){
+			payloadData=this.get316(coverCode,coverName,varCode);
+		}
+
+		var restMessage = new sn_ws.RESTMessageV2();
+restMessage.setHttpMethod("post");
+restMessage.setEndpoint("https://balicsit.bajajallianz.com/BalicWSRest/BalicWSRest_UAT4");
+restMessage.setRequestHeader("Content-Type", "application/json");
+restMessage.setRequestBody(JSON.stringify(payloadData));
+var response1 = restMessage.execute();
+// Get the response body
+var responseBody = response1.getBody();
+
+// Print the response body
+var premium=(JSON.parse((JSON.parse(responseBody).pInObj1_inout).stringval150).modal_PREM);
+var quoteId=(JSON.parse((JSON.parse(responseBody).pInObj1_inout).stringval150).balic_Quoteid);
+return {"premium":premium||"invalid payload","applNo":quoteId||"invalid payload"};
+	},
+
+get331:function(coverCode,coverName,varCode){
+var i="I";
+if(coverCode=="JOINT_LIFE_WEALTH"){
+ 	i="JL";
+}
+return {
+    "pInObj1_inout": {
+        "stringval1": "IDFC_UPSURE",
+        "stringval2": "PREMIUM_CALC",
+        "stringval3": "10.1.217.155",
+        "stringval4": "2000003083",
+        "stringval5": "P00IUPNB",
+        "stringval9": "Y",
+        "stringval10": "331",
+        "stringval11": i,
+        "stringval13": "Somnath",
+        "stringval29": "somu9009@gmail.com",
+        "stringval16": "24/07/1989",
+        "stringval17": "25",
+        "stringval18": "M",
+        "stringval19": "9880696462",
+        "stringval30": coverName,
+        "stringval31": coverCode,
+        "stringval34": "ENG",
+        "stringval35": "30",
+        "stringval36": "15",
+        "stringval37": "56567",
+        "stringval38": "10",
+        "stringval39": "1",
+        "stringval42": "WL"
+    },
+    "pInObj4_inout": {
+        "stringval147": "BAJAJ",
+        "stringval148": "I",
+        "stringval149": "I"
+    },
+    "pInList1_inout": {
+        "WeoRecStrings150User": [
+            {
+                "stringval1": varCode,
+                "stringval2": "",
+                "stringval3": "30",
+                "stringval4": "15"
+            }
+        ]
+    }
+}
+},
+get345:function(coverCode,coverName,varCode){
+
+return{
+    "pInObj1_inout": {
+        "stringval1": "IDFC_UPSURE",
+        "stringval2": "PREMIUM_CALC",
+        "stringval3": "10.1.217.155",
+        "stringval4": "2000003083",
+        "stringval5": "P00IUPNB",
+        "stringval6": "",
+        "stringval7": "",
+        "stringval8": "N",
+        "stringval9": "Y",
+        "stringval10": "345",
+        "stringval11": "I",
+        "stringval12": "MR",
+        "stringval13": "SUMIT",
+        "stringval14": "V",
+        "stringval15": "VARMA",
+        "stringval16": "24/04/1987",
+        "stringval17": "51",
+        "stringval18": "M",
+        "stringval19": "9766500199",
+        "stringval20": "SUMIT@gmail.com",
+        "stringval21": "",
+        "stringval22": "",
+        "stringval23": "",
+        "stringval24": "",
+        "stringval25": "",
+        "stringval26": "",
+        "stringval27": "",
+        "stringval28": "",
+        "stringval29": "",
+        "stringval30": coverName,
+        "stringval31": coverCode,
+        "stringval32": "1",
+        "stringval34": "ENG",
+        "stringval35": "10",
+        "stringval36": "10",
+        "stringval37": "50000",
+        "stringval38": "10",
+        "stringval39": "1",
+        "stringval40": "60000000",
+        "stringval131": "H"
+    },
+    "pInObj4_inout": {
+        "stringval138": "0",
+        "stringval134": "Y",
+        "stringval119": "N",
+        "stringval136": "Y",
+        "stringval112": "N",
+        "stringval89": "M",
+        "stringval141": "1",
+        "stringval142": "10",
+        "stringval143": "20",
+        "stringval147": "BAJAJ",
+        "stringval148": "I",
+        "stringval149": "I"
+    },
+    "pInObj5_inout": {
+        "stringval53": "Y",
+        "stringval107": "Y",
+        "stringval62": "N"
+    },
+    "pInList1_inout": {
+        "WeoRecStrings150User": {
+            "stringval1": varCode,
+            "stringval2": "60000000",
+            "stringval3": "10",
+            "stringval4": "10"
+        }
+    }
+}
+
+},
+get316:function(coverCode,coverName,varCode){
+return{
+    "pInObj1_inout": {
+        "stringval1": "IDFC_UPSURE",
+        "stringval2": "PREMIUM_CALC",
+        "stringval3": "10.1.217.155",
+        "stringval4": "2000003083",
+        "stringval5": "P00IUPNB",
+        "stringval6": "",
+        "stringval7": "",
+        "stringval8": "N",
+        "stringval9": "Y",
+        "stringval10": "316",
+        "stringval11": "I",
+        "stringval12": "MR",
+        "stringval13": "APURV ",
+        "stringval14": "",
+        "stringval15": "LLG",
+        "stringval16": "01-Nov-2000",
+        "stringval17": "19",
+        "stringval18": "M",
+        "stringval19": "9888888888",
+        "stringval20": "sasa@dsd.com",
+        "stringval21": "",
+        "stringval22": "",
+        "stringval23": "",
+        "stringval24": "",
+        "stringval25": "",
+        "stringval26": "",
+        "stringval27": "",
+        "stringval28": "",
+        "stringval29": "",
+        "stringval30": coverName,
+        "stringval31": coverCode,
+        "stringval34": "ENG",
+        "stringval35": "80",
+        "stringval36": "10",
+        "stringval37": "5000",
+        "stringval38": "",
+        "stringval39": "12",
+        "stringval40": "600000",
+        "stringval130": "1000000",
+        "stringval131": "SN",
+        "stringval129": "GR",
+        "stringval55": "411052",
+        "stringval42": "IS"
+    },
+    "pInObj3_inout": {
+        "stringval5": "0",
+        "stringval6": "Self",
+        "stringval7": "N"
+    },
+    "pInList1_inout": {
+        "WeoRecStrings150User": [
+            {
+                "stringval1": varCode,
+                "stringval2": "600000",
+                "stringval3": "80",
+                "stringval4": "10"
+            }
+        ]
+    },
+    "pInList3_inout": {
+        "WeoRecStrings150User": [
+            {
+                "stringval1": "JEGF",
+                "stringval2": "100"
+            }
+        ]
+    }
+}
+
+},
+
+    type: 'BalicIntegration '
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-04-18 12:04:16</sys_created_on>
+        <sys_id>82ed4a4fffa98e1019a8ffda7c4fd911</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>BalicIntegration </sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_script_include_82ed4a4fffa98e1019a8ffda7c4fd911</sys_update_name>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-04-22 09:35:23</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</application>
+        <file_path/>
+        <instance_id>d634b9cd1ba13d9c52a243f4bd4bcb01</instance_id>
+        <instance_name>rptdev02</instance_name>
+        <name>sys_script_include_82ed4a4fffa98e1019a8ffda7c4fd911</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_rptp_smartinte_0.BalicIntegration &lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;BalicIntegration &lt;/name&gt;&lt;sandbox_callable&gt;true&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var BalicIntegration  = Class.create();
+BalicIntegration .prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getPremium:function(prodId,coverCode,coverName,varCode){
+		var payloadData={};
+		if(prodId=="331"){
+			payloadData=this.get331(coverCode,coverName,varCode);
+		}
+		else if(prodId=="345"){
+			payloadData=this.get345(coverCode,coverName,varCode);
+		}
+		if(prodId=="316"){
+			payloadData=this.get316(coverCode,coverName,varCode);
+		}
+
+		var restMessage = new sn_ws.RESTMessageV2();
+restMessage.setHttpMethod("post");
+restMessage.setEndpoint("https://balicsit.bajajallianz.com/BalicWSRest/BalicWSRest_UAT4");
+restMessage.setRequestHeader("Content-Type", "application/json");
+restMessage.setRequestBody(JSON.stringify(payloadData));
+var response1 = restMessage.execute();
+// Get the response body
+var responseBody = response1.getBody();
+
+// Print the response body
+var premium=(JSON.parse((JSON.parse(responseBody).pInObj1_inout).stringval150).modal_PREM);
+var quoteId=(JSON.parse((JSON.parse(responseBody).pInObj1_inout).stringval150).balic_Quoteid);
+return {"premium":premium||"invalid payload","applNo":quoteId||"invalid payload"};
+	},
+
+get331:function(coverCode,coverName,varCode){
+var i="I";
+if(coverCode=="JOINT_LIFE_WEALTH"){
+ 	i="JL";
+}
+return {
+    "pInObj1_inout": {
+        "stringval1": "IDFC_UPSURE",
+        "stringval2": "PREMIUM_CALC",
+        "stringval3": "10.1.217.155",
+        "stringval4": "2000003083",
+        "stringval5": "P00IUPNB",
+        "stringval9": "Y",
+        "stringval10": "331",
+        "stringval11": i,
+        "stringval13": "Somnath",
+        "stringval29": "somu9009@gmail.com",
+        "stringval16": "24/07/1989",
+        "stringval17": "25",
+        "stringval18": "M",
+        "stringval19": "9880696462",
+        "stringval30": coverName,
+        "stringval31": coverCode,
+        "stringval34": "ENG",
+        "stringval35": "30",
+        "stringval36": "15",
+        "stringval37": "56567",
+        "stringval38": "10",
+        "stringval39": "1",
+        "stringval42": "WL"
+    },
+    "pInObj4_inout": {
+        "stringval147": "BAJAJ",
+        "stringval148": "I",
+        "stringval149": "I"
+    },
+    "pInList1_inout": {
+        "WeoRecStrings150User": [
+            {
+                "stringval1": varCode,
+                "stringval2": "",
+                "stringval3": "30",
+                "stringval4": "15"
+            }
+        ]
+    }
+}
+},
+get345:function(coverCode,coverName,varCode){
+
+return{
+    "pInObj1_inout": {
+        "stringval1": "IDFC_UPSURE",
+        "stringval2": "PREMIUM_CALC",
+        "stringval3": "10.1.217.155",
+        "stringval4": "2000003083",
+        "stringval5": "P00IUPNB",
+        "stringval6": "",
+        "stringval7": "",
+        "stringval8": "N",
+        "stringval9": "Y",
+        "stringval10": "345",
+        "stringval11": "I",
+        "stringval12": "MR",
+        "stringval13": "SUMIT",
+        "stringval14": "V",
+        "stringval15": "VARMA",
+        "stringval16": "24/04/1987",
+        "stringval17": "51",
+        "stringval18": "M",
+        "stringval19": "9766500199",
+        "stringval20": "SUMIT@gmail.com",
+        "stringval21": "",
+        "stringval22": "",
+        "stringval23": "",
+        "stringval24": "",
+        "stringval25": "",
+        "stringval26": "",
+        "stringval27": "",
+        "stringval28": "",
+        "stringval29": "",
+        "stringval30": coverName,
+        "stringval31": coverCode,
+        "stringval32": "1",
+        "stringval34": "ENG",
+        "stringval35": "10",
+        "stringval36": "10",
+        "stringval37": "50000",
+        "stringval38": "10",
+        "stringval39": "1",
+        "stringval40": "60000000",
+        "stringval131": "H"
+    },
+    "pInObj4_inout": {
+        "stringval138": "0",
+        "stringval134": "Y",
+        "stringval119": "N",
+        "stringval136": "Y",
+        "stringval112": "N",
+        "stringval89": "M",
+        "stringval141": "1",
+        "stringval142": "10",
+        "stringval143": "20",
+        "stringval147": "BAJAJ",
+        "stringval148": "I",
+        "stringval149": "I"
+    },
+    "pInObj5_inout": {
+        "stringval53": "Y",
+        "stringval107": "Y",
+        "stringval62": "N"
+    },
+    "pInList1_inout": {
+        "WeoRecStrings150User": {
+            "stringval1": varCode,
+            "stringval2": "60000000",
+            "stringval3": "10",
+            "stringval4": "10"
+        }
+    }
+}
+
+},
+get316:function(coverCode,coverName,varCode){
+return{
+    "pInObj1_inout": {
+        "stringval1": "IDFC_UPSURE",
+        "stringval2": "PREMIUM_CALC",
+        "stringval3": "10.1.217.155",
+        "stringval4": "2000003083",
+        "stringval5": "P00IUPNB",
+        "stringval6": "",
+        "stringval7": "",
+        "stringval8": "N",
+        "stringval9": "Y",
+        "stringval10": "316",
+        "stringval11": "I",
+        "stringval12": "MR",
+        "stringval13": "APURV ",
+        "stringval14": "",
+        "stringval15": "LLG",
+        "stringval16": "01-Nov-2000",
+        "stringval17": "19",
+        "stringval18": "M",
+        "stringval19": "9888888888",
+        "stringval20": "sasa@dsd.com",
+        "stringval21": "",
+        "stringval22": "",
+        "stringval23": "",
+        "stringval24": "",
+        "stringval25": "",
+        "stringval26": "",
+        "stringval27": "",
+        "stringval28": "",
+        "stringval29": "",
+        "stringval30": coverName,
+        "stringval31": coverCode,
+        "stringval34": "ENG",
+        "stringval35": "80",
+        "stringval36": "10",
+        "stringval37": "5000",
+        "stringval38": "",
+        "stringval39": "12",
+        "stringval40": "600000",
+        "stringval130": "1000000",
+        "stringval131": "SN",
+        "stringval129": "GR",
+        "stringval55": "411052",
+        "stringval42": "IS"
+    },
+    "pInObj3_inout": {
+        "stringval5": "0",
+        "stringval6": "Self",
+        "stringval7": "N"
+    },
+    "pInList1_inout": {
+        "WeoRecStrings150User": [
+            {
+                "stringval1": varCode,
+                "stringval2": "600000",
+                "stringval3": "80",
+                "stringval4": "10"
+            }
+        ]
+    },
+    "pInList3_inout": {
+        "WeoRecStrings150User": [
+            {
+                "stringval1": "JEGF",
+                "stringval2": "100"
+            }
+        ]
+    }
+}
+
+},
+
+    type: 'BalicIntegration '
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-18 12:04:16&lt;/sys_created_on&gt;&lt;sys_id&gt;82ed4a4fffa98e1019a8ffda7c4fd911&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;BalicIntegration &lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_82ed4a4fffa98e1019a8ffda7c4fd911&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-22 09:35:23&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>647782653</payload_hash>
+        <record_name>BalicIntegration </record_name>
+        <reverted_from/>
+        <source>ae658a1233121210798ab3373e5c7bb2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-08 06:29:20</sys_created_on>
+        <sys_id>7e6a940d2b629210c692feb2f291bf9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193a4f54e000000000</sys_recorded_at>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-24 21:02:10</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>3e6a940de4629210653c031fe60d339e</update_guid>
+        <update_guid_history>3e6a940de4629210653c031fe60d339e:647782653</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-16 11:45:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0214e4fab0a24be08d52bf0f38225cc4</sys_id>
+        <sys_metadata>82ed4a4fffa98e1019a8ffda7c4fd911</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BalicIntegration </sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_scope_delete display_value="">369325a421bf4d1f809d3b2ab5baaae1</sys_scope_delete>
+        <sys_update_name>sys_script_include_82ed4a4fffa98e1019a8ffda7c4fd911</sys_update_name>
+        <sys_update_version display_value="sys_script_include_82ed4a4fffa98e1019a8ffda7c4fd911">7e6a940d2b629210c692feb2f291bf9e</sys_update_version>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-16 11:45:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

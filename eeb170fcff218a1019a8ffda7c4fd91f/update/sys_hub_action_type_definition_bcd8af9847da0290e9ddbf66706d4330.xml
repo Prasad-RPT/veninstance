@@ -31,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bcd8af9847da0290e9ddbf66706d4330</sys_id>
-        <sys_mod_count>723</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>mapping field values according to insurer and ICICI nearest match</sys_name>
         <sys_overrides/>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_bcd8af9847da0290e9ddbf66706d4330</sys_update_name>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-24 20:58:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -53,10 +53,10 @@
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-28 05:44:00</sys_created_on>
         <sys_id>839632f74792ce50e9ddbf66706d43cd</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</value>
         <variable display_value="Action Status">0f9632f74792ce50e9ddbf66706d4395</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -289,7 +289,7 @@
         <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:17</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:27</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=37829b9f47b3ce10e9ddbf66706d433a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -316,7 +316,7 @@
         <sys_id>08929b9f47b3ce10e9ddbf66706d43a2</sys_id>
         <sys_mod_count>22</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:17</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:27</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 // ... code ...&#13;
   var req = inputs.requestObject;&#13;
@@ -325,18 +325,22 @@
   var mul=req.multiplier||10;&#13;
   if(!req.sumAssured &amp;&amp; inputs.insurer!="HDFC" &amp;&amp; req.productId=="363f0ffb5f804d2bac044f931d9bf41a")&#13;
    req.sumAssured=req.annualPremium *parseInt(mul) +"";&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+   if(!req.sumAssured||req.sumAssured=="0" || req.sumAssured===0 || req.sumAssured===0.0){&#13;
+      var sum=parseInt(req.annualPremium) * mul;&#13;
+      sum=sum.toString().split(".")[0];&#13;
+      req.sumAssured=sum;&#13;
+   }&#13;
    req.input_pptOption=inputs.pptOption;&#13;
 &#13;
-if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
-  if(req.sumAssured===0.0){&#13;
-    var sum=req.annualPremium * 10;&#13;
-    req.sumAssured=sum.toString().split(".")[0];&#13;
-  }&#13;
-}&#13;
+&#13;
 //nearest Match for ICICI &#13;
-   if( inputs.insurer == "ICICI" &amp;&amp; req.productId=="5fd6398fe76f4bd783aa96a54dafc8a1" &amp;&amp; req.productId=="VRN006"){&#13;
-   if(inputs.pptOption== "Limited Pay"){&#13;
-    if(parseInt(req.age) + parseInt(req.pt) &lt;= 75 ){&#13;
+   if( inputs.insurer == "ICICI" &amp;&amp; req.productId=="5fd6398fe76f4bd783aa96a54dafc8a1" &amp;&amp; req.variantId=="VRN006"){&#13;
+   if(inputs.pptOption== "Limited Pay" || "Regular Pay"){&#13;
+    if(parseInt(req.age) + parseInt(req.policyTerm) &lt;= 75 ){&#13;
       var pt=(75 - parseInt(req.age)) +"";&#13;
       req.policyTerm = pt.split(".")[0];&#13;
     }&#13;
@@ -361,18 +365,6 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=37829b9f47b3ce10e9ddbf66706d433a"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>37829b9f47b3ce10e9ddbf66706d433a</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-08-09 08:03:21</sys_created_on>
-        <sys_id>c4929b9f47b3ce10e9ddbf66706d43a1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-08-09 08:03:21</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>insurer</field>
         <id>37829b9f47b3ce10e9ddbf66706d433a</id>
@@ -408,18 +400,6 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_updated_on>2024-08-09 08:03:21</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_37829b9f47b3ce10e9ddbf66706d433a</table>
         <value>{{step[d5ac911b-d252-4858-82ad-85f684d26ed9].requestbody}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>37829b9f47b3ce10e9ddbf66706d433a</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-08-09 08:03:21</sys_created_on>
-        <sys_id>8c929b9f47b3ce10e9ddbf66706d43a1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-08-09 08:03:21</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_37829b9f47b3ce10e9ddbf66706d433a^id=37829b9f47b3ce10e9ddbf66706d433a"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=37829b9f47b3ce10e9ddbf66706d433a"/>
@@ -772,7 +752,7 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_created_on>2024-08-09 08:03:21</sys_created_on>
         <sys_id>44929b9f47b3ce10e9ddbf66706d436b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1197,8 +1177,8 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_id>e29632f74792ce50e9ddbf66706d430f</sys_id>
         <sys_mod_count>94</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:07</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-10 05:16:05</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e29632f74792ce50e9ddbf66706d430f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1224,8 +1204,8 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_created_on>2024-05-28 05:43:59</sys_created_on>
         <sys_id>b29632f74792ce50e9ddbf66706d4361</sys_id>
         <sys_mod_count>91</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:07</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-10 05:16:05</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
     function calculateAge(dob) {
@@ -1234,20 +1214,20 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
 }
     
     var req;
-    if (!typeof inputs.request == 'object') {
+    if (!inputs.request.isProposer) {
         req = JSON.parse(inputs.request);
     } else {
         req = inputs.request;
     }
-    req.age=calculateAge(req.dob);
+    req.age=calculateAge(req.dateOfBirth);
     var array = req.funds;
    // gs.info(JSON.stringify(array)); 
     outputs.response = req;
     outputs.isnri= req.isNri  ||""; // adding default value since isNri is not mandatory input.
-    outputs.is_existing_user= req.isExistingCustomer;
+    outputs.is_existing_user= req.isExCustomer;
     outputs.proposerGender= req.proposerGender ||"";
-    outputs.ip = req.isPolicyHolder;
-    outputs.fre = req.paymentFrequency;
+    outputs.ip = req.isProposer;
+    outputs.fre = req.frequency;
     outputs.gen = req.gender;
     outputs.occ = req.occupation;
     outputs.marital = req.maritalStatus;
@@ -1257,14 +1237,16 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
     //outputs.strat = req.product.investmentProtifolio;
 
 
-    if (req.pt===req.ppt){
+    if (req.policyTerm===req.paymentTerm){
     outputs.ppt = "Regular Pay";
     }
     else{
-            outputs.ppt = "Limited Pay";      
+          
+            outputs.ppt = "Limited Pay"; 
+              
     }
       if(req.variantId=="VRN006"){
-            if(parseInt(req.age)+parseInt(req.pt) == 99){
+            if(parseInt(req.age)+parseInt(req.policyTerm) == 99){
             outputs.ppt="Whole Life"
         }
         else{
@@ -1295,7 +1277,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
                 if (gr.next()) {
                     var name = gr.getValue('value'); 
                     rec.name = name;
-                    rec.name_cd="";
+                    rec.name_cd=rec.name_cd;
                     if (inputs.insurer == "HDFC") { 
                         var nameCode = name.toUpperCase().replace(/ /g, '_'); 
                         rec.name_cd = nameCode;
@@ -1317,18 +1299,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=e29632f74792ce50e9ddbf66706d430f"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>e29632f74792ce50e9ddbf66706d430f</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:43:59</sys_created_on>
-        <sys_id>329632f74792ce50e9ddbf66706d4360</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:43:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>insurer</field>
         <id>e29632f74792ce50e9ddbf66706d430f</id>
@@ -1352,18 +1322,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_updated_on>2024-05-28 05:43:59</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_e29632f74792ce50e9ddbf66706d430f</table>
         <value>{{action.request}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>e29632f74792ce50e9ddbf66706d430f</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:43:59</sys_created_on>
-        <sys_id>f69632f74792ce50e9ddbf66706d4360</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:43:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_e29632f74792ce50e9ddbf66706d430f^id=e29632f74792ce50e9ddbf66706d430f"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=e29632f74792ce50e9ddbf66706d430f"/>
@@ -1962,7 +1920,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b947af55ffd7c61019a8ffda7c4fd964</sys_id>
-        <sys_mod_count>111</sys_mod_count>
+        <sys_mod_count>110</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1970,7 +1928,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:15</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:25</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -2569,7 +2527,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-08 10:54:17</sys_created_on>
         <sys_id>0cd68f45ff53461019a8ffda7c4fd95a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>funds</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2592,7 +2550,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:43:59</sys_created_on>
         <sys_id>369632f74792ce50e9ddbf66706d4351</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>response</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2615,7 +2573,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-10 09:26:20</sys_created_on>
         <sys_id>4bd5c97dffd38a1019a8ffda7c4fd99f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>occ</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2638,7 +2596,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:43:59</sys_created_on>
         <sys_id>7a9632f74792ce50e9ddbf66706d435b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>pro</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2661,7 +2619,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-01 07:09:17</sys_created_on>
         <sys_id>ab20d6b6ffcb829019a8ffda7c4fd9d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>ppt</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2684,7 +2642,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:43:59</sys_created_on>
         <sys_id>b29632f74792ce50e9ddbf66706d4358</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>fre</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2707,7 +2665,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-24 11:58:28</sys_created_on>
         <sys_id>ccfe651e47a30a50e9ddbf66706d4324</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>isnri</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2730,7 +2688,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-24 12:05:02</sys_created_on>
         <sys_id>d470b55247e30a50e9ddbf66706d43e9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>is_existing_user</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2753,7 +2711,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-29 06:26:39</sys_created_on>
         <sys_id>d8f2deb347a34690e9ddbf66706d4361</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>marital</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2776,7 +2734,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-06-28 10:20:59</sys_created_on>
         <sys_id>e64fdb75ff430e5019a8ffda7c4fd995</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>gen</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2799,7 +2757,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-09-23 10:52:58</sys_created_on>
         <sys_id>e7e8e73947b4d610e9ddbf66706d4376</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>gst_waiver</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2822,7 +2780,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:43:59</sys_created_on>
         <sys_id>fa9632f74792ce50e9ddbf66706d4354</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>ip</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2915,10 +2873,10 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-28 05:43:59</sys_created_on>
         <sys_id>f69632f74792ce50e9ddbf66706d437b</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:25:09</sys_updated_on>
+        <sys_updated_on>2024-12-04 17:16:22</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f69632f74792ce50e9ddbf66706d437b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2943,15 +2901,15 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-28 05:44:00</sys_created_on>
         <sys_id>c39632f74792ce50e9ddbf66706d4391</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:25:09</sys_updated_on>
+        <sys_updated_on>2024-12-04 17:16:22</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 // ... code ...
   var req=inputs.req;
 
-if(req.isPolicyHolder!=""){
+if(req.isProposer!=""){
   if(inputs.insurer=="HDFC"){
     if(req.proposerGender=="G001"){
       req.proposerGender="M";
@@ -2982,9 +2940,9 @@ if(!req.gstWaiver){
   req.gstWaiver="false"
 }
 
-  req.isPolicyHolder=inputs.ip;
-  req.input_frequency = req.paymentFrequency;
-  req.paymentFrequency=inputs.frequency;
+  req.isProposer=inputs.ip;
+  req.input_frequency = req.frequency;
+  req.frequency=inputs.frequency;
  // req.proposalType=inputs.proposal;
   req.gender=inputs.gender;
   req.isExCustomer=inputs.isexisting;
@@ -2993,11 +2951,14 @@ if(!req.gstWaiver){
   //req.product.investmentProtifolio=inputs.investmentProtifolio;
   req.pptOption=inputs.ppt;
   req.funds=inputs.funds;
-  req.annualPremium=calculateAnnualPremium(req.input_frequency,req.premium);
- req.age=calculateAge(req.dob);
+  req.annualPremium=calculateAnnualPremium(req.frequency,req.premium);
+ req.age=calculateAge(req.dateOfBirth);
+// gs.info("annual"+req.annualPremium)
+// gs.info("sum"+req.sumAssured);
+//gs.info(calculateAge(req.insuredPerson.dob));
 
 
-///icici for tobbaco flag
+///icici for tobaco flag
 if(req.smokerFlag &amp;&amp; req.smokerFlag=="true"){
   req.smokerFlag="1";
 }else{
@@ -3066,18 +3027,6 @@ function calculateAnnualPremium(freq, premium){
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=f69632f74792ce50e9ddbf66706d437b"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>f69632f74792ce50e9ddbf66706d437b</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:44:00</sys_created_on>
-        <sys_id>cb9632f74792ce50e9ddbf66706d4390</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:44:00</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>frequency</field>
         <id>f69632f74792ce50e9ddbf66706d437b</id>
@@ -3269,18 +3218,6 @@ function calculateAnnualPremium(freq, premium){
         <sys_updated_on>2024-05-28 05:44:00</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_f69632f74792ce50e9ddbf66706d437b</table>
         <value>{{step[7882ccfe-fc92-4b2b-933e-767858881168].response}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>f69632f74792ce50e9ddbf66706d437b</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:44:00</sys_created_on>
-        <sys_id>8f9632f74792ce50e9ddbf66706d4390</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:44:00</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>strategy</field>
@@ -4475,7 +4412,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_on>2024-05-28 06:31:51</sys_created_on>
         <sys_id>489147b34716ce50e9ddbf66706d4317</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -4807,14 +4744,14 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-28 05:44:00</sys_created_on>
         <sys_id>4f9632f74792ce50e9ddbf66706d439e</sys_id>
-        <sys_mod_count>385</sys_mod_count>
+        <sys_mod_count>383</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:17</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4934,13 +4871,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>7</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for occupation"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for occupation"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-29 12:22:55</sys_created_on>
         <sys_id>037463bb476f4690e9ddbf66706d4334</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:12">b57ba790471e0290e9ddbf66706d4365</action_status_metadata_id>
@@ -4948,13 +4885,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>3</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for gender"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for gender"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-29 12:22:55</sys_created_on>
         <sys_id>077463bb476f4690e9ddbf66706d4333</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:12">b57ba790471e0290e9ddbf66706d4365</action_status_metadata_id>
@@ -4962,13 +4899,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>2</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for Frequency"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for Frequency"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-29 12:22:55</sys_created_on>
         <sys_id>4f7463bb476f4690e9ddbf66706d4332</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:12">b57ba790471e0290e9ddbf66706d4365</action_status_metadata_id>
@@ -4976,13 +4913,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>6</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isExistingCustomer"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isExistingCustomer"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-29 12:22:55</sys_created_on>
         <sys_id>4f7463bb476f4690e9ddbf66706d4333</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:12">b57ba790471e0290e9ddbf66706d4365</action_status_metadata_id>
@@ -4990,13 +4927,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>5</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isNri"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isNri"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-29 12:22:55</sys_created_on>
         <sys_id>8b7463bb476f4690e9ddbf66706d4333</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:12">b57ba790471e0290e9ddbf66706d4365</action_status_metadata_id>
@@ -5004,13 +4941,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for IsPolicyHolder"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for IsPolicyHolder"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-12 10:44:04</sys_created_on>
         <sys_id>95daab12ffdbce1019a8ffda7c4fd9cb</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:12">b57ba790471e0290e9ddbf66706d4365</action_status_metadata_id>
@@ -5018,13 +4955,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>8</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for maritalstatus "}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for maritalstatus "}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-29 12:22:55</sys_created_on>
         <sys_id>c37463bb476f4690e9ddbf66706d4334</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:12">b57ba790471e0290e9ddbf66706d4365</action_status_metadata_id>
@@ -5032,13 +4969,13 @@ function calculateAnnualPremium(freq, premium){
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>4</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for PPT"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for PPT"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-07-29 12:22:55</sys_created_on>
         <sys_id>c77463bb476f4690e9ddbf66706d4333</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:09</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:04:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_bcd8af9847da0290e9ddbf66706d4330^sys_idNOT IN34acd528ffa6029019a8ffda7c4fd929,a696feb74792ce50e9ddbf66706d43e7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -5054,7 +4991,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_on>2024-05-30 07:06:21</sys_created_on>
         <sys_id>34acd528ffa6029019a8ffda7c4fd929</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>request</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -5077,7 +5014,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_on>2024-05-28 05:43:58</sys_created_on>
         <sys_id>a696feb74792ce50e9ddbf66706d43e7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>insurer</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -5102,7 +5039,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_on>2024-05-28 05:44:00</sys_created_on>
         <sys_id>039632f74792ce50e9ddbf66706d439a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -5125,7 +5062,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_on>2024-05-28 05:44:00</sys_created_on>
         <sys_id>879632f74792ce50e9ddbf66706d43c9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -5148,7 +5085,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_on>2024-05-28 05:44:00</sys_created_on>
         <sys_id>8f9632f74792ce50e9ddbf66706d439d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>response</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -5163,17 +5100,17 @@ function calculateAnnualPremium(freq, premium){
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="mapping field values according to insurer and ICICI nearest match">bcd8af9847da0290e9ddbf66706d4330</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"027b27d0471e0290e9ddbf66706d4337","name":"plan","plan_signature":null}}</plan>
-        <snapshot>98ce24d2472a5e50e9ddbf66706d43ec</snapshot>
+        <snapshot>0f7cb9652bae5610c692feb2f291bf4f</snapshot>
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-17 12:36:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>027b27d0471e0290e9ddbf66706d4337</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>173</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:29</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:38</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5239,10 +5176,10 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-28 05:44:04</sys_created_on>
         <sys_id>fb96b2f74792ce50e9ddbf66706d436f</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:19</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-12-18 08:04:24</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</value>
         <variable display_value="Action Status">757be3d0471e0290e9ddbf66706d43ea</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=717be3d0471e0290e9ddbf66706d43b4"/>
@@ -5366,10 +5303,10 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-28 05:44:03</sys_created_on>
         <sys_id>2796b2f74792ce50e9ddbf66706d4342</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:25:18</sys_updated_on>
+        <sys_updated_on>2024-12-04 17:16:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2796b2f74792ce50e9ddbf66706d4342"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5380,15 +5317,15 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-28 05:44:03</sys_created_on>
         <sys_id>3796b2f74792ce50e9ddbf66706d435c</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:25:18</sys_updated_on>
+        <sys_updated_on>2024-12-04 17:16:28</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 // ... code ...
   var req=inputs.req;
 
-if(req.isPolicyHolder!=""){
+if(req.isProposer!=""){
   if(inputs.insurer=="HDFC"){
     if(req.proposerGender=="G001"){
       req.proposerGender="M";
@@ -5419,9 +5356,9 @@ if(!req.gstWaiver){
   req.gstWaiver="false"
 }
 
-  req.isPolicyHolder=inputs.ip;
-  req.input_frequency = req.paymentFrequency;
-  req.paymentFrequency=inputs.frequency;
+  req.isProposer=inputs.ip;
+  req.input_frequency = req.frequency;
+  req.frequency=inputs.frequency;
  // req.proposalType=inputs.proposal;
   req.gender=inputs.gender;
   req.isExCustomer=inputs.isexisting;
@@ -5430,11 +5367,14 @@ if(!req.gstWaiver){
   //req.product.investmentProtifolio=inputs.investmentProtifolio;
   req.pptOption=inputs.ppt;
   req.funds=inputs.funds;
-  req.annualPremium=calculateAnnualPremium(req.input_frequency,req.premium);
- req.age=calculateAge(req.dob);
+  req.annualPremium=calculateAnnualPremium(req.frequency,req.premium);
+ req.age=calculateAge(req.dateOfBirth);
+// gs.info("annual"+req.annualPremium)
+// gs.info("sum"+req.sumAssured);
+//gs.info(calculateAge(req.insuredPerson.dob));
 
 
-///icici for tobbaco flag
+///icici for tobaco flag
 if(req.smokerFlag &amp;&amp; req.smokerFlag=="true"){
   req.smokerFlag="1";
 }else{
@@ -5517,18 +5457,6 @@ function calculateAnnualPremium(freq, premium){
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=2796b2f74792ce50e9ddbf66706d4342"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>2796b2f74792ce50e9ddbf66706d4342</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:44:03</sys_created_on>
-        <sys_id>3f96b2f74792ce50e9ddbf66706d435b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:44:03</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>frequency</field>
         <id>2796b2f74792ce50e9ddbf66706d4342</id>
@@ -5720,18 +5648,6 @@ function calculateAnnualPremium(freq, premium){
         <sys_updated_on>2024-05-28 05:44:03</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_2796b2f74792ce50e9ddbf66706d4342</table>
         <value>{{step[7882ccfe-fc92-4b2b-933e-767858881168].response}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>2796b2f74792ce50e9ddbf66706d4342</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:44:03</sys_created_on>
-        <sys_id>ff96b2f74792ce50e9ddbf66706d435b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:44:03</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>strategy</field>
@@ -6926,7 +6842,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_created_on>2024-05-28 06:33:15</sys_created_on>
         <sys_id>9ce103f34716ce50e9ddbf66706d43d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -7154,7 +7070,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:24</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=92925f9f47b3ce10e9ddbf66706d4321"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7167,7 +7083,7 @@ function calculateAnnualPremium(freq, premium){
         <sys_id>1a925f9f47b3ce10e9ddbf66706d4330</sys_id>
         <sys_mod_count>22</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:24</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 // ... code ...&#13;
   var req = inputs.requestObject;&#13;
@@ -7176,18 +7092,22 @@ function calculateAnnualPremium(freq, premium){
   var mul=req.multiplier||10;&#13;
   if(!req.sumAssured &amp;&amp; inputs.insurer!="HDFC" &amp;&amp; req.productId=="363f0ffb5f804d2bac044f931d9bf41a")&#13;
    req.sumAssured=req.annualPremium *parseInt(mul) +"";&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+   if(!req.sumAssured||req.sumAssured=="0" || req.sumAssured===0 || req.sumAssured===0.0){&#13;
+      var sum=parseInt(req.annualPremium) * mul;&#13;
+      sum=sum.toString().split(".")[0];&#13;
+      req.sumAssured=sum;&#13;
+   }&#13;
    req.input_pptOption=inputs.pptOption;&#13;
 &#13;
-if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
-  if(req.sumAssured===0.0){&#13;
-    var sum=req.annualPremium * 10;&#13;
-    req.sumAssured=sum.toString().split(".")[0];&#13;
-  }&#13;
-}&#13;
+&#13;
 //nearest Match for ICICI &#13;
-   if( inputs.insurer == "ICICI" &amp;&amp; req.productId=="5fd6398fe76f4bd783aa96a54dafc8a1" &amp;&amp; req.productId=="VRN006"){&#13;
-   if(inputs.pptOption== "Limited Pay"){&#13;
-    if(parseInt(req.age) + parseInt(req.pt) &lt;= 75 ){&#13;
+   if( inputs.insurer == "ICICI" &amp;&amp; req.productId=="5fd6398fe76f4bd783aa96a54dafc8a1" &amp;&amp; req.variantId=="VRN006"){&#13;
+   if(inputs.pptOption== "Limited Pay" || "Regular Pay"){&#13;
+    if(parseInt(req.age) + parseInt(req.policyTerm) &lt;= 75 ){&#13;
       var pt=(75 - parseInt(req.age)) +"";&#13;
       req.policyTerm = pt.split(".")[0];&#13;
     }&#13;
@@ -7227,18 +7147,6 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=92925f9f47b3ce10e9ddbf66706d4321"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>92925f9f47b3ce10e9ddbf66706d4321</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-08-09 08:03:31</sys_created_on>
-        <sys_id>12925f9f47b3ce10e9ddbf66706d4330</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-08-09 08:03:31</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>insurer</field>
         <id>92925f9f47b3ce10e9ddbf66706d4321</id>
         <sys_created_by>akshay</sys_created_by>
@@ -7273,18 +7181,6 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_updated_on>2024-08-09 08:03:31</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_92925f9f47b3ce10e9ddbf66706d4321</table>
         <value>{{step[d5ac911b-d252-4858-82ad-85f684d26ed9].requestbody}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>92925f9f47b3ce10e9ddbf66706d4321</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-08-09 08:03:31</sys_created_on>
-        <sys_id>d2925f9f47b3ce10e9ddbf66706d4330</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-08-09 08:03:31</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_92925f9f47b3ce10e9ddbf66706d4321^id=92925f9f47b3ce10e9ddbf66706d4321"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=92925f9f47b3ce10e9ddbf66706d4321"/>
@@ -7637,7 +7533,7 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_created_on>2024-08-09 08:03:30</sys_created_on>
         <sys_id>56925f9f47b3ce10e9ddbf66706d432c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestbody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -7732,8 +7628,8 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_id>a396b2f74792ce50e9ddbf66706d4304</sys_id>
         <sys_mod_count>93</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:16</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-10 05:16:12</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a396b2f74792ce50e9ddbf66706d4304"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7745,8 +7641,8 @@ if( req.variantId=="VRN003" || req.variantId=="VRN004"){&#13;
         <sys_created_on>2024-05-28 05:44:02</sys_created_on>
         <sys_id>2396b2f74792ce50e9ddbf66706d431e</sys_id>
         <sys_mod_count>90</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:09:16</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-10 05:16:12</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
     function calculateAge(dob) {
@@ -7755,20 +7651,20 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
 }
     
     var req;
-    if (!typeof inputs.request == 'object') {
+    if (!inputs.request.isProposer) {
         req = JSON.parse(inputs.request);
     } else {
         req = inputs.request;
     }
-    req.age=calculateAge(req.dob);
+    req.age=calculateAge(req.dateOfBirth);
     var array = req.funds;
    // gs.info(JSON.stringify(array)); 
     outputs.response = req;
     outputs.isnri= req.isNri  ||""; // adding default value since isNri is not mandatory input.
-    outputs.is_existing_user= req.isExistingCustomer;
+    outputs.is_existing_user= req.isExCustomer;
     outputs.proposerGender= req.proposerGender ||"";
-    outputs.ip = req.isPolicyHolder;
-    outputs.fre = req.paymentFrequency;
+    outputs.ip = req.isProposer;
+    outputs.fre = req.frequency;
     outputs.gen = req.gender;
     outputs.occ = req.occupation;
     outputs.marital = req.maritalStatus;
@@ -7778,14 +7674,16 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
     //outputs.strat = req.product.investmentProtifolio;
 
 
-    if (req.pt===req.ppt){
+    if (req.policyTerm===req.paymentTerm){
     outputs.ppt = "Regular Pay";
     }
     else{
-            outputs.ppt = "Limited Pay";      
+          
+            outputs.ppt = "Limited Pay"; 
+              
     }
       if(req.variantId=="VRN006"){
-            if(parseInt(req.age)+parseInt(req.pt) == 99){
+            if(parseInt(req.age)+parseInt(req.policyTerm) == 99){
             outputs.ppt="Whole Life"
         }
         else{
@@ -7816,7 +7714,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
                 if (gr.next()) {
                     var name = gr.getValue('value'); 
                     rec.name = name;
-                    rec.name_cd="";
+                    rec.name_cd=rec.name_cd;
                     if (inputs.insurer == "HDFC") { 
                         var nameCode = name.toUpperCase().replace(/ /g, '_'); 
                         rec.name_cd = nameCode;
@@ -7853,18 +7751,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a396b2f74792ce50e9ddbf66706d4304"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>a396b2f74792ce50e9ddbf66706d4304</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:44:02</sys_created_on>
-        <sys_id>2b96b2f74792ce50e9ddbf66706d431d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:44:02</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>insurer</field>
         <id>a396b2f74792ce50e9ddbf66706d4304</id>
         <sys_created_by>nikita</sys_created_by>
@@ -7887,18 +7773,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_updated_on>2024-05-28 05:44:02</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_a396b2f74792ce50e9ddbf66706d4304</table>
         <value>{{action.request}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>a396b2f74792ce50e9ddbf66706d4304</id>
-        <sys_created_by>nikita</sys_created_by>
-        <sys_created_on>2024-05-28 05:44:02</sys_created_on>
-        <sys_id>eb96b2f74792ce50e9ddbf66706d431d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>nikita</sys_updated_by>
-        <sys_updated_on>2024-05-28 05:44:02</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a396b2f74792ce50e9ddbf66706d4304^id=a396b2f74792ce50e9ddbf66706d4304"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=a396b2f74792ce50e9ddbf66706d4304"/>
@@ -8082,7 +7956,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4f47ef55ffd7c61019a8ffda7c4fd9ea</sys_id>
-        <sys_mod_count>102</sys_mod_count>
+        <sys_mod_count>101</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -8090,7 +7964,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:22</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:32</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -9104,7 +8978,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-24 11:58:35</sys_created_on>
         <sys_id>02fee51e47a30a50e9ddbf66706d43d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>isnri</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9127,7 +9001,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-10 09:26:25</sys_created_on>
         <sys_id>20e54d7dffd38a1019a8ffda7c4fd94a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>occ</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9150,7 +9024,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:44:02</sys_created_on>
         <sys_id>2b96b2f74792ce50e9ddbf66706d430f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>response</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9173,7 +9047,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-06-28 10:21:04</sys_created_on>
         <sys_id>374f5f75ff430e5019a8ffda7c4fd96f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>gen</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9196,7 +9070,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-29 06:26:45</sys_created_on>
         <sys_id>39f252f347a34690e9ddbf66706d4388</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>marital</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9219,7 +9093,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-08 10:54:22</sys_created_on>
         <sys_id>49d60385ff53461019a8ffda7c4fd93a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>funds</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9242,7 +9116,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:44:02</sys_created_on>
         <sys_id>6f96b2f74792ce50e9ddbf66706d4319</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>pro</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9265,7 +9139,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-09-23 11:10:25</sys_created_on>
         <sys_id>8bec277547f4d610e9ddbf66706d4386</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>gst_waiver</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9288,7 +9162,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:44:02</sys_created_on>
         <sys_id>a796b2f74792ce50e9ddbf66706d4316</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>fre</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9311,7 +9185,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-24 12:05:12</sys_created_on>
         <sys_id>ba70795247e30a50e9ddbf66706d43f9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>is_existing_user</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9334,7 +9208,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-07-01 07:09:24</sys_created_on>
         <sys_id>d5309ab6ffcb829019a8ffda7c4fd9a1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>ppt</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -9357,7 +9231,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:44:02</sys_created_on>
         <sys_id>ef96b2f74792ce50e9ddbf66706d4312</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>ip</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -10066,14 +9940,14 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_by>nikita</sys_created_by>
         <sys_created_on>2024-05-17 12:36:13</sys_created_on>
         <sys_id>797be3d0471e0290e9ddbf66706d43ef</sys_id>
-        <sys_mod_count>349</sys_mod_count>
+        <sys_mod_count>347</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10099,62 +9973,20 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_updated_by>nikita</sys_updated_by>
         <sys_updated_on>2024-05-17 12:36:13</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=ca7b27d0471e0290e9ddbf66706d4312^sys_idNOT IN10ce24d2472a5e50e9ddbf66706d43eb,14ce24d2472a5e50e9ddbf66706d43eb,18ce24d2472a5e50e9ddbf66706d43eb,1cce24d2472a5e50e9ddbf66706d43ea,90ce24d2472a5e50e9ddbf66706d43eb,94ce24d2472a5e50e9ddbf66706d43ea,94ce24d2472a5e50e9ddbf66706d43eb,9cce24d2472a5e50e9ddbf66706d43ea"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=ca7b27d0471e0290e9ddbf66706d4312^sys_idNOT IN037cb9652bae5610c692feb2f291bf4e,077cb9652bae5610c692feb2f291bf4e,0b7cb9652bae5610c692feb2f291bf4d,0b7cb9652bae5610c692feb2f291bf4e,837cb9652bae5610c692feb2f291bf4e,877cb9652bae5610c692feb2f291bf4e,8b7cb9652bae5610c692feb2f291bf4e,8f7cb9652bae5610c692feb2f291bf4d"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
-        <condition>{{step[09d69fbf-053d-43ec-b061-67d01662fbfd].status}}=1^NQ{{step[09d69fbf-053d-43ec-b061-67d01662fbfd].__step_status__.code}}=1</condition>
+        <condition>{{step[88109f61-bfb6-4971-bf80-ca10f48b4f4d].status}}=1^NQ{{step[88109f61-bfb6-4971-bf80-ca10f48b4f4d].__step_status__.code}}=1</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
-        <order>4</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for PPT"}}},"serializationFormat":"JSON"}</status>
+        <order>3</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for gender"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>10ce24d2472a5e50e9ddbf66706d43eb</sys_id>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>037cb9652bae5610c692feb2f291bf4e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
-    </sys_hub_status_condition>
-    <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
-        <condition>{{step[c64458ea-a154-4ec7-b9e7-6d4e720835ec].status}}=1^NQ{{step[c64458ea-a154-4ec7-b9e7-6d4e720835ec].__step_status__.code}}=1</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
-        <label/>
-        <order>6</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isExistingCustomer"}}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>14ce24d2472a5e50e9ddbf66706d43eb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
-    </sys_hub_status_condition>
-    <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
-        <condition>{{step[8cfbe742-1abc-4b9c-8a2a-ba85e1dc34fa].status}}=1^NQ{{step[8cfbe742-1abc-4b9c-8a2a-ba85e1dc34fa].__step_status__.code}}=1</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
-        <label/>
-        <order>8</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for maritalstatus "}}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>18ce24d2472a5e50e9ddbf66706d43eb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
-    </sys_hub_status_condition>
-    <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
-        <condition>{{step[600b6131-2419-4b80-a5f3-ecdd631962d3].status}}=1^NQ{{step[600b6131-2419-4b80-a5f3-ecdd631962d3].__step_status__.code}}=1</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
-        <label/>
-        <order>2</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for Frequency"}}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>1cce24d2472a5e50e9ddbf66706d43ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
@@ -10162,13 +9994,13 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>5</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isNri"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isNri"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>90ce24d2472a5e50e9ddbf66706d43eb</sys_id>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>077cb9652bae5610c692feb2f291bf4e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
@@ -10176,13 +10008,13 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for IsPolicyHolder"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for IsPolicyHolder"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>94ce24d2472a5e50e9ddbf66706d43ea</sys_id>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>0b7cb9652bae5610c692feb2f291bf4d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
@@ -10190,27 +10022,69 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
         <order>7</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for occupation"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for occupation"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>94ce24d2472a5e50e9ddbf66706d43eb</sys_id>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>0b7cb9652bae5610c692feb2f291bf4e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
-        <condition>{{step[88109f61-bfb6-4971-bf80-ca10f48b4f4d].status}}=1^NQ{{step[88109f61-bfb6-4971-bf80-ca10f48b4f4d].__step_status__.code}}=1</condition>
+        <condition>{{step[09d69fbf-053d-43ec-b061-67d01662fbfd].status}}=1^NQ{{step[09d69fbf-053d-43ec-b061-67d01662fbfd].__step_status__.code}}=1</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label/>
-        <order>3</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for gender"}}},"serializationFormat":"JSON"}</status>
+        <order>4</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for PPT"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
         <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-12-20 10:26:25</sys_created_on>
-        <sys_id>9cce24d2472a5e50e9ddbf66706d43ea</sys_id>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>837cb9652bae5610c692feb2f291bf4e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:26:25</sys_updated_on>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
+        <condition>{{step[c64458ea-a154-4ec7-b9e7-6d4e720835ec].status}}=1^NQ{{step[c64458ea-a154-4ec7-b9e7-6d4e720835ec].__step_status__.code}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label/>
+        <order>6</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for isExistingCustomer"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>877cb9652bae5610c692feb2f291bf4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
+        <condition>{{step[8cfbe742-1abc-4b9c-8a2a-ba85e1dc34fa].status}}=1^NQ{{step[8cfbe742-1abc-4b9c-8a2a-ba85e1dc34fa].__step_status__.code}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label/>
+        <order>8</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for maritalstatus "}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>8b7cb9652bae5610c692feb2f291bf4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-05-17 18:06:13">ca7b27d0471e0290e9ddbf66706d4312</action_status_metadata_id>
+        <condition>{{step[600b6131-2419-4b80-a5f3-ecdd631962d3].status}}=1^NQ{{step[600b6131-2419-4b80-a5f3-ecdd631962d3].__step_status__.code}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label/>
+        <order>2</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Please enter a valid value for Frequency"}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</status>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-18 08:10:34</sys_created_on>
+        <sys_id>8f7cb9652bae5610c692feb2f291bf4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-18 08:10:34</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_717be3d0471e0290e9ddbf66706d43b4^sys_idNOT IN92ac1928ffa6029019a8ffda7c4fd971,eb96b2f74792ce50e9ddbf66706d4301"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -10226,7 +10100,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-30 07:06:27</sys_created_on>
         <sys_id>92ac1928ffa6029019a8ffda7c4fd971</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>request</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -10249,7 +10123,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:44:02</sys_created_on>
         <sys_id>eb96b2f74792ce50e9ddbf66706d4301</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>insurer</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -10274,7 +10148,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-17 12:36:13</sys_created_on>
         <sys_id>b97be3d0471e0290e9ddbf66706d43ee</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -10297,7 +10171,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-28 05:44:03</sys_created_on>
         <sys_id>f796b2f74792ce50e9ddbf66706d4367</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>response</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -10320,7 +10194,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');
         <sys_created_on>2024-05-17 12:36:13</sys_created_on>
         <sys_id>f97be3d0471e0290e9ddbf66706d43f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>

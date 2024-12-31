@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="adf4c88133aed210798ab3373e5c7b41" label="Integration VariantFunds" max_length="40" name="x_rptp_smartinte_0_integration_variantfunds" type="collection">
+        <element label="Fundcode" max_length="32" name="fundcode" reference="x_rptp_smartinte_0_integration_fund" type="reference"/>
+        <element label="Id" max_length="40" name="id" type="string"/>
+        <element label="IsDefault" max_length="10000" name="isdefault" type="boolean"/>
+        <element label="Percentage" max_length="10000" name="percentage" type="string"/>
+        <element label="productID" max_length="10000" name="productid" type="string"/>
+        <index name="index">
+            <element name="fundcode"/>
+        </index>
+    </element>
+</database>

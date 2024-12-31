@@ -3,11 +3,39 @@
         <active>true</active>
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri>/api/x_rptp_smartinte_0/getpaymentlink</default_operation_uri>
+        <default_operation_uri/>
         <enforce_acl/>
         <http_method>GET</http_method>
         <name>getPaymentLink</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var header1=request.headers['x-frame-options']||"";
+var header2=request.headers['content-security-policy']||"";
+
+
+// check for headers security purpose
+if(header1=="" ||  new x_rptp_smartinte_0.checkForHeaders().checkHeaders("1",header1)+""=="0"){
+	response.setContentType("application/json");
+			response.setStatus(400);
+            var inValidUser={
+				code:400,
+				message:"Missing or invalid X-Frame-Options in header"
+			}
+            var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(inValidUser));
+			return;
+}
+if(header2=="" || new x_rptp_smartinte_0.checkForHeaders().checkHeaders("2",header2)+"" =="0"){
+	response.setContentType("application/json");
+			response.setStatus(400);
+            var inValidUser={
+				code:400,
+				message:"Missing or invalid Content-Security-Policy in header"
+			}
+            var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(inValidUser));
+			return;
+}
 
 var queryParams = request.queryParams;
 
@@ -68,7 +96,7 @@ var insurer ;
     // implement resource here
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_rptp_smartinte_0/v1/getpaymentlink</operation_uri>
+        <operation_uri>/api</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/</relative_path>
@@ -81,15 +109,26 @@ var insurer ;
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-05-07 09:45:25</sys_created_on>
         <sys_id>5fd36fcdff42c61019a8ffda7c4fd969</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>getPaymentLink</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name>sys_ws_operation_5fd36fcdff42c61019a8ffda7c4fd969</sys_update_name>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-09-18 11:03:53</sys_updated_on>
-        <web_service_definition display_value="GetPaymentLink">1dc3abcdff42c61019a8ffda7c4fd9c7</web_service_definition>
-        <web_service_version display_value="v1">dc9280abff1c16d019a8ffda7c4fd965</web_service_version>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-12-20 06:33:53</sys_updated_on>
+        <web_service_definition display_value="">1dc3abcdff42c61019a8ffda7c4fd9c7</web_service_definition>
+        <web_service_version display_value="">dc9280abff1c16d019a8ffda7c4fd965</web_service_version>
     </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5fd36fcdff42c61019a8ffda7c4fd969</id>
+        <sys_created_by>harshitha</sys_created_by>
+        <sys_created_on>2024-12-20 06:33:53</sys_created_on>
+        <sys_id>0e897b062b229a10c692feb2f291bf86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-12-20 06:33:53</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

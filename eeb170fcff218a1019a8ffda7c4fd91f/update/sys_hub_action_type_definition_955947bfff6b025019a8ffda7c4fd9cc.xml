@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>add_default_values_to_the_quote_api</internal_name>
-        <label_cache>[{"name":"{{action.request}}","label":"action➛request","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.insurer}}","label":"action➛insurer","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].request}}","label":"step➛Script step➛request","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.request}}","label":"action➛request","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.insurer}}","label":"action➛insurer","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].request}}","label":"Add default funds &amp; step➛➛request","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].code}}","label":"step➛Add default funds &amp; ➛code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"05fe60c9-2ee6-4ead-bf2d-2c596b158efd"}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].msg}}","label":"step➛Add default funds &amp; ➛msg","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"74ab58c3-38b3-4e7c-82be-0b2769f8be32"}}]</label_cache>
         <master_snapshot>413e47b3ff2f025019a8ffda7c4fd9ac</master_snapshot>
         <master_snapshot_digest/>
         <name>Add default Values To the quote API</name>
@@ -31,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>955947bfff6b025019a8ffda7c4fd9cc</sys_id>
-        <sys_mod_count>188</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Add default Values To the quote API</sys_name>
         <sys_overrides/>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_955947bfff6b025019a8ffda7c4fd9cc</sys_update_name>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:15</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-24 20:58:12</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -53,10 +53,10 @@
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 11:40:47</sys_created_on>
         <sys_id>75da1fbfff6f025019a8ffda7c4fd99d</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:12</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:35</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">21da1fbfff6f025019a8ffda7c4fd973</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -120,7 +120,7 @@
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <label>Script step</label>
+        <label>Add default funds &amp; </label>
         <order>1</order>
         <outputs/>
         <section/>
@@ -128,10 +128,10 @@
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 10:45:33</sys_created_on>
         <sys_id>ac3e47b3ff2f025019a8ffda7c4fd911</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>97</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:12</sys_updated_on>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:35</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ac3e47b3ff2f025019a8ffda7c4fd911"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -156,13 +156,13 @@
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 10:45:33</sys_created_on>
         <sys_id>7c3e47b3ff2f025019a8ffda7c4fd935</sys_id>
-        <sys_mod_count>46</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:12</sys_updated_on>
+        <sys_mod_count>94</sys_mod_count>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:35</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 // ... code ...&#13;
     var req=inputs.request;&#13;
-    if(typeof req == 'object')&#13;
+    if(req.productId)&#13;
     req=req;&#13;
     else&#13;
     req=JSON.parse(req);&#13;
@@ -184,21 +184,21 @@ variantGr.query();&#13;
 if(variantGr.next()){&#13;
     variant_sysid=variantGr.sys_id+"";&#13;
 }&#13;
-var gr = new GlideRecord("x_rptp_smartinte_0_integration_fundspervariant");&#13;
+var gr = new GlideRecord("x_rptp_smartinte_0_integration_variantfunds");&#13;
 gr.addQuery("insurer",insurer_sysid);&#13;
 gr.addQuery("variantid",variant_sysid);&#13;
 gr.query();&#13;
 while(gr.next()){&#13;
   //  gs.addInfoMessage(gr.getDisplayValue("fundcode"))&#13;
-    var fGr=new GlideRecord("x_rptp_smartinte_0_funds");&#13;
+    var fGr=new GlideRecord("x_rptp_smartinte_0_integration_fund");&#13;
     fGr.addQuery("sys_id",gr.fundcode+"");&#13;
     fGr.query();&#13;
     if(fGr.next()){&#13;
         var obj={&#13;
-            fundCode:fGr.fundcode+"",&#13;
-            name:fGr.fundname+"",&#13;
+            fundCode:fGr.id+"",&#13;
+            name:fGr.name+"",&#13;
             value:gr.percentage+"",&#13;
-            name_cd:fGr.fundbackendname+""&#13;
+            name_cd:fGr.code+""&#13;
             };&#13;
       //  if(gr.getDisplayValue("fundcode"))&#13;
         defaultFunds.push(obj);&#13;
@@ -211,33 +211,76 @@ while(gr.next()){&#13;
 &#13;
     }else{&#13;
         var funds=req.funds;&#13;
+        var reqFunds=[];&#13;
+        var invalidFunds = [];&#13;
         defaultFunds.forEach(function(fund){&#13;
+        fund.value="0";&#13;
           funds.forEach(function(element){&#13;
             if(fund.fundCode==element.name){&#13;
                 fund.value=element.value+"";&#13;
-            }else{&#13;
-                fund.value="0";&#13;
+                return;&#13;
             }&#13;
           });&#13;
+        &#13;
+     //     gs.info(JSON.stringify(fund));&#13;
+          reqFunds.push(fund);&#13;
         });&#13;
-        req.funds=defaultFunds;&#13;
+&#13;
+&#13;
+// Throw error if any invalid fund is &#13;
+var du=[]&#13;
+        funds.forEach(function(element) {&#13;
+        if(du.includes(element.name)){&#13;
+            invalidFunds.push(element.name);&#13;
+        }&#13;
+        else{&#13;
+            var validFund = defaultFunds.some(function(fund) {&#13;
+            return fund.fundCode === element.name; &#13;
+        });&#13;
+         if (!validFund) {&#13;
+            invalidFunds.push(element.name); &#13;
+        }&#13;
+        du.push(element.name);&#13;
+        }&#13;
+    });&#13;
+&#13;
+    if (invalidFunds.length &gt; 0 ) {&#13;
+        outputs.msg="Invalid fund code: " + invalidFunds.join(", ");&#13;
+        outputs.code=400&#13;
+        return&#13;
     }&#13;
 &#13;
+     //gs.info(inputs.insurer)&#13;
+ &#13;
+        req.funds=reqFunds;&#13;
+    }&#13;
+&#13;
+// if balic send only selected fund&#13;
+  if(inputs.insurer=="BALIC"){&#13;
+   &#13;
+    req.funds = req.funds.filter(function(fund) {&#13;
+        return fund.value !== "0";  &#13;
+    });&#13;
+   }&#13;
+//end of send selected fund&#13;
+        &#13;
+&#13;
+//calculate the pt from entry age &#13;
     if(req.productId=="6017bdb8ee33446abe361de25c2bc9f0"){&#13;
-            var age=calculateAge(req.dob);&#13;
-            var pt=req.pt ;&#13;
+        var age=calculateAge(req.dateOfBirth);&#13;
+        var pt=req.policyTerm ;&#13;
         if(parseInt(pt) - parseInt(age)  &lt; 85){&#13;
          pt = 85;&#13;
         }&#13;
         else{&#13;
            pt= parseInt(pt) - parseInt(age) ;&#13;
         }&#13;
-        req.pt=pt+"";&#13;
-        }&#13;
+        req.policyTerm=pt+"";&#13;
+    }&#13;
  //       gs.info("request "+JSON.stringify(req));&#13;
-    req.isExCustomer=req.isExistingCustomer;&#13;
-    if(!req.isExistingCustomer){&#13;
-        req.isExistingCustomer="false";&#13;
+    req.isExCustomer=req.isExistingUser;&#13;
+    if(!req.isExistingUser){&#13;
+        req.isExistingUser="false";&#13;
     }&#13;
 &#13;
     if(!req.isNri){&#13;
@@ -247,8 +290,8 @@ while(gr.next()){&#13;
         req.gstWaiver="false";&#13;
     }&#13;
 &#13;
-    if(!req.isPolicyHolder){&#13;
-        req.isPolicyHolder="true";&#13;
+    if(!req.isProposer){&#13;
+        req.isProposer="true";&#13;
     }&#13;
     if(!req.multiplier &amp;&amp; !(req.productId=="0550dee2331e4517ba2624e1a289e695")){&#13;
     req.multiplier=10;&#13;
@@ -312,18 +355,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=ac3e47b3ff2f025019a8ffda7c4fd911"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>ac3e47b3ff2f025019a8ffda7c4fd911</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-07-29 10:45:33</sys_created_on>
-        <sys_id>f83e47b3ff2f025019a8ffda7c4fd934</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-07-29 10:45:33</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>insurer</field>
         <id>ac3e47b3ff2f025019a8ffda7c4fd911</id>
         <sys_created_by>akshay</sys_created_by>
@@ -346,18 +377,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_updated_on>2024-07-29 10:45:33</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_ac3e47b3ff2f025019a8ffda7c4fd911</table>
         <value>{{action.requestbody}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>ac3e47b3ff2f025019a8ffda7c4fd911</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-07-29 10:45:33</sys_created_on>
-        <sys_id>b03e47b3ff2f025019a8ffda7c4fd935</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-07-29 10:45:33</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911^id=ac3e47b3ff2f025019a8ffda7c4fd911"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=ac3e47b3ff2f025019a8ffda7c4fd911"/>
@@ -402,7 +421,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">ac3e47b3ff2f025019a8ffda7c4fd911</model>
+        <model display_value="Add default funds &amp; ">ac3e47b3ff2f025019a8ffda7c4fd911</model>
         <model_id>ac3e47b3ff2f025019a8ffda7c4fd911</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_ac3e47b3ff2f025019a8ffda7c4fd911</name>
@@ -485,7 +504,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">ac3e47b3ff2f025019a8ffda7c4fd911</model>
+        <model display_value="Add default funds &amp; ">ac3e47b3ff2f025019a8ffda7c4fd911</model>
         <model_id>ac3e47b3ff2f025019a8ffda7c4fd911</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_ac3e47b3ff2f025019a8ffda7c4fd911</name>
@@ -528,7 +547,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=ac3e47b3ff2f025019a8ffda7c4fd911^sys_idNOT IN203e47b3ff2f025019a8ffda7c4fd920"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ac3e47b3ff2f025019a8ffda7c4fd911^sys_idNOT IN203e47b3ff2f025019a8ffda7c4fd920,aa66f1292b6e5610c692feb2f291bf6d,aa66f1292b6e5610c692feb2f291bf71"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -569,7 +588,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <label>request</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">ac3e47b3ff2f025019a8ffda7c4fd911</model>
+        <model display_value="Add default funds &amp; ">ac3e47b3ff2f025019a8ffda7c4fd911</model>
         <model_id>ac3e47b3ff2f025019a8ffda7c4fd911</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911</name>
@@ -612,8 +631,220 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=05fe60c9-2ee6-4ead-bf2d-2c596b158efd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add default funds &amp; ">ac3e47b3ff2f025019a8ffda7c4fd911</model>
+        <model_id>ac3e47b3ff2f025019a8ffda7c4fd911</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:03</sys_created_on>
+        <sys_id>aa66f1292b6e5610c692feb2f291bf6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=74ab58c3-38b3-4e7c-82be-0b2769f8be32</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>msg</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>msg</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add default funds &amp; ">ac3e47b3ff2f025019a8ffda7c4fd911</model>
+        <model_id>ac3e47b3ff2f025019a8ffda7c4fd911</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:03</sys_created_on>
+        <sys_id>aa66f1292b6e5610c692feb2f291bf71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ac3e47b3ff2f025019a8ffda7c4fd911"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911^sys_idNOT IN703e47b3ff2f025019a8ffda7c4fd930"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911^sys_idNOT IN2266f1292b6e5610c692feb2f291bf74,6e66f1292b6e5610c692feb2f291bf70,703e47b3ff2f025019a8ffda7c4fd930"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>msg</element>
+        <help/>
+        <hint/>
+        <label>msg</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:03</sys_created_on>
+        <sys_id>2266f1292b6e5610c692feb2f291bf74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>msg</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911_msg_en</sys_update_name>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>code</element>
+        <help/>
+        <hint/>
+        <label>code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:03</sys_created_on>
+        <sys_id>6e66f1292b6e5610c692feb2f291bf70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>code</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_ac3e47b3ff2f025019a8ffda7c4fd911_code_en</sys_update_name>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>request</element>
         <help/>
@@ -627,7 +858,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:33</sys_created_on>
         <sys_id>703e47b3ff2f025019a8ffda7c4fd930</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>request</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1046,14 +1277,14 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 11:40:47</sys_created_on>
         <sys_id>fdda1fbfff6f025019a8ffda7c4fd97a</sys_id>
-        <sys_mod_count>93</sys_mod_count>
+        <sys_mod_count>191</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:12</sys_updated_on>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:35</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1079,7 +1310,21 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_updated_by>akshay</sys_updated_by>
         <sys_updated_on>2024-07-29 10:45:33</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=b83e47b3ff2f025019a8ffda7c4fd94e"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=b83e47b3ff2f025019a8ffda7c4fd94e^sys_idNOT INec07dea12b629610c692feb2f291bf87"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-07-29 16:15:33">b83e47b3ff2f025019a8ffda7c4fd94e</action_status_metadata_id>
+        <condition>{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].code}}=400</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label/>
+        <order>1</order>
+        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].msg}}\\\"}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 10:06:27</sys_created_on>
+        <sys_id>ec07dea12b629610c692feb2f291bf87</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:30:27</sys_updated_on>
+    </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_955947bfff6b025019a8ffda7c4fd9cc^sys_idNOT IN683e47b3ff2f025019a8ffda7c4fd90b,a43e47b3ff2f025019a8ffda7c4fd90f"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>requestbody</element>
@@ -1094,7 +1339,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:33</sys_created_on>
         <sys_id>683e47b3ff2f025019a8ffda7c4fd90b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestBody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1117,7 +1362,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:33</sys_created_on>
         <sys_id>a43e47b3ff2f025019a8ffda7c4fd90f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>insurer</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1142,7 +1387,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 11:40:47</sys_created_on>
         <sys_id>39da1fbfff6f025019a8ffda7c4fd979</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1165,7 +1410,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 11:40:47</sys_created_on>
         <sys_id>75da1fbfff6f025019a8ffda7c4fd980</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1188,7 +1433,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:33</sys_created_on>
         <sys_id>b83e47b3ff2f025019a8ffda7c4fd94a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>request</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -1203,17 +1448,17 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Add default Values To the quote API">955947bfff6b025019a8ffda7c4fd9cc</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"2d3e87b3ff2f025019a8ffda7c4fd997","name":"plan","plan_signature":null}}</plan>
-        <snapshot>9ee9e85647e65e50e9ddbf66706d4370</snapshot>
+        <snapshot>925880da33621e10798ab3373e5c7b6f</snapshot>
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 10:45:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2d3e87b3ff2f025019a8ffda7c4fd997</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>94</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:16</sys_updated_on>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:37</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1230,7 +1475,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <description/>
         <flow_priority/>
         <internal_name>add_default_values_to_the_quote_api</internal_name>
-        <label_cache>[{"name":"{{action.request}}","label":"action➛request","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.insurer}}","label":"action➛insurer","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].request}}","label":"step➛Script step➛request","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.request}}","label":"action➛request","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.insurer}}","label":"action➛insurer","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].request}}","label":"Add default funds &amp; step➛➛request","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].code}}","label":"step➛Add default funds &amp; ➛code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"05fe60c9-2ee6-4ead-bf2d-2c596b158efd"}},{"name":"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].msg}}","label":"step➛Add default funds &amp; ➛msg","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"74ab58c3-38b3-4e7c-82be-0b2769f8be32"}}]</label_cache>
         <master>true</master>
         <name>Add default Values To the quote API</name>
         <natlang/>
@@ -1243,15 +1488,15 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>413e47b3ff2f025019a8ffda7c4fd9ac</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-09-23 07:14:26</sys_updated_on>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 10:06:28</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1279,10 +1524,10 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 11:40:51</sys_created_on>
         <sys_id>f2da5fbfff6f025019a8ffda7c4fd94f</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:15</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:30:29</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">013e87b3ff2f025019a8ffda7c4fd920</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=413e47b3ff2f025019a8ffda7c4fd9ac"/>
@@ -1332,7 +1577,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <label>Script step</label>
+        <label>Add default funds &amp; </label>
         <order>1</order>
         <outputs/>
         <section/>
@@ -1340,10 +1585,10 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 10:45:34</sys_created_on>
         <sys_id>453e47b3ff2f025019a8ffda7c4fd9c6</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>96</sys_mod_count>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:14</sys_updated_on>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:36</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=453e47b3ff2f025019a8ffda7c4fd9c6"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1354,13 +1599,13 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 10:45:35</sys_created_on>
         <sys_id>093e47b3ff2f025019a8ffda7c4fd9fe</sys_id>
-        <sys_mod_count>45</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:14</sys_updated_on>
+        <sys_mod_count>93</sys_mod_count>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:36</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 // ... code ...&#13;
     var req=inputs.request;&#13;
-    if(typeof req == 'object')&#13;
+    if(req.productId)&#13;
     req=req;&#13;
     else&#13;
     req=JSON.parse(req);&#13;
@@ -1382,21 +1627,21 @@ variantGr.query();&#13;
 if(variantGr.next()){&#13;
     variant_sysid=variantGr.sys_id+"";&#13;
 }&#13;
-var gr = new GlideRecord("x_rptp_smartinte_0_integration_fundspervariant");&#13;
+var gr = new GlideRecord("x_rptp_smartinte_0_integration_variantfunds");&#13;
 gr.addQuery("insurer",insurer_sysid);&#13;
 gr.addQuery("variantid",variant_sysid);&#13;
 gr.query();&#13;
 while(gr.next()){&#13;
   //  gs.addInfoMessage(gr.getDisplayValue("fundcode"))&#13;
-    var fGr=new GlideRecord("x_rptp_smartinte_0_funds");&#13;
+    var fGr=new GlideRecord("x_rptp_smartinte_0_integration_fund");&#13;
     fGr.addQuery("sys_id",gr.fundcode+"");&#13;
     fGr.query();&#13;
     if(fGr.next()){&#13;
         var obj={&#13;
-            fundCode:fGr.fundcode+"",&#13;
-            name:fGr.fundname+"",&#13;
+            fundCode:fGr.id+"",&#13;
+            name:fGr.name+"",&#13;
             value:gr.percentage+"",&#13;
-            name_cd:fGr.fundbackendname+""&#13;
+            name_cd:fGr.code+""&#13;
             };&#13;
       //  if(gr.getDisplayValue("fundcode"))&#13;
         defaultFunds.push(obj);&#13;
@@ -1409,33 +1654,76 @@ while(gr.next()){&#13;
 &#13;
     }else{&#13;
         var funds=req.funds;&#13;
+        var reqFunds=[];&#13;
+        var invalidFunds = [];&#13;
         defaultFunds.forEach(function(fund){&#13;
+        fund.value="0";&#13;
           funds.forEach(function(element){&#13;
             if(fund.fundCode==element.name){&#13;
                 fund.value=element.value+"";&#13;
-            }else{&#13;
-                fund.value="0";&#13;
+                return;&#13;
             }&#13;
           });&#13;
+        &#13;
+     //     gs.info(JSON.stringify(fund));&#13;
+          reqFunds.push(fund);&#13;
         });&#13;
-        req.funds=defaultFunds;&#13;
+&#13;
+&#13;
+// Throw error if any invalid fund is &#13;
+var du=[]&#13;
+        funds.forEach(function(element) {&#13;
+        if(du.includes(element.name)){&#13;
+            invalidFunds.push(element.name);&#13;
+        }&#13;
+        else{&#13;
+            var validFund = defaultFunds.some(function(fund) {&#13;
+            return fund.fundCode === element.name; &#13;
+        });&#13;
+         if (!validFund) {&#13;
+            invalidFunds.push(element.name); &#13;
+        }&#13;
+        du.push(element.name);&#13;
+        }&#13;
+    });&#13;
+&#13;
+    if (invalidFunds.length &gt; 0 ) {&#13;
+        outputs.msg="Invalid fund code: " + invalidFunds.join(", ");&#13;
+        outputs.code=400&#13;
+        return&#13;
     }&#13;
 &#13;
+     //gs.info(inputs.insurer)&#13;
+ &#13;
+        req.funds=reqFunds;&#13;
+    }&#13;
+&#13;
+// if balic send only selected fund&#13;
+  if(inputs.insurer=="BALIC"){&#13;
+   &#13;
+    req.funds = req.funds.filter(function(fund) {&#13;
+        return fund.value !== "0";  &#13;
+    });&#13;
+   }&#13;
+//end of send selected fund&#13;
+        &#13;
+&#13;
+//calculate the pt from entry age &#13;
     if(req.productId=="6017bdb8ee33446abe361de25c2bc9f0"){&#13;
-            var age=calculateAge(req.dob);&#13;
-            var pt=req.pt ;&#13;
+        var age=calculateAge(req.dateOfBirth);&#13;
+        var pt=req.policyTerm ;&#13;
         if(parseInt(pt) - parseInt(age)  &lt; 85){&#13;
          pt = 85;&#13;
         }&#13;
         else{&#13;
            pt= parseInt(pt) - parseInt(age) ;&#13;
         }&#13;
-        req.pt=pt+"";&#13;
-        }&#13;
+        req.policyTerm=pt+"";&#13;
+    }&#13;
  //       gs.info("request "+JSON.stringify(req));&#13;
-    req.isExCustomer=req.isExistingCustomer;&#13;
-    if(!req.isExistingCustomer){&#13;
-        req.isExistingCustomer="false";&#13;
+    req.isExCustomer=req.isExistingUser;&#13;
+    if(!req.isExistingUser){&#13;
+        req.isExistingUser="false";&#13;
     }&#13;
 &#13;
     if(!req.isNri){&#13;
@@ -1445,8 +1733,8 @@ while(gr.next()){&#13;
         req.gstWaiver="false";&#13;
     }&#13;
 &#13;
-    if(!req.isPolicyHolder){&#13;
-        req.isPolicyHolder="true";&#13;
+    if(!req.isProposer){&#13;
+        req.isProposer="true";&#13;
     }&#13;
     if(!req.multiplier &amp;&amp; !(req.productId=="0550dee2331e4517ba2624e1a289e695")){&#13;
     req.multiplier=10;&#13;
@@ -1524,18 +1812,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=453e47b3ff2f025019a8ffda7c4fd9c6"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>453e47b3ff2f025019a8ffda7c4fd9c6</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-07-29 10:45:35</sys_created_on>
-        <sys_id>013e47b3ff2f025019a8ffda7c4fd9fe</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-07-29 10:45:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>insurer</field>
         <id>453e47b3ff2f025019a8ffda7c4fd9c6</id>
         <sys_created_by>akshay</sys_created_by>
@@ -1558,18 +1834,6 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_updated_on>2024-07-29 10:45:35</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_453e47b3ff2f025019a8ffda7c4fd9c6</table>
         <value>{{action.requestbody}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>453e47b3ff2f025019a8ffda7c4fd9c6</id>
-        <sys_created_by>akshay</sys_created_by>
-        <sys_created_on>2024-07-29 10:45:35</sys_created_on>
-        <sys_id>c13e47b3ff2f025019a8ffda7c4fd9fe</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-07-29 10:45:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6^id=453e47b3ff2f025019a8ffda7c4fd9c6"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=453e47b3ff2f025019a8ffda7c4fd9c6"/>
@@ -1614,7 +1878,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <label>insurer</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">453e47b3ff2f025019a8ffda7c4fd9c6</model>
+        <model display_value="Add default funds &amp; ">453e47b3ff2f025019a8ffda7c4fd9c6</model>
         <model_id>453e47b3ff2f025019a8ffda7c4fd9c6</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_453e47b3ff2f025019a8ffda7c4fd9c6</name>
@@ -1697,7 +1961,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <label>request</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">453e47b3ff2f025019a8ffda7c4fd9c6</model>
+        <model display_value="Add default funds &amp; ">453e47b3ff2f025019a8ffda7c4fd9c6</model>
         <model_id>453e47b3ff2f025019a8ffda7c4fd9c6</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_453e47b3ff2f025019a8ffda7c4fd9c6</name>
@@ -1740,7 +2004,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=453e47b3ff2f025019a8ffda7c4fd9c6^sys_idNOT IN013e47b3ff2f025019a8ffda7c4fd9f7"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=453e47b3ff2f025019a8ffda7c4fd9c6^sys_idNOT IN013e47b3ff2f025019a8ffda7c4fd9f7,0766f1292b6e5610c692feb2f291bfe8,8b66f1292b6e5610c692feb2f291bfd8"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1781,7 +2045,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <label>request</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">453e47b3ff2f025019a8ffda7c4fd9c6</model>
+        <model display_value="Add default funds &amp; ">453e47b3ff2f025019a8ffda7c4fd9c6</model>
         <model_id>453e47b3ff2f025019a8ffda7c4fd9c6</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6</name>
@@ -1824,8 +2088,197 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=74ab58c3-38b3-4e7c-82be-0b2769f8be32</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>msg</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>msg</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add default funds &amp; ">453e47b3ff2f025019a8ffda7c4fd9c6</model>
+        <model_id>453e47b3ff2f025019a8ffda7c4fd9c6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:05</sys_created_on>
+        <sys_id>0766f1292b6e5610c692feb2f291bfe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=05fe60c9-2ee6-4ead-bf2d-2c596b158efd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add default funds &amp; ">453e47b3ff2f025019a8ffda7c4fd9c6</model>
+        <model_id>453e47b3ff2f025019a8ffda7c4fd9c6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:05</sys_created_on>
+        <sys_id>8b66f1292b6e5610c692feb2f291bfd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=453e47b3ff2f025019a8ffda7c4fd9c6"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6^sys_idNOT INc13e47b3ff2f025019a8ffda7c4fd9fa"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6^sys_idNOT IN8b66f1292b6e5610c692feb2f291bfea,c13e47b3ff2f025019a8ffda7c4fd9fa,c766f1292b6e5610c692feb2f291bfe7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>msg</element>
+        <help/>
+        <hint/>
+        <label>msg</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:05</sys_created_on>
+        <sys_id>8b66f1292b6e5610c692feb2f291bfea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>msg</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6_msg_en</sys_update_name>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>request</element>
         <help/>
@@ -1839,13 +2292,36 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:35</sys_created_on>
         <sys_id>c13e47b3ff2f025019a8ffda7c4fd9fa</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>request</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akshay</sys_updated_by>
         <sys_updated_on>2024-07-29 10:45:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>code</element>
+        <help/>
+        <hint/>
+        <label>code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-18 07:44:05</sys_created_on>
+        <sys_id>c766f1292b6e5610c692feb2f291bfe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>code</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_453e47b3ff2f025019a8ffda7c4fd9c6_code_en</sys_update_name>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:44:05</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2258,14 +2734,14 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-07-29 10:45:35</sys_created_on>
         <sys_id>4d3e87b3ff2f025019a8ffda7c4fd923</sys_id>
-        <sys_mod_count>91</sys_mod_count>
+        <sys_mod_count>189</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-20 10:05:14</sys_updated_on>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:36</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2291,7 +2767,21 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_updated_by>akshay</sys_updated_by>
         <sys_updated_on>2024-07-29 10:45:35</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=1d3e87b3ff2f025019a8ffda7c4fd93a"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=1d3e87b3ff2f025019a8ffda7c4fd93a^sys_idNOT INde5880da33621e10798ab3373e5c7b6d"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-07-29 16:15:35">1d3e87b3ff2f025019a8ffda7c4fd93a</action_status_metadata_id>
+        <condition>{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].code}}=400</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label/>
+        <order>1</order>
+        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[77bb9582-579c-48f4-b1c5-0a2531ba4419].msg}}\\\"}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
+        <sys_created_by>kishen.mascarenhas</sys_created_by>
+        <sys_created_on>2024-12-20 07:38:37</sys_created_on>
+        <sys_id>de5880da33621e10798ab3373e5c7b6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kishen.mascarenhas</sys_updated_by>
+        <sys_updated_on>2024-12-20 07:38:37</sys_updated_on>
+    </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_413e47b3ff2f025019a8ffda7c4fd9ac^sys_idNOT IN493e47b3ff2f025019a8ffda7c4fd9b3,853e47b3ff2f025019a8ffda7c4fd9b7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>requestbody</element>
@@ -2306,7 +2796,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:34</sys_created_on>
         <sys_id>493e47b3ff2f025019a8ffda7c4fd9b3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>requestBody</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2329,7 +2819,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:34</sys_created_on>
         <sys_id>853e47b3ff2f025019a8ffda7c4fd9b7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>insurer</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2354,7 +2844,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:35</sys_created_on>
         <sys_id>413e87b3ff2f025019a8ffda7c4fd91f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>request</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2377,7 +2867,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:35</sys_created_on>
         <sys_id>8d3e87b3ff2f025019a8ffda7c4fd922</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
@@ -2400,7 +2890,7 @@ return  new x_rptp_smartinte_0.moment().diff(convertedDate, 'years');&#13;
         <sys_created_on>2024-07-29 10:45:35</sys_created_on>
         <sys_id>953e87b3ff2f025019a8ffda7c4fd935</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>

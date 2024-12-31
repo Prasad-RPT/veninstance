@@ -3,11 +3,40 @@
         <active>true</active>
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri>/api/x_rptp_smartinte_0/get_bi</default_operation_uri>
+        <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>POST</http_method>
         <name>Get Bi</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var header1=request.headers['x-frame-options']||"";
+var header2=request.headers['content-security-policy']||"";
+
+
+// check for headers security purpose
+if(header1=="" ||  new x_rptp_smartinte_0.checkForHeaders().checkHeaders("1",header1)+""=="0"){
+	response.setContentType("application/json");
+			response.setStatus(400);
+            var inValidUser={
+				code:400,
+				message:"Missing or invalid X-Frame-Options in header"
+			}
+            var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(inValidUser));
+			return;
+}
+if(header2=="" || new x_rptp_smartinte_0.checkForHeaders().checkHeaders("2",header2)+"" =="0"){
+	response.setContentType("application/json");
+			response.setStatus(400);
+            var inValidUser={
+				code:400,
+				message:"Missing or invalid Content-Security-Policy in header"
+			}
+            var writer = response.getStreamWriter();
+            writer.writeString(JSON.stringify(inValidUser));
+			return;
+}
+
 
 
 var insurer;
@@ -15,6 +44,9 @@ var req=request.body.data;
     // implement resource here
 	try {
 		
+
+		gs.info(req);
+		gs.info(JSON.stringify(req));
 
 		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
 		// sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.getbi_latest').inBackground().withInputs(inputs).run();
@@ -47,6 +79,7 @@ var req=request.body.data;
 			});
 			return;
 		}
+		
 
 		var inputs = {};
 		inputs['insurer'] = insurer; // String 
@@ -129,7 +162,7 @@ var req=request.body.data;
 	}
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_rptp_smartinte_0/v1/get_bi</operation_uri>
+        <operation_uri>/api</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/</relative_path>
@@ -142,16 +175,16 @@ var req=request.body.data;
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-05-03 09:15:56</sys_created_on>
         <sys_id>ed3772b7ffbdce9019a8ffda7c4fd9b0</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Get Bi</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name>sys_ws_operation_ed3772b7ffbdce9019a8ffda7c4fd9b0</sys_update_name>
-        <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-04 10:07:59</sys_updated_on>
-        <web_service_definition display_value="Get BI">a7173eb7ffbdce9019a8ffda7c4fd9c1</web_service_definition>
-        <web_service_version display_value="v1">0e2d0a5547fec210e9ddbf66706d43ed</web_service_version>
+        <sys_updated_by>harshitha</sys_updated_by>
+        <sys_updated_on>2024-12-19 06:06:40</sys_updated_on>
+        <web_service_definition display_value="">a7173eb7ffbdce9019a8ffda7c4fd9c1</web_service_definition>
+        <web_service_version display_value="">0e2d0a5547fec210e9ddbf66706d43ed</web_service_version>
     </sys_ws_operation>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>ed3772b7ffbdce9019a8ffda7c4fd9b0</id>

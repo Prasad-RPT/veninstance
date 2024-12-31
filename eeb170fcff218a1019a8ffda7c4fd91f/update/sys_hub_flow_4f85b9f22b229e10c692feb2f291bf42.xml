@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=91515000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_record</internal_name>
+        <label_cache>[{"name":"subflow.input.country","label":"input➛input➛country","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"b3a7b7cf-5e2f-4790-a3ee-b030b797bed1":["country"],"85b8404f-4d2c-404e-9761-1b16505f3d08":["country"]},"attributes":{"uiUniqueId":"0aab0ebf-6ae6-493c-befa-f221690a219f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.email","label":"input➛input➛email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["email"]},"attributes":{"uiUniqueId":"9b271823-4099-44dc-9b85-6f5a4091c8f8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.landmark","label":"input➛input➛landmark","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_landmark"]},"attributes":{"uiUniqueId":"ad5109a6-a89a-4e09-b902-97f82604a88d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.state","label":"input➛input➛state","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_state"]},"attributes":{"uiUniqueId":"18636f78-7f33-42ed-8c79-1a29921fd664","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.name","label":"input➛input➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["name"]},"attributes":{"uiUniqueId":"c1a2ab61-63f2-4e48-8b8f-1b20973e5dbb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.house_no","label":"input➛input➛house_no","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_house_no"]},"attributes":{"uiUniqueId":"41296ad5-3594-425b-a1b4-47c68adacce4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.street","label":"input➛input➛street","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["street"]},"attributes":{"uiUniqueId":"4c63ab54-7f85-4bb1-bf3c-b4e6bc25886c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.dob","label":"input➛input➛dob","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["fso_date_of_birth"]},"attributes":{"uiUniqueId":"d539d4a9-3589-4f37-b3c6-a0e538c0393f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.care_off","label":"input➛input➛care_off","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_care_off"]},"attributes":{"uiUniqueId":"a0edd744-5fbb-46f1-b7a3-940aa4fa3390","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.pdf","label":"input➛input➛pdf","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_pdf"]},"attributes":{"uiUniqueId":"e96f86be-e65a-4c4a-ac46-8c3e479d1c09","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.photo","label":"input➛input➛photo","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["photo"]},"attributes":{"uiUniqueId":"c69de4b9-9741-4d2f-b6f8-19d896f2b732","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.post_office","label":"input➛input➛post_office","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_post_office"]},"attributes":{"uiUniqueId":"92953e44-88f6-4733-bbfe-00750b79c086","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.locality","label":"input➛input➛locality","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_locality"]},"attributes":{"uiUniqueId":"29b84eff-3bbe-4c51-ae3a-67e2d0d4622c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.vtc","label":"input➛input➛vtc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_vtc"]},"attributes":{"uiUniqueId":"7d0e2c4f-8953-4968-b4b0-6be870c6e0ed","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.gender","label":"input➛input➛gender","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["gender"]},"attributes":{"uiUniqueId":"e498644d-c6c6-440e-9f33-e71e2bae89e7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.sub_district","label":"input➛input➛sub_district","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_sub_district"]},"attributes":{"uiUniqueId":"dcd9887f-e702-4876-b24d-3e6feb9d2b7a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.pincode","label":"input➛input➛pincode","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"b3a7b7cf-5e2f-4790-a3ee-b030b797bed1":["values"],"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_pincode","pincode"]},"attributes":{"uiUniqueId":"41a80c38-10cb-4d39-8d67-cd912a5493ec","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.encodedAadhar","label":"input➛input➛encodedAadhar","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_los_appli_aadhaar_number"]},"attributes":{"uiUniqueId":"c8127b6a-6b0d-4003-b7b3-3a096362cb53","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input","label":"input➛input","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_los_appli_aadhaar_number"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c1787506-fff1-4ef1-9ae6-4207162c383e"}}]</label_cache>
+        <master_snapshot>1f2cd23a2b269e10c692feb2f291bf30</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Create Aadhar Record</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 04:52:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f85b9f22b229e10c692feb2f291bf42</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create Aadhar Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_flow_4f85b9f22b229e10c692feb2f291bf42</sys_update_name>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-26 10:47:49</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4f85b9f22b229e10c692feb2f291bf42^sys_idNOT INc38571362b229e10c692feb2f291bf6a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4f85b9f22b229e10c692feb2f291bf42</id>
+        <name>Create Record</name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 04:52:40</sys_created_on>
+        <sys_id>c38571362b229e10c692feb2f291bf6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-22 04:52:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c38571362b229e10c692feb2f291bf6a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4f85b9f22b229e10c692feb2f291bf42^sys_idNOT IN81b152f22be29e10c692feb2f291bfad"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD85b152f26fe29e10cbe2c51f96f8ffab</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD85b152f26fe29e10cbe2c51f96f8ffab":{"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"pincode":"String","pincode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pincode\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"encodedAadhar":"String","encodedAadhar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"encodedAadhar\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"sub_district":"String","sub_district.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sub_district\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"gender":"String","gender.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"gender\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"vtc":"String","vtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"vtc\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"locality":"String","locality.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"locality\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"post_office":"String","post_office.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"post_office\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"photo":"String","photo.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"photo\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"pdf":"String","pdf.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pdf\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"care_off":"String","care_off.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"care_off\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"dob":"String","dob.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dob\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"district":"String","district.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"district\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\"}"},"house_no":"String","house_no.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"house_no\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\"}"},"landmark":"String","landmark.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"landmark\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\"}"}},"FlowDesigner:FD85b152f26fe29e10cbe2c51f96f8ffab.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"input\",\"mandatory\":\"false\",\"uiUniqueId\":\"c1787506-fff1-4ef1-9ae6-4207162c383e\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD85b152f26fe29e10cbe2c51f96f8ffab\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 06:55:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89b152f22be29e10c692feb2f291bfab</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-26 10:47:49</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD85b152f26fe29e10cbe2c51f96f8ffab,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=c1787506-fff1-4ef1-9ae6-4207162c383e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>input</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Aadhar Record">4f85b9f22b229e10c692feb2f291bf42</model>
+        <model_id>4f85b9f22b229e10c692feb2f291bf42</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4f85b9f22b229e10c692feb2f291bf42</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 06:55:41</sys_created_on>
+        <sys_id>81b152f22be29e10c692feb2f291bfad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-22 06:55:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=81b152f22be29e10c692feb2f291bfad"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4f85b9f22b229e10c692feb2f291bf42^sys_idNOT INc9b19af22be29e10c692feb2f291bfc0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Aadhar Record">4f85b9f22b229e10c692feb2f291bf42</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 06:55:41</sys_created_on>
+        <sys_id>c9b19af22be29e10c692feb2f291bfc0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-23 06:17:51</sys_updated_on>
+        <ui_id>85b8404f-4d2c-404e-9761-1b16505f3d08</ui_id>
+        <values>H4sIAAAAAAAA/+1WTWvcMBD9K8HnxdjZdEn2Fii5NYG25JKmYiyN16KypEryJttl/3tH/shXLQilpRQSyEF682beaGbWc7PPpMjW2arE4t1ZueLLcrk8Lorj05OyWi2r8lgsAfEkW2QaWiTLAJVC1h8W2RZUFy/vmbPBMi2FYcp4+gfNwFolOejgyVJIbxXsrl9N4I1UwqHO1je3i8yCo4gBXbbev4DCziJTUKEiv5+juqPLQd1rM3tGTmQao7y8M05EQcUiw/uAWiDFq0F5XGQtaAHBuF22Dq6jC4cgrrTaPVg0UgdymEXbey9/kPfTItrVSKlxHDDeGMnxygZp9HDTKxhBo7pWXw5q4xtjDZ0K0xvTTeeRCbRRW4w2hq4/Nebu4xToQuo+jRFUhoN6OEEITlZdQB8fHhW25Ii1VCmpN8w6s5U9mbS0+UbRIa+VuaOgXm50DjwKz+kpIL+g+/f99TU4GbP4QG6IfOizZt+7GHfIY1TMhqTJwHMnbTgnd1scxR0WU+8KLM6SFS6rx4r27eqf9C1lwY3AL11RLMV+77sqqs+ltl3IR/Bw+Dp2a2zUvkcZgGgAHNNdW6Gbp2PPFufR1D068S24QLVHVjAiMBoMemIe5p08tSAfm/guiXgDNh9oG/g8iYB5Rt8GMuzmaRM6z7XGU+nqmjo38bKPBuTBNiaYhGGEEkFEneCIep7BwWGMOk+bUOLW3jBq2XhklXShmWcIU5Ex1QYxVb0em1fTmDicOpH4hBI39u68UUQSjRVIfkoTQYma048WHb8laj6ixMUWpEp0fYTIhJtOB5donxE8HH79MLxN5NtEvk3kP53I39y8sKU5Dng0TPLi1d/mycGFRCX8zMd6Wr3GAGw7BhjXr/JPrV/lquj//vISNgj6z3awJ3tvYhu7/Qn8GvCoSwwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4f85b9f22b229e10c692feb2f291bf42^sys_idNOT IN85b19af22be29e10c692feb2f291bfbc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input</element>
+        <help/>
+        <hint/>
+        <label>input</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4f85b9f22b229e10c692feb2f291bf42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 06:55:41</sys_created_on>
+        <sys_id>85b19af22be29e10c692feb2f291bfbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-22 06:55:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>create_aadhar_record</internal_name>
+        <label_cache>[{"name":"subflow.input","label":"input➛input","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_los_appli_aadhaar_number"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c1787506-fff1-4ef1-9ae6-4207162c383e"}},{"name":"subflow.input.country","label":"input➛input➛country","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"b3a7b7cf-5e2f-4790-a3ee-b030b797bed1":["country"],"85b8404f-4d2c-404e-9761-1b16505f3d08":["country"]},"attributes":{"uiUniqueId":"0aab0ebf-6ae6-493c-befa-f221690a219f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.email","label":"input➛input➛email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["email"]},"attributes":{"uiUniqueId":"9b271823-4099-44dc-9b85-6f5a4091c8f8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.landmark","label":"input➛input➛landmark","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_landmark"]},"attributes":{"uiUniqueId":"ad5109a6-a89a-4e09-b902-97f82604a88d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.state","label":"input➛input➛state","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_state"]},"attributes":{"uiUniqueId":"18636f78-7f33-42ed-8c79-1a29921fd664","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.name","label":"input➛input➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["name"]},"attributes":{"uiUniqueId":"c1a2ab61-63f2-4e48-8b8f-1b20973e5dbb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.house_no","label":"input➛input➛house_no","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_house_no"]},"attributes":{"uiUniqueId":"41296ad5-3594-425b-a1b4-47c68adacce4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.street","label":"input➛input➛street","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["street"]},"attributes":{"uiUniqueId":"4c63ab54-7f85-4bb1-bf3c-b4e6bc25886c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.dob","label":"input➛input➛dob","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["fso_date_of_birth"]},"attributes":{"uiUniqueId":"d539d4a9-3589-4f37-b3c6-a0e538c0393f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.care_off","label":"input➛input➛care_off","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_care_off"]},"attributes":{"uiUniqueId":"a0edd744-5fbb-46f1-b7a3-940aa4fa3390","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.pdf","label":"input➛input➛pdf","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_pdf"]},"attributes":{"uiUniqueId":"e96f86be-e65a-4c4a-ac46-8c3e479d1c09","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.photo","label":"input➛input➛photo","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["photo"]},"attributes":{"uiUniqueId":"c69de4b9-9741-4d2f-b6f8-19d896f2b732","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.post_office","label":"input➛input➛post_office","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_post_office"]},"attributes":{"uiUniqueId":"92953e44-88f6-4733-bbfe-00750b79c086","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.locality","label":"input➛input➛locality","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_locality"]},"attributes":{"uiUniqueId":"29b84eff-3bbe-4c51-ae3a-67e2d0d4622c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.vtc","label":"input➛input➛vtc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_vtc"]},"attributes":{"uiUniqueId":"7d0e2c4f-8953-4968-b4b0-6be870c6e0ed","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.gender","label":"input➛input➛gender","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["gender"]},"attributes":{"uiUniqueId":"e498644d-c6c6-440e-9f33-e71e2bae89e7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.sub_district","label":"input➛input➛sub_district","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_sub_district"]},"attributes":{"uiUniqueId":"dcd9887f-e702-4876-b24d-3e6feb9d2b7a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.pincode","label":"input➛input➛pincode","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"b3a7b7cf-5e2f-4790-a3ee-b030b797bed1":["values"],"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_smartinte_0_pincode","pincode"]},"attributes":{"uiUniqueId":"41a80c38-10cb-4d39-8d67-cd912a5493ec","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.input.encodedAadhar","label":"input➛input➛encodedAadhar","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"85b8404f-4d2c-404e-9761-1b16505f3d08":["x_rptp_los_appli_aadhaar_number"]},"attributes":{"uiUniqueId":"c8127b6a-6b0d-4003-b7b3-3a096362cb53","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>Create Aadhar Record</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Aadhar Record">4f85b9f22b229e10c692feb2f291bf42</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 07:41:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f2cd23a2b269e10c692feb2f291bf30</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-23 06:17:56</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1f2cd23a2b269e10c692feb2f291bf30^sys_idNOT INdb2cd23a2b269e10c692feb2f291bf31"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1f2cd23a2b269e10c692feb2f291bf30</id>
+        <name>Create Aadhar Record</name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 07:41:26</sys_created_on>
+        <sys_id>db2cd23a2b269e10c692feb2f291bf31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-22 07:41:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=db2cd23a2b269e10c692feb2f291bf31"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1f2cd23a2b269e10c692feb2f291bf30^sys_idNOT IN5f2cd23a2b269e10c692feb2f291bf33"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD9b2cd23a38269e10742a329ed7f1dd32</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FD9b2cd23a38269e10742a329ed7f1dd32":{"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"pincode":"String","pincode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pincode\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"encodedAadhar":"String","encodedAadhar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"encodedAadhar\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"sub_district":"String","sub_district.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sub_district\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"gender":"String","gender.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"gender\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"vtc":"String","vtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"vtc\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"locality":"String","locality.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"locality\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"post_office":"String","post_office.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"post_office\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"photo":"String","photo.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"photo\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"pdf":"String","pdf.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pdf\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"care_off":"String","care_off.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"care_off\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"dob":"String","dob.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dob\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"district":"String","district.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"district\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\"}"},"house_no":"String","house_no.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"house_no\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\"}"},"landmark":"String","landmark.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"landmark\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\"}"}},"FlowDesigner:FD9b2cd23a38269e10742a329ed7f1dd32.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"input\",\"mandatory\":\"false\",\"uiUniqueId\":\"c1787506-fff1-4ef1-9ae6-4207162c383e\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9b2cd23a38269e10742a329ed7f1dd32\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 07:41:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5f2cd23a2b269e10c692feb2f291bf32</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-23 06:17:56</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD9b2cd23a38269e10742a329ed7f1dd32,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=c1787506-fff1-4ef1-9ae6-4207162c383e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>input</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Aadhar Record">1f2cd23a2b269e10c692feb2f291bf30</model>
+        <model_id>1f2cd23a2b269e10c692feb2f291bf30</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1f2cd23a2b269e10c692feb2f291bf30</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 07:41:26</sys_created_on>
+        <sys_id>5f2cd23a2b269e10c692feb2f291bf33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-22 07:41:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5f2cd23a2b269e10c692feb2f291bf33"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=1f2cd23a2b269e10c692feb2f291bf30^sys_idNOT IN1b2cd23a2b269e10c692feb2f291bf5d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Aadhar Record">1f2cd23a2b269e10c692feb2f291bf30</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 07:41:26</sys_created_on>
+        <sys_id>1b2cd23a2b269e10c692feb2f291bf5d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-23 06:17:56</sys_updated_on>
+        <ui_id>85b8404f-4d2c-404e-9761-1b16505f3d08</ui_id>
+        <values>H4sIAAAAAAAA/+1W3WvbMBD/V4qeQ7CbLrR5Kw192lpYR1+6TpytcywmS54kp81C/ved/JGEzmIdDEahgTzofve7L91Z97BlUrAFm6eYfLhI5/ksnc1Ok+T0/CzN5rMsPRUzQDxjE6ahQtL0kCnk7WHC1qCaIHzmtvY111IYroyjP2gOda1kDto70hTS1Qo2968m5KVUwqJmi4fHCavBkkePli22L6DXxq8gQ0WqX0ICkXz8ph6VfTzmntx0gLEixJNMGD571AIpkAKUwwmrQAvwxm7YwtuGBBZB3Gq12WuUUnsyyILus5M/ye15EvQKpMxy7LD9sXW87GrYQcUSPNyR9dw3tlfPSyNzdF1dBBbQKH91LOsUbmsvje4obao926im0jddWdjewHBlJGkccoF1yDVE36dS3JXm6fMQ6bXUbVl6UJkc1P4E3luZNT7Es2WosCJDvKKLl3rFa2vWsiVTLNV0pegwLZR5IqdOrvQU8hD4lEoL02uSL1vxPVgZsvhEZoi8mzC3cVcKnDvkQoXkP5oQSZdZnwPvyhAouZW1vyQHa+zD3U2G4RCYXESbK80OzdTOgzsaDMorNwK/NkkyE9uta7KQz1TquvHTHtztvvXjECahHQIOIEoAy3VTZWjH6diyxWVQtQcjrgLrqbuQJ5wInCaPip77cSPHGmRjFeoS8ddh447WPh8nETDOaBtD+s04bUDHubVxdHVFQb0cqexBgSzUpfEmohigiBNRRDiiGGfkYDF4HacNKHELZzg1cTjyTFpfjjOEyUiZ7gYxdnstNh5NacK46kjiA0rc0LvjSgGJNJan8GMxERS5c/os0vF75M57lLhYgVSRrg8QqeSm0d5G2qcHd7vfX573iXyfyPeJ/K8T+Zer3Z9f32G1u5aohBt5joe9Div6FFDi3fP8YrfrwZP7Huz3u/Rf7XfpPGl/b2zL6xJ880ve0U4fWfcefwG3l0uMDQ0AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1f2cd23a2b269e10c692feb2f291bf30^sys_idNOT IN532cd23a2b269e10c692feb2f291bf58"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input</element>
+        <help/>
+        <hint/>
+        <label>input</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1f2cd23a2b269e10c692feb2f291bf30</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 07:41:26</sys_created_on>
+        <sys_id>532cd23a2b269e10c692feb2f291bf58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>input</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_1f2cd23a2b269e10c692feb2f291bf30_input_en</sys_update_name>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-22 07:41:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1f2cd23a2b269e10c692feb2f291bf30"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>4f85b9f22b229e10c692feb2f291bf42</sys_id>
+        <latest_snapshot>1f2cd23a2b269e10c692feb2f291bf30</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4f85b9f22b229e10c692feb2f291bf42"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4f85b9f22b229e10c692feb2f291bf42^sys_idNOT IN1f2cd23a2b269e10c692feb2f291bf63"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@19942d75</plan>
+        <plan_id display_value="Create Aadhar Record">4f85b9f22b229e10c692feb2f291bf42</plan_id>
+        <snapshot>1f2cd23a2b269e10c692feb2f291bf30</snapshot>
+        <sys_created_by>architakumari.gupta</sys_created_by>
+        <sys_created_on>2024-12-22 07:41:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f2cd23a2b269e10c692feb2f291bf63</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>architakumari.gupta</sys_updated_by>
+        <sys_updated_on>2024-12-23 06:17:56</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

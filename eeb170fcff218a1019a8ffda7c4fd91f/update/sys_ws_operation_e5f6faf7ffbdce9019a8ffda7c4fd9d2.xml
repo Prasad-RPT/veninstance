@@ -3,7 +3,7 @@
         <active>true</active>
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri>/api/x_rptp_smartinte_0/get_quote</default_operation_uri>
+        <default_operation_uri/>
         <enforce_acl>c7092e05ffb2821019a8ffda7c4fd98c</enforce_acl>
         <http_method>POST</http_method>
         <name>Get Quote</name>
@@ -135,6 +135,7 @@ if(header2=="" || new x_rptp_smartinte_0.checkForHeaders().checkHeaders("2",head
             logGR.addQuery('sys_id', sysID);
             logGR.query();
             if (logGR.next()) {
+
                 id = logGR.request_id;
 
                 if (typeof receivedresponse=="object")
@@ -142,27 +143,19 @@ if(header2=="" || new x_rptp_smartinte_0.checkForHeaders().checkHeaders("2",head
                 else
                     logGR.receviedresponse = (receivedresponse);
 
-				if(typeof formatedrequest =='object')
-                logGR.transformedrequest = JSON.stringify(formatedrequest);
-				else
-                logGR.transformedrequest =(formatedrequest);
+				if(typeof formatedrequest =='object'){
+					logGR.transformedrequest = JSON.stringify(formatedrequest);
+				}else{
+					logGR.transformedrequest = (formatedrequest);
+				}
 
-
+                
                 if (typeof result=="object")
                     logGR.responsereturened = JSON.stringify(result);
                 else
                     logGR.responsereturened = (result)+"";
-				if(tostore && tostore!=""){
-					gs.info(tostore);
-					if(typeof tostore=='object')
-					tostore = JSON.stringify(tostore);
-					else
-					tostore = (tostore);
-					gs.info(tostore+"after");
-					logGR.clientrequestbody = (tostore);
-
-				}
-                
+				if(tostore && tostore!="")
+                logGR.clientrequestbody = JSON.stringify(tostore);
                 logGR.update();
 
             }
@@ -254,6 +247,47 @@ if(header2=="" || new x_rptp_smartinte_0.checkForHeaders().checkHeaders("2",head
     } else if (insurer == "all") {
 
 
+
+		//validation for request body
+
+
+var requestForValidation= {};
+		requestForValidation['request'] = req; // String 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.common_validation_for_async_bulk_quote').inBackground().withInputs(inputs).run();
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.common_validation_for_async_bulk_quote').inForeground().withInputs(requestForValidation).run();
+		var valodationResponse = result.getOutputs();
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		var isvalid = valodationResponse['isvalid']; // True/False
+		var errorresponse = valodationResponse['errorresponse']; // String
+		if(!isvalid){
+
+			if(typeof errorresponse=='object'){
+				errorresponse=errorresponse;
+			}else{
+				errorresponse=JSON.parse(errorresponse);
+			}
+
+		response.setStatus(errorresponse.code);
+		key="code";
+		delete errorresponse[key];
+		
+			response.setContentType('application/json');
+ 				var writer = response.getStreamWriter();
+            	writer.writeString(JSON.stringify(errorresponse));
+
+				return;
+		}
+
+
+		//end of validation for request body
+
+
 	logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
     logGR.addQuery('sys_id', sysID);
     logGR.query();
@@ -285,7 +319,8 @@ try {
 
 		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
 		sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.async_call').inBackground().withInputs(inputs).run();
-
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		// var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.async_call').inForeground().withInputs(inputs).run();
 
 		//to trigger the call back url 
 		inputs={};
@@ -293,8 +328,7 @@ try {
 		inputs['transactionid'] = transactionId;
 		 sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.call_back_subflow_for_bulk_api_call').inBackground().withInputs(inputs).run();
 				
-		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
-		// var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_smartinte_0.async_call').inForeground().withInputs(inputs).run();
+		
 		var res={ "message": "Success", "payload": { "transactionId": transactionId+"" } };
 
 		var logGR = new GlideRecord('x_rptp_smartinte_0_integration_request_log');
@@ -328,7 +362,7 @@ try {
    	 }
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_rptp_smartinte_0/v1/get_quote</operation_uri>
+        <operation_uri>/api</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/</relative_path>
@@ -341,16 +375,16 @@ try {
         <sys_created_by>akshay</sys_created_by>
         <sys_created_on>2024-05-03 09:14:26</sys_created_on>
         <sys_id>e5f6faf7ffbdce9019a8ffda7c4fd9d2</sys_id>
-        <sys_mod_count>207</sys_mod_count>
+        <sys_mod_count>210</sys_mod_count>
         <sys_name>Get Quote</sys_name>
         <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
         <sys_policy>protected</sys_policy>
         <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
         <sys_update_name>sys_ws_operation_e5f6faf7ffbdce9019a8ffda7c4fd9d2</sys_update_name>
         <sys_updated_by>akshay</sys_updated_by>
-        <sys_updated_on>2024-12-11 12:04:50</sys_updated_on>
-        <web_service_definition display_value="Get Quote">884672b7ffbdce9019a8ffda7c4fd943</web_service_definition>
-        <web_service_version display_value="v1">86618d4547364210e9ddbf66706d4316</web_service_version>
+        <sys_updated_on>2024-12-17 06:30:50</sys_updated_on>
+        <web_service_definition display_value="">884672b7ffbdce9019a8ffda7c4fd943</web_service_definition>
+        <web_service_version display_value="">86618d4547364210e9ddbf66706d4316</web_service_version>
     </sys_ws_operation>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>e5f6faf7ffbdce9019a8ffda7c4fd9d2</id>

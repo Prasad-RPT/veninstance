@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>ebbe2a0f477f0e10e9ddbf66706d43d4</copied_from>
+        <copied_from_name>Get keys for bulk API</copied_from_name>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>get_keys_for_bulk_api_for_smart_assurance</internal_name>
+        <label_cache>[{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8fc5745c-2581-4606-9f78-2de01740aa6f].response}}","label":"Check if the qutation is present in the cachestep➛step➛response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>79007704ffda5a5019a8ffda7c4fd958</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Get keys for bulk API for Smart Assurance</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9fffa304ffda5a5019a8ffda7c4fd963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get keys for bulk API for Smart Assurance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_9fffa304ffda5a5019a8ffda7c4fd963</sys_update_name>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-09 17:54:02</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_hub_step_instance action="DELETE" query="action=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT INe7ffa304ffda5a5019a8ffda7c4fd98a"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</action>
+        <cid>8fc5745c-2581-4606-9f78-2de01740aa6f</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Check if the qutation is present in the cachestep</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:39</sys_created_on>
+        <sys_id>e7ffa304ffda5a5019a8ffda7c4fd98a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:13</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=e7ffa304ffda5a5019a8ffda7c4fd98a"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e7ffa304ffda5a5019a8ffda7c4fd98a</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>27ffa304ffda5a5019a8ffda7c4fd9b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:14</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+// ... code ...&#13;
+    var req= inputs.req;&#13;
+    if(typeof req =='object'){&#13;
+        req=req;&#13;
+    }&#13;
+    else{&#13;
+        req=JSON.parse(req);&#13;
+    }&#13;
+    var age=calculateAge(req.dateOfBirth);&#13;
+&#13;
+    var key=req.productId+"_"+req.variantId+"_"+req.premium+"_"+req.policyTerm+"_"+req.paymentTerm+"_"+req.frequency+"_"+age;&#13;
+    var gr=new GlideRecord('x_rptp_smartinte_0_integration_cache_table');&#13;
+    gr.addQuery('key',key);&#13;
+    gr.query();&#13;
+    if(gr.next()){&#13;
+        outputs.response=gr.response;&#13;
+    }&#13;
+    else&#13;
+    outputs.response=false;&#13;
+&#13;
+})(inputs, outputs);&#13;
+ function calculateAge(dob) {&#13;
+  var convertedDate=dob.split("/").reverse().join("/"); // output: 2022/07/24&#13;
+return  (new x_rptp_smartinte_0.moment().diff(convertedDate, 'years')).toString().split(".")[0];&#13;
+}</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e7ffa304ffda5a5019a8ffda7c4fd98a</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>2fffa304ffda5a5019a8ffda7c4fd9b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=e7ffa304ffda5a5019a8ffda7c4fd98a"/>
+    <sys_element_mapping action="DELETE">
+        <field>req</field>
+        <id>e7ffa304ffda5a5019a8ffda7c4fd98a</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>6fffa304ffda5a5019a8ffda7c4fd9ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_e7ffa304ffda5a5019a8ffda7c4fd98a</table>
+        <value>{{action.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a^id=e7ffa304ffda5a5019a8ffda7c4fd98a"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=e7ffa304ffda5a5019a8ffda7c4fd98a"/>
+    <sys_translated_text action="DELETE" query="documentkey=e7ffa304ffda5a5019a8ffda7c4fd98a"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=e7ffa304ffda5a5019a8ffda7c4fd98a^sys_idNOT INafffa304ffda5a5019a8ffda7c4fd98d"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Check if the qutation is present in the cachestep">e7ffa304ffda5a5019a8ffda7c4fd98a</model>
+        <model_id>e7ffa304ffda5a5019a8ffda7c4fd98a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_e7ffa304ffda5a5019a8ffda7c4fd98a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:39</sys_created_on>
+        <sys_id>afffa304ffda5a5019a8ffda7c4fd98d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=e7ffa304ffda5a5019a8ffda7c4fd98a^sys_idNOT IN67ffa304ffda5a5019a8ffda7c4fd9ac"/>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3b52db5e-ece3-456a-9fcd-5c1336ef38b9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Check if the qutation is present in the cachestep">e7ffa304ffda5a5019a8ffda7c4fd98a</model>
+        <model_id>e7ffa304ffda5a5019a8ffda7c4fd98a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:39</sys_created_on>
+        <sys_id>67ffa304ffda5a5019a8ffda7c4fd9ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="DELETE" query="instance=e7ffa304ffda5a5019a8ffda7c4fd98a"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a^sys_idNOT INefffa304ffda5a5019a8ffda7c4fd9af"/>
+    <sys_documentation action="DELETE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>efffa304ffda5a5019a8ffda7c4fd9af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>response</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="DELETE" query="model=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT INe7ffa304ffda5a5019a8ffda7c4fd96a"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfd33811-84e3-44c1-9b9e-a81378e84d8c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</model>
+        <model_id>9fffa304ffda5a5019a8ffda7c4fd963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:39</sys_created_on>
+        <sys_id>e7ffa304ffda5a5019a8ffda7c4fd96a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=e7ffa304ffda5a5019a8ffda7c4fd96a"/>
+    <sys_hub_action_output action="DELETE" query="model=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN7fffa304ffda5a5019a8ffda7c4fd9db,afffa304ffda5a5019a8ffda7c4fd9d2,bfffa304ffda5a5019a8ffda7c4fd9d7"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cc1c88bf-ce68-487d-a288-1aebb9107213,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</model>
+        <model_id>9fffa304ffda5a5019a8ffda7c4fd963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>7fffa304ffda5a5019a8ffda7c4fd9db</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=7fffa304ffda5a5019a8ffda7c4fd9db"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=7fffa304ffda5a5019a8ffda7c4fd9db"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bbd5c899-0d89-49ff-884a-f119c3f3917b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</model>
+        <model_id>9fffa304ffda5a5019a8ffda7c4fd963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>afffa304ffda5a5019a8ffda7c4fd9d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=afffa304ffda5a5019a8ffda7c4fd9d2"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=afffa304ffda5a5019a8ffda7c4fd9d2"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FDebffa3049dda5a50da66262a7e0945d1</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eeb170fcff218a1019a8ffda7c4fd91f</scope_name>
+        <serialized_content>{"FlowDesigner:FDebffa3049dda5a50da66262a7e0945d1":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDebffa3049dda5a50da66262a7e0945d1.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f388e8f0-17b3-4f7c-a61a-ed21bc041458\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDebffa3049dda5a50da66262a7e0945d1\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>efffa304ffda5a5019a8ffda7c4fd9d1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:14</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDebffa3049dda5a50da66262a7e0945d1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=f388e8f0-17b3-4f7c-a61a-ed21bc041458</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</model>
+        <model_id>9fffa304ffda5a5019a8ffda7c4fd963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>bfffa304ffda5a5019a8ffda7c4fd9d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=bfffa304ffda5a5019a8ffda7c4fd9d7"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=bfffa304ffda5a5019a8ffda7c4fd9d7"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=9fffa304ffda5a5019a8ffda7c4fd963"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN73ffa304ffda5a5019a8ffda7c4fd9e7"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</action_type_id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>73ffa304ffda5a5019a8ffda7c4fd9e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=73ffa304ffda5a5019a8ffda7c4fd9e7"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN27ffa304ffda5a5019a8ffda7c4fd988"/>
+    <sys_documentation action="DELETE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:39</sys_created_on>
+        <sys_id>27ffa304ffda5a5019a8ffda7c4fd988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requestBody</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN33ffa304ffda5a5019a8ffda7c4fd9db,37ffa304ffda5a5019a8ffda7c4fd9e1,63ffa304ffda5a5019a8ffda7c4fd9d7"/>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>33ffa304ffda5a5019a8ffda7c4fd9db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>37ffa304ffda5a5019a8ffda7c4fd9e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:40</sys_created_on>
+        <sys_id>63ffa304ffda5a5019a8ffda7c4fd9d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>response</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN5a007704ffda5a5019a8ffda7c4fd9e5"/>
+    <sys_hub_action_plan action="DELETE">
+        <action_id display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"5a007704ffda5a5019a8ffda7c4fd9e5","name":"plan","plan_signature":null}}</plan>
+        <snapshot>fd41b708ffda5a5019a8ffda7c4fd9e6</snapshot>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a007704ffda5a5019a8ffda7c4fd9e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:17</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>ebbe2a0f477f0e10e9ddbf66706d43d4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>get_keys_for_bulk_api_for_smart_assurance</internal_name>
+        <label_cache>[{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8fc5745c-2581-4606-9f78-2de01740aa6f].response}}","label":"Check if the qutation is present in the cachestep➛step➛response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Get keys for bulk API for Smart Assurance</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get keys for bulk API for Smart Assurance">9fffa304ffda5a5019a8ffda7c4fd963</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>79007704ffda5a5019a8ffda7c4fd958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=79007704ffda5a5019a8ffda7c4fd958"/>
+    <sys_variable_value action="DELETE" query="document_key=79007704ffda5a5019a8ffda7c4fd958"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>79007704ffda5a5019a8ffda7c4fd958</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>06007704ffda5a5019a8ffda7c4fd99d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</value>
+        <variable display_value="Action Status">82007704ffda5a5019a8ffda7c4fd978</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>79007704ffda5a5019a8ffda7c4fd958</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>42007704ffda5a5019a8ffda7c4fd99d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">ce007704ffda5a5019a8ffda7c4fd994</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=79007704ffda5a5019a8ffda7c4fd958"/>
+    <sys_element_mapping action="DELETE">
+        <field>variable</field>
+        <id>79007704ffda5a5019a8ffda7c4fd958</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>4a007704ffda5a5019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</table>
+        <value>{{step[8fc5745c-2581-4606-9f78-2de01740aa6f].response}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__action_status__</field>
+        <id>79007704ffda5a5019a8ffda7c4fd958</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>ce007704ffda5a5019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__dont_treat_as_error__</field>
+        <id>79007704ffda5a5019a8ffda7c4fd958</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>0e007704ffda5a5019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="DELETE" query="action=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT INb5007704ffda5a5019a8ffda7c4fd961"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Get keys for bulk API for Smart Assurance">79007704ffda5a5019a8ffda7c4fd958</action>
+        <cid>8fc5745c-2581-4606-9f78-2de01740aa6f</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Check if the qutation is present in the cachestep</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>b5007704ffda5a5019a8ffda7c4fd961</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:15</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=b5007704ffda5a5019a8ffda7c4fd961"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b5007704ffda5a5019a8ffda7c4fd961</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>02007704ffda5a5019a8ffda7c4fd970</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:15</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+// ... code ...&#13;
+    var req= inputs.req;&#13;
+    if(typeof req =='object'){&#13;
+        req=req;&#13;
+    }&#13;
+    else{&#13;
+        req=JSON.parse(req);&#13;
+    }&#13;
+    var age=calculateAge(req.dateOfBirth);&#13;
+&#13;
+    var key=req.productId+"_"+req.variantId+"_"+req.premium+"_"+req.policyTerm+"_"+req.paymentTerm+"_"+req.frequency+"_"+age;&#13;
+    var gr=new GlideRecord('x_rptp_smartinte_0_integration_cache_table');&#13;
+    gr.addQuery('key',key);&#13;
+    gr.query();&#13;
+    if(gr.next()){&#13;
+        outputs.response=gr.response;&#13;
+    }&#13;
+    else&#13;
+    outputs.response=false;&#13;
+&#13;
+})(inputs, outputs);&#13;
+ function calculateAge(dob) {&#13;
+  var convertedDate=dob.split("/").reverse().join("/"); // output: 2022/07/24&#13;
+return  (new x_rptp_smartinte_0.moment().diff(convertedDate, 'years')).toString().split(".")[0];&#13;
+}</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b5007704ffda5a5019a8ffda7c4fd961</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>4e007704ffda5a5019a8ffda7c4fd96f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=b5007704ffda5a5019a8ffda7c4fd961"/>
+    <sys_element_mapping action="DELETE">
+        <field>req</field>
+        <id>b5007704ffda5a5019a8ffda7c4fd961</id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>4a007704ffda5a5019a8ffda7c4fd970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b5007704ffda5a5019a8ffda7c4fd961</table>
+        <value>{{action.requestbody}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961^id=b5007704ffda5a5019a8ffda7c4fd961"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=b5007704ffda5a5019a8ffda7c4fd961"/>
+    <sys_translated_text action="DELETE" query="documentkey=b5007704ffda5a5019a8ffda7c4fd961"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=b5007704ffda5a5019a8ffda7c4fd961^sys_idNOT IN39007704ffda5a5019a8ffda7c4fd964"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>req</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Check if the qutation is present in the cachestep">b5007704ffda5a5019a8ffda7c4fd961</model>
+        <model_id>b5007704ffda5a5019a8ffda7c4fd961</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b5007704ffda5a5019a8ffda7c4fd961</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>39007704ffda5a5019a8ffda7c4fd964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=b5007704ffda5a5019a8ffda7c4fd961^sys_idNOT INbd007704ffda5a5019a8ffda7c4fd968"/>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3b52db5e-ece3-456a-9fcd-5c1336ef38b9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Check if the qutation is present in the cachestep">b5007704ffda5a5019a8ffda7c4fd961</model>
+        <model_id>b5007704ffda5a5019a8ffda7c4fd961</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>bd007704ffda5a5019a8ffda7c4fd968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="DELETE" query="instance=b5007704ffda5a5019a8ffda7c4fd961"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961^sys_idNOT INce007704ffda5a5019a8ffda7c4fd96b"/>
+    <sys_documentation action="DELETE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>ce007704ffda5a5019a8ffda7c4fd96b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>response</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="DELETE" query="model=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN7d007704ffda5a5019a8ffda7c4fd95b"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfd33811-84e3-44c1-9b9e-a81378e84d8c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBody</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">79007704ffda5a5019a8ffda7c4fd958</model>
+        <model_id>79007704ffda5a5019a8ffda7c4fd958</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>7d007704ffda5a5019a8ffda7c4fd95b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=7d007704ffda5a5019a8ffda7c4fd95b"/>
+    <sys_hub_action_output action="DELETE" query="model=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN4a007704ffda5a5019a8ffda7c4fd973,82007704ffda5a5019a8ffda7c4fd978,ce007704ffda5a5019a8ffda7c4fd994"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bbd5c899-0d89-49ff-884a-f119c3f3917b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">79007704ffda5a5019a8ffda7c4fd958</model>
+        <model_id>79007704ffda5a5019a8ffda7c4fd958</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>4a007704ffda5a5019a8ffda7c4fd973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=4a007704ffda5a5019a8ffda7c4fd973"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=4a007704ffda5a5019a8ffda7c4fd973"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=f388e8f0-17b3-4f7c-a61a-ed21bc041458</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">79007704ffda5a5019a8ffda7c4fd958</model>
+        <model_id>79007704ffda5a5019a8ffda7c4fd958</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>82007704ffda5a5019a8ffda7c4fd978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=82007704ffda5a5019a8ffda7c4fd978"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=82007704ffda5a5019a8ffda7c4fd978"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cc1c88bf-ce68-487d-a288-1aebb9107213,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get keys for bulk API for Smart Assurance">79007704ffda5a5019a8ffda7c4fd958</model>
+        <model_id>79007704ffda5a5019a8ffda7c4fd958</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>ce007704ffda5a5019a8ffda7c4fd994</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:34:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_payload/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=ce007704ffda5a5019a8ffda7c4fd994"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=ce007704ffda5a5019a8ffda7c4fd994"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=79007704ffda5a5019a8ffda7c4fd958"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN4e007704ffda5a5019a8ffda7c4fd99e"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Get keys for bulk API for Smart Assurance">79007704ffda5a5019a8ffda7c4fd958</action_type_id>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>4e007704ffda5a5019a8ffda7c4fd99e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=4e007704ffda5a5019a8ffda7c4fd99e"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958^sys_idNOT INb9007704ffda5a5019a8ffda7c4fd95f"/>
+    <sys_documentation action="DELETE">
+        <element>requestbody</element>
+        <help/>
+        <hint/>
+        <label>requestBody</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>b9007704ffda5a5019a8ffda7c4fd95f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requestBody</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN46007704ffda5a5019a8ffda7c4fd977,4e007704ffda5a5019a8ffda7c4fd999,82007704ffda5a5019a8ffda7c4fd994"/>
+    <sys_documentation action="DELETE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:49</sys_created_on>
+        <sys_id>46007704ffda5a5019a8ffda7c4fd977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>response</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>4e007704ffda5a5019a8ffda7c4fd999</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>akshay</sys_created_by>
+        <sys_created_on>2024-12-01 14:28:50</sys_created_on>
+        <sys_id>82007704ffda5a5019a8ffda7c4fd994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>akshay</sys_updated_by>
+        <sys_updated_on>2024-12-01 14:28:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958"/>
+    <sys_hub_action_type_definition action="DELETE">
+        <sys_id>9fffa304ffda5a5019a8ffda7c4fd963</sys_id>
+        <latest_snapshot>79007704ffda5a5019a8ffda7c4fd958</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
+    </sys_hub_action_type_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</application>
+        <file_path/>
+        <instance_id>d634b9cd1ba13d9c52a243f4bd4bcb01</instance_id>
+        <instance_name>rptdev02</instance_name>
+        <name>sys_hub_action_type_definition_9fffa304ffda5a5019a8ffda7c4fd963</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;{labelCacheCleanUpExecuted=true}&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;ebbe2a0f477f0e10e9ddbf66706d43d4&lt;/copied_from&gt;&lt;copied_from_name&gt;Get keys for bulk API&lt;/copied_from_name&gt;&lt;description/&gt;&lt;flow_priority/&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;get_keys_for_bulk_api_for_smart_assurance&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8fc5745c-2581-4606-9f78-2de01740aa6f].response}}","label":"Check if the qutation is present in the cachestep➛step➛response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Get keys for bulk API for Smart Assurance&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;state&gt;published&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:39&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get keys for bulk API for Smart Assurance&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_9fffa304ffda5a5019a8ffda7c4fd963&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;prasad.n&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-09 17:54:02&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT INe7ffa304ffda5a5019a8ffda7c4fd98a"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/action&gt;&lt;cid&gt;8fc5745c-2581-4606-9f78-2de01740aa6f&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Check if the qutation is present in the cachestep&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:39&lt;/sys_created_on&gt;&lt;sys_id&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:13&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e7ffa304ffda5a5019a8ffda7c4fd98a"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;27ffa304ffda5a5019a8ffda7c4fd9b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:14&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {&amp;#13;
+// ... code ...&amp;#13;
+    var req= inputs.req;&amp;#13;
+    if(typeof req =='object'){&amp;#13;
+        req=req;&amp;#13;
+    }&amp;#13;
+    else{&amp;#13;
+        req=JSON.parse(req);&amp;#13;
+    }&amp;#13;
+    var age=calculateAge(req.dateOfBirth);&amp;#13;
+&amp;#13;
+    var key=req.productId+"_"+req.variantId+"_"+req.premium+"_"+req.policyTerm+"_"+req.paymentTerm+"_"+req.frequency+"_"+age;&amp;#13;
+    var gr=new GlideRecord('x_rptp_smartinte_0_integration_cache_table');&amp;#13;
+    gr.addQuery('key',key);&amp;#13;
+    gr.query();&amp;#13;
+    if(gr.next()){&amp;#13;
+        outputs.response=gr.response;&amp;#13;
+    }&amp;#13;
+    else&amp;#13;
+    outputs.response=false;&amp;#13;
+&amp;#13;
+})(inputs, outputs);&amp;#13;
+ function calculateAge(dob) {&amp;#13;
+  var convertedDate=dob.split("/").reverse().join("/"); // output: 2022/07/24&amp;#13;
+return  (new x_rptp_smartinte_0.moment().diff(convertedDate, 'years')).toString().split(".")[0];&amp;#13;
+}&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;2fffa304ffda5a5019a8ffda7c4fd9b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=e7ffa304ffda5a5019a8ffda7c4fd98a"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;req&lt;/field&gt;&lt;id&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/id&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;6fffa304ffda5a5019a8ffda7c4fd9ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/table&gt;&lt;value&gt;{{action.requestbody}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a^id=e7ffa304ffda5a5019a8ffda7c4fd98a"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=e7ffa304ffda5a5019a8ffda7c4fd98a"/&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e7ffa304ffda5a5019a8ffda7c4fd98a"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=e7ffa304ffda5a5019a8ffda7c4fd98a^sys_idNOT INafffa304ffda5a5019a8ffda7c4fd98d"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;req&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Check if the qutation is present in the cachestep"&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/model&gt;&lt;model_id&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:39&lt;/sys_created_on&gt;&lt;sys_id&gt;afffa304ffda5a5019a8ffda7c4fd98d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:48&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=e7ffa304ffda5a5019a8ffda7c4fd98a^sys_idNOT IN67ffa304ffda5a5019a8ffda7c4fd9ac"/&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3b52db5e-ece3-456a-9fcd-5c1336ef38b9&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;response&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;response&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Check if the qutation is present in the cachestep"&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/model&gt;&lt;model_id&gt;e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:39&lt;/sys_created_on&gt;&lt;sys_id&gt;67ffa304ffda5a5019a8ffda7c4fd9ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:39&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=e7ffa304ffda5a5019a8ffda7c4fd98a"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a^sys_idNOT INefffa304ffda5a5019a8ffda7c4fd9af"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;response&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;response&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_e7ffa304ffda5a5019a8ffda7c4fd98a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;efffa304ffda5a5019a8ffda7c4fd9af&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;response&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT INe7ffa304ffda5a5019a8ffda7c4fd96a"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfd33811-84e3-44c1-9b9e-a81378e84d8c&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;requestBody&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model&gt;&lt;model_id&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:39&lt;/sys_created_on&gt;&lt;sys_id&gt;e7ffa304ffda5a5019a8ffda7c4fd96a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:39&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e7ffa304ffda5a5019a8ffda7c4fd96a"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN7fffa304ffda5a5019a8ffda7c4fd9db,afffa304ffda5a5019a8ffda7c4fd9d2,bfffa304ffda5a5019a8ffda7c4fd9d7"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cc1c88bf-ce68-487d-a288-1aebb9107213,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model&gt;&lt;model_id&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;7fffa304ffda5a5019a8ffda7c4fd9db&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:14&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7fffa304ffda5a5019a8ffda7c4fd9db"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=7fffa304ffda5a5019a8ffda7c4fd9db"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bbd5c899-0d89-49ff-884a-f119c3f3917b&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;variable&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;response&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model&gt;&lt;model_id&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;afffa304ffda5a5019a8ffda7c4fd9d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=afffa304ffda5a5019a8ffda7c4fd9d2"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=afffa304ffda5a5019a8ffda7c4fd9d2"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FDebffa3049dda5a50da66262a7e0945d1&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FDebffa3049dda5a50da66262a7e0945d1":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDebffa3049dda5a50da66262a7e0945d1.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f388e8f0-17b3-4f7c-a61a-ed21bc041458\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDebffa3049dda5a50da66262a7e0945d1\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;efffa304ffda5a5019a8ffda7c4fd9d1&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:14&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_schema&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FDebffa3049dda5a50da66262a7e0945d1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=f388e8f0-17b3-4f7c-a61a-ed21bc041458&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model&gt;&lt;model_id&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;bfffa304ffda5a5019a8ffda7c4fd9d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bfffa304ffda5a5019a8ffda7c4fd9d7"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=bfffa304ffda5a5019a8ffda7c4fd9d7"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=9fffa304ffda5a5019a8ffda7c4fd963"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN73ffa304ffda5a5019a8ffda7c4fd9e7"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/action_type_id&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;73ffa304ffda5a5019a8ffda7c4fd9e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=73ffa304ffda5a5019a8ffda7c4fd9e7"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN27ffa304ffda5a5019a8ffda7c4fd988"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;requestBody&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:39&lt;/sys_created_on&gt;&lt;sys_id&gt;27ffa304ffda5a5019a8ffda7c4fd988&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;requestBody&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:39&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_9fffa304ffda5a5019a8ffda7c4fd963"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN33ffa304ffda5a5019a8ffda7c4fd9db,37ffa304ffda5a5019a8ffda7c4fd9e1,63ffa304ffda5a5019a8ffda7c4fd9d7"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;33ffa304ffda5a5019a8ffda7c4fd9db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Action Status&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;37ffa304ffda5a5019a8ffda7c4fd9e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Don't Treat as Error&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;variable&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;response&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:40&lt;/sys_created_on&gt;&lt;sys_id&gt;63ffa304ffda5a5019a8ffda7c4fd9d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;response&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:40&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_9fffa304ffda5a5019a8ffda7c4fd963"/&gt;&lt;sys_hub_action_plan action="delete_multiple" query="action_id=9fffa304ffda5a5019a8ffda7c4fd963^sys_idNOT IN5a007704ffda5a5019a8ffda7c4fd9e5"/&gt;&lt;sys_hub_action_plan action="INSERT_OR_UPDATE"&gt;&lt;action_id display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/action_id&gt;&lt;plan&gt;{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"5a007704ffda5a5019a8ffda7c4fd9e5","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;snapshot&gt;fd41b708ffda5a5019a8ffda7c4fd9e6&lt;/snapshot&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5a007704ffda5a5019a8ffda7c4fd9e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:17&lt;/sys_updated_on&gt;&lt;/sys_hub_action_plan&gt;&lt;sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;annotation/&gt;&lt;attributes&gt;{labelCacheCleanUpExecuted=true}&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;ebbe2a0f477f0e10e9ddbf66706d43d4&lt;/copied_from&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;flow_priority/&gt;&lt;internal_name&gt;get_keys_for_bulk_api_for_smart_assurance&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.requestbody}}","label":"action➛requestBody","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8fc5745c-2581-4606-9f78-2de01740aa6f].response}}","label":"Check if the qutation is present in the cachestep➛step➛response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Get keys for bulk API for Smart Assurance&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;parent_action display_value="Get keys for bulk API for Smart Assurance"&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/parent_action&gt;&lt;sys_class_name&gt;sys_hub_action_type_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=79007704ffda5a5019a8ffda7c4fd958"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=79007704ffda5a5019a8ffda7c4fd958"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;06007704ffda5a5019a8ffda7c4fd99d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}&lt;/value&gt;&lt;variable display_value="Action Status"&gt;82007704ffda5a5019a8ffda7c4fd978&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;42007704ffda5a5019a8ffda7c4fd99d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Don't Treat as Error"&gt;ce007704ffda5a5019a8ffda7c4fd994&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=79007704ffda5a5019a8ffda7c4fd958"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;variable&lt;/field&gt;&lt;id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/id&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;4a007704ffda5a5019a8ffda7c4fd99c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/table&gt;&lt;value&gt;{{step[8fc5745c-2581-4606-9f78-2de01740aa6f].response}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__action_status__&lt;/field&gt;&lt;id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/id&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;ce007704ffda5a5019a8ffda7c4fd99c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__dont_treat_as_error__&lt;/field&gt;&lt;id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/id&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;0e007704ffda5a5019a8ffda7c4fd99c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT INb5007704ffda5a5019a8ffda7c4fd961"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Get keys for bulk API for Smart Assurance"&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/action&gt;&lt;cid&gt;8fc5745c-2581-4606-9f78-2de01740aa6f&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Check if the qutation is present in the cachestep&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:15&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b5007704ffda5a5019a8ffda7c4fd961"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;02007704ffda5a5019a8ffda7c4fd970&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:15&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {&amp;#13;
+// ... code ...&amp;#13;
+    var req= inputs.req;&amp;#13;
+    if(typeof req =='object'){&amp;#13;
+        req=req;&amp;#13;
+    }&amp;#13;
+    else{&amp;#13;
+        req=JSON.parse(req);&amp;#13;
+    }&amp;#13;
+    var age=calculateAge(req.dateOfBirth);&amp;#13;
+&amp;#13;
+    var key=req.productId+"_"+req.variantId+"_"+req.premium+"_"+req.policyTerm+"_"+req.paymentTerm+"_"+req.frequency+"_"+age;&amp;#13;
+    var gr=new GlideRecord('x_rptp_smartinte_0_integration_cache_table');&amp;#13;
+    gr.addQuery('key',key);&amp;#13;
+    gr.query();&amp;#13;
+    if(gr.next()){&amp;#13;
+        outputs.response=gr.response;&amp;#13;
+    }&amp;#13;
+    else&amp;#13;
+    outputs.response=false;&amp;#13;
+&amp;#13;
+})(inputs, outputs);&amp;#13;
+ function calculateAge(dob) {&amp;#13;
+  var convertedDate=dob.split("/").reverse().join("/"); // output: 2022/07/24&amp;#13;
+return  (new x_rptp_smartinte_0.moment().diff(convertedDate, 'years')).toString().split(".")[0];&amp;#13;
+}&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;4e007704ffda5a5019a8ffda7c4fd96f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=b5007704ffda5a5019a8ffda7c4fd961"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;req&lt;/field&gt;&lt;id&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/id&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;4a007704ffda5a5019a8ffda7c4fd970&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_b5007704ffda5a5019a8ffda7c4fd961&lt;/table&gt;&lt;value&gt;{{action.requestbody}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961^id=b5007704ffda5a5019a8ffda7c4fd961"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=b5007704ffda5a5019a8ffda7c4fd961"/&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b5007704ffda5a5019a8ffda7c4fd961"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=b5007704ffda5a5019a8ffda7c4fd961^sys_idNOT IN39007704ffda5a5019a8ffda7c4fd964"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;req&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;req&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Check if the qutation is present in the cachestep"&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/model&gt;&lt;model_id&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_b5007704ffda5a5019a8ffda7c4fd961&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;39007704ffda5a5019a8ffda7c4fd964&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=b5007704ffda5a5019a8ffda7c4fd961^sys_idNOT INbd007704ffda5a5019a8ffda7c4fd968"/&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3b52db5e-ece3-456a-9fcd-5c1336ef38b9&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;response&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;response&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Check if the qutation is present in the cachestep"&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/model&gt;&lt;model_id&gt;b5007704ffda5a5019a8ffda7c4fd961&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;bd007704ffda5a5019a8ffda7c4fd968&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=b5007704ffda5a5019a8ffda7c4fd961"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961^sys_idNOT INce007704ffda5a5019a8ffda7c4fd96b"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;response&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;response&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_b5007704ffda5a5019a8ffda7c4fd961&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;ce007704ffda5a5019a8ffda7c4fd96b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;response&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN7d007704ffda5a5019a8ffda7c4fd95b"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfd33811-84e3-44c1-9b9e-a81378e84d8c&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;requestBody&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model&gt;&lt;model_id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;7d007704ffda5a5019a8ffda7c4fd95b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d007704ffda5a5019a8ffda7c4fd95b"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN4a007704ffda5a5019a8ffda7c4fd973,82007704ffda5a5019a8ffda7c4fd978,ce007704ffda5a5019a8ffda7c4fd994"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bbd5c899-0d89-49ff-884a-f119c3f3917b&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;variable&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;response&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model&gt;&lt;model_id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;4a007704ffda5a5019a8ffda7c4fd973&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4a007704ffda5a5019a8ffda7c4fd973"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=4a007704ffda5a5019a8ffda7c4fd973"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=f388e8f0-17b3-4f7c-a61a-ed21bc041458&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model&gt;&lt;model_id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;82007704ffda5a5019a8ffda7c4fd978&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=82007704ffda5a5019a8ffda7c4fd978"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=82007704ffda5a5019a8ffda7c4fd978"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cc1c88bf-ce68-487d-a288-1aebb9107213,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Get keys for bulk API for Smart Assurance"&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model&gt;&lt;model_id&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;ce007704ffda5a5019a8ffda7c4fd994&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:34:16&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_payload/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ce007704ffda5a5019a8ffda7c4fd994"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=ce007704ffda5a5019a8ffda7c4fd994"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=79007704ffda5a5019a8ffda7c4fd958"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN4e007704ffda5a5019a8ffda7c4fd99e"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Get keys for bulk API for Smart Assurance"&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/action_type_id&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;4e007704ffda5a5019a8ffda7c4fd99e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=4e007704ffda5a5019a8ffda7c4fd99e"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958^sys_idNOT INb9007704ffda5a5019a8ffda7c4fd95f"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;requestbody&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;requestBody&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;b9007704ffda5a5019a8ffda7c4fd95f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;requestBody&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_79007704ffda5a5019a8ffda7c4fd958"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958^sys_idNOT IN46007704ffda5a5019a8ffda7c4fd977,4e007704ffda5a5019a8ffda7c4fd999,82007704ffda5a5019a8ffda7c4fd994"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;variable&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;response&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;46007704ffda5a5019a8ffda7c4fd977&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;response&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:49&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;4e007704ffda5a5019a8ffda7c4fd999&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Don't Treat as Error&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;akshay&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 14:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;82007704ffda5a5019a8ffda7c4fd994&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Action Status&lt;/sys_name&gt;&lt;sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SmartIntegration"&gt;eeb170fcff218a1019a8ffda7c4fd91f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;akshay&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 14:28:50&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_79007704ffda5a5019a8ffda7c4fd958"/&gt;&lt;sys_hub_action_type_definition action="UPDATE"&gt;&lt;sys_id&gt;9fffa304ffda5a5019a8ffda7c4fd963&lt;/sys_id&gt;&lt;latest_snapshot&gt;79007704ffda5a5019a8ffda7c4fd958&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip&lt;/compiler_build&gt;&lt;/sys_hub_action_type_definition&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1013040109</payload_hash>
+        <record_name>Get keys for bulk API for Smart Assurance</record_name>
+        <reverted_from/>
+        <source>ae658a1233121210798ab3373e5c7bb2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-08 06:29:20</sys_created_on>
+        <sys_id>bc41a8492ba29210c692feb2f291bf07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193a4f54e000000000</sys_recorded_at>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-24 21:00:45</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>7c41a8491ca29210c6768d5ffe769507</update_guid>
+        <update_guid_history>7c41a8491ca29210c6768d5ffe769507:1013040109</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>prasad.n</sys_created_by>
+        <sys_created_on>2024-12-16 12:15:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>50bcd58037fa4b249362997552c7c124</sys_id>
+        <sys_metadata>9fffa304ffda5a5019a8ffda7c4fd963</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get keys for bulk API for Smart Assurance</sys_name>
+        <sys_package display_value="SmartIntegration" source="x_rptp_smartinte_0">eeb170fcff218a1019a8ffda7c4fd91f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SmartIntegration">eeb170fcff218a1019a8ffda7c4fd91f</sys_scope>
+        <sys_scope_delete display_value="">369325a421bf4d1f809d3b2ab5baaae1</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_9fffa304ffda5a5019a8ffda7c4fd963</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_9fffa304ffda5a5019a8ffda7c4fd963">bc41a8492ba29210c692feb2f291bf07</sys_update_version>
+        <sys_updated_by>prasad.n</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:15:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
